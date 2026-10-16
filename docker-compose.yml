@@ -1,0 +1,88 @@
+services:
+  caddy:
+    image: caddy:2.11.3-alpine
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./Caddyfile.dev:/etc/caddy/Caddyfile:Z,ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - app
+    depends_on:
+      - frontend
+      - postgres
+      - backend
+ 
+  frontend:
+    restart: unless-stopped
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend/src:/app/src:Z,ro
+    expose:
+      - "5173"
+    networks:
+      - app
+    env_file:
+      - .env
+ 
+  backend:
+    restart: unless-stopped
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./backend/src:/app/src:Z,ro
+      - ./backend/static:/app/static:Z,ro
+      - ./backend/pyproject.toml:/app/pyproject.toml:Z,ro
+      - ./backend/uv.lock:/app/uv.lock:Z,ro
+    environment:
+      - DATABASE_URL=postgresql://root:root@postgres:5432/music
+      - DEPLOYMENT_ENV=development
+      - JWT_SECRET_KEY=KABASHISTYLE
+    expose:
+      - "8000"
+    networks:
+      - app
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=music
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app
+
+  adminer:
+    image: adminer:5.4.2
+    restart: always
+    environment:
+      - DATABASE_URL=postgresql://root:root@postgres:5432/music
+    expose:
+      - "8080" 
+    depends_on:
+      - postgres
+    networks:
+      - app
+ 
+networks:
+  app:
+    driver: bridge
+ 
+volumes:
+  caddy_data:
+  caddy_config:
+  postgres_data:
+ 

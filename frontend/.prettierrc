@@ -1,0 +1,21 @@
+{
+    "useTabs": true,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "printWidth": 200,
+    "tabWidth": 4,
+    "semi": false,
+    "plugins": [
+        "prettier-plugin-svelte",
+        "prettier-plugin-tailwindcss"
+    ],
+    "overrides": [
+        {
+            "files": "*.svelte",
+            "options": {
+                "parser": "svelte"
+            }
+        }
+    ],
+    "tailwindStylesheet": "./src/routes/layout.css"
+}
