@@ -11,6 +11,7 @@ import src.auth.router
 import src.db
 import src.models
 import src.ws.router
+import src.song.router
 
 logging.basicConfig(
     level=logging.INFO,
@@ -39,5 +40,6 @@ app.state.is_dev = os.getenv("DEPLOYMENT_ENV") == "development"
 
 app.include_router(src.auth.router.router, tags=["auth"])
 app.include_router(src.ws.router.router, tags=["ws"])
+app.include_router(src.song.router.router, tags=["song"])
 
 app.mount("/static", StaticFiles(directory=Path.cwd() / "static"), name="assets")
