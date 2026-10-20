@@ -13,7 +13,8 @@ download_opts = {
 
 search_opts = {
     "quiet": True,
-    # "js_runtimes": {"node": {"path": "/usr/bin/node"}},
+    "no_warnings": True,
+    "js_runtimes": {"node": {"path": "/usr/bin/node"}},
 }
 
 
