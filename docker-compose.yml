@@ -6,7 +6,7 @@ services:
             - "8080:80"
             - "8443:443"
         volumes:
-            - ./Caddyfile.dev:/etc/caddy/Caddyfile:Z,ro
+            - ./Caddyfile.dev:/etc/caddy/Caddyfile:z,ro
             - caddy_data:/data
             - caddy_config:/config
         networks:
@@ -22,7 +22,7 @@ services:
             context: ./frontend
             dockerfile: Dockerfile.dev
         volumes:
-            - ./frontend/src:/app/src:Z,ro
+            - ./frontend/src:/app/src:z,ro
         expose:
             - "5173"
         networks:
@@ -36,10 +36,10 @@ services:
             context: ./backend
             dockerfile: Dockerfile.dev
         volumes:
-            - ./backend/src:/app/src:Z,ro
-            - ./backend/static:/app/static:Z,ro
-            - ./backend/pyproject.toml:/app/pyproject.toml:Z,ro
-            - ./backend/uv.lock:/app/uv.lock:Z,ro
+            - ./backend/src:/app/src:z,ro
+            - ./backend/static:/app/static:z,ro
+            - ./backend/pyproject.toml:/app/pyproject.toml:z,ro
+            - ./backend/uv.lock:/app/uv.lock:z,ro
             - ./.data/songs:/app/songs:z
         environment:
             - DATABASE_URL=postgresql://root:root@postgres:5432/music
