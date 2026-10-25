@@ -15,4 +15,10 @@
 - The project uses `shadcn-svelte` for frontend components
 - `shadcn` is a component library where you only add what you need
 - `shadcn` components are added via the `pnpm dlx shadcn-svelte@latest add <component name> -y`
+- Before writing a custom component, always try looking in the `shadcn-svelte` docs if there is something already made
+    - if not, build upon `shadcn-svelte` components if possible
 
+# Backend
+- The backend is built on `fastapi` and `sqlmodel`
+- The dbms is `postgres` which always runs as a docker container
+- The backend uses `uv` as the package manager, never try to do things via `pip` directly
