@@ -16,7 +16,7 @@
 {#if user.current != null}
 	<div class="flex h-full w-full items-center justify-center">
 		<div class="flex flex-col gap-2">
-			<h1 class="text-2xl">Ciao, {user.current?.name}</h1>
+			<h1 class="text-2xl">Hello, {user.current?.name}</h1>
 			<Button onclick={() => user.logout()}>Logout</Button>
 		</div>
 	</div>

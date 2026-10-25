@@ -28,9 +28,9 @@
 		if (!err) {
 			err = await user.login(creds.username, creds.password)
 			if (!err) goto("/")
-			else console.error("ERRORE LOGIN")
+			else console.error("Login error!")
 		} else {
-			console.error("ERRORE REGISTRAZIONE")
+			console.error("Registration error!")
 		}
 	}
 </script>
