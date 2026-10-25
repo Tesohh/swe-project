@@ -14,6 +14,7 @@ class Room(SQLModel, table=True):
 
     id: int | None = Field(default=None, primary_key=True)
     name: str = Field(unique=True)
+    user_id: int = Field(foreign_key="users.id")  # host user who created the room
     password_hash: str | None  # if set, the room is "password protected"
 
     description: str | None  # plain text sent to the Decision model to filter song requests
