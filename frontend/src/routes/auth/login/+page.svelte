@@ -34,7 +34,7 @@
 <div class="flex h-full w-full items-center justify-center">
 	<Card.Root class="-my-4 w-full max-w-sm">
 		<Card.Header>
-			<Card.Title>Login Area</Card.Title>
+			<Card.Title>Login</Card.Title>
 		</Card.Header>
 		<Card.Content>
 			<form onsubmit={handleLogin}>
