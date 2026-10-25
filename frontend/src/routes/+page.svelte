@@ -15,9 +15,17 @@
 	</div>
 {:else}
 	<div class="flex h-full w-full items-center justify-center">
-		<div class="flex flex-col gap-2">
+		<div class="flex w-56 flex-col gap-2">
 			<h1 class="text-2xl">Hello, {user.current?.name}</h1>
-			<Button onclick={() => user.logout()}>Logout</Button>
+			<div class="flex flex-row">
+				<Button onclick={() => user.logout()}>New Room</Button>
+				<Button variant="secondary" onclick={() => user.logout()}>Logout</Button>
+			</div>
+			<div class="flex flex-col gap-y-2">
+				<div class="bg-secondary p-4">Room A</div>
+				<div class="bg-secondary p-4">Room B</div>
+				<div class="bg-secondary p-4">Room C</div>
+			</div>
 		</div>
 	</div>
 {/if}
