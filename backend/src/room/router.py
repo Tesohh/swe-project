@@ -6,6 +6,7 @@ from sqlmodel import select
 import src.auth
 import src.db
 import src.models
+from src.models import Room
 
 router = APIRouter(prefix="/room")
 
@@ -84,15 +85,35 @@ def delete_room(session: src.db.SessionDep, user: src.auth.UserDep, room_id: int
     return JSONResponse(status_code=200, content={"status": "ok"})
 
 
+@router.get("/mine")
+def get_my_rooms(user: src.auth.UserDep, session: src.db.SessionDep):
+    rooms = session.exec(select(Room).where(Room.user_id == user.id)).all()
+
+    return JSONResponse(
+        [
+            {
+                "id": room.id,
+                "name": room.name,
+                "user_id": room.user_id,
+                "description": room.description,
+                "is_password_protected": room.password_hash is not None,
+            }
+            for room in rooms
+        ]
+    )
+
+
 @router.get("/{room_id}")
 def get_room(session: src.db.SessionDep, room_id: int):
     room = session.get(src.models.Room, room_id)
     if room is None:
         raise HTTPException(status_code=404, detail="Room not found")
-    return JSONResponse({
-        "id": room.id,
-        "name": room.name,
-        "user_id": room.user_id,
-        "description": room.description,
-        "is_password_protected": room.password_hash is not None,
-    })
+    return JSONResponse(
+        {
+            "id": room.id,
+            "name": room.name,
+            "user_id": room.user_id,
+            "description": room.description,
+            "is_password_protected": room.password_hash is not None,
+        }
+    )
