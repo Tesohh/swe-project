@@ -1,8 +1,10 @@
 <script lang="ts">
 	import Button from "$lib/components/ui/button/button.svelte"
+	import CreateRoomDialog from "$lib/components/CreateRoomDialog.svelte"
 	import { getUserContext } from "$lib/types/User.svelte"
 
 	const user = getUserContext()
+	let newRoomOpen = $state(false)
 </script>
 
 {#if user.current == null}
@@ -18,7 +20,7 @@
 		<div class="flex w-56 flex-col gap-2">
 			<h1 class="text-2xl">Hello, {user.current?.name}</h1>
 			<div class="flex flex-row">
-				<Button onclick={() => user.logout()}>New Room</Button>
+				<CreateRoomDialog bind:open={newRoomOpen} onSubmit={() => user.refresh()} />
 				<Button variant="secondary" onclick={() => user.logout()}>Logout</Button>
 			</div>
 			<div class="flex flex-col gap-y-2">
