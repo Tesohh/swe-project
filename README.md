@@ -37,3 +37,12 @@ It is meant for
 - Pick best version of song (avoid music videos, concert recordings, intros... etc.)
 - Resolve duplicates (even with similar songs)
 - "Smart shuffle" (order the queue in a smart way to avoid too much repetition and keep things interesting)
+
+## Database migrations
+
+The backend now uses Alembic migrations.
+
+From `/backend`:
+
+- create migration: `uv run alembic revision -m "your change"`
+- apply latest migrations: `uv run alembic upgrade head`
