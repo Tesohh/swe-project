@@ -25,8 +25,8 @@ log = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # stuff that is run at startup
-    src.db.create_db_and_tables()
-    log.info("created db and tables")
+    src.db.run_migrations()
+    log.info("ran db migrations")
     # add more here if needed ...
     log.info("done all startup procedures")
 

@@ -1,9 +1,12 @@
 import logging
 import os
+from pathlib import Path
 from typing import Annotated
 
+from alembic import command
+from alembic.config import Config
 from fastapi import Depends
-from sqlmodel import Session, SQLModel, create_engine
+from sqlmodel import Session, create_engine
 
 engine = create_engine(os.environ["DATABASE_URL"])
 
@@ -18,5 +21,7 @@ def get_session():
 SessionDep = Annotated[Session, Depends(get_session)]
 
 
-def create_db_and_tables():
-    SQLModel.metadata.create_all(engine)
+def run_migrations():
+    alembic_config = Config(str(Path(__file__).resolve().parent.parent / "alembic.ini"))
+    alembic_config.set_main_option("sqlalchemy.url", os.environ["DATABASE_URL"])
+    command.upgrade(alembic_config, "head")

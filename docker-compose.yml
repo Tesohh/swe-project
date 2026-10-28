@@ -38,6 +38,8 @@ services:
         volumes:
             - ./backend/src:/app/src:z,ro
             - ./backend/static:/app/static:z,ro
+            - ./backend/alembic:/app/alembic:z,ro
+            - ./backend/alembic.ini:/app/alembic.ini:z,ro
             - ./backend/pyproject.toml:/app/pyproject.toml:z,ro
             - ./backend/uv.lock:/app/uv.lock:z,ro
             - ./.data/songs:/app/songs:z
