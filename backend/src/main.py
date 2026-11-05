@@ -11,7 +11,6 @@ import src.auth.router
 import src.db
 import src.models
 import src.room.router
-import src.ws.router
 import src.song.router
 
 logging.basicConfig(
@@ -40,7 +39,6 @@ app = FastAPI(title="GIVE ME A NAME", root_path="/api", lifespan=lifespan)
 app.state.is_dev = os.getenv("DEPLOYMENT_ENV") == "development"
 
 app.include_router(src.auth.router.router, tags=["auth"])
-app.include_router(src.ws.router.router, tags=["ws"])
 app.include_router(src.room.router.router, tags=["room"])
 app.include_router(src.song.router.router, tags=["song"])
 

@@ -1,5 +1,8 @@
+from collections.abc import AsyncIterable
+
 from fastapi import APIRouter, HTTPException, status
 from fastapi.responses import JSONResponse
+from fastapi.sse import EventSourceResponse, ServerSentEvent
 from pydantic import BaseModel
 from sqlmodel import select
 
@@ -101,6 +104,13 @@ def get_my_rooms(user: src.auth.UserDep, session: src.db.SessionDep):
             for room in rooms
         ]
     )
+
+
+@router.get("/events", response_class=EventSourceResponse)
+async def stream_items() -> AsyncIterable[ServerSentEvent]:
+    yield ServerSentEvent(comment="stream of item updates")
+    for i in range(3):
+        yield ServerSentEvent(data=i, event="ping", id=str(i + 1), retry=5000)
 
 
 @router.get("/{room_id}")
