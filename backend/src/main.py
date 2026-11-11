@@ -10,6 +10,7 @@ import src.auth
 import src.auth.router
 import src.db
 import src.models
+import src.queue.user_router
 import src.room.router
 import src.song.router
 
@@ -40,6 +41,7 @@ app.state.is_dev = os.getenv("DEPLOYMENT_ENV") == "development"
 
 app.include_router(src.auth.router.router, tags=["auth"])
 app.include_router(src.room.router.router, tags=["room"])
+app.include_router(src.queue.user_router.router, tags=["queue"])
 app.include_router(src.song.router.router, tags=["song"])
 
 app.mount("/static", StaticFiles(directory=Path.cwd() / "static"), name="assets")
