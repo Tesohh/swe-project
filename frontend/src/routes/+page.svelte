@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Button from "$lib/components/ui/button/button.svelte"
+	import Input from "$lib/components/ui/input/input.svelte"
 	import CreateRoomDialog from "$lib/components/CreateRoomDialog.svelte"
 	import type { Room } from "$lib/room"
 	import { getMyRooms } from "$lib/room"
@@ -9,6 +10,7 @@
 	const user = getUserContext()
 	let newRoomOpen = $state(false)
 	let rooms = $state<Room[] | null>(null)
+	let roomId = $state<string>("")
 
 	// fetch the rooms once the user is known
 	// TODO: use skeletons while loading?
@@ -30,7 +32,13 @@
 	<div class="flex h-full w-full items-center justify-center">
 		<div class="flex flex-col gap-2">
 			<h1 class="text-2xl font-bold">Hi</h1>
-			<p>Join a room by scanning a <b class="text-accent">QR code</b> <br />or <b class="text-accent">login</b> to create a room</p>
+			<p>Join a room by scanning a <b class="text-accent">QR code</b></p>
+			<div class=" flex flex-col gap-2 border-2 border-border bg-secondary p-2">
+				<p class="text-lg font-bold">Join room</p>
+				<Input placeholder="Room Id" bind:value={roomId}></Input>
+				<Button href="/room/{roomId}">Join</Button>
+			</div>
+			<p>or <b class="text-accent">login</b> to create a room</p>
 			<Button href="/auth/login">Login</Button>
 		</div>
 	</div>
