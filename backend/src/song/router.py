@@ -1,12 +1,12 @@
 from pathlib import Path
 
 import yt_dlp
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter
 from fastapi.responses import FileResponse, JSONResponse
 
 import src.db
 from src.models import Song
-from src.song.download import MEDIA_TYPES, download_song, song_file, song_or_404
+from src.song.download import MEDIA_TYPES, download_song, ensure_file, song_file, song_or_404
 
 router = APIRouter(prefix="/song")
 
@@ -48,9 +48,8 @@ def download(url: str, session: src.db.SessionDep):
 def stream_song(song_id: int, session: src.db.SessionDep):
     """Streams the audio file of a song by its DB id. Supports Range requests for seeking."""
     song = song_or_404(session, song_id)
-    path = song_file(song.id)
-    if path is None:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, f"Song {song_id} has no file on disk")
+    # the row exists but the file does not, so the song is downloaded again
+    path = ensure_file(song)
 
     return FileResponse(path, media_type=MEDIA_TYPES.get(path.suffix.lower(), "application/octet-stream"))
 
