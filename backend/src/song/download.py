@@ -15,6 +15,18 @@ from src.models import Song
 SONGS_DIR = Path("./songs")
 PARTIAL_SUFFIXES = (".part", ".partial", ".frag", ".ytdl")
 
+# media type for the audio file yt-dlp wrote, keyed by extension
+MEDIA_TYPES = {
+    ".mp3": "audio/mpeg",
+    ".m4a": "audio/mp4",
+    ".aac": "audio/aac",
+    ".opus": "audio/opus",
+    ".ogg": "audio/ogg",
+    ".wav": "audio/wav",
+    ".webm": "audio/webm",
+    ".flac": "audio/flac",
+}
+
 DOWNLOAD_OPTS = {
     "format": "bestaudio/best",
     "merge_output_format": "mp3",

@@ -1,9 +1,10 @@
 import yt_dlp
-from fastapi import APIRouter
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, HTTPException, status
+from fastapi.responses import FileResponse, JSONResponse
 
 import src.db
-from src.song.download import download_song, song_file
+from src.models import Song
+from src.song.download import MEDIA_TYPES, download_song, song_file
 
 router = APIRouter(prefix="/song")
 
@@ -36,6 +37,20 @@ def download(url: str, session: src.db.SessionDep):
             },
         }
     )
+
+
+@router.get("/stream/{song_id}")
+def stream_song(song_id: int, session: src.db.SessionDep):
+    """Streams the audio file of a song by its DB id. Supports Range requests for seeking."""
+    song = session.get(Song, song_id)
+    if song is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, f"No song with id {song_id}")
+
+    path = song_file(song.id)
+    if path is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, f"Song {song_id} has no file on disk")
+
+    return FileResponse(path, media_type=MEDIA_TYPES.get(path.suffix.lower(), "application/octet-stream"))
 
 
 @router.get("/search")
