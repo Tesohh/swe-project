@@ -111,13 +111,6 @@ def get_my_rooms(user: src.auth.UserDep, session: src.db.SessionDep):
     )
 
 
-@router.get("/events", response_class=EventSourceResponse)
-async def stream_items() -> AsyncIterable[ServerSentEvent]:
-    yield ServerSentEvent(comment="stream of item updates")
-    for i in range(3):
-        yield ServerSentEvent(data=i, event="ping", id=str(i + 1), retry=5000)
-
-
 @router.get("/{room_id}/events", response_class=EventSourceResponse)
 async def stream_room_events(room_id: int) -> AsyncIterable[ServerSentEvent]:
     """Streams the changes of room_id, which holds the one queue of that room."""
