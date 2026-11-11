@@ -46,6 +46,14 @@ def song_file(song_id: int | None) -> Path | None:
     return None
 
 
+def song_or_404(session: src.db.SessionDep, song_id: int) -> Song:
+    """Song row for song_id, or 404 if it is not in the songs table."""
+    song = session.get(Song, song_id)
+    if song is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, f"No song with id {song_id}")
+    return song
+
+
 def _extract_info(url: str) -> dict:
     try:
         with yt_dlp.YoutubeDL(DOWNLOAD_OPTS) as ydl:
