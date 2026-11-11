@@ -130,10 +130,28 @@ def _extract_info(url: str) -> dict:
     return info
 
 
-def download_song(session: src.db.SessionDep, url: str, found_by: str | None = None) -> Song:
-    """Downloads url into songs/<song id> and returns the row that stores it. Reuses the row if the song was already downloaded."""
+# yt-dlp options for a search that finds a song, no download
+SEARCH_OPTS = {
+    "quiet": True,
+    "no_warnings": True,
+    "js_runtimes": {"node": {"path": "/usr/bin/node"}},
+}
+
+
+def download_url(query: str) -> str:
+    """Download url for query. A search text is not supported yet."""
+    if not query.startswith(("http://", "https://")):
+        raise HTTPException(status.HTTP_422_UNPROCESSABLE_ENTITY, "Only a song url is accepted for now")
+    return query
+
+
+def download_song(session: src.db.SessionDep, query: str) -> Song:
+    """Downloads the song that query names into songs/<song id>, and stores query as the input it was found by.
+    Reuses the row if the song was already downloaded.
+    """
     SONGS_DIR.mkdir(parents=True, exist_ok=True)
 
+    url = download_url(query)
     existing = session.exec(select(Song).where(Song.source_url == url)).first()
     if existing is not None:
         ensure_file(existing)
@@ -147,7 +165,7 @@ def download_song(session: src.db.SessionDep, url: str, found_by: str | None = N
         uploader=info.get("uploader"),
         duration=info.get("duration"),
         source_id=info.get("id"),
-        found_by=found_by or url,
+        found_by=query,
         source_url=url,
     )
     session.add(song)

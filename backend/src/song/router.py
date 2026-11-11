@@ -6,7 +6,7 @@ from fastapi.responses import FileResponse, JSONResponse
 
 import src.db
 from src.models import Song
-from src.song.download import MEDIA_TYPES, download_song, ensure_file, song_file, song_or_404
+from src.song.download import MEDIA_TYPES, SEARCH_OPTS, download_song, ensure_file, song_file, song_or_404
 
 router = APIRouter(prefix="/song")
 
@@ -21,6 +21,7 @@ def song_payload(song: Song, path: Path | None) -> dict:
         "duration": song.duration,
         "source_id": song.source_id,
         "source_url": song.source_url,
+        "found_by": song.found_by,
         "genre": song.genre,
         "mood": song.mood,
         "quality": song.quality,
@@ -28,16 +29,9 @@ def song_payload(song: Song, path: Path | None) -> dict:
     }
 
 
-search_opts = {
-    "quiet": True,
-    "no_warnings": True,
-    "js_runtimes": {"node": {"path": "/usr/bin/node"}},
-}
-
-
 @router.get("/download")
 def download(url: str, session: src.db.SessionDep):
-    """Stores the song in the songs table and saves the file as songs/<song id>."""
+    """Stores the song in the songs table and saves the file as songs/<song id>. url is the input the song was found by."""
     song = download_song(session, url)
     path = song_file(song.id)
 
@@ -63,7 +57,7 @@ def song_info(song_id: int, session: src.db.SessionDep):
 
 @router.get("/search")
 def search(query: str):
-    with yt_dlp.YoutubeDL(search_opts) as ydl:
+    with yt_dlp.YoutubeDL(SEARCH_OPTS) as ydl:
         info = ydl.extract_info(f"ytsearch{5}:{query}", download=False)
 
     results = []
