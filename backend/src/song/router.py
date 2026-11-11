@@ -2,14 +2,11 @@ import yt_dlp
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 
+import src.db
+from src.song.download import download_song, song_file
+
 router = APIRouter(prefix="/song")
 
-
-download_opts = {
-    "format": "bestaudio/best",
-    "merge_output_format": "mp3",
-    "outtmpl": "./songs/%(title)s.%(ext)s",
-}
 
 search_opts = {
     "quiet": True,
@@ -19,12 +16,26 @@ search_opts = {
 
 
 @router.get("/download")
-def download(url: str):
-    with yt_dlp.YoutubeDL(download_opts) as ydl:
-        ydl.download([url])
+def download(url: str, session: src.db.SessionDep):
+    """Stores the song in the songs table and saves the file as songs/<song id>."""
+    song = download_song(session, url)
+    path = song_file(song.id)
 
-    response = JSONResponse({"status": "Funzia", "url": url})
-    return response
+    return JSONResponse(
+        {
+            "status": "ok",
+            "song": {
+                "id": song.id,
+                "title": song.title,
+                "artist": song.artist,
+                "uploader": song.uploader,
+                "duration": song.duration,
+                "source_id": song.source_id,
+                "source_url": song.source_url,
+                "filename": path.name if path else None,
+            },
+        }
+    )
 
 
 @router.get("/search")
