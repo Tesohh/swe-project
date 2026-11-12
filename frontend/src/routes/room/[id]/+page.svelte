@@ -40,7 +40,11 @@
 	<div class="flex h-full w-1/2 flex-col gap-4">
 		<div class="mb-8 flex w-full items-center justify-between gap-4">
 			<h1 class=" text-2xl">Room: <span class="font-bold">{data.room.name}</span></h1>
-			<div class="" id="placeholder"></div>
+			<div class="flex flex-col items-center gap-2">
+				<span class="text-lg">JOIN HERE</span>
+				<div class="" id="placeholder"></div>
+				<span class="font-mono text-muted-foreground">[Code: {data.room.id}]</span>
+			</div>
 		</div>
 		<div class=" flex flex-col gap-2 border-2 border-border bg-secondary p-2">
 			<p class="text-lg font-bold">Request Song</p>
