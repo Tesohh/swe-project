@@ -6,7 +6,7 @@
 	import { Button } from "$lib/components/ui/button"
 
 	onMount(() => {
-		document.getElementById("placeholder").innerHTML = qrObj.createImgTag(4)
+		document.getElementById("placeholder").innerHTML = qrObj.createImgTag(6)
 	})
 
 	let { data }: PageProps = $props()
