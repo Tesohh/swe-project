@@ -66,8 +66,10 @@ def test_query_only_row_is_valid():
     )
     assert row.url is None
     assert row.query == ""
-    # neither url, query nor title+artist must fail
-    with pytest.raises(ValidationError, match="needs a url or a search query"):
+    # neither url, query nor title+artist to search must fail
+    with pytest.raises(
+        ValidationError, match="row needs a url, a query, or artist plus title to search"
+    ):
         ManifestRow(source="youtube", label_origin="agent")
 
 

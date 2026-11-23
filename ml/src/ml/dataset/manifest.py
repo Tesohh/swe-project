@@ -50,7 +50,7 @@ class ManifestRow(BaseModel):
     # rows without url must carry a search query, checked below
     query: str = ""
 
-    title: str = Field(min_length=1)
+    title: str = ""
     artist: str = ""
     source: Source
     genre: list[str] = []
@@ -59,12 +59,15 @@ class ManifestRow(BaseModel):
     label_origin: LabelOrigin
     notes: str = ""
 
-    @field_validator("audio_type", mode="before")
-    @classmethod
-    def empty_audio_type_means_music(cls, value: object) -> object:
-        if value is None or (isinstance(value, str) and not value.strip()):
-            return AudioType.MUSIC
-        return value
+    @model_validator(mode="after")
+    def check_identity_and_labels(self) -> "ManifestRow":
+        # identity: a direct url, a query, or artist plus title to search
+        has_search = bool(self.query) or (self.title and self.artist)
+        if self.url is None and not has_search:
+            raise ValueError("row needs a url, a query, or artist plus title to search")
+        if self.audio_type == AudioType.MUSIC and not self.genre and not self.mood:
+            raise ValueError("music rows need at least one genre or mood tag")
+        return self
 
     @field_validator("genre", "mood", mode="before")
     @classmethod

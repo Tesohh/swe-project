@@ -83,7 +83,10 @@ def collect_jamendo(
     mooded = sum(1 for row in selected if row.mood)
     print(f"wrote {len(selected)} rows to {out_path}")
     print("genre counts:", ", ".join(f"{tag}: {count}" for tag, count in genre_stats.most_common()))
-    print(f"mood counts: rows with mood: {mooded}, ", ", ".join(f"{tag}: {count}" for tag, count in mood_stats.most_common()))
+    print(
+        f"mood counts: rows with mood: {mooded}, ",
+        ", ".join(f"{tag}: {count}" for tag, count in mood_stats.most_common()),
+    )
 
 
 def collect_librivox(
@@ -120,7 +123,9 @@ def collect_librivox(
         for mp3 in files:
             rows.append(
                 ManifestRow(
-                    url=ARCHIVE_DOWNLOAD_URL.format(item_id=item["identifier"], file_name=mp3["name"]),
+                    url=ARCHIVE_DOWNLOAD_URL.format(
+                        item_id=item["identifier"], file_name=mp3["name"]
+                    ),
                     title=item.get("title") or mp3["name"],
                     artist=item_meta.get("metadata", {}).get("creator", ""),
                     source=Source.SPEECH,
@@ -315,10 +320,11 @@ def _ensure_cache() -> None:
         urllib.request.urlretrieve(url, target)
 
 
-def collect_seeds(in_path: Path, out_path: Path) -> None:
+def collect_seeds(in_path: Path, out_path: Path, mood_overrides: Path | None = None) -> None:
     """Convert a 'Artist - Title | genre|genre | mood|mood' seed list into a manifest CSV."""
     genres = load_genres()
     moods = load_moods()
+    overrides = _load_mood_overrides(mood_overrides)
     rows: list[ManifestRow] = []
     errors: list[str] = []
     for line_number, line in enumerate(in_path.read_text().splitlines(), start=1):
@@ -327,12 +333,22 @@ def collect_seeds(in_path: Path, out_path: Path) -> None:
             continue
         sections = [part.strip() for part in line.split(" | ")]
         artist, _, title = sections[0].partition(" - ")
-        genre_tags = [tag for tag in sections[1].split(TAG_SEPARATOR) if tag] if len(sections) > 1 else []
-        mood_tags = [tag for tag in sections[2].split(TAG_SEPARATOR) if tag] if len(sections) > 2 else []
+        genre_tags = (
+            [tag for tag in sections[1].split(TAG_SEPARATOR) if tag] if len(sections) > 1 else []
+        )
+        mood_tags = (
+            [tag for tag in sections[2].split(TAG_SEPARATOR) if tag] if len(sections) > 2 else []
+        )
+        # knowledge-based mood seeds ride along when the line has no mood section
+        override = overrides.get(f"{title.strip().lower()}|{artist.strip().lower()}")
+        if override and not mood_tags:
+            mood_tags = override
         unknown_genre = [tag for tag in genre_tags if tag not in genres]
         unknown_mood = [tag for tag in mood_tags if tag not in moods]
         if unknown_genre or unknown_mood:
-            errors.append(f"line {line_number}: unknown genre {unknown_genre} or mood {unknown_mood}")
+            errors.append(
+                f"line {line_number}: unknown genre {unknown_genre} or mood {unknown_mood}"
+            )
             continue
         if not artist or not title:
             errors.append(f"line {line_number}: expected 'Artist - Title'")
@@ -355,13 +371,23 @@ def collect_seeds(in_path: Path, out_path: Path) -> None:
     print(f"wrote {len(rows)} seed rows to {out_path}, {len(errors)} line errors")
 
 
+def _load_mood_overrides(path: Path | None) -> dict[str, list[str]]:
+    if path is None or not path.exists():
+        return {}
+    data = json.loads(path.read_text())
+    return data.get("moods", {})
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Build collect-stage manifests")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    seeds = sub.add_parser("seeds", help="Convert a 'Artist - Title | tags' seed list into a manifest CSV")
+    seeds = sub.add_parser(
+        "seeds", help="Convert a 'Artist - Title | tags' seed list into a manifest CSV"
+    )
     seeds.add_argument("--in", dest="in_path", type=Path, required=True)
     seeds.add_argument("--out", type=Path, required=True)
+    seeds.add_argument("--mood-overrides", type=Path, default=DATA_DIR / "mood_seeds.json")
 
     jamendo = sub.add_parser("jamendo", help="Balanced music manifest from MTG-Jamendo")
     jamendo.add_argument("--out", type=Path, default=MANIFEST_DIR / "jamendo.csv")
@@ -388,7 +414,7 @@ def main(argv: list[str] | None = None) -> int:
             duration_max=args.duration_max,
         )
     elif args.command == "seeds":
-        collect_seeds(in_path=args.in_path, out_path=args.out)
+        collect_seeds(in_path=args.in_path, out_path=args.out, mood_overrides=args.mood_overrides)
     else:
         collect_librivox(
             out_path=args.out,
