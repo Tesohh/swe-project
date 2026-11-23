@@ -9,8 +9,6 @@ import argparse
 import json
 from pathlib import Path
 
-from pydantic import ValidationError
-
 from ml.dataset.manifest import ManifestRow, load_manifest
 
 # status values: "pending" -> "ok" | "error:<reason>"

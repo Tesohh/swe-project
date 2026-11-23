@@ -62,6 +62,7 @@ def test_query_only_row_is_valid():
         title="Smells Like Teen Spirit",
         artist="Nirvana",
         source="youtube",
+        genre=["rock"],
         label_origin="agent",
     )
     assert row.url is None
