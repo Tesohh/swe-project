@@ -1,0 +1,9 @@
+id,url,title,artist,source,genre,mood,audio_type,label_origin,notes
+,https://freemusicarchive.org/track/spanish-johnny,Spanish Johnny,Deer Tick,free_music_archive,folk|rock|country,calm|melancholic,music,dataset_tag,
+,https://freemusicarchive.org/track/spanish-johnny,Spanish Johnny (live),Deer Tick,free_music_archive,folk,calm,music,dataset_tag,duplicate url
+,https://freemusicarchive.org/track/chasing-cars,Chasing Cars,Seabound,free_music_archive,electronic,energetic|party,music,dataset_tag,
+,https://freemusicarchive.org/track/chasing-cars-remaster,Chasing Cars,Seabound,free_music_archive,electronic,energetic,music,dataset_tag,duplicate title
+,https://youtube.com/watch?v=krautcore,Broken row,Not A Band,youtube,krautcore,party,music,dataset_tag,unknown genre
+,https://youtube.com/watch?v=rear,Rear Of The Year,Weird Al,youtube,,parpy,music,dataset_tag,unknown mood
+,https://youtube.com/watch?v=silence,Silence 10 hours,Nobody,youtube,ambient,,noise,agent,non music with tags
+

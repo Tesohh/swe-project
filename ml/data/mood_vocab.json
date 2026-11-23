@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "description": "Fixed mood vocabulary. Every stage must use only these tags.",
+  "moods": [
+    "calm",
+    "sad",
+    "happy",
+    "party",
+    "energetic",
+    "dark",
+    "romantic",
+    "aggressive",
+    "dreamy",
+    "melancholic"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "description": "Fixed genre vocabulary. Every stage must use only these tags.",
+  "genres": [
+    "rock",
+    "pop",
+    "rap",
+    "hip_hop",
+    "jazz",
+    "blues",
+    "electronic",
+    "techno",
+    "house",
+    "ambient",
+    "folk",
+    "country",
+    "reggae",
+    "funk",
+    "soul",
+    "rnb",
+    "metal",
+    "punk",
+    "classical",
+    "latin",
+    "world",
+    "experimental"
+  ]
+}

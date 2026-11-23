@@ -1,0 +1,24 @@
+[project]
+name = "ml"
+version = "0.1.0"
+description = "Dataset tooling for the music model"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.10",
+]
+
+[project.scripts]
+dataset-check = "ml.dataset.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9,<1"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.17.6",
+]
+
+[tool.uv.build-backend]
+module-name = "ml"

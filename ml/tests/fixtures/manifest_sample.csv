@@ -1,0 +1,4 @@
+id,url,title,artist,source,genre,mood,audio_type,label_origin,notes
+,https://freemusicarchive.org/track/spanish-johnny,Spanish Johnny,Deer Tick,free_music_archive,folk|rock|country,calm|melancholic,music,dataset_tag,
+,https://freemusicarchive.org/track/chasing-cars,Chasing Cars,Seabound,free_music_archive,electronic,energetic|party,music,dataset_tag,
+,https://example.org/speech/001,News report ep 12,,archive_org,,,speech,agent,speech clip for the non music set
