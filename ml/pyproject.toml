@@ -9,6 +9,7 @@ dependencies = [
 
 [project.scripts]
 dataset-check = "ml.dataset.cli:main"
+dataset-collect = "ml.dataset.collect:main"
 
 [build-system]
 requires = ["uv_build>=0.9,<1"]
