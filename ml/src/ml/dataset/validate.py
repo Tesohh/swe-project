@@ -48,9 +48,10 @@ def check_manifest(manifest: Manifest) -> ManifestReport:
 
 
 def _find_url_duplicates(rows: list[ManifestRow]) -> list[CrossCheckError]:
+    direct = [row for row in rows if row.url is not None]
     errors = []
     for url, group in groupby(
-        sorted(rows, key=lambda row: str(row.url)), key=lambda row: str(row.url)
+        sorted(direct, key=lambda row: str(row.url)), key=lambda row: str(row.url)
     ):
         duplicates = list(group)[1:]
         errors += [

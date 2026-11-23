@@ -13,19 +13,27 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
-from ml.dataset.manifest import TAG_SEPARATOR, ManifestRow
-from ml.dataset.vocabs import AudioType, LabelOrigin, Source
+from ml.dataset.manifest import TAG_SEPARATOR, ManifestRow, load_manifest
+from ml.dataset.vocabs import AudioType, LabelOrigin, Source, load_genres, load_moods
 
 RAW_BASE = "https://raw.githubusercontent.com/MTG/mtg-jamendo-dataset/master/data"
 # Direct per-track mp3 endpoint, verified reachable
 AUDIO_URL_TEMPLATE = "https://mp3d.jamendo.com/?trackid={track_id}&format=mp31"
+
+ARCHIVE_SEARCH_URL = (
+    "https://archive.org/advancedsearch.php"
+    "?q=collection%3Alibrivoxaudio+AND+mediatype%3Aaudio"
+    "&fl%5B%5D=identifier&fl%5B%5D=title&rows={rows}&page={page}&output=json"
+)
+ARCHIVE_METADATA_URL = "https://archive.org/metadata/{item_id}"
+ARCHIVE_DOWNLOAD_URL = "https://archive.org/download/{item_id}/{file_name}"
 
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 CACHE_DIR = DATA_DIR / "jamendo"
 MANIFEST_DIR = DATA_DIR / "manifests"
 TAG_MAP_PATH = DATA_DIR / "jamendo_tag_map.json"
 
-DEFAULTS = {"duration_min": 60.0, "duration_max": 600.0, "per_genre": 200}
+DEFAULTS = {"duration_min": 60.0, "duration_max": 600.0, "per_genre": 800}
 
 
 def collect_jamendo(
@@ -76,6 +84,96 @@ def collect_jamendo(
     print(f"wrote {len(selected)} rows to {out_path}")
     print("genre counts:", ", ".join(f"{tag}: {count}" for tag, count in genre_stats.most_common()))
     print(f"mood counts: rows with mood: {mooded}, ", ", ".join(f"{tag}: {count}" for tag, count in mood_stats.most_common()))
+
+
+def collect_librivox(
+    out_path: Path,
+    cap: int = 500,
+    items: int = 250,
+    files_per_item: int = 3,
+    page: int = 1,
+    duration_min: float = 60.0,
+    duration_max: float = 1800.0,
+) -> None:
+    """Build a speech manifest from LibriVox audiobooks on archive.org."""
+    # resume support: skip items that are already in the output manifest
+    done_items: set[str] = set()
+    existing: list[ManifestRow] = []
+    if out_path.exists():
+        existing = load_manifest(out_path).rows
+        for row in existing:
+            if "librivox item:" in row.notes:
+                done_items.add(row.notes.split("librivox item: ")[1].split(",")[0])
+        cap -= len(existing)
+        if cap <= 0:
+            print(f"{out_path} already holds {len(existing)} rows, nothing to do")
+            return
+
+    rows: list[ManifestRow] = list(existing)
+    for item in _archive_items(rows=items, page=page):
+        if item["identifier"] in done_items:
+            continue
+        if len(rows) >= cap:
+            break
+        item_meta = _http_get_json(ARCHIVE_METADATA_URL.format(item_id=item["identifier"]))
+        files = _speech_files(item_meta, duration_min, duration_max)[:files_per_item]
+        for mp3 in files:
+            rows.append(
+                ManifestRow(
+                    url=ARCHIVE_DOWNLOAD_URL.format(item_id=item["identifier"], file_name=mp3["name"]),
+                    title=item.get("title") or mp3["name"],
+                    artist=item_meta.get("metadata", {}).get("creator", ""),
+                    source=Source.SPEECH,
+                    audio_type=AudioType.SPEECH,
+                    label_origin=LabelOrigin.DATASET_TAG,
+                    notes=f"librivox item: {item['identifier']}, file: {mp3['name']}",
+                )
+            )
+            if len(rows) >= cap:
+                break
+    _write_manifest(out_path, rows)
+    print(f"wrote {len(rows)} speech rows to {out_path}")
+
+
+def _archive_items(rows: int, page: int):
+    data = _http_get_json(ARCHIVE_SEARCH_URL.format(rows=rows, page=page))
+    return data["response"]["docs"]
+
+
+def _speech_files(item_meta: dict, duration_min: float, duration_max: float) -> list[dict]:
+    """Pick the usable mp3 files of one item, sorted by name for stable chapter order."""
+    files = []
+    for entry in item_meta.get("files", []):
+        if "mp3" not in entry.get("format", "").lower():
+            continue
+        if "64kb" in entry.get("name", "").lower():
+            continue  # skip the low bitrate duplicates
+        duration = _parse_length(entry.get("length", ""))
+        if duration is None or not duration_min <= duration <= duration_max:
+            continue
+        files.append(entry)
+    return sorted(files, key=lambda entry: entry["name"])
+
+
+def _parse_length(text: str) -> float | None:
+    """archive.org lengths come as '934.76' or '1:04:02'."""
+    text = text.strip()
+    if not text:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        parts = [float(part) for part in text.split(":")]
+        seconds = 0.0
+        for part in parts:
+            seconds = seconds * 60 + part
+        return seconds
+
+
+def _http_get_json(url: str) -> dict:
+    request = urllib.request.Request(url, headers={"User-Agent": "swe-project-collect/0.1"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read())
 
 
 def _load_tag_map(path: Path) -> dict[str, dict[str, list[str] | None]]:
@@ -217,21 +315,90 @@ def _ensure_cache() -> None:
         urllib.request.urlretrieve(url, target)
 
 
-def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Build a collect-stage manifest from MTG-Jamendo")
-    parser.add_argument("--out", type=Path, default=MANIFEST_DIR / "jamendo.csv")
-    parser.add_argument("--per-genre", type=int, default=DEFAULTS["per_genre"])
-    parser.add_argument("--duration-min", type=float, default=DEFAULTS["duration_min"])
-    parser.add_argument("--duration-max", type=float, default=DEFAULTS["duration_max"])
-    args = parser.parse_args(argv)
+def collect_seeds(in_path: Path, out_path: Path) -> None:
+    """Convert a 'Artist - Title | genre|genre | mood|mood' seed list into a manifest CSV."""
+    genres = load_genres()
+    moods = load_moods()
+    rows: list[ManifestRow] = []
+    errors: list[str] = []
+    for line_number, line in enumerate(in_path.read_text().splitlines(), start=1):
+        line = line.strip()
+        if not line:
+            continue
+        sections = [part.strip() for part in line.split(" | ")]
+        artist, _, title = sections[0].partition(" - ")
+        genre_tags = [tag for tag in sections[1].split(TAG_SEPARATOR) if tag] if len(sections) > 1 else []
+        mood_tags = [tag for tag in sections[2].split(TAG_SEPARATOR) if tag] if len(sections) > 2 else []
+        unknown_genre = [tag for tag in genre_tags if tag not in genres]
+        unknown_mood = [tag for tag in mood_tags if tag not in moods]
+        if unknown_genre or unknown_mood:
+            errors.append(f"line {line_number}: unknown genre {unknown_genre} or mood {unknown_mood}")
+            continue
+        if not artist or not title:
+            errors.append(f"line {line_number}: expected 'Artist - Title'")
+            continue
+        rows.append(
+            ManifestRow(
+                title=title.strip(),
+                artist=artist.strip(),
+                source=Source.YOUTUBE,
+                genre=genre_tags,
+                mood=mood_tags,
+                label_origin=LabelOrigin.AGENT,
+                notes="seed line",
+            )
+        )
+    if errors:
+        print("seed line errors:")
+        print("\n".join(errors))
+    _write_manifest(out_path, rows)
+    print(f"wrote {len(rows)} seed rows to {out_path}, {len(errors)} line errors")
 
-    _ensure_cache()
-    collect_jamendo(
-        out_path=args.out,
-        per_genre=args.per_genre,
-        duration_min=args.duration_min,
-        duration_max=args.duration_max,
-    )
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Build collect-stage manifests")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    seeds = sub.add_parser("seeds", help="Convert a 'Artist - Title | tags' seed list into a manifest CSV")
+    seeds.add_argument("--in", dest="in_path", type=Path, required=True)
+    seeds.add_argument("--out", type=Path, required=True)
+
+    jamendo = sub.add_parser("jamendo", help="Balanced music manifest from MTG-Jamendo")
+    jamendo.add_argument("--out", type=Path, default=MANIFEST_DIR / "jamendo.csv")
+    jamendo.add_argument("--per-genre", type=int, default=800)
+    jamendo.add_argument("--duration-min", type=float, default=DEFAULTS["duration_min"])
+    jamendo.add_argument("--duration-max", type=float, default=DEFAULTS["duration_max"])
+
+    speech = sub.add_parser("speech", help="Speech manifest from LibriVox on archive.org")
+    speech.add_argument("--out", type=Path, default=MANIFEST_DIR / "speech.csv")
+    speech.add_argument("--cap", type=int, default=500)
+    speech.add_argument("--items", type=int, default=250)
+    speech.add_argument("--files-per-item", type=int, default=3)
+    speech.add_argument("--page", type=int, default=1)
+    speech.add_argument("--duration-min", type=float, default=60.0)
+    speech.add_argument("--duration-max", type=float, default=1800.0)
+
+    args = parser.parse_args(argv)
+    if args.command == "jamendo":
+        _ensure_cache()
+        collect_jamendo(
+            out_path=args.out,
+            per_genre=args.per_genre,
+            duration_min=args.duration_min,
+            duration_max=args.duration_max,
+        )
+    elif args.command == "seeds":
+        collect_seeds(in_path=args.in_path, out_path=args.out)
+    else:
+        collect_librivox(
+            out_path=args.out,
+            cap=args.cap,
+            items=args.items,
+            files_per_item=args.files_per_item,
+            page=args.page,
+            duration_min=args.duration_min,
+            duration_max=args.duration_max,
+        )
     return 0
 
 

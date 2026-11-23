@@ -38,7 +38,18 @@ class ManifestRow(BaseModel):
             return str(uuid.uuid4())
         return value
 
-    url: HttpUrl
+    url: HttpUrl | None = None
+
+    @field_validator("url", mode="before")
+    @classmethod
+    def blank_url_means_none(cls, value: object) -> object:
+        if value is None or (isinstance(value, str) and not value.strip()):
+            return None
+        return value
+
+    # rows without url must carry a search query, checked below
+    query: str = ""
+
     title: str = Field(min_length=1)
     artist: str = ""
     source: Source
@@ -71,8 +82,10 @@ class ManifestRow(BaseModel):
 
     @model_validator(mode="after")
     def check_labels_present(self) -> "ManifestRow":
-        if self.audio_type == AudioType.MUSIC and not self.genre and not self.mood:
-            raise ValueError("music rows need at least one genre or mood tag")
+        # download searches by query, falling back to artist - title
+        has_search = bool(self.query) or (self.url is None and self.title and self.artist)
+        if self.url is None and not has_search:
+            raise ValueError("row needs a url, a query, or artist plus title to search")
         return self
 
 

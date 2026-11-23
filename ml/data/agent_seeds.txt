@@ -1,0 +1,331 @@
+Queen - Bohemian Rhapsody | rock
+Queen - We Will Rock You | rock
+Queen - Another One Bites the Dust | rock|funk
+Led Zeppelin - Stairway to Heaven | rock
+Deep Purple - Smoke on the Water | rock
+AC/DC - Back In Black | rock
+AC/DC - Thunderstruck | rock
+Guns N Roses - Sweet Child O Mine | rock
+Guns N Roses - November Rain | rock
+Nirvana - Smells Like Teen Spirit | rock|punk
+Nirvana - Come As You Are | rock
+Pearl Jam - Alive | rock
+Foo Fighters - Everlong | rock
+Radiohead - Creep | rock
+Radiohead - Paranoid Android | rock|experimental
+Oasis - Wonderwall | rock|pop
+Oasis - Dont Look Back in Anger | rock
+Blur - Song 2 | rock|punk
+The Strokes - Last Nite | rock
+Arctic Monkeys - Do I Wanna Know | rock
+The White Stripes - Seven Nation Army | rock
+The Killers - Mr. Brightside | rock|pop
+Kings of Leon - Sex on Fire | rock|pop
+Coldplay - Viva La Vida | rock|pop
+Coldplay - Yellow | rock
+U2 - With Or Without You | rock
+U2 - Beautiful Day | rock
+R.E.M. - Losing My Religion | rock
+Red Hot Chili Peppers - Under the Bridge | rock|funk
+Red Hot Chili Peppers - Californication | rock
+Fleetwood Mac - Dreams | rock|pop
+Eagles - Hotel California | rock
+Pink Floyd - Another Brick in the Wall | rock
+Pink Floyd - Comfortably Numb | rock
+The Rolling Stones - Paint It Black | rock
+The Rolling Stones - Satisfaction | rock|blues
+The Beatles - Come Together | rock|blues
+The Beatles - Hey Jude | rock|pop
+David Bowie - Starman | rock
+David Bowie - Heroes | rock
+Jimi Hendrix - Purple Haze | rock|blues
+Black Sabbath - Paranoid | metal|rock
+Iron Maiden - Run to the Hills | metal
+Iron Maiden - The Number of the Beast | metal
+Metallica - Enter Sandman | metal
+Metallica - Master of Puppets | metal
+Megadeth - Symphony of Destruction | metal
+Slayer - Raining Blood | metal
+Pantera - Walk | metal
+Slipknot - Duality | metal
+System of a Down - Chop Suey | metal
+System of a Down - Toxicity | metal
+Motorhead - Ace of Spades | metal|punk
+Judas Priest - Breaking the Law | metal
+Rammstein - Du Hast | metal|electronic
+Ramones - Blitzkrieg Bop | punk
+Sex Pistols - God Save the Queen | punk
+The Clash - London Calling | punk|rock
+The Clash - Should I Stay or Should I Go | punk|rock
+Green Day - American Idiot | punk
+Green Day - Basket Case | punk
+The Offspring - Self Esteem | punk
+Blink-182 - All the Small Things | punk|pop
+My Chemical Romance - Welcome to the Black Parade | punk|rock
+Dead Kennedys - Holiday in Cambodia | punk
+Michael Jackson - Billie Jean | pop|rnb
+Michael Jackson - Beat It | pop|rock
+Michael Jackson - Thriller | pop
+Madonna - Like A Prayer | pop
+Madonna - Vogue | pop|house
+ABBA - Dancing Queen | pop
+ABBA - Mamma Mia | pop
+Whitney Houston - I Wanna Dance with Somebody | pop|rnb
+Whitney Houston - I Will Always Love You | pop
+Britney Spears - Toxic | pop
+Britney Spears - Oops I Did It Again | pop
+Lady Gaga - Bad Romance | pop
+Lady Gaga - Poker Face | pop|electronic
+Katy Perry - Firework | pop
+Katy Perry - Roar | pop
+Taylor Swift - Blank Space | pop
+Taylor Swift - Shake It Off | pop
+Adele - Rolling in the Deep | pop|soul
+Adele - Someone Like You | pop
+Ed Sheeran - Shape of You | pop
+Ed Sheeran - Perfect | pop
+Justin Timberlake - SexyBack | pop|rnb
+Justin Timberlake - Mirrors | pop
+Bruno Mars - 24K Magic | pop|funk
+Bruno Mars - Just the Way You Are | pop
+Billie Eilish - bad guy | pop
+Billie Eilish - when the party is over | pop
+The Weeknd - Blinding Lights | pop|electronic
+The Weeknd - Save Your Tears | pop
+Dua Lipa - Dont Start Now | pop
+Dua Lipa - New Rules | pop|house
+Harry Styles - As It Was | pop
+Lorde - Royals | pop
+Sia - Chandelier | pop
+Sam Smith - Stay With Me | pop|soul
+Pharrell Williams - Happy | pop|funk
+Gotye - Somebody That I Used To Know | pop
+Stevie Wonder - Superstition | soul|funk
+Stevie Wonder - Sir Duke | soul|funk
+Marvin Gaye - Whats Going On | soul
+Marvin Gaye - Lets Get It On | soul|rnb
+Aretha Franklin - Respect | soul|rnb
+Al Green - Lets Stay Together | soul|rnb
+Otis Redding - Sittin On The Dock of the Bay | soul
+Sam Cooke - A Change Is Gonna Come | soul
+James Brown - I Got You I Feel Good | funk|soul
+Bill Withers - Aint No Sunshine | soul|rnb
+Bill Withers - Lovely Day | soul|rnb
+Curtis Mayfield - Move On Up | soul|funk
+The Temptations - My Girl | soul
+The Temptations - Papa Was a Rollin Stone | soul
+Earth Wind and Fire - September | funk|soul|pop
+Earth Wind and Fire - Lets Groove | funk|pop
+Rick James - Super Freak | funk|rnb
+Chaka Khan - I Feel for You | funk|pop
+Prince - Kiss | funk|pop
+Prince - When Doves Cry | pop|rnb
+Janet Jackson - Rhythm Nation | pop|rnb
+TLC - Waterfalls | rnb
+TLC - No Scrubs | rnb
+Boyz II Men - End of the Road | rnb
+Usher - Yeah | rnb|pop
+Alicia Keys - Fallin | rnb|soul
+John Legend - All of Me | rnb|pop
+Frank Ocean - Thinkin Bout You | rnb
+SZA - Kill Bill | rnb
+Amy Winehouse - Back To Black | rnb|soul
+Amy Winehouse - Valerie | rnb|soul|pop
+Erykah Badu - On and On | rnb|soul
+D Angelo - Brown Sugar | rnb|soul
+Sugarhill Gang - Rappers Delight | rap
+Grandmaster Flash and the Furious Five - The Message | rap
+Afrika Bambaataa - Planet Rock | rap|electronic
+Run DMC - Walk This Way | rap|rock
+Run DMC - Its Tricky | rap
+Beastie Boys - Fight For Your Right | rap|rock
+Beastie Boys - Intergalactic | hip_hop
+LL Cool J - Mama Said Knock You Out | rap
+Public Enemy - Fight The Power | rap|hip_hop
+NWA - Straight Outta Compton | rap|hip_hop
+Ice Cube - It Was A Good Day | hip_hop
+Dr Dre - Nuthin But A G Thang | hip_hop
+Dr Dre - Still D.R.E. | hip_hop
+Snoop Dogg - Gin and Juice | hip_hop
+2Pac - California Love | hip_hop
+2Pac - Dear Mama | hip_hop
+The Notorious B.I.G. - Juicy | hip_hop
+The Notorious B.I.G. - Big Poppa | hip_hop
+Wu-Tang Clan - C.R.E.A.M. | hip_hop
+Nas - N.Y. State of Mind | hip_hop
+Mobb Deep - Shook Ones Pt. II | hip_hop
+Warren G and Nate Dogg - Regulate | hip_hop
+Coolio - Gangstas Paradise | hip_hop|pop
+Fugees - Killing Me Softly | hip_hop|pop
+Lauryn Hill - Doo Wop That Thing | rnb|hip_hop
+OutKast - Ms. Jackson | hip_hop
+OutKast - Hey Ya | pop|funk
+Eminem - Lose Yourself | hip_hop
+Eminem - Without Me | hip_hop
+50 Cent - In Da Club | hip_hop
+Jay-Z - 99 Problems | hip_hop
+Jay-Z - Empire State of Mind | hip_hop|pop
+Kanye West - Gold Digger | hip_hop|pop
+Kanye West - Stronger | hip_hop|electronic
+Lil Wayne - A Milli | hip_hop
+T.I. - Whatever You Like | hip_hop
+Kendrick Lamar - HUMBLE | hip_hop
+Kendrick Lamar - Alright | hip_hop
+J. Cole - No Role Modelz | hip_hop
+Nicki Minaj - Super Bass | pop|rap
+Drake - Gods Plan | hip_hop
+Drake - Hotline Bling | hip_hop
+Travis Scott - SICKO MODE | hip_hop
+Cardi B - Bodak Yellow | hip_hop
+Migos - Bad and Boujee | hip_hop
+Post Malone - rockstar | hip_hop|rock
+Childish Gambino - Redbone | rnb|funk
+Daft Punk - One More Time | electronic|house
+Daft Punk - Get Lucky | electronic|funk
+Daft Punk - Around the World | electronic|house
+The Chemical Brothers - Galvanize | electronic
+The Chemical Brothers - Block Rockin Beats | electronic
+The Prodigy - Firestarter | electronic
+The Prodigy - Breathe | electronic
+Fatboy Slim - Right Here Right Now | electronic
+Fatboy Slim - Praise You | electronic
+Moby - Porcelain | electronic|ambient
+Moby - Natural Blues | electronic
+Massive Attack - Teardrop | electronic
+Portishead - Glory Box | electronic
+New Order - Blue Monday | electronic
+Depeche Mode - Enjoy The Silence | electronic
+Depeche Mode - Personal Jesus | electronic|rock
+Eurythmics - Sweet Dreams | electronic|pop
+Soft Cell - Tainted Love | electronic|pop
+Justice - D.A.N.C.E. | electronic
+M83 - Midnight City | electronic
+Aphex Twin - Windowlicker | electronic|experimental
+Boards of Canada - Roygbiv | electronic|ambient
+Bjork - Hyperballad | electronic|pop
+Robyn - Dancing On My Own | pop|electronic
+Faithless - Insomnia | electronic|house
+Avicii - Levels | electronic|house
+Avicii - Wake Me Up | electronic|pop
+Calvin Harris - Feel So Close | electronic|pop
+David Guetta - Titanium | electronic|pop
+Swedish House Mafia - Dont You Worry Child | electronic|house
+Alan Walker - Faded | electronic
+Skrillex - Scary Monsters and Nice Sprites | electronic
+Robin S - Show Me Love | house
+Crystal Waters - Gypsy Woman | house
+Stardust - Music Sounds Better With You | house
+Modjo - Lady | house
+Eric Prydz - Call On Me | house
+Marshall Jefferson - Move Your Body | house
+CeCe Peniston - Finally | house
+Tiesto - Red Lights | house
+Fisher - Losing It | house|techno
+Meduza - Piece Of Your Heart | house|pop
+Kraftwerk - The Model | techno|electronic
+Kraftwerk - Trans Europe Express | techno
+Underworld - Born Slippy | techno
+Orbital - Halcyon | techno|ambient
+Jeff Mills - The Bells | techno
+Brian Eno - An Ending Ascent | ambient
+Brian Eno - Music for Airports 1/1 | ambient
+Aphex Twin - Avril 14th | ambient
+Enya - Orinoco Flow | ambient|pop
+Tycho - A Walk | electronic|ambient
+Sigur Ros - Hoppipolla | rock|ambient
+Max Richter - On The Nature of Daylight | classical|ambient
+Beethoven - Symphony No. 5 | classical
+Beethoven - Fur Elise | classical
+Beethoven - Moonlight Sonata | classical
+Mozart - Eine kleine Nachtmusik | classical
+Bach - Cello Suite No. 1 | classical
+Bach - Toccata and Fugue in D minor | classical
+Vivaldi - Spring Four Seasons | classical
+Chopin - Nocturne Op. 9 No. 2 | classical
+Debussy - Clair de Lune | classical
+Satie - Gymnopedie No. 1 | classical
+Tchaikovsky - Swan Lake | classical
+Grieg - In the Hall of the Mountain King | classical
+Pachelbel - Canon in D | classical
+Louis Armstrong - What a Wonderful World | jazz
+Duke Ellington - Take the A Train | jazz
+Miles Davis - So What | jazz
+John Coltrane - Giant Steps | jazz
+John Coltrane - My Favorite Things | jazz
+Dave Brubeck - Take Five | jazz
+Ella Fitzgerald - Summertime | jazz
+Ella Fitzgerald - Dream a Little Dream of Me | jazz|pop
+Nina Simone - Feeling Good | jazz|soul
+Nina Simone - My Baby Just Cares for Me | jazz
+Frank Sinatra - Fly Me To The Moon | jazz|pop
+Frank Sinatra - My Way | jazz|pop
+Nat King Cole - Unforgettable | jazz
+Nat King Cole - L-O-V-E | jazz
+Bobby Darin - Mack the Knife | jazz
+Herbie Hancock - Cantaloupe Island | jazz|funk
+Herbie Hancock - Rockit | jazz
+Bill Withers - Use Me | soul|funk
+B.B. King - The Thrill Is Gone | blues
+Muddy Waters - Mannish Boy | blues
+Muddy Waters - Hoochie Coochie Man | blues
+John Lee Hooker - Boom Boom | blues
+Robert Johnson - Cross Road Blues | blues
+Stevie Ray Vaughan - Pride and Joy | blues
+Etta James - At Last | blues|soul
+Gary Moore - Still Got the Blues | blues
+Janis Joplin - Piece of My Heart | blues|rock
+ZZ Top - La Grange | blues|rock
+Johnny Cash - Ring of Fire | country
+Johnny Cash - I Walk the Line | country
+Johnny Cash - Hurt | country|rock
+Dolly Parton - Jolene | country
+Dolly Parton - 9 to 5 | country|pop
+Willie Nelson - On the Road Again | country
+Patsy Cline - Crazy | country
+Kenny Rogers - The Gambler | country
+Shania Twain - Man I Feel Like a Woman | country|pop
+Chris Stapleton - Tennessee Whiskey | country
+John Denver - Take Me Home Country Roads | country|folk
+Bob Marley - No Woman No Cry | reggae
+Bob Marley - One Love | reggae
+Bob Marley - Three Little Birds | reggae
+Bob Marley - Jamming | reggae
+Toots and the Maytals - Pressure Drop | reggae
+Desmond Dekker - Israelites | reggae
+UB40 - Red Red Wine | reggae|pop
+Inner Circle - Bad Boys | reggae
+Sean Paul - Get Busy | reggae|hip_hop
+Damian Marley - Welcome to Jamrock | reggae|hip_hop
+Santana - Oye Como Va | latin|rock
+Santana - Smooth | latin|rock
+Ricky Martin - Livin La Vida Loca | latin|pop
+Shakira - Hips Dont Lie | latin|pop
+Shakira - Whenever Wherever | latin|pop
+Enrique Iglesias - Bailando | latin|pop
+Enrique Iglesias - Hero | latin|pop
+Luis Fonsi - Despacito | latin|pop
+Daddy Yankee - Gasolina | latin|hip_hop
+Bad Bunny - Titi Me Pregunto | latin|hip_hop
+Marc Anthony - Vivir Mi Vida | latin
+Celia Cruz - La Vida Es Un Carnaval | latin
+Buena Vista Social Club - Chan Chan | latin
+Gipsy Kings - Bamboleo | latin
+Gloria Estefan - Conga | latin|pop
+Manu Chao - Me Gustas Tu | latin|reggae
+Simon and Garfunkel - The Sound of Silence | folk|rock
+Simon and Garfunkel - Mrs. Robinson | folk|rock
+Bob Dylan - Blowin in the Wind | folk
+Bob Dylan - Like a Rolling Stone | folk|rock
+Leonard Cohen - Hallelujah | folk
+Joni Mitchell - Big Yellow Taxi | folk
+Cat Stevens - Father and Son | folk
+Mumford and Sons - Little Lion Man | folk|rock
+Of Monsters and Men - Little Talks | folk|rock
+Vance Joy - Riptide | folk|pop
+Passenger - Let Her Go | folk|pop
+The Lumineers - Ho Hey | folk|rock
+Hozier - Take Me To Church | folk|rock
+Fela Kuti - Zombie | world|funk
+Khaled - Aicha | world
+Miriam Makeba - Pata Pata | world
+Toto - Africa | rock

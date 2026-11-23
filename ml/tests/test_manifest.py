@@ -4,8 +4,9 @@ from collections import Counter
 from pathlib import Path
 
 import pytest
+from pydantic import ValidationError
 
-from ml.dataset.manifest import load_manifest
+from ml.dataset.manifest import ManifestRow, load_manifest
 from ml.dataset.validate import check_manifest
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
@@ -54,6 +55,20 @@ def test_each_broken_row_is_caught():
     # row 8: noise with genre tags; blank trailing row ignored
     assert len([e for e in report.cross_errors if e.kind == "non_music_tagged"]) == 1
     assert not any("url" in detail for detail in details)
+
+
+def test_query_only_row_is_valid():
+    row = ManifestRow(
+        title="Smells Like Teen Spirit",
+        artist="Nirvana",
+        source="youtube",
+        label_origin="agent",
+    )
+    assert row.url is None
+    assert row.query == ""
+    # neither url, query nor title+artist must fail
+    with pytest.raises(ValidationError, match="needs a url or a search query"):
+        ManifestRow(source="youtube", label_origin="agent")
 
 
 def test_counts_per_row(sample_manifest):
