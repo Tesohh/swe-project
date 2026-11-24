@@ -141,7 +141,7 @@ def main(argv: list[str] | None = None) -> int:
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"device: {device}")
-    dataset = SpecDataset(args.specs_dir, args.manifest)
+    dataset = SpecDataset(args.manifest, args.specs_dir)
     loader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate)
 
     model = MultiTaskAST().to(device)
