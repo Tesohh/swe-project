@@ -24,6 +24,10 @@ dev = [
     "pytest>=8",
     "ruff>=0.17.6",
 ]
+train = [
+    "torch>=2.9",
+    "transformers>=4.57",
+]
 
 [tool.uv.build-backend]
 module-name = "ml"
