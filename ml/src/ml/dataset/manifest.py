@@ -23,6 +23,14 @@ from ml.dataset.vocabs import AudioType, LabelOrigin, Source
 # Multi-label tags use this separator inside one CSV cell
 TAG_SEPARATOR = "|"
 
+# stable id namespace, so re-runs keep the same row ids
+ID_NAMESPACE = uuid.UUID("6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+
+
+def stable_id(*parts: str) -> str:
+    """Deterministic row id from the stable parts of the row identity."""
+    return str(uuid.uuid5(ID_NAMESPACE, "|".join(parts)))
+
 
 class ManifestRow(BaseModel):
     """One song to fetch. Labels are attached here, at collect time."""

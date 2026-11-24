@@ -16,7 +16,7 @@ from pathlib import Path
 
 from pydantic import HttpUrl
 
-from ml.dataset.manifest import TAG_SEPARATOR, ManifestRow, load_manifest
+from ml.dataset.manifest import TAG_SEPARATOR, ManifestRow, load_manifest, stable_id
 from ml.dataset.progress import eta_string
 from ml.dataset.vocabs import AudioType, LabelOrigin, Source, load_genres, load_moods
 
@@ -67,6 +67,7 @@ def collect_jamendo(
             continue
         rows.append(
             ManifestRow(
+                id=stable_id("jamendo", str(numeric_id)),
                 url=HttpUrl(AUDIO_URL_TEMPLATE.format(track_id=numeric_id)),
                 title=info["title"],
                 artist=info["artist"],
@@ -130,6 +131,7 @@ def collect_librivox(
         for mp3 in files:
             rows.append(
                 ManifestRow(
+                    id=stable_id("librivox", item["identifier"], mp3["name"]),
                     url=HttpUrl(
                         ARCHIVE_DOWNLOAD_URL.format(
                             item_id=item["identifier"], file_name=mp3["name"]
@@ -146,8 +148,6 @@ def collect_librivox(
             if len(rows) >= cap:
                 break
         if scanned % 10 == 0:
-            rate = scanned / max(time.monotonic() - start, 0.001)  # items per second
-            eta = (cap - len(rows)) / (len(rows) / scanned) / rate if len(rows) else 0
             print(
                 f"scanned {scanned} items, {len(rows)}/{cap} rows, eta ~{eta_string(start, len(rows), cap)}",
                 flush=True,
@@ -314,8 +314,8 @@ def _write_manifest(out_path: Path, rows: list[ManifestRow]) -> None:
         writer = csv.DictWriter(file, fieldnames=["id", *fields])
         writer.writeheader()
         for row in rows:
-            # ids are re-generated at collect time, so re-runs stay stable
-            record = row.model_dump(mode="json") | {"id": ""}
+            # ids come from stable_id, so re-runs keep the same id
+            record = row.model_dump(mode="json")
             record["genre"] = TAG_SEPARATOR.join(row.genre)
             record["mood"] = TAG_SEPARATOR.join(row.mood)
             writer.writerow(record)
@@ -371,6 +371,7 @@ def collect_seeds(in_path: Path, out_path: Path, mood_overrides: Path | None = N
             continue
         rows.append(
             ManifestRow(
+                id=stable_id("seed", artist.strip().lower(), title.strip().lower()),
                 title=title.strip(),
                 artist=artist.strip(),
                 source=Source.YOUTUBE,

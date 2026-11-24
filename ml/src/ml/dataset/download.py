@@ -60,11 +60,16 @@ def main(argv: list[str] | None = None) -> int:
 
     rows = load_manifest(args.manifest).rows
     status = load_status(args.audio_dir)
-    pending = [row for row in rows if not is_done(status.get(row.id, ""))]
+    on_disk = sum(1 for row in rows if audio_file_for(args.audio_dir, row.id))
+    pending = [
+        row
+        for row in rows
+        if not is_done(status.get(row.id, "")) and audio_file_for(args.audio_dir, row.id) is None
+    ]
     if args.limit is not None:
         pending = pending[: args.limit]
 
-    print(f"{len(pending)} rows to download (of {len(rows)})")
+    print(f"{len(pending)} rows to download, {on_disk} already on disk (of {len(rows)})")
     start = time.monotonic()
     done = 0
     errors = 0
@@ -90,6 +95,18 @@ def main(argv: list[str] | None = None) -> int:
 
 def is_done(status: str) -> bool:
     return status == "ok"
+
+
+AUDIO_EXTENSIONS = ["mp3", "m4a", "webm", "opus", "ogg", "wav", "flac"]
+
+
+def audio_file_for(audio_dir: Path, row_id: str) -> Path | None:
+    """The downloaded audio file for one row id, any supported extension."""
+    for extension in AUDIO_EXTENSIONS:
+        found = audio_dir / f"{row_id}.{extension}"
+        if found.exists():
+            return found
+    return None
 
 
 def download_row(row: ManifestRow, audio_dir: Path) -> str:

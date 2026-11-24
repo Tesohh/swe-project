@@ -15,6 +15,9 @@ import numpy as np
 
 from ml.dataset.progress import eta_string
 
+# extensions the download stage can produce
+AUDIO_EXTENSIONS = ["mp3", "m4a", "webm", "opus", "ogg", "wav", "flac"]
+
 SAMPLE_RATE = 22050
 N_MELS = 96
 N_FFT = 1024
@@ -77,7 +80,7 @@ def main(argv: list[str] | None = None) -> int:
     if sidecar.exists():
         done = {json.loads(line)["id"] for line in sidecar.read_text().splitlines() if line.strip()}
 
-    audio_files = sorted(p for p in args.audio_dir.glob("*.mp3"))
+    audio_files = sorted(p for p in args.audio_dir.iterdir() if p.suffix.lstrip(".") in AUDIO_EXTENSIONS)
     pending = [p for p in audio_files if p.stem not in done]
     print(f"{len(pending)} files to preprocess (of {len(audio_files)} on disk)")
     start = time.monotonic()
