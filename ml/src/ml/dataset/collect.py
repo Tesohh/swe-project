@@ -8,12 +8,16 @@ import argparse
 import csv
 import json
 import sys
+import time
 import typing
 import urllib.request
 from collections import Counter
 from pathlib import Path
 
+from pydantic import HttpUrl
+
 from ml.dataset.manifest import TAG_SEPARATOR, ManifestRow, load_manifest
+from ml.dataset.progress import eta_string
 from ml.dataset.vocabs import AudioType, LabelOrigin, Source, load_genres, load_moods
 
 RAW_BASE = "https://raw.githubusercontent.com/MTG/mtg-jamendo-dataset/master/data"
@@ -63,7 +67,7 @@ def collect_jamendo(
             continue
         rows.append(
             ManifestRow(
-                url=AUDIO_URL_TEMPLATE.format(track_id=numeric_id),
+                url=HttpUrl(AUDIO_URL_TEMPLATE.format(track_id=numeric_id)),
                 title=info["title"],
                 artist=info["artist"],
                 source=Source.MTG_JAMENDO,
@@ -113,18 +117,23 @@ def collect_librivox(
             return
 
     rows: list[ManifestRow] = list(existing)
+    start = time.monotonic()
+    scanned = 0
     for item in _archive_items(rows=items, page=page):
         if item["identifier"] in done_items:
             continue
         if len(rows) >= cap:
             break
+        scanned += 1
         item_meta = _http_get_json(ARCHIVE_METADATA_URL.format(item_id=item["identifier"]))
         files = _speech_files(item_meta, duration_min, duration_max)[:files_per_item]
         for mp3 in files:
             rows.append(
                 ManifestRow(
-                    url=ARCHIVE_DOWNLOAD_URL.format(
-                        item_id=item["identifier"], file_name=mp3["name"]
+                    url=HttpUrl(
+                        ARCHIVE_DOWNLOAD_URL.format(
+                            item_id=item["identifier"], file_name=mp3["name"]
+                        )
                     ),
                     title=item.get("title") or mp3["name"],
                     artist=item_meta.get("metadata", {}).get("creator", ""),
@@ -136,6 +145,13 @@ def collect_librivox(
             )
             if len(rows) >= cap:
                 break
+        if scanned % 10 == 0:
+            rate = scanned / max(time.monotonic() - start, 0.001)  # items per second
+            eta = (cap - len(rows)) / (len(rows) / scanned) / rate if len(rows) else 0
+            print(
+                f"scanned {scanned} items, {len(rows)}/{cap} rows, eta ~{eta_string(start, len(rows), cap)}",
+                flush=True,
+            )
     _write_manifest(out_path, rows)
     print(f"wrote {len(rows)} speech rows to {out_path}")
 

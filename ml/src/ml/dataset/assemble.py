@@ -36,7 +36,9 @@ def assemble(manifests: list[Path], out_path: Path) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Assemble manifests into the training samples jsonl")
+    parser = argparse.ArgumentParser(
+        description="Assemble manifests into the training samples jsonl"
+    )
     parser.add_argument("manifests", nargs="+", type=Path, help="manifest CSV files")
     parser.add_argument("--out", type=Path, required=True, help="output jsonl")
     args = parser.parse_args(argv)

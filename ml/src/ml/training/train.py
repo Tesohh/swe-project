@@ -14,13 +14,40 @@ from ml.training.model import MultiTaskAST
 
 # fixed label spaces; heads tie to these indexes, so never reorder this list
 GENRE_VOCAB = [
-    "rock", "pop", "jazz", "blues", "electronic", "techno", "house", "ambient",
-    "folk", "world", "hip_hop", "rap", "rnb", "soul", "funk", "metal", "punk",
-    "classical", "latin", "country", "reggae", "experimental",
+    "rock",
+    "pop",
+    "jazz",
+    "blues",
+    "electronic",
+    "techno",
+    "house",
+    "ambient",
+    "folk",
+    "world",
+    "hip_hop",
+    "rap",
+    "rnb",
+    "soul",
+    "funk",
+    "metal",
+    "punk",
+    "classical",
+    "latin",
+    "country",
+    "reggae",
+    "experimental",
 ]
 MOOD_VOCAB = [
-    "calm", "sad", "happy", "party", "energetic", "dark", "romantic", "dreamy",
-    "melancholic", "dramatic",
+    "calm",
+    "sad",
+    "happy",
+    "party",
+    "energetic",
+    "dark",
+    "romantic",
+    "dreamy",
+    "melancholic",
+    "dramatic",
 ]
 
 
@@ -53,7 +80,9 @@ def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, 
     specs = torch.full((len(batch), n_mels, max_frames), -80.0)
     for i, (spec, _) in enumerate(batch):
         specs[i, :, : spec.shape[-1]] = torch.from_numpy(spec.copy())
-    music = torch.tensor([1.0 if row.get("audio_type", "music") == "music" else 0.0 for _, row in batch])
+    music = torch.tensor(
+        [1.0 if row.get("audio_type", "music") == "music" else 0.0 for _, row in batch]
+    )
     genre = torch.zeros(len(batch), len(genre_vocab))
     mood = torch.zeros(len(batch), len(mood_vocab))
     for i, (_, row) in enumerate(batch):
@@ -104,7 +133,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--lr", type=float, default=1e-5)
     parser.add_argument("--freeze-trunk", action="store_true", help="train heads only")
     parser.add_argument("--resume", action="store_true", help="continue from last.pt if present")
-    parser.add_argument("--keep-all", action="store_true", help="keep one checkpoint per epoch, not just last.pt")
+    parser.add_argument(
+        "--keep-all", action="store_true", help="keep one checkpoint per epoch, not just last.pt"
+    )
     parser.add_argument("--out-dir", type=Path, required=True)
     args = parser.parse_args(argv)
 

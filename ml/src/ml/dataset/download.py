@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from ml.dataset.manifest import ManifestRow, load_manifest
+from ml.dataset.progress import eta_string
 
 # status values: "pending" -> "ok" | "error:<reason>"
 STATUS_FILE = "download_status.jsonl"
@@ -50,7 +51,9 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Download audio for manifest rows via yt-dlp")
     parser.add_argument("manifest", type=Path)
     parser.add_argument("--audio-dir", type=Path, required=True)
-    parser.add_argument("--limit", type=int, default=None, help="stop after N finished rows this run")
+    parser.add_argument(
+        "--limit", type=int, default=None, help="stop after N finished rows this run"
+    )
     parser.add_argument("--workers", type=int, default=4, help="parallel downloads")
     args = parser.parse_args(argv)
     args.audio_dir.mkdir(parents=True, exist_ok=True)
@@ -80,21 +83,9 @@ def main(argv: list[str] | None = None) -> int:
             done += 1
             errors += result.startswith("error:")
             if done % 50 == 0 or done == len(pending):
-                elapsed = time.monotonic() - start
-                eta = elapsed / done * (len(pending) - done)
-                print(
-                    f"done {done}/{len(pending)}, errors {errors}, "
-                    f"eta {_format_duration(eta)}",
-                    flush=True,
-                )
+                eta = eta_string(start, done, len(pending))
+                print(f"done {done}/{len(pending)}, errors {errors}, eta {eta}", flush=True)
     return 0
-
-
-def _format_duration(seconds: float) -> str:
-    """ETA string like 12:34 or 1:02:03."""
-    minutes, secs = divmod(int(seconds + 0.5), 60)
-    hours, minutes = divmod(minutes, 60)
-    return f"{hours}:{minutes:02d}:{secs:02d}" if hours else f"{minutes}:{secs:02d}"
 
 
 def is_done(status: str) -> bool:
@@ -131,4 +122,3 @@ def source_for(row: ManifestRow) -> str:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

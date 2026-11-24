@@ -37,7 +37,9 @@ class MultiTaskAST(nn.Module):
             "energy": torch.sigmoid(self.energy_head(pooled)).squeeze(-1),
         }
 
-    def loss(self, outputs: dict[str, torch.Tensor], batch: dict[str, torch.Tensor]) -> dict[str, torch.Tensor]:
+    def loss(
+        self, outputs: dict[str, torch.Tensor], batch: dict[str, torch.Tensor]
+    ) -> dict[str, torch.Tensor]:
         """Masked BCE per head plus energy MSE; batch carries targets and masks."""
         losses = {}
         # music vs not-music
@@ -45,13 +47,19 @@ class MultiTaskAST(nn.Module):
             outputs["music"], batch["music_labels"].float()
         )
         # multi-label genre, masked where no label is known
-        losses["genre"] = self._masked_bce(outputs["genre"], batch["genre_labels"], batch["genre_mask"])
+        losses["genre"] = self._masked_bce(
+            outputs["genre"], batch["genre_labels"], batch["genre_mask"]
+        )
         losses["mood"] = self._masked_bce(outputs["mood"], batch["mood_labels"], batch["mood_mask"])
         losses["energy"] = nn.functional.mse_loss(outputs["energy"], batch["energy"].float())
         return losses
 
     @staticmethod
-    def _masked_bce(logits: torch.Tensor, targets: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
-        elementwise = nn.functional.binary_cross_entropy_with_logits(logits, targets.float(), reduction="none")
+    def _masked_bce(
+        logits: torch.Tensor, targets: torch.Tensor, mask: torch.Tensor
+    ) -> torch.Tensor:
+        elementwise = nn.functional.binary_cross_entropy_with_logits(
+            logits, targets.float(), reduction="none"
+        )
         mask = mask.float()
         return (elementwise * mask).sum() / mask.sum().clamp(min=1.0)

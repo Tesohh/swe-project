@@ -8,9 +8,12 @@ Output: one .npy per song in the preprocessed dir, float32 [mel, frames] tiles
 
 import argparse
 import json
+import time
 from pathlib import Path
 
 import numpy as np
+
+from ml.dataset.progress import eta_string
 
 SAMPLE_RATE = 22050
 N_MELS = 96
@@ -60,7 +63,9 @@ def preprocess_row(audio_path: Path) -> tuple[np.ndarray, float, float]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Preprocess downloaded audio into spectrogram tensors")
+    parser = argparse.ArgumentParser(
+        description="Preprocess downloaded audio into spectrogram tensors"
+    )
     parser.add_argument("audio_dir", type=Path)
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=None, help="stop after N files this run")
@@ -73,28 +78,42 @@ def main(argv: list[str] | None = None) -> int:
         done = {json.loads(line)["id"] for line in sidecar.read_text().splitlines() if line.strip()}
 
     audio_files = sorted(p for p in args.audio_dir.glob("*.mp3"))
+    pending = [p for p in audio_files if p.stem not in done]
+    print(f"{len(pending)} files to preprocess (of {len(audio_files)} on disk)")
+    start = time.monotonic()
     processed = 0
-    for audio_path in audio_files:
+    failed = 0
+    for audio_path in pending:
         row_id = audio_path.stem
-        if row_id in done:
-            continue
         try:
             spec, energy, duration = preprocess_row(audio_path)
         except Exception as exc:  # noqa: BLE001 - one bad file must not kill the run
-            print(f"{row_id}: {type(exc).__name__}: {str(exc)[:120]}")
+            print(f"{row_id}: {type(exc).__name__}: {str(exc)[:120]}", flush=True)
             continue
         np.save(args.out_dir / f"{row_id}.npy", spec.astype(np.float32))
         with sidecar.open("a") as file:
             file.write(
                 json.dumps(
-                    {"id": row_id, "shape": list(spec.shape), "energy": energy, "duration_s": duration}
+                    {
+                        "id": row_id,
+                        "shape": list(spec.shape),
+                        "energy": energy,
+                        "duration_s": duration,
+                    }
                 )
                 + "\n"
             )
         processed += 1
+        done_here = processed + failed
+        if done_here % 20 == 0 or done_here == len(pending):
+            print(
+                f"done {done_here}/{len(pending)}, failed {failed}, "
+                f"eta {eta_string(start, done_here, len(pending))}",
+                flush=True,
+            )
         if args.limit is not None and processed >= args.limit:
             break
-    print(f"preprocessed {processed} new files to {args.out_dir}")
+    print(f"preprocessed {processed} new files to {args.out_dir} ({failed} failed)")
     return 0
 
 
