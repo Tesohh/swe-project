@@ -7,6 +7,9 @@ picks up where it stopped and never fetches the same song twice.
 
 import argparse
 import json
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from ml.dataset.manifest import ManifestRow, load_manifest
@@ -48,22 +51,50 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("manifest", type=Path)
     parser.add_argument("--audio-dir", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=None, help="stop after N finished rows this run")
+    parser.add_argument("--workers", type=int, default=4, help="parallel downloads")
     args = parser.parse_args(argv)
     args.audio_dir.mkdir(parents=True, exist_ok=True)
 
     rows = load_manifest(args.manifest).rows
     status = load_status(args.audio_dir)
-    finished = 0
-    for row in rows:
-        if args.limit is not None and finished >= args.limit:
-            break
-        if is_done(status.get(row.id, "")):
-            continue
-        record_status(args.audio_dir, row.id, "pending")
+    pending = [row for row in rows if not is_done(status.get(row.id, ""))]
+    if args.limit is not None:
+        pending = pending[: args.limit]
+
+    print(f"{len(pending)} rows to download (of {len(rows)})")
+    start = time.monotonic()
+    done = 0
+    errors = 0
+    # downloads are I/O-bound, so a pool of workers runs them concurrently;
+    # status appends are tiny, so a lock keeps the jsonl log clean
+    lock = threading.Lock()
+
+    def worker(row: ManifestRow) -> str:
         result = download_row(row, args.audio_dir)
-        record_status(args.audio_dir, row.id, result)
-        finished += 1
+        with lock:
+            record_status(args.audio_dir, row.id, result)
+            return result
+
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for result in pool.map(worker, pending):
+            done += 1
+            errors += result.startswith("error:")
+            if done % 50 == 0 or done == len(pending):
+                elapsed = time.monotonic() - start
+                eta = elapsed / done * (len(pending) - done)
+                print(
+                    f"done {done}/{len(pending)}, errors {errors}, "
+                    f"eta {_format_duration(eta)}",
+                    flush=True,
+                )
     return 0
+
+
+def _format_duration(seconds: float) -> str:
+    """ETA string like 12:34 or 1:02:03."""
+    minutes, secs = divmod(int(seconds + 0.5), 60)
+    hours, minutes = divmod(minutes, 60)
+    return f"{hours}:{minutes:02d}:{secs:02d}" if hours else f"{minutes}:{secs:02d}"
 
 
 def is_done(status: str) -> bool:
@@ -89,18 +120,6 @@ def download_row(row: ManifestRow, audio_dir: Path) -> str:
         return "ok"
     except yt_dlp.utils.DownloadError as exc:
         return f"error:{str(exc)[:200]}"
-
-
-def build_ydl_options(target_dir: Path, row: ManifestRow) -> dict:
-    """yt-dlp options: audio only, mono-able re-encode kept for the preprocess stage."""
-    return {
-        "format": "bestaudio/best",
-        "outtmpl": str(target_dir / f"{row.id}.%(ext)s"),
-        "quiet": True,
-        "no_warnings": True,
-        "noplaylist": True,
-        "max_filesize": 50 * 1024 * 1024,
-    }
 
 
 def source_for(row: ManifestRow) -> str:
