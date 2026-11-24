@@ -3,6 +3,7 @@
 import argparse
 import csv
 import json
+import time
 from pathlib import Path
 
 import numpy as np
@@ -63,6 +64,13 @@ def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, 
             if tag in mood_vocab:
                 mood[i, mood_vocab.index(tag)] = 1.0
     return {"specs": specs, "music": music, "genre": genre, "mood": mood}
+
+
+def _format_duration(seconds: float) -> str:
+    """ETA string like 12:34 or 1:02:03."""
+    minutes, secs = divmod(int(seconds + 0.5), 60)
+    hours, minutes = divmod(minutes, 60)
+    return f"{hours}:{minutes:02d}:{secs:02d}" if hours else f"{minutes}:{secs:02d}"
 
 
 def evaluate(model: MultiTaskAST, loader: DataLoader) -> dict[str, float]:
@@ -131,6 +139,7 @@ def main(argv: list[str] | None = None) -> int:
             model.train()
             running = 0.0
             batches = 0
+            epoch_start = time.monotonic()
             for batch in loader:
                 outputs = model(batch["specs"].to(next(model.parameters()).device))
                 losses = model.loss(outputs, batch)
@@ -140,6 +149,15 @@ def main(argv: list[str] | None = None) -> int:
                 optimizer.step()
                 running += loss.item()
                 batches += 1
+                # progress with ETA every 20 batches and on the last one
+                if batches % 20 == 0 or batches == len(loader):
+                    elapsed = time.monotonic() - epoch_start
+                    eta = elapsed / batches * (len(loader) - batches)
+                    print(
+                        f"epoch {epoch}: batch {batches}/{len(loader)}, "
+                        f"loss {running / batches:.4f}, eta {_format_duration(eta)}",
+                        flush=True,
+                    )
             eval_loss = evaluate(model, loader)
             writer.writerow([epoch, running / max(batches, 1), eval_loss["hits"]])
             # rolling checkpoint: model, optimizer, and epoch counter for resume
