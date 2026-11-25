@@ -1,0 +1,8 @@
+# bulk training artifacts: audio, spectrograms, checkpoints
+data/raw/
+data/specs/
+runs/
+
+# temp orchestration scripts and logs
+run_speech_pipeline.sh
+*.log

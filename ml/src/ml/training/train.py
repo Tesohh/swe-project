@@ -50,6 +50,10 @@ MOOD_VOCAB = [
     "dramatic",
 ]
 
+# AST patching: inputs are cropped/padded to exactly these frame/mel counts
+AST_FRAMES = 1024
+AST_MEL_BINS = 128
+
 
 class SpecDataset(Dataset):
     """Manifest rows joined with preprocessed spectrograms on disk."""
@@ -74,12 +78,14 @@ class SpecDataset(Dataset):
 
 
 def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, torch.Tensor]:
-    """Pad spectrograms along the frame axis with the -80 dB silence floor."""
-    n_mels = batch[0][0].shape[0]
-    max_frames = max(spec.shape[-1] for spec, _ in batch)
-    specs = torch.full((len(batch), n_mels, max_frames), -80.0)
+    """Pad spectrograms along the frame axis out to AST_FRAMES with a -80 dB floor."""
+def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, torch.Tensor]:
+    """Crop/pad spectrograms to the AST input grid and build label targets."""
+    # AST takes [batch, frames, mels]; mel and frame counts must match its patch grid
+    specs = torch.full((len(batch), AST_FRAMES, AST_MEL_BINS), -80.0)
     for i, (spec, _) in enumerate(batch):
-        specs[i, :, : spec.shape[-1]] = torch.from_numpy(spec.copy())
+        spec = torch.from_numpy(spec[:AST_MEL_BINS, :AST_FRAMES].T.copy())
+        specs[i, : spec.shape[0], : spec.shape[1]] = spec
     music = torch.tensor(
         [1.0 if row.get("audio_type", "music") == "music" else 0.0 for _, row in batch]
     )
@@ -92,7 +98,36 @@ def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, 
         for tag in row.get("mood", []):
             if tag in mood_vocab:
                 mood[i, mood_vocab.index(tag)] = 1.0
-    return {"specs": specs, "music": music, "genre": genre, "mood": mood}
+    return {
+        "specs": specs,
+        "music_labels": music,
+        "genre_labels": genre,
+        "genre_mask": (genre.sum(dim=1, keepdim=True) > 0).float(),
+        "mood_labels": mood,
+        "mood_mask": (mood.sum(dim=1, keepdim=True) > 0).float(),
+        "energy": torch.zeros(len(batch)),  # no energy labels in manifest; neutral targets
+    }
+    music = torch.tensor(
+        [1.0 if row.get("audio_type", "music") == "music" else 0.0 for _, row in batch]
+    )
+    genre = torch.zeros(len(batch), len(genre_vocab))
+    mood = torch.zeros(len(batch), len(mood_vocab))
+    for i, (_, row) in enumerate(batch):
+        for tag in row.get("genre", []):
+            if tag in genre_vocab:
+                genre[i, genre_vocab.index(tag)] = 1.0
+        for tag in row.get("mood", []):
+            if tag in mood_vocab:
+                mood[i, mood_vocab.index(tag)] = 1.0
+    return {
+        "specs": specs.transpose(1, 2),  # AST takes [batch, frames, mels]
+        "music_labels": music,
+        "genre_labels": genre,
+        "mood_labels": mood,
+        "genre_mask": (genre.sum(1, keepdim=True) > 0).float(),
+        "mood_mask": (mood.sum(1, keepdim=True) > 0).float(),
+        "energy": torch.zeros(len(batch)),  # no energy labels in manifest; neutral targets
+    }
 
 
 def _format_duration(seconds: float) -> str:
@@ -108,15 +143,17 @@ def evaluate(model: MultiTaskAST, loader: DataLoader) -> dict[str, float]:
     totals = {"music": 0.0, "genre": 0.0, "mood": 0.0, "energy": 0.0}
     hits = 0
     genre_total = 0
+    device = next(model.parameters()).device
     with torch.no_grad():
         for batch in loader:
+            batch = {k: v.to(device) for k, v in batch.items()}
             outputs = model(batch["specs"])
             losses = model.loss(outputs, batch)
             for key in totals:
                 totals[key] += losses.get(key, 0.0)
             top10 = outputs["genre"].topk(10, dim=-1).indices
             for i in range(top10.shape[0]):
-                correct = {j for j in range(len(GENRE_VOCAB)) if batch["genre"][i, j] > 0}
+                correct = {j for j in range(len(GENRE_VOCAB)) if batch["genre_labels"][i, j] > 0}
                 predicted = set(top10[i].tolist())
                 hits += int(bool(correct & predicted))
             genre_total += batch["specs"].shape[0]
@@ -144,7 +181,7 @@ def main(argv: list[str] | None = None) -> int:
     dataset = SpecDataset(args.manifest, args.specs_dir)
     loader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate)
 
-    model = MultiTaskAST().to(device)
+    model = MultiTaskAST(n_genre=len(GENRE_VOCAB), n_mood=len(MOOD_VOCAB)).to(device)
     if args.freeze_trunk:
         for param in model.encoder.parameters():
             param.requires_grad = False
@@ -172,7 +209,8 @@ def main(argv: list[str] | None = None) -> int:
             batches = 0
             epoch_start = time.monotonic()
             for batch in loader:
-                outputs = model(batch["specs"].to(next(model.parameters()).device))
+                batch = {k: v.to(device) for k, v in batch.items()}
+                outputs = model(batch["specs"])
                 losses = model.loss(outputs, batch)
                 loss = sum(losses.values())
                 optimizer.zero_grad()

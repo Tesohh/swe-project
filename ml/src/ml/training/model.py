@@ -27,7 +27,7 @@ class MultiTaskAST(nn.Module):
         self.energy_head = nn.Linear(hidden, 1)  # sigmoid after pooling
 
     def forward(self, spec: torch.Tensor) -> dict[str, torch.Tensor]:
-        """spec: [batch, mel, frames] float32; returns per-head logits."""
+        """spec: [batch, frames, mels] float32 in AST layout; returns per-head logits."""
         encoded = self.encoder(spec)
         pooled = encoded.last_hidden_state.mean(dim=1)  # mean over tiles/frame axis
         return {
