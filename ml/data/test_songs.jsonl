@@ -1,0 +1,17 @@
+{"expect": "metal", "query": "Metallica - Ride the Lightning", "file": "t_metallica"}
+{"expect": "reggae", "query": "Bob Marley - Is This Love", "file": "t_marley"}
+{"expect": "soul", "query": "Marvin Gaye - Inner City Blues", "file": "t_gaye"}
+{"expect": "jazz", "query": "Miles Davis - Freddie Freeloader", "file": "t_miles"}
+{"expect": "blues", "query": "Gary Moore - Parisienne Walkways", "file": "t_moore"}
+{"expect": "classical", "query": "Chopin - Fantaisie Impromptu", "file": "t_chopin"}
+{"expect": "latin", "query": "Bad Bunny - Safaera", "file": "t_badbunny"}
+{"expect": "funk", "query": "Earth Wind Fire - Lets Groove", "file": "t_ewf"}
+{"expect": "folk", "query": "Bob Dylan - Mr Tambourine Man", "file": "t_dylan"}
+{"expect": "electronic", "query": "Kraftwerk - Pocket Calculator", "file": "t_kraftwerk"}
+{"expect": "rnb", "query": "Erykah Badu - On and On", "file": "t_badu"}
+{"expect": "world", "query": "Nusrat Fateh Ali Khan - Dam Mast Qalandar", "file": "t_nusrat"}
+{"expect": "rock", "query": "Vasco Rossi - Albachiara", "file": "t_vasco"}
+{"expect": "hip_hop", "query": "Playboi Carti - NEW TANK", "file": "t_carti"}
+{"expect": "rock", "query": "Neil Young - Cinnamon Girl", "file": "t_neil"}
+{"expect": "electronic", "query": "Aphex Twin - Ageispolis", "file": "t_aphex"}
+{"expect": "electronic", "query": "Aphex Twin - Didgeridoo", "file": "t_didgeridoo"}

@@ -1,6 +1,8 @@
 # bulk training artifacts: audio, spectrograms, checkpoints
 data/raw/
 data/specs/
+data/specs_ast/
+data/test_audio/
 runs/
 
 # temp orchestration scripts and logs

@@ -2,13 +2,24 @@
 
 Reads every manifest CSV, keeps the fields the trainer needs, and writes
 one jsonl row per sample. Resume-safe: rows already in the output are
-skipped, so re-runs only append new samples.
+skipped, so re-runs only append new samples. Rows with no id are dropped,
+and parent genres are filled in (techno/house also carry electronic).
 """
 
 import argparse
 import csv
 import json
 from pathlib import Path
+
+from ml.dataset.clean_seeds import IMPLIED_GENRES
+
+
+def with_parents(genres: list[str]) -> list[str]:
+    out = list(genres)
+    for child, parents in IMPLIED_GENRES.items():
+        if child in out:
+            out += [p for p in parents if p not in out]
+    return out
 
 
 def assemble(manifests: list[Path], out_path: Path) -> int:
@@ -21,13 +32,16 @@ def assemble(manifests: list[Path], out_path: Path) -> int:
     with out_path.open("a") as out:
         for manifest in manifests:
             for row in csv.DictReader(manifest.open()):
-                if row["id"] in done:
+                if not row["id"] or row["id"] in done:
                     continue
                 sample = {
                     "id": row["id"],
-                    "genre": [tag for tag in (row.get("genre") or "").split("|") if tag],
-                    "mood": [tag for tag in (row.get("mood") or "").split("|") if tag],
+                    "artist": row.get("artist") or "",
+                    "title": row.get("title") or "",
+                    "genre": with_parents([t for t in (row.get("genre") or "").split("|") if t]),
+                    "mood": [t for t in (row.get("mood") or "").split("|") if t],
                     "audio_type": row.get("audio_type") or "music",
+                    "origin": row.get("label_origin") or "",
                 }
                 out.write(json.dumps(sample) + "\n")
                 done.add(row["id"])

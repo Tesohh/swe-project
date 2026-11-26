@@ -57,3 +57,13 @@ def load_moods() -> frozenset[str]:
 def _load_vocab(path: Path, key: str) -> frozenset[str]:
     data = json.loads(path.read_text())
     return frozenset(data[key])
+
+
+def genre_list() -> list[str]:
+    """Genre tags in vocab-file order; head indexes follow this order."""
+    return list(json.loads(GENRE_VOCAB_PATH.read_text())["genres"])
+
+
+def mood_list() -> list[str]:
+    """Mood tags in vocab-file order; head indexes follow this order."""
+    return list(json.loads(MOOD_VOCAB_PATH.read_text())["moods"])
