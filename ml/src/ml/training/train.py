@@ -345,11 +345,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--exclude-ids", type=Path, default=None, help="train ids to drop, one per line")
     parser.add_argument("--max-train", type=int, default=None, help="subsample train rows (smoke)")
     parser.add_argument("--max-val", type=int, default=None, help="subsample val rows (smoke)")
+    parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--out-dir", type=Path, required=True)
     args = parser.parse_args(argv)
 
-    random.seed(0)
-    torch.manual_seed(0)
+    random.seed(args.seed)
+    torch.manual_seed(args.seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"device: {device}")
 
