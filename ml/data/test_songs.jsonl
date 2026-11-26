@@ -11,7 +11,7 @@
 {"expect": "rnb", "query": "Erykah Badu - On and On", "file": "t_badu"}
 {"expect": "world", "query": "Nusrat Fateh Ali Khan - Dam Mast Qalandar", "file": "t_nusrat"}
 {"expect": "rock", "query": "Vasco Rossi - Albachiara", "file": "t_vasco"}
-{"expect": "hip_hop", "query": "Playboi Carti - NEW TANK", "file": "t_carti"}
+{"expect": "rap", "query": "Playboi Carti - NEW TANK", "file": "t_carti"}
 {"expect": "rock", "query": "Neil Young - Cinnamon Girl", "file": "t_neil"}
 {"expect": "electronic", "query": "Aphex Twin - Ageispolis", "file": "t_aphex"}
 {"expect": "electronic", "query": "Aphex Twin - Didgeridoo", "file": "t_didgeridoo"}
@@ -25,10 +25,10 @@
 {"expect": "pop", "query": "Matia Bazar - Vacanze romane", "file": "t_matia_bazar_vacanze_romane"}
 {"expect": "rap", "query": "Big Pun - Twinz (Deep Cover '98)", "file": "t_big_pun_twinz_deep_cover_98"}
 {"expect": "rap", "query": "Pharoahe Monch - Simon Says", "file": "t_pharoahe_monch_simon_says"}
-{"expect": "hip_hop", "query": "Pete Rock & CL Smooth - They Reminisce Over You (T.R.O.Y.)", "file": "t_pete_rock_cl_smooth_they_reminisce_over_"}
-{"expect": "hip_hop", "query": "Boogie Down Productions - My Philosophy", "file": "t_boogie_down_productions_my_philosophy"}
-{"expect": "hip_hop", "query": "Digable Planets - Rebirth of Slick (Cool Like Dat)", "file": "t_digable_planets_rebirth_of_slick_cool_li"}
-{"expect": "hip_hop", "query": "Brand Nubian - Slow Down", "file": "t_brand_nubian_slow_down"}
+{"expect": "rap", "query": "Pete Rock & CL Smooth - They Reminisce Over You (T.R.O.Y.)", "file": "t_pete_rock_cl_smooth_they_reminisce_over_"}
+{"expect": "rap", "query": "Boogie Down Productions - My Philosophy", "file": "t_boogie_down_productions_my_philosophy"}
+{"expect": "rap", "query": "Digable Planets - Rebirth of Slick (Cool Like Dat)", "file": "t_digable_planets_rebirth_of_slick_cool_li"}
+{"expect": "rap", "query": "Brand Nubian - Slow Down", "file": "t_brand_nubian_slow_down"}
 {"expect": "jazz", "query": "Donald Byrd - Cristo Redentor", "file": "t_donald_byrd_cristo_redentor"}
 {"expect": "jazz", "query": "Jaco Pastorius - Portrait of Tracy", "file": "t_jaco_pastorius_portrait_of_tracy"}
 {"expect": "jazz", "query": "Bobby Timmons - Dat Dere", "file": "t_bobby_timmons_dat_dere"}

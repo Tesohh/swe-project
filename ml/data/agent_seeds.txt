@@ -119,43 +119,43 @@ Amy Winehouse - Back To Black | rnb|soul | dark|melancholic
 Amy Winehouse - Valerie | rnb|soul|pop | happy
 D Angelo - Brown Sugar | rnb|soul | romantic|calm
 Grandmaster Flash and the Furious Five - The Message | rap | melancholic
-Afrika Bambaataa - Planet Rock | hip_hop|electronic | party|energetic
+Afrika Bambaataa - Planet Rock | rap|electronic | party|energetic
 Run DMC - Walk This Way | rap|rock | aggressive|energetic
 Run DMC - Its Tricky | rap | party|energetic
 Beastie Boys - Fight For Your Right | rap|rock | party|aggressive
-Beastie Boys - Intergalactic | hip_hop | energetic|aggressive
+Beastie Boys - Intergalactic | rap | energetic|aggressive
 LL Cool J - Mama Said Knock You Out | rap | aggressive
-Public Enemy - Fight The Power | rap|hip_hop | aggressive
-Ice Cube - It Was A Good Day | hip_hop | calm|happy
-Snoop Dogg - Gin and Juice | hip_hop | calm
-2Pac - California Love | hip_hop | party|energetic
-2Pac - Dear Mama | hip_hop | melancholic
-The Notorious B.I.G. - Juicy | hip_hop | happy|melancholic
-The Notorious B.I.G. - Big Poppa | hip_hop | calm
-Wu-Tang Clan - C.R.E.A.M. | hip_hop | dark|melancholic
-Nas - N.Y. State of Mind | hip_hop | dark|aggressive
-Mobb Deep - Shook Ones Pt. II | hip_hop | dark|aggressive
-Warren G and Nate Dogg - Regulate | hip_hop | calm|dark
-Fugees - Killing Me Softly | hip_hop|pop | melancholic
-Lauryn Hill - Doo Wop That Thing | rnb|hip_hop | energetic
-OutKast - Ms. Jackson | hip_hop | melancholic
-Eminem - Lose Yourself | hip_hop | aggressive
-Eminem - Without Me | hip_hop | happy|energetic
-50 Cent - In Da Club | hip_hop | party|energetic
-Jay-Z - 99 Problems | hip_hop | aggressive
-Jay-Z - Empire State of Mind | hip_hop|pop | energetic
-Kanye West - Gold Digger | hip_hop|pop | energetic
-Kanye West - Stronger | hip_hop|electronic | energetic
-Lil Wayne - A Milli | hip_hop | aggressive
-T.I. - Whatever You Like | hip_hop | party|happy
-Kendrick Lamar - Alright | hip_hop | happy
-J. Cole - No Role Modelz | hip_hop | calm|melancholic
+Public Enemy - Fight The Power | rap | aggressive
+Ice Cube - It Was A Good Day | rap | calm|happy
+Snoop Dogg - Gin and Juice | rap | calm
+2Pac - California Love | rap | party|energetic
+2Pac - Dear Mama | rap | melancholic
+The Notorious B.I.G. - Juicy | rap | happy|melancholic
+The Notorious B.I.G. - Big Poppa | rap | calm
+Wu-Tang Clan - C.R.E.A.M. | rap | dark|melancholic
+Nas - N.Y. State of Mind | rap | dark|aggressive
+Mobb Deep - Shook Ones Pt. II | rap | dark|aggressive
+Warren G and Nate Dogg - Regulate | rap | calm|dark
+Fugees - Killing Me Softly | rap|pop | melancholic
+Lauryn Hill - Doo Wop That Thing | rnb|rap | energetic
+OutKast - Ms. Jackson | rap | melancholic
+Eminem - Lose Yourself | rap | aggressive
+Eminem - Without Me | rap | happy|energetic
+50 Cent - In Da Club | rap | party|energetic
+Jay-Z - 99 Problems | rap | aggressive
+Jay-Z - Empire State of Mind | rap|pop | energetic
+Kanye West - Gold Digger | rap|pop | energetic
+Kanye West - Stronger | rap|electronic | energetic
+Lil Wayne - A Milli | rap | aggressive
+T.I. - Whatever You Like | rap | party|happy
+Kendrick Lamar - Alright | rap | happy
+J. Cole - No Role Modelz | rap | calm|melancholic
 Nicki Minaj - Super Bass | pop|rap | party|happy
-Drake - Hotline Bling | hip_hop | calm
-Travis Scott - SICKO MODE | hip_hop | aggressive|energetic
-Cardi B - Bodak Yellow | hip_hop | aggressive|energetic
-Migos - Bad and Boujee | hip_hop | party|aggressive
-Post Malone - rockstar | hip_hop|rock | dark
+Drake - Hotline Bling | rap | calm
+Travis Scott - SICKO MODE | rap | aggressive|energetic
+Cardi B - Bodak Yellow | rap | aggressive|energetic
+Migos - Bad and Boujee | rap | party|aggressive
+Post Malone - rockstar | rap|rock | dark
 Childish Gambino - Redbone | rnb|funk | romantic|calm
 Daft Punk - One More Time | electronic|house | happy|party
 Daft Punk - Get Lucky | electronic|funk | happy|party
@@ -262,15 +262,15 @@ Bob Marley - Three Little Birds | reggae | happy|calm
 Bob Marley - Jamming | reggae | happy|calm
 UB40 - Red Red Wine | reggae|pop | calm|happy
 Inner Circle - Bad Boys | reggae | energetic
-Sean Paul - Get Busy | reggae|hip_hop | party|energetic
-Damian Marley - Welcome to Jamrock | reggae|hip_hop | dark|aggressive
+Sean Paul - Get Busy | reggae|rap | party|energetic
+Damian Marley - Welcome to Jamrock | reggae|rap | dark|aggressive
 Santana - Oye Como Va | latin|rock | energetic
 Santana - Smooth | latin|rock | energetic
 Enrique Iglesias - Bailando | latin|pop | party|happy
 Enrique Iglesias - Hero | latin|pop | romantic|melancholic
 Luis Fonsi - Despacito | latin|pop | party|happy
-Daddy Yankee - Gasolina | latin|hip_hop | party|energetic
-Bad Bunny - Titi Me Pregunto | latin|hip_hop | calm|happy
+Daddy Yankee - Gasolina | latin|rap | party|energetic
+Bad Bunny - Titi Me Pregunto | latin|rap | calm|happy
 Marc Anthony - Vivir Mi Vida | latin | happy|energetic
 Celia Cruz - La Vida Es Un Carnaval | latin | happy|party
 Buena Vista Social Club - Chan Chan | latin | calm|romantic
@@ -347,7 +347,7 @@ Beyonce - Crazy In Love | pop|rnb | party|energetic
 Beyonce - Halo | pop|rnb | romantic|calm
 Rihanna - Umbrella | pop|rnb | romantic|calm
 Rihanna - Diamonds | pop|rnb | dreamy|calm
-Ariana Grande - 7 rings | pop|hip_hop | party
+Ariana Grande - 7 rings | pop|rap | party
 Carly Rae Jepsen - Call Me Maybe | pop | happy|romantic
 Ellie Goulding - Love Me Like You Do | pop|electronic | romantic|dreamy
 Adele - Hello | pop|soul | sad|melancholic
@@ -370,15 +370,15 @@ Gnarls Barkley - Crazy | soul|pop | melancholic|dark
 Aaliyah - Try Again | rnb|pop | party|romantic
 Usher - Burn | rnb | sad|melancholic
 Anderson Paak - Come Down | funk|rnb | party|happy
-Missy Elliott - Work It | hip_hop|electronic | party|energetic
-Salt-N-Pepa - Push It | hip_hop | party|energetic
-OutKast - Roses | hip_hop | melancholic
-Kanye West - Heartless | hip_hop | sad|melancholic
-Kid Cudi - Day N Nite | hip_hop|electronic | melancholic|dreamy
-Eminem - The Real Slim Shady | hip_hop | party|energetic
-Post Malone - Circles | hip_hop|pop | melancholic|calm
-Wiz Khalifa - See You Again | hip_hop|pop | sad|melancholic
-Megan Thee Stallion - Savage | hip_hop|rap | party|energetic
+Missy Elliott - Work It | rap|electronic | party|energetic
+Salt-N-Pepa - Push It | rap | party|energetic
+OutKast - Roses | rap | melancholic
+Kanye West - Heartless | rap | sad|melancholic
+Kid Cudi - Day N Nite | rap|electronic | melancholic|dreamy
+Eminem - The Real Slim Shady | rap | party|energetic
+Post Malone - Circles | rap|pop | melancholic|calm
+Wiz Khalifa - See You Again | rap|pop | sad|melancholic
+Megan Thee Stallion - Savage | rap | party|energetic
 deadmau5 - Strobe | electronic|ambient | dreamy|calm
 Calvin Harris - Summer | electronic|pop | party|happy
 Zedd - Clarity | electronic|pop | romantic|dramatic
@@ -444,7 +444,7 @@ Tito Puente - Ran Kan Kan | latin | party|energetic
 Hector Lavoe - El Cantante | latin | melancholic|dramatic
 Ruben Blades - Pedro Navaja | latin | dark|dramatic
 Los del Rio - Macarena | latin|pop | party|happy
-J Balvin - Mi Gente | latin|hip_hop | party|energetic
+J Balvin - Mi Gente | latin|rap | party|energetic
 Woody Guthrie - This Land Is Your Land | folk | happy|calm
 Peter Paul and Mary - Puff The Magic Dragon | folk | dreamy|calm
 Joan Baez - Diamonds and Rust | folk | melancholic|dramatic
@@ -631,7 +631,7 @@ Adele - Set Fire To The Rain | pop|soul | dramatic|melancholic
 Sam Smith - Im Not The Only One | pop|soul | sad|melancholic
 Bruno Mars - Thats What I Like | pop|rnb | party|romantic
 Justin Timberlake - Cry Me A River | pop|rnb | melancholic|dark
-Katy Perry - Dark Horse | pop|hip_hop | dark|party
+Katy Perry - Dark Horse | pop|rap | dark|party
 Aretha Franklin - Chain Of Fools | soul|rnb | dark|melancholic
 Aretha Franklin - Natural Woman | soul|rnb | romantic|calm
 Aretha Franklin - Think | soul|rnb | energetic|party
@@ -669,10 +669,10 @@ Boyz II Men - Ill Make Love To You | rnb | romantic|calm
 TLC - Creep | rnb | romantic|calm
 En Vogue - Dont Let Go | rnb|pop | romantic|melancholic
 En Vogue - Free Your Mind | rnb|rock | aggressive|energetic
-Mary J Blige - Family Affair | rnb|hip_hop | party|energetic
+Mary J Blige - Family Affair | rnb|rap | party|energetic
 Mary J Blige - No More Drama | rnb|soul | dramatic|melancholic
 Beyonce - Single Ladies | pop|rnb | party|happy
-Beyonce - Drunk In Love | rnb|hip_hop | dark|romantic
+Beyonce - Drunk In Love | rnb|rap | dark|romantic
 Rihanna - We Found Love | pop|electronic | happy|party
 Rihanna - Love On The Brain | rnb|soul | dramatic|romantic
 Usher - Nice and Slow | rnb | romantic|calm
@@ -688,38 +688,38 @@ Beastie Boys - No Sleep Till Brooklyn | rap|rock | aggressive|party
 Beastie Boys - Sabotage | rap|rock | aggressive|energetic
 LL Cool J - I Need Love | rap|rnb | romantic|calm
 Public Enemy - Bring The Noise | rap|metal | aggressive|energetic
-Dr Dre - Let Me Ride | hip_hop|funk | dreamy|dark
-Snoop Dogg - Who Am I | hip_hop|funk | party|happy
+Dr Dre - Let Me Ride | rap|funk | dreamy|dark
+Snoop Dogg - Who Am I | rap|funk | party|happy
 2Pac - Changes | rap | melancholic|sad
-The Notorious B.I.G. - Hypnotize | hip_hop|funk | party|energetic
-The Notorious B.I.G. - Skys The Limit | hip_hop|soul | dreamy|happy
-Wu-Tang Clan - Triumph | hip_hop | aggressive|energetic
-Nas - If I Ruled The World | hip_hop|soul | dreamy|happy
-Nas - One Love | hip_hop | calm|melancholic
-Jay-Z - Hard Knock Life | hip_hop | dark|melancholic
-Kanye West - Jesus Walks | hip_hop | dramatic|dark
-Kanye West - Flashing Lights | hip_hop|electronic | dreamy|party
-Eminem - Stan | hip_hop | dark|melancholic
-Eminem - Rap God | hip_hop | energetic|aggressive
-50 Cent - 21 Questions | hip_hop|rnb | romantic|melancholic
-50 Cent - Many Men | hip_hop | dark|melancholic
-OutKast - So Fresh So Clean | hip_hop|funk | party|romantic
-Fugees - Ready Or Not | hip_hop|soul | dark|dramatic
-T.I. - What You Know | hip_hop | aggressive|energetic
-J. Cole - Power Trip | hip_hop|rnb | dreamy|melancholic
-Kendrick Lamar - King Kunta | hip_hop|funk | party|energetic
-Kendrick Lamar - Money Trees | hip_hop | dreamy|melancholic|calm|dark
+The Notorious B.I.G. - Hypnotize | rap|funk | party|energetic
+The Notorious B.I.G. - Skys The Limit | rap|soul | dreamy|happy
+Wu-Tang Clan - Triumph | rap | aggressive|energetic
+Nas - If I Ruled The World | rap|soul | dreamy|happy
+Nas - One Love | rap | calm|melancholic
+Jay-Z - Hard Knock Life | rap | dark|melancholic
+Kanye West - Jesus Walks | rap | dramatic|dark
+Kanye West - Flashing Lights | rap|electronic | dreamy|party
+Eminem - Stan | rap | dark|melancholic
+Eminem - Rap God | rap | energetic|aggressive
+50 Cent - 21 Questions | rap|rnb | romantic|melancholic
+50 Cent - Many Men | rap | dark|melancholic
+OutKast - So Fresh So Clean | rap|funk | party|romantic
+Fugees - Ready Or Not | rap|soul | dark|dramatic
+T.I. - What You Know | rap | aggressive|energetic
+J. Cole - Power Trip | rap|rnb | dreamy|melancholic
+Kendrick Lamar - King Kunta | rap|funk | party|energetic
+Kendrick Lamar - Money Trees | rap | dreamy|melancholic|calm|dark
 Drake - One Dance | rnb|pop | party|happy
-Travis Scott - Goosebumps | hip_hop|electronic | dark|dreamy
-Lil Wayne - Lollipop | hip_hop|pop | party|dark
-Nicki Minaj - Moment 4 Life | hip_hop | happy|dreamy
-Chance The Rapper - No Problem | hip_hop | happy|party
+Travis Scott - Goosebumps | rap|electronic | dark|dreamy
+Lil Wayne - Lollipop | rap|pop | party|dark
+Nicki Minaj - Moment 4 Life | rap | happy|dreamy
+Chance The Rapper - No Problem | rap | happy|party
 Gorillaz - Clint Eastwood | rap|electronic | dark|dreamy
 A Tribe Called Quest - Can I Kick It | rap|jazz | happy|party
 De La Soul - Me Myself And I | rap|funk | party|happy
-The Roots - You Got Me | hip_hop|soul | romantic|melancholic
-Common - The Light | hip_hop|soul | romantic|happy
-Bone Thugs N Harmony - Tha Crossroads | hip_hop | sad|melancholic
+The Roots - You Got Me | rap|soul | romantic|melancholic
+Common - The Light | rap|soul | romantic|happy
+Bone Thugs N Harmony - Tha Crossroads | rap | sad|melancholic
 Daft Punk - Harder Better Faster Stronger | electronic|house | party|energetic
 Daft Punk - Digital Love | electronic|pop | happy|romantic
 Daft Punk - Something About Us | electronic|rnb | romantic|dreamy
@@ -870,10 +870,10 @@ Third World - 96 Degrees In The Shade | reggae | dark|melancholic
 Burning Spear - Marcus Garvey | reggae | dark|dramatic
 Gregory Isaacs - Night Nurse | reggae | romantic|dark
 Jimmy Cliff - You Can Get It If You Really Want | reggae | happy|energetic
-Ini Kamoze - Here Comes The Hotstepper | reggae|hip_hop | party|energetic
+Ini Kamoze - Here Comes The Hotstepper | reggae|rap | party|energetic
 UB40 - Kingston Town | reggae|pop | romantic|melancholic
 Omi - Cheerleader | reggae|pop | happy|party
-Chaka Demus and Pliers - Murder She Wrote | reggae|hip_hop | party|energetic
+Chaka Demus and Pliers - Murder She Wrote | reggae|rap | party|energetic
 Santana - Samba Pa Ti | latin|rock | romantic|melancholic
 Gipsy Kings - Volare | latin|pop | happy|party
 Selena - Bidi Bidi Bom Bom | latin|pop | happy|party
@@ -908,57 +908,57 @@ Mulatu Astatke - Yegelle Tezeta | world|jazz | dreamy|romantic
 Teresa Teng - The Moon Represents My Heart | world|pop | romantic|calm
 Kyu Sakamoto - Sukiyaki | world|pop | melancholic|romantic
 Amr Diab - Habibi | world|pop | romantic|happy
-Psy - Gangnam Style | pop|hip_hop | party|energetic
+Psy - Gangnam Style | pop|rap | party|energetic
 Radiohead - Idioteque | rock|experimental | dark|energetic
 Can - Vitamin C | rock|experimental | energetic|dark
 Neu - Hallogallo | electronic|experimental | dreamy|calm
-Travis Scott - Antidote | hip_hop | party|dark
-Future - Mask Off | hip_hop|pop | melancholic|dreamy
-Future - March Madness | hip_hop | dark|melancholic
-21 Savage - A Lot | hip_hop|soul | melancholic|dark
-Young Thug - Hot | hip_hop | energetic|dark
-Playboi Carti - Magnolia | hip_hop | party|energetic
-Lil Uzi Vert - XO Tour Llif3 | hip_hop | sad|dark
+Travis Scott - Antidote | rap | party|dark
+Future - Mask Off | rap|pop | melancholic|dreamy
+Future - March Madness | rap | dark|melancholic
+21 Savage - A Lot | rap|soul | melancholic|dark
+Young Thug - Hot | rap | energetic|dark
+Playboi Carti - Magnolia | rap | party|energetic
+Lil Uzi Vert - XO Tour Llif3 | rap | sad|dark
 Juice WRLD - Lucid Dreams | rap|pop | dreamy|sad
-Roddy Ricch - The Box | hip_hop | dark|energetic
+Roddy Ricch - The Box | rap | dark|energetic
 Pop Smoke - Dior | rap | dark|energetic
 Lil Yachty - Poland | rap | party|dreamy
-Metro Boomin - Superhero | hip_hop|electronic | dark|energetic
-Lil Baby - The Bigger Picture | hip_hop | dramatic|melancholic
-Baby Keem - Orange Soda | hip_hop | party|dark
+Metro Boomin - Superhero | rap|electronic | dark|energetic
+Lil Baby - The Bigger Picture | rap | dramatic|melancholic
+Baby Keem - Orange Soda | rap | party|dark
 Vince Staples - Norf Norf | rap | aggressive|dark
-JID - Surround Sound | hip_hop|soul | energetic|dreamy
+JID - Surround Sound | rap|soul | energetic|dreamy
 Denzel Curry - Ultimate | rap | aggressive|energetic
-Joey Badass - Devastated | hip_hop | energetic|melancholic
-ASAP Rocky - Praise The Lord | hip_hop | happy|dreamy
+Joey Badass - Devastated | rap | energetic|melancholic
+ASAP Rocky - Praise The Lord | rap | happy|dreamy
 Latto - Big Energy | pop|rap | party|happy
-Gunna - Fukumean | hip_hop | party|aggressive
+Gunna - Fukumean | rap | party|aggressive
 Brockhampton - Sugar | rap|pop | romantic|dreamy
 Desiigner - Panda | rap | party|energetic
 Pusha T - Numbers On The Boards | rap | dark|aggressive
 2 Chainz - Im Different | rap|pop | happy|party
-Skepta - Shutdown | hip_hop | aggressive|energetic
+Skepta - Shutdown | rap | aggressive|energetic
 Little Simz - Introvert | rap|soul | dramatic|energetic
 Madvillain - All Caps | rap|experimental | dark|energetic
 Madvillain - Accordion | rap|experimental | dark|dreamy
 MF DOOM - Rapp Snitch Knishes | rap | happy|dark
 Freddie Gibbs and Madlib - Thuggin | rap|soul | dark|aggressive
 Run The Jewels - Legend Has It | rap|electronic | aggressive|energetic
-Death Grips - Guillotine | experimental|hip_hop | aggressive|energetic
+Death Grips - Guillotine | experimental|rap | aggressive|energetic
 JPEGMAFIA - BALD | rap|experimental | aggressive|energetic
 Clipping - Work Work | rap|experimental | dark|aggressive
 Danny Brown - When It Rain | rap|experimental | aggressive|dark
 Earl Sweatshirt - Chum | rap | dark|melancholic
 Aesop Rock - Daylight | rap|experimental | melancholic|calm
-Playboi Carti - Wokeuplikethis | hip_hop | party|dreamy
-Playboi Carti - Sky | hip_hop | party|energetic
-Playboi Carti - Shoota | hip_hop | happy|party
-Playboi Carti - Broke Boi | hip_hop | party|aggressive
-Travis Scott - Highest In The Room | hip_hop | dark|melancholic
-Travis Scott - Butterfly Effect | hip_hop | dreamy|melancholic
-Travis Scott - Stargazing | hip_hop|electronic | dreamy|energetic
+Playboi Carti - Wokeuplikethis | rap | party|dreamy
+Playboi Carti - Sky | rap | party|energetic
+Playboi Carti - Shoota | rap | happy|party
+Playboi Carti - Broke Boi | rap | party|aggressive
+Travis Scott - Highest In The Room | rap | dark|melancholic
+Travis Scott - Butterfly Effect | rap | dreamy|melancholic
+Travis Scott - Stargazing | rap|electronic | dreamy|energetic
 Travis Scott - Fein | rap|rock | aggressive|party
-Travis Scott - I KNOW | hip_hop|electronic | dreamy|dark
+Travis Scott - I KNOW | rap|electronic | dreamy|dark
 The Beatles - Helter Skelter | rock | aggressive|energetic
 Pink Floyd - Money | rock | dark|dramatic
 Foo Fighters - The Pretender | rock | energetic|aggressive
@@ -1205,34 +1205,34 @@ Snoh Aalegra - I Want You Around | rnb | romantic|calm
 Kehlani - Nights Like This | rnb | romantic|calm
 Tyla - Water | rnb | party|happy
 Bruno Mars - When I Was Your Man | rnb | sad|melancholic
-Kendrick Lamar - HUMBLE. | hip_hop | aggressive
-Kendrick Lamar - DNA. | hip_hop | aggressive|energetic
-Drake - God's Plan | hip_hop | calm|happy
-Drake - Started From the Bottom | hip_hop | energetic|dark
-J. Cole - Middle Child | hip_hop | dramatic|energetic
-Nas - One Mic | hip_hop | calm|melancholic
-2Pac - Hail Mary | hip_hop | dark|aggressive
-Dr. Dre - Still D.R.E. | hip_hop | energetic
-A$AP Rocky - Praise the Lord | hip_hop | energetic|dark
-Tyler, The Creator - EARFQUAKE | hip_hop|soul | dreamy|romantic
-MF DOOM - Accordion | hip_hop | dreamy|calm
-Mos Def - Umi Says | hip_hop | calm|romantic
-Lauryn Hill - Doo Wop (That Thing) | hip_hop | happy|party
-Missy Elliott - Get Ur Freak On | hip_hop | party|energetic
-Busta Rhymes - Put Your Hands Where My Eyes Could See | hip_hop | energetic|party
-DMX - Ruff Ryders' Anthem | hip_hop | aggressive|dark
-Eric B. & Rakim - Paid in Full | hip_hop | energetic|party
-Grandmaster Flash - The Message | hip_hop | dark|melancholic
-Bone Thugs-N-Harmony - Tha Crossroads | hip_hop | melancholic|sad
-Three 6 Mafia - Stay Fly | hip_hop | party|energetic
-Stormzy - Shut Up | hip_hop | energetic|aggressive
-Dizzee Rascal - Bonkers | hip_hop | energetic|aggressive
-Sfera Ebbasta - Rapstar | hip_hop | dark|energetic
-Capo Plaza - Tesla | hip_hop | dark|energetic
-Salmo - Far Out | hip_hop | aggressive|dark
-Fabri Fibra - In Italy | hip_hop
-Ghali - Cara Italia | hip_hop | romantic|calm
-Pnl - Au DD | hip_hop | dark|melancholic
+Kendrick Lamar - HUMBLE. | rap | aggressive
+Kendrick Lamar - DNA. | rap | aggressive|energetic
+Drake - God's Plan | rap | calm|happy
+Drake - Started From the Bottom | rap | energetic|dark
+J. Cole - Middle Child | rap | dramatic|energetic
+Nas - One Mic | rap | calm|melancholic
+2Pac - Hail Mary | rap | dark|aggressive
+Dr. Dre - Still D.R.E. | rap | energetic
+A$AP Rocky - Praise the Lord | rap | energetic|dark
+Tyler, The Creator - EARFQUAKE | rap|soul | dreamy|romantic
+MF DOOM - Accordion | rap | dreamy|calm
+Mos Def - Umi Says | rap | calm|romantic
+Lauryn Hill - Doo Wop (That Thing) | rap | happy|party
+Missy Elliott - Get Ur Freak On | rap | party|energetic
+Busta Rhymes - Put Your Hands Where My Eyes Could See | rap | energetic|party
+DMX - Ruff Ryders' Anthem | rap | aggressive|dark
+Eric B. & Rakim - Paid in Full | rap | energetic|party
+Grandmaster Flash - The Message | rap | dark|melancholic
+Bone Thugs-N-Harmony - Tha Crossroads | rap | melancholic|sad
+Three 6 Mafia - Stay Fly | rap | party|energetic
+Stormzy - Shut Up | rap | energetic|aggressive
+Dizzee Rascal - Bonkers | rap | energetic|aggressive
+Sfera Ebbasta - Rapstar | rap | dark|energetic
+Capo Plaza - Tesla | rap | dark|energetic
+Salmo - Far Out | rap | aggressive|dark
+Fabri Fibra - In Italy | rap
+Ghali - Cara Italia | rap | romantic|calm
+Pnl - Au DD | rap | dark|melancholic
 Bad Bunny - Yo Perreo Sola | latin | party|dark
 Don Omar - Danza Kuduro | latin | party|energetic
 Shakira - Hips Don't Lie | latin|pop | party|happy
@@ -1366,7 +1366,7 @@ Neutral Milk Hotel - In the Aeroplane Over the Sea | rock|experimental | melanch
 Animal Collective - My Girls | experimental | dreamy|happy
 Animal Collective - Leaf House | experimental | dreamy|energetic
 Sufjan Stevens - The Black Hawk War | folk | melancholic|dramatic
-Death Grips - No Love | experimental|hip_hop | aggressive|dark
+Death Grips - No Love | experimental|rap | aggressive|dark
 These New Puritans - We Want War | experimental | dark|energetic
 Scott Walker - The Seventh Seal | experimental | dark|dramatic
 Swans - The Glowing Man | experimental | dark|dramatic
@@ -1415,7 +1415,7 @@ Supergrass - Alright | rock | happy|energetic
 George Michael - Faith | pop | party|happy
 Michael Jackson - Smooth Criminal | pop | party|energetic
 Christina Aguilera - Genie in a Bottle | pop | party|happy
-Kanye - Gold Digger | hip_hop | party|energetic
+Kanye - Gold Digger | rap | party|energetic
 P!nk - Get the Party Started | pop | party|energetic
 Lorde - Green Light | pop | energetic|dramatic
 Justin Bieber - Love Yourself | pop | calm|happy
@@ -1456,7 +1456,7 @@ Nicolas Jaar - Space Is Only Noise If You Can See | electronic | calm|dreamy
 Rhye - Open | electronic | romantic|calm
 Burial - Kindred | electronic | dark|melancholic
 The Bug - Poison Dart | electronic | dark|aggressive
-Death Grips - The Fever (Aye Aye) | experimental|hip_hop | aggressive|energetic
+Death Grips - The Fever (Aye Aye) | experimental|rap | aggressive|energetic
 Drexciya - Wavejumper | electronic | dark|energetic
 Dave Clarke - Red 2 | electronic | energetic|dark
 Joey Beltram - Energy Flash | electronic | energetic|party
@@ -1477,58 +1477,58 @@ Burial - Forgive | electronic | calm|melancholic
 Kode9 - 9 Samurai | electronic | dark|energetic
 Mala - Changes | electronic | dark|calm
 Digital Mystikz - Anti War Dub | electronic | dark|calm
-Kendrick Lamar - Backseat Freestyle | hip_hop | energetic|aggressive
-Kendrick - Poetic Justice | hip_hop | calm|romantic
-Kanye West - Can't Tell Me Nothing | hip_hop | energetic|dramatic
-Nas - Represent | hip_hop | dark|aggressive
-Big L - Put It On | hip_hop | aggressive|energetic
-Big L - M.V.P. | hip_hop | party|energetic
-GZA - Liquid Swords | hip_hop | dark
-Ol' Dirty Bastard - Shimmy Shimmy Ya | hip_hop | party|energetic
-Raekwon - Ice Cream | hip_hop | party|dark
-Method Man - Bring the Pain | hip_hop | aggressive|energetic
-Eminem - The Way I Am | hip_hop | aggressive|energetic
-The Game - Hate It or Love It | hip_hop | party|energetic
-Ice Cube - Check Yo Self | hip_hop | party|energetic
-Dr. Dre - Nuthin' but a 'G' Thang | hip_hop | party|calm
-Nate Dogg - Regulate | hip_hop | calm|romantic
-Warren G - Regulate | hip_hop | calm|party
-Mobb Deep - Shook Ones | hip_hop | dark|aggressive
-Mobb Deep - Survival of the Fittest | hip_hop | dark|aggressive
-OutKast - Rosa Parks | hip_hop | energetic|party
-Goodie Mob - Soul Food | hip_hop | calm
-UGK - Int'l Players Anthem | hip_hop | calm|party
-Scarface - On My Block | hip_hop | dark|calm
-Ludacris - Southern Hospitality | hip_hop | party|energetic
-Young Jeezy - Put On | hip_hop | energetic|aggressive
-Gucci Mane - Lemonade | hip_hop | party|energetic
-Future - Wait for U | hip_hop | dreamy|melancholic
-Lil Baby - Drip Too Hard | hip_hop | party|energetic
-Kendrick - money trees | hip_hop | calm|dark
-J. Cole - 1985 | hip_hop | calm|melancholic
-Childish Gambino - This Is America | hip_hop | dark|aggressive
-Tyler, The Creator - See You Again | hip_hop | party|happy
-Brockhampton - BOOGIE | hip_hop | energetic|party
-Run The Jewels - Close Your Eyes | hip_hop | energetic|aggressive
-Killer Mike - Reagan | hip_hop | aggressive|energetic
-Denzel Curry - Clout Cobain | hip_hop | aggressive|energetic
-JPEGMAFIA - Baby I'm Bleeding | hip_hop | dark|aggressive
-Kano - Garage Skank | hip_hop | party|energetic
-Wiley - Wearing My Rolex | hip_hop | party|energetic
-D-Block Europe - Darling Armani | hip_hop | dark|aggressive
-Headie One - Ain't It Different | hip_hop | dark|calm
-Dave - Thiago Silva | hip_hop | dark|melancholic
-AJ Tracey - Ladbroke Grove | hip_hop | dark|energetic
-Gazo - Drill FR 4 | hip_hop | dark|aggressive
-PNL - Le monde ou rien | hip_hop | dark|calm
-Niska - Réseaux | hip_hop | dark|calm
-Nekfeu - Ma dope | hip_hop | dark|calm
-SCH - Mode Akimbo | hip_hop | dark|aggressive
-Capo Plaza - Capo Argento | hip_hop | dark|energetic
-Sfera Ebbasta - Rockstar | hip_hop | party|energetic
-Gué - Freestyle Koching | hip_hop
-Salmo - 1969 | hip_hop
-Nitro - Outlaw | hip_hop
+Kendrick Lamar - Backseat Freestyle | rap | energetic|aggressive
+Kendrick - Poetic Justice | rap | calm|romantic
+Kanye West - Can't Tell Me Nothing | rap | energetic|dramatic
+Nas - Represent | rap | dark|aggressive
+Big L - Put It On | rap | aggressive|energetic
+Big L - M.V.P. | rap | party|energetic
+GZA - Liquid Swords | rap | dark
+Ol' Dirty Bastard - Shimmy Shimmy Ya | rap | party|energetic
+Raekwon - Ice Cream | rap | party|dark
+Method Man - Bring the Pain | rap | aggressive|energetic
+Eminem - The Way I Am | rap | aggressive|energetic
+The Game - Hate It or Love It | rap | party|energetic
+Ice Cube - Check Yo Self | rap | party|energetic
+Dr. Dre - Nuthin' but a 'G' Thang | rap | party|calm
+Nate Dogg - Regulate | rap | calm|romantic
+Warren G - Regulate | rap | calm|party
+Mobb Deep - Shook Ones | rap | dark|aggressive
+Mobb Deep - Survival of the Fittest | rap | dark|aggressive
+OutKast - Rosa Parks | rap | energetic|party
+Goodie Mob - Soul Food | rap | calm
+UGK - Int'l Players Anthem | rap | calm|party
+Scarface - On My Block | rap | dark|calm
+Ludacris - Southern Hospitality | rap | party|energetic
+Young Jeezy - Put On | rap | energetic|aggressive
+Gucci Mane - Lemonade | rap | party|energetic
+Future - Wait for U | rap | dreamy|melancholic
+Lil Baby - Drip Too Hard | rap | party|energetic
+Kendrick - money trees | rap | calm|dark
+J. Cole - 1985 | rap | calm|melancholic
+Childish Gambino - This Is America | rap | dark|aggressive
+Tyler, The Creator - See You Again | rap | party|happy
+Brockhampton - BOOGIE | rap | energetic|party
+Run The Jewels - Close Your Eyes | rap | energetic|aggressive
+Killer Mike - Reagan | rap | aggressive|energetic
+Denzel Curry - Clout Cobain | rap | aggressive|energetic
+JPEGMAFIA - Baby I'm Bleeding | rap | dark|aggressive
+Kano - Garage Skank | rap | party|energetic
+Wiley - Wearing My Rolex | rap | party|energetic
+D-Block Europe - Darling Armani | rap | dark|aggressive
+Headie One - Ain't It Different | rap | dark|calm
+Dave - Thiago Silva | rap | dark|melancholic
+AJ Tracey - Ladbroke Grove | rap | dark|energetic
+Gazo - Drill FR 4 | rap | dark|aggressive
+PNL - Le monde ou rien | rap | dark|calm
+Niska - Réseaux | rap | dark|calm
+Nekfeu - Ma dope | rap | dark|calm
+SCH - Mode Akimbo | rap | dark|aggressive
+Capo Plaza - Capo Argento | rap | dark|energetic
+Sfera Ebbasta - Rockstar | rap | party|energetic
+Gué - Freestyle Koching | rap
+Salmo - 1969 | rap
+Nitro - Outlaw | rap
 Dvorak - Cello Concerto | classical | dramatic|melancholic
 Dvorak - American Quartet | classical | calm|happy
 Sibelius - Violin Concerto | classical | dramatic|melancholic
@@ -1953,7 +1953,7 @@ Stephan Bodzin - Powers of Ten | techno|electronic | dark|energetic
 Boris Brejcha - Gravity | techno|electronic | energetic|dark
 Aphex Twin - On | experimental | dreamy|calm
 Flying Lotus - Do the Astral Plane | electronic|experimental | dreamy|calm
-Death Grips - Takyon (Death Yon) | experimental|hip_hop | aggressive|dark
+Death Grips - Takyon (Death Yon) | experimental|rap | aggressive|dark
 Scott Walker - Tilt | experimental | dark|dramatic
 Fela Kuti - Sorrow Tears and Blood | world|funk | dramatic|melancholic
 Fela Kuti - Coffin for Head of State | world|funk | dramatic|aggressive
@@ -2218,7 +2218,7 @@ Billie Eilish - when the party's over | pop | dark|melancholic
 Taylor Swift - Cruel Summer | pop | dreamy|party
 Doja Cat - Kiss Me More | pop | party|romantic
 Olivia Rodrigo - good 4 u | pop | energetic|dramatic
-Lil Nas X - Old Town Road | hip_hop|pop | party|happy
+Lil Nas X - Old Town Road | rap|pop | party|happy
 Harry Styles - Golden | pop | happy|party
 Miley Cyrus - Midnight Sky | pop | party|energetic
 Pink - Just Give Me a Reason | pop | melancholic|romantic
@@ -2311,69 +2311,69 @@ Tiga - Sunglasses at Night | electronic | party|energetic
 Soulwax - E Talking | electronic | party|energetic
 Digitalism - Circles | electronic | energetic|party
 Digitalism - Pogo | electronic | aggressive|party
-Kendrick Lamar - Swimming Pools | hip_hop | dark|melancholic
-Kendrick Lamar - N95 | hip_hop | dark|energetic
-Kendrick Lamar - Family Ties | hip_hop | energetic|party
-Drake - Wants and Needs | hip_hop | dark|melancholic
-Drake - Way 2 Sexy | hip_hop | party|romantic
-Travis Scott - 90210 | hip_hop | dreamy|dark
-J. Cole - Kevin's Heart | hip_hop | melancholic|calm
-J. Cole - Neighbors | hip_hop | dark|energetic
-Kanye West - Runaway | hip_hop | dramatic|melancholic
-Jay-Z - Public Service Announcement | hip_hop
-Nas - It Ain't Hard to Tell | hip_hop | dark
-Nas - The World Is Yours | hip_hop | dark|dramatic
-The Notorious B.I.G. - One More Chance | hip_hop | party|romantic
-Eminem - 'Till I Collapse | hip_hop | energetic|aggressive
-Dr. Dre - The Next Episode | hip_hop | energetic
-Snoop Dogg - Drop It Like It's Hot | hip_hop | party|dark
-Ice Cube - Today Was a Good Day | hip_hop | calm|happy
-N.W.A - Straight Outta Compton | rap|hip_hop | aggressive
-N.W.A - Express Yourself | rap|hip_hop | happy|party
-Geto Boys - Mind Playing Tricks on Me | hip_hop | dark|melancholic
-Scarface - Smile | hip_hop | sad|melancholic
-Clipse - Grindin | hip_hop | dark|aggressive
-Rick Ross - Hustlin' | hip_hop | party|energetic
-Meek Mill - Dreams and Nightmares | hip_hop | melancholic|dramatic
-Jeezy - Put On | hip_hop | energetic|party
-Yo Gotti - Down in the DM | hip_hop
-Young Dolph - Preach | hip_hop
-21 Savage - Bank Account | hip_hop | dark|aggressive
-DaBaby - Suge | hip_hop | aggressive|energetic
-DaBaby - Rockstar | hip_hop | party|energetic
-Lil Durk - Voice of the Heroes | hip_hop | dark|dramatic
-Lil Baby - Emotionally Scarred | hip_hop | melancholic|dark
-Pop Smoke - Welcome to the Party | hip_hop | aggressive|dark
-Fivio Foreign - Big Drip | hip_hop | energetic|aggressive
-Ice Spice - Munch | hip_hop | party|energetic
-Lil Uzi Vert - Money Longer | hip_hop | party|energetic
-A$AP Ferg - Work REMIX | hip_hop | party|energetic
-ScHoolboy Q - Man of the Year | hip_hop
-Isaiah Rashad - Wat's Wrong | hip_hop | calm|melancholic
-Earl Sweatshirt - Hive | hip_hop | dark|aggressive
-Mac Miller - Self Care | hip_hop | melancholic|calm
-Mac Miller - Donald Trump | hip_hop
-Logic - 1-800-273-8255 | hip_hop | sad|melancholic
-Joyner Lucas - I'm Not Racist | hip_hop | aggressive|dark
-NF - Let You Down | hip_hop | dramatic|melancholic
-Hopsin - Ill Mind of Hopsin 5 | hip_hop | aggressive|dark
-Tech N9ne - Fragile | hip_hop
-Jadakiss - We Gonna Make It | hip_hop
-Cam'ron - Hey Ma | hip_hop | party|energetic
-The Diplomats - I Really Mean It | hip_hop | party|energetic
-M.O.P. - Ante Up | hip_hop | aggressive|energetic
-Busta Rhymes - Break Ya Neck | hip_hop | aggressive|energetic
-Lil Jon - Get Low | hip_hop | party|energetic
-Petey Pablo - Raise Up | hip_hop | party|energetic
-Chingy - Right Thurr | hip_hop | party|happy
-Nelly - Hot in Herre | hip_hop | party|energetic
-Nelly - Dilemma | hip_hop | romantic|calm
-T.I. - Bring Em Out | hip_hop | aggressive|energetic
-Lloyd Banks - On Fire | hip_hop
-The Game - Wouldn't Get Far | hip_hop
-M.O.P. - Cold as Ice | hip_hop | dark|aggressive
-Freeway - What We Do | hip_hop
-Jadakiss - Knock Yourself Out | hip_hop
+Kendrick Lamar - Swimming Pools | rap | dark|melancholic
+Kendrick Lamar - N95 | rap | dark|energetic
+Kendrick Lamar - Family Ties | rap | energetic|party
+Drake - Wants and Needs | rap | dark|melancholic
+Drake - Way 2 Sexy | rap | party|romantic
+Travis Scott - 90210 | rap | dreamy|dark
+J. Cole - Kevin's Heart | rap | melancholic|calm
+J. Cole - Neighbors | rap | dark|energetic
+Kanye West - Runaway | rap | dramatic|melancholic
+Jay-Z - Public Service Announcement | rap
+Nas - It Ain't Hard to Tell | rap | dark
+Nas - The World Is Yours | rap | dark|dramatic
+The Notorious B.I.G. - One More Chance | rap | party|romantic
+Eminem - 'Till I Collapse | rap | energetic|aggressive
+Dr. Dre - The Next Episode | rap | energetic
+Snoop Dogg - Drop It Like It's Hot | rap | party|dark
+Ice Cube - Today Was a Good Day | rap | calm|happy
+N.W.A - Straight Outta Compton | rap | aggressive
+N.W.A - Express Yourself | rap | happy|party
+Geto Boys - Mind Playing Tricks on Me | rap | dark|melancholic
+Scarface - Smile | rap | sad|melancholic
+Clipse - Grindin | rap | dark|aggressive
+Rick Ross - Hustlin' | rap | party|energetic
+Meek Mill - Dreams and Nightmares | rap | melancholic|dramatic
+Jeezy - Put On | rap | energetic|party
+Yo Gotti - Down in the DM | rap
+Young Dolph - Preach | rap
+21 Savage - Bank Account | rap | dark|aggressive
+DaBaby - Suge | rap | aggressive|energetic
+DaBaby - Rockstar | rap | party|energetic
+Lil Durk - Voice of the Heroes | rap | dark|dramatic
+Lil Baby - Emotionally Scarred | rap | melancholic|dark
+Pop Smoke - Welcome to the Party | rap | aggressive|dark
+Fivio Foreign - Big Drip | rap | energetic|aggressive
+Ice Spice - Munch | rap | party|energetic
+Lil Uzi Vert - Money Longer | rap | party|energetic
+A$AP Ferg - Work REMIX | rap | party|energetic
+ScHoolboy Q - Man of the Year | rap
+Isaiah Rashad - Wat's Wrong | rap | calm|melancholic
+Earl Sweatshirt - Hive | rap | dark|aggressive
+Mac Miller - Self Care | rap | melancholic|calm
+Mac Miller - Donald Trump | rap
+Logic - 1-800-273-8255 | rap | sad|melancholic
+Joyner Lucas - I'm Not Racist | rap | aggressive|dark
+NF - Let You Down | rap | dramatic|melancholic
+Hopsin - Ill Mind of Hopsin 5 | rap | aggressive|dark
+Tech N9ne - Fragile | rap
+Jadakiss - We Gonna Make It | rap
+Cam'ron - Hey Ma | rap | party|energetic
+The Diplomats - I Really Mean It | rap | party|energetic
+M.O.P. - Ante Up | rap | aggressive|energetic
+Busta Rhymes - Break Ya Neck | rap | aggressive|energetic
+Lil Jon - Get Low | rap | party|energetic
+Petey Pablo - Raise Up | rap | party|energetic
+Chingy - Right Thurr | rap | party|happy
+Nelly - Hot in Herre | rap | party|energetic
+Nelly - Dilemma | rap | romantic|calm
+T.I. - Bring Em Out | rap | aggressive|energetic
+Lloyd Banks - On Fire | rap
+The Game - Wouldn't Get Far | rap
+M.O.P. - Cold as Ice | rap | dark|aggressive
+Freeway - What We Do | rap
+Jadakiss - Knock Yourself Out | rap
 Grandmaster Flash - White Lines | rap | dark|energetic
 Run DMC - My Adidas | rap | party|energetic
 Kurtis Blow - The Breaks | rap | party|energetic
@@ -2939,21 +2939,21 @@ Levante - Alfonso | pop | happy|calm
 Mahmood - Soldi | pop | dark|melancholic
 Mahmood - Rapido | pop | energetic|dark
 Blanco - Brividi | pop | romantic|dreamy
-Fabri Fibra - Applausi per Fibra | hip_hop | aggressive|dark
-Salmo - Hellvisback | hip_hop | dark|aggressive
-Marracash - Crack | hip_hop | dark|melancholic
-Club Dogo - Chic | hip_hop | party|energetic
-Club Dogo - Vile denaro | hip_hop | dark|aggressive
-Lazza - Cicale | hip_hop | dark|energetic
-Ghali - Wallah | hip_hop|pop | happy|energetic
-Rkomi - Insuperabile | pop|hip_hop | melancholic|calm
-Anna - Desolee | pop|hip_hop | sad|melancholic
-Articolo 31 - Senza pagare | hip_hop | party|energetic
-Articolo 31 - Tranne te | hip_hop | romantic|calm
-Neffa - Aspettando il sole | hip_hop | calm|happy
-Frankie hi-nrg mc - Quelli che benpensano | rap|hip_hop | aggressive|energetic
-Caparezza - Vieni a ballare in Puglia | rap|hip_hop | happy|party
-Fedez - Vorrei ma non posso | pop|hip_hop | melancholic|energetic
+Fabri Fibra - Applausi per Fibra | rap | aggressive|dark
+Salmo - Hellvisback | rap | dark|aggressive
+Marracash - Crack | rap | dark|melancholic
+Club Dogo - Chic | rap | party|energetic
+Club Dogo - Vile denaro | rap | dark|aggressive
+Lazza - Cicale | rap | dark|energetic
+Ghali - Wallah | rap|pop | happy|energetic
+Rkomi - Insuperabile | pop|rap | melancholic|calm
+Anna - Desolee | pop|rap | sad|melancholic
+Articolo 31 - Senza pagare | rap | party|energetic
+Articolo 31 - Tranne te | rap | romantic|calm
+Neffa - Aspettando il sole | rap | calm|happy
+Frankie hi-nrg mc - Quelli che benpensano | rap | aggressive|energetic
+Caparezza - Vieni a ballare in Puglia | rap | happy|party
+Fedez - Vorrei ma non posso | pop|rap | melancholic|energetic
 Gigi D'Agostino - Bla Bla Bla | electronic|house | party|energetic
 Benny Benassi - Cinema | electronic|house | party|energetic
 Giorgio Moroder - Chase | electronic | energetic|dramatic
@@ -3019,7 +3019,7 @@ Elio e le Storie Tese - Servi della gleba | rock|pop | party|energetic
 Elio e le Storie Tese - La terra dei cachi | pop|rock | party|happy
 883 - Gli anni | pop | happy|energetic
 883 - Come mai | pop | romantic|melancholic
-Jovanotti - Serenata rap | pop|hip_hop | happy|party
+Jovanotti - Serenata rap | pop|rap | happy|party
 Zucchero - Senza una donna | pop|rock | romantic|melancholic
 Pino Daniele - Terra mia | pop|blues | melancholic|calm
 Pino Daniele - Yes I know my way | blues|pop | calm|dreamy
@@ -3038,7 +3038,7 @@ Adriano Celentano - Soli | pop | melancholic|calm
 Domenico Modugno - Piange il telefono | pop | melancholic|sad
 Negramaro - La rivoluzione sta arrivando | rock | energetic|happy
 Afterhours - Male di miele | rock | dark|melancholic
-Ghali - Ninna nanna | hip_hop|pop | calm|melancholic
+Ghali - Ninna nanna | rap|pop | calm|melancholic
 Mannarino - Tevere grand hotel | pop|world | happy|calm
 Mannarino - Bahia | pop|world | happy|party
 Eiffel 65 - Move Your Body | electronic|pop | party|energetic
@@ -3056,7 +3056,7 @@ Enrique Iglesias - Escape | pop | romantic|dreamy
 Juan Luis Guerra - Bachata Rosa | latin | romantic|calm
 Juan Luis Guerra 440 - Burbujas de Amor | latin | romantic|happy
 Gloria Estefan - Rhythm Is Gonna Get You | pop | party
-Bad Bunny - Dákiti | latin|hip_hop | party|energetic
+Bad Bunny - Dákiti | latin|rap | party|energetic
 Maluma - Hawái | latin|pop | party|happy
 DJ Snake - Taki Taki | electronic|latin | party|energetic
 Anitta - Envolver | latin|pop | party|energetic
@@ -3163,24 +3163,24 @@ Lipps Inc. - Funkytown | funk|pop | party|happy
 Katy Perry - Last Friday Night (T.G.I.F.) | pop | party|happy
 Kesha - Tik Tok | pop|rap | party|energetic
 Flo Rida - Low | rap|pop | party|energetic
-The Black Eyed Peas - I Gotta Feeling | pop|hip_hop | party|energetic
-The Black Eyed Peas - Pump It | hip_hop|pop | party|energetic
-OutKast - Hey Ya! | pop|funk|hip_hop | happy|party
+The Black Eyed Peas - I Gotta Feeling | pop|rap | party|energetic
+The Black Eyed Peas - Pump It | rap|pop | party|energetic
+OutKast - Hey Ya! | pop|funk|rap | happy|party
 Bruno Mars - Uptown Funk | funk|pop | party|energetic
 The Weeknd - Can't Feel My Face | rnb|pop | party|dreamy
 Lizzo - Good as Hell | pop|rnb | party|happy
-Jason Derulo - Wiggle | pop|hip_hop | party|happy
+Jason Derulo - Wiggle | pop|rap | party|happy
 Robin Schulz - Sugar | electronic|house | party|happy
 Marshmello - Happier | electronic|pop | romantic|melancholic
 Rihanna - Work | rnb|pop | party|energetic
 Kid Cudi - Pursuit of Happiness | rap|rock | energetic|happy
-Ludacris - Money Maker | rap|hip_hop | party|energetic
-Run-DMC - It's Tricky | hip_hop|rap | party|energetic
+Ludacris - Money Maker | rap | party|energetic
+Run-DMC - It's Tricky | rap | party|energetic
 Cypress Hill - Insane in the Brain | rap|rock | aggressive|energetic
-Bone Thugs-n-Harmony - Crossroads | rap|hip_hop | melancholic|sad
-Coolio - Gangsta's Paradise | hip_hop|pop|rap | melancholic|dark|sad
-Naughty by Nature - O.P.P. | hip_hop|rap | party|energetic
-Will Smith - Gettin' Jiggy wit It | rap|hip_hop | party|happy
+Bone Thugs-n-Harmony - Crossroads | rap | melancholic|sad
+Coolio - Gangsta's Paradise | rap|pop | melancholic|dark|sad
+Naughty by Nature - O.P.P. | rap | party|energetic
+Will Smith - Gettin' Jiggy wit It | rap | party|happy
 James Brown - I Got You (I Feel Good) | funk|soul | party|happy
 The Isley Brothers - Shout | soul|rnb | party|energetic
 Sly & the Family Stone - Everyday People | funk|soul | happy|calm
@@ -3225,7 +3225,7 @@ Bob Marley - No Woman, No Cry | reggae | melancholic|calm|sad
 Eddy Grant - Electric Avenue | pop|funk | party|energetic
 Eddy Grant - Gimme Hope Jo'Anna | reggae|pop | happy|energetic
 Shaggy - Boombastic | reggae|pop | party|happy
-Shaggy - It Wasn't Me | reggae|hip_hop|pop | party|happy
+Shaggy - It Wasn't Me | reggae|rap|pop | party|happy
 Sean Paul - Temperature | reggae|pop | party|happy
 Maxi Priest - Close to You | reggae|pop | romantic|calm
 Dennis Brown - Money in My Pocket | reggae | happy|calm
@@ -3238,7 +3238,7 @@ Colbie Caillat - Bubbly | pop|folk | happy|calm
 Dave Matthews Band - Crash into Me | rock|folk | romantic|dreamy
 Kenny Chesney - No Shoes, No Shirt, No Problems | country | happy|party
 Xavier Rudd - Follow the Sun | folk|world | calm|happy
-Michael Franti & Spearhead - Say Hey (I Love You) | reggae|hip_hop | happy|energetic
+Michael Franti & Spearhead - Say Hey (I Love You) | reggae|rap | happy|energetic
 Hozier - Someone New | folk|rock | romantic|happy
 Dermot Kennedy - Outnumbered | folk|rock | melancholic|dramatic
 Gavin DeGraw - I Don't Want to Be | pop|rock | romantic|happy
