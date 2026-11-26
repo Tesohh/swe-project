@@ -2,7 +2,10 @@
 data/raw/
 data/specs/
 data/specs_ast/
+data/specs_ast6/
 data/test_audio/
+data/*.bak
+data/test_features/
 runs/
 
 # temp orchestration scripts and logs
