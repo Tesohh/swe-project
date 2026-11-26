@@ -1,0 +1,170 @@
+{"expect": "rock", "query": "The Hold Steady - Stuck Between Stations", "file": "h1_hold_steady_stuck"}
+{"expect": "rock", "query": "Modest Mouse - Dashboard", "file": "h1_modest_mouse_dashboard"}
+{"expect": "rock", "query": "Wilco - Handshake Drugs", "file": "h1_wilco_handshake"}
+{"expect": "rock", "query": "Built to Spill - Carry the Zero", "file": "h1_built_to_spill_carry"}
+{"expect": "rock", "query": "The Replacements - Bastards of Young", "file": "h1_replacements_bastards"}
+{"expect": "rock", "query": "The Black Crowes - Sometimes Salvation", "file": "h1_black_crowes_salvation"}
+{"expect": "rock", "query": "Dinosaur Jr - Feel the Pain", "file": "h1_dinosaur_jr_feel"}
+{"expect": "rock", "query": "Wolfmother - Joker and the Thief", "file": "h1_wolfmother_joker"}
+{"expect": "rock", "query": "Rival Sons - Pressure and Time", "file": "h1_rival_sons_pressure"}
+{"expect": "rock", "query": "Band of Horses - The Funeral", "file": "h1_band_of_horses_funeral"}
+{"expect": "rock", "query": "Guided By Voices - Motor Away", "file": "h1_gbv_motor_away"}
+{"expect": "rock", "query": "Spoon - The Underdog", "file": "h1_spoon_underdog"}
+{"expect": "punk", "query": "Naked Raygun - Rat Race", "file": "h1_naked_raygun_rat"}
+{"expect": "punk", "query": "The Adolescents - Amoeba", "file": "h1_adolescents_amoeba"}
+{"expect": "punk", "query": "The Queers - Punk Rock Girlfriend", "file": "h1_queers_punk_girlfriend"}
+{"expect": "punk", "query": "The Dickies - Banana Splits", "file": "h1_dickies_banana"}
+{"expect": "punk", "query": "Cock Sparrer - Argy Bargy", "file": "h1_cock_sparrer_argy"}
+{"expect": "punk", "query": "Hot Water Music - Trusty Chords", "file": "h1_hot_water_trusty"}
+{"expect": "punk", "query": "Against Me! - Thrash Unreal", "file": "h1_against_me_thrash"}
+{"expect": "punk", "query": "MxPx - Responsibility", "file": "h1_mxpx_responsibility"}
+{"expect": "punk", "query": "Suicidal Tendencies - Institutionalized", "file": "h1_suicidal_institutionalized"}
+{"expect": "punk", "query": "Dead Milkmen - Bitchin' Camaro", "file": "h1_dead_milkmen_camaro"}
+{"expect": "metal", "query": "Napalm Death - Suffer the Children", "file": "h1_napalm_suffer"}
+{"expect": "metal", "query": "Cathedral - Ebony Tears", "file": "h1_cathedral_ebony"}
+{"expect": "metal", "query": "Pentagram - Relentless", "file": "h1_pentagram_relentless"}
+{"expect": "metal", "query": "High on Fire - Snakes for the Divine", "file": "h1_high_on_fire_snakes"}
+{"expect": "metal", "query": "Baroness - Take My Bones Away", "file": "h1_baroness_bones"}
+{"expect": "metal", "query": "Converge - Concubine", "file": "h1_converge_concubine"}
+{"expect": "metal", "query": "Kvelertak - Mjod", "file": "h1_kvelertak_mjod"}
+{"expect": "metal", "query": "Dark Funeral - My Dark Desires", "file": "h1_dark_funeral_desires"}
+{"expect": "metal", "query": "Crowbar - Planets Collide", "file": "h1_crowbar_planets"}
+{"expect": "metal", "query": "Trouble - Psalm 9", "file": "h1_trouble_psalm"}
+{"expect": "blues", "query": "Lightnin Slim - Rooster Blues", "file": "h1_lightnin_slim_rooster"}
+{"expect": "blues", "query": "Tommy McClennan - Bottle Up and Go", "file": "h1_mcclennan_bottle"}
+{"expect": "blues", "query": "Blind Boy Fuller - Step It Up and Go", "file": "h1_blind_boy_fuller_step"}
+{"expect": "blues", "query": "Big Maceo - Worried Life Blues", "file": "h1_big_maceo_worried"}
+{"expect": "blues", "query": "Little Brother Montgomery - Vicksburg Blues", "file": "h1_little_brother_vicksburg"}
+{"expect": "blues", "query": "Otis Taylor - Ten Million Slaves", "file": "h1_otis_taylor_slaves"}
+{"expect": "blues", "query": "Seasick Steve - Dog House Boogie", "file": "h1_seasick_steve_doghouse"}
+{"expect": "blues", "query": "Gov't Mule - Soulshine", "file": "h1_govt_mule_soulshine"}
+{"expect": "blues", "query": "Leroy Carr - How Long Blues", "file": "h1_leroy_carr_how_long"}
+{"expect": "country", "query": "Dwight Yoakam - Thousand Miles from Nowhere", "file": "h1_dwight_thousand_miles"}
+{"expect": "country", "query": "Jason Isbell - Cover Me Up", "file": "h1_isbell_cover_me_up"}
+{"expect": "country", "query": "Uncle Tupelo - Give Back the Key to My Heart", "file": "h1_uncle_tupelo_key"}
+{"expect": "country", "query": "Son Volt - Drown", "file": "h1_son_volt_drown"}
+{"expect": "country", "query": "Whiskeytown - Faithless Street", "file": "h1_whiskeytown_faithless"}
+{"expect": "country", "query": "Buck Owens - Under Your Spell Again", "file": "h1_buck_owens_spell"}
+{"expect": "country", "query": "Ernest Tubb - Waltz Across Texas", "file": "h1_ernest_tubb_waltz"}
+{"expect": "country", "query": "Gram Parsons - Hickory Wind", "file": "h1_gram_parsons_hickory"}
+{"expect": "country", "query": "The Flying Burrito Brothers - Sin City", "file": "h1_burrito_sin_city"}
+{"expect": "pop", "query": "Icona Pop - All Night", "file": "h2_iconapop_night"}
+{"expect": "pop", "query": "Sigrid - Don't Kill My Vibe", "file": "h2_sigrid_vibe"}
+{"expect": "pop", "query": "Christine and the Queens - Tilted", "file": "h2_christine_tilted"}
+{"expect": "pop", "query": "Vanessa Paradis - Joe le taxi", "file": "h2_paradis_joe"}
+{"expect": "pop", "query": "Alizee - Moi... Lolita", "file": "h2_alizee_lolita"}
+{"expect": "pop", "query": "Jain - Makeba", "file": "h2_jain_makeba"}
+{"expect": "pop", "query": "Saint Etienne - Only Love Can Break Your Heart", "file": "h2_stetienne_only"}
+{"expect": "pop", "query": "Tove Lo - Habits (Stay High)", "file": "h2_tovelo_habits"}
+{"expect": "pop", "query": "Jessie Ware - Wildest Moments", "file": "h2_ware_wildest"}
+{"expect": "pop", "query": "Mika - Relax, Take It Easy", "file": "h2_mika_relax"}
+{"expect": "rnb", "query": "Tinashe - 2 On", "file": "h2_tinashe_2on"}
+{"expect": "rnb", "query": "Jazmine Sullivan - Bust Your Windows", "file": "h2_sullivan_windows"}
+{"expect": "rnb", "query": "Brent Faiyaz - Dead Man Walking", "file": "h2_faiyaz_deadman"}
+{"expect": "rnb", "query": "Anthony Hamilton - Charlene", "file": "h2_hamilton_charlene"}
+{"expect": "rnb", "query": "Ari Lennox - Shea Butter Baby", "file": "h2_lennox_shea"}
+{"expect": "rnb", "query": "Chloe x Halle - Do It", "file": "h2_chloehalle_doit"}
+{"expect": "rnb", "query": "Tweet - Oops (Oh My)", "file": "h2_tweet_oops"}
+{"expect": "rnb", "query": "Avant - My First Love", "file": "h2_avant_first"}
+{"expect": "rnb", "query": "Kelela - Frontline", "file": "h2_kelela_frontline"}
+{"expect": "soul", "query": "Gwen McCrae - Rockin' Chair", "file": "h2_mccrae_rockin"}
+{"expect": "soul", "query": "Al Wilson - Show and Tell", "file": "h2_wilson_show"}
+{"expect": "soul", "query": "Shirley Brown - Woman to Woman", "file": "h2_brown_woman"}
+{"expect": "soul", "query": "Otis Clay - Trying to Live My Life Without You", "file": "h2_clay_trying"}
+{"expect": "soul", "query": "O.V. Wright - Ace of Spades", "file": "h2_wright_ace"}
+{"expect": "soul", "query": "Lalah Hathaway - Little Ghetto Boy", "file": "h2_hathaway_ghetto"}
+{"expect": "funk", "query": "Faze-O - Riding High", "file": "h2_fazeo_riding"}
+{"expect": "funk", "query": "Kleeer - Tonight", "file": "h2_kleeer_tonight"}
+{"expect": "funk", "query": "Tom Browne - Funkin' for Jamaica", "file": "h2_browne_jamaica"}
+{"expect": "funk", "query": "Mtume - Juicy Fruit", "file": "h2_mtume_juicy"}
+{"expect": "funk", "query": "Slave - Slide", "file": "h2_slave_slide"}
+{"expect": "funk", "query": "Vaughan Mason and Crew - Bounce, Rock, Skate, Roll", "file": "h2_mason_bounce"}
+{"expect": "funk", "query": "Bohannon - Let's Start the Dance", "file": "h2_bohannon_dance"}
+{"expect": "rap", "query": "MC Solaar - Caroline", "file": "h2_solaar_caroline"}
+{"expect": "rap", "query": "IAM - Je danse le Mia", "file": "h2_iam_mia"}
+{"expect": "rap", "query": "Kid Frost - La Raza", "file": "h2_frost_raza"}
+{"expect": "rap", "query": "Ultramagnetic MCs - Ego Trip", "file": "h2_ultramagnetic_ego"}
+{"expect": "rap", "query": "Dead Prez - Hip Hop", "file": "h2_deadprez_hiphop"}
+{"expect": "rap", "query": "Racionais MC's - Capitulo 4, Versiculo 3", "file": "h2_racionais_capitulo"}
+{"expect": "rap", "query": "Jurassic 5 - Quality Control", "file": "h2_j5_quality"}
+{"expect": "reggae", "query": "Cornell Campbell - Queen of the Minstrels", "file": "h2_campbell_minstrels"}
+{"expect": "reggae", "query": "Janet Kay - Silly Games", "file": "h2_kay_silly"}
+{"expect": "reggae", "query": "Hugh Mundell - Africa Must Be Free by 1983 Come", "file": "h2_mundell_africa"}
+{"expect": "reggae", "query": "Louisa Mark - Caught You in a Lie", "file": "h2_mark_caught"}
+{"expect": "reggae", "query": "Junior Byles - Beat Down Babylon", "file": "h2_byles_babylon"}
+{"expect": "rap", "query": "Organized Konfusion - Stray Bullet", "file": "h2_konfusion_stray"}
+{"expect": "electronic", "query": "Gold Panda - You", "file": "h3_gold_panda_you"}
+{"expect": "electronic", "query": "Nightmares on Wax - Dextrous", "file": "h3_nightmares_dextrous"}
+{"expect": "electronic", "query": "Rustie - Ghost Hunter", "file": "h3_rustie_ghost_hunter"}
+{"expect": "electronic", "query": "Rustie - Glass Swords", "file": "h3_rustie_glass_swords"}
+{"expect": "electronic", "query": "Lone - Airglow", "file": "h3_lone_airglow"}
+{"expect": "electronic", "query": "Mount Kimbie - Maybes", "file": "h3_mount_kimbie_maybes"}
+{"expect": "electronic", "query": "Fuck Buttons - Surf Solar", "file": "h3_fuck_buttons_surf_solar"}
+{"expect": "techno", "query": "Mathew Jonson - Marionette", "file": "h3_mathew_jonson_marionette"}
+{"expect": "house", "query": "DJ Koze - Pick Up", "file": "h3_koze_pick_up"}
+{"expect": "house", "query": "Ame - Rej", "file": "h3_ame_rej"}
+{"expect": "house", "query": "Motorbass - Pansoul", "file": "h3_motorbass_pansoul"}
+{"expect": "house", "query": "Roger Sanchez - Another Chance", "file": "h3_roger_sanchez_another_chance"}
+{"expect": "ambient", "query": "Popol Vuh - Aguirre", "file": "h3_popol_vuh_aguirre"}
+{"expect": "experimental", "query": "The Residents - Hello Skinny", "file": "h3_residents_hello_skinny"}
+{"expect": "experimental", "query": "Jlin - Black Ballet", "file": "h3_jlin_black_ballet"}
+{"expect": "jazz", "query": "Abdullah Ibrahim - Mannenberg", "file": "h3_ibrahim_mannenberg"}
+{"expect": "jazz", "query": "Paul Bley - Ida Lupino", "file": "h3_bley_ida_lupino"}
+{"expect": "jazz", "query": "J.J. Johnson - Lament", "file": "h3_jj_johnson_lament"}
+{"expect": "jazz", "query": "Archie Shepp - Mama Too Tight", "file": "h3_shepp_mama_too_tight"}
+{"expect": "jazz", "query": "Wardell Gray - Twisted", "file": "h3_gray_twisted"}
+{"expect": "classical", "query": "Federico Mompou - Cancion y danza No. 6", "file": "h3_mompou_cancion_danza_6"}
+{"expect": "classical", "query": "Toru Takemitsu - Rain Tree Sketch", "file": "h3_takemitsu_rain_tree_sketch"}
+{"expect": "classical", "query": "Leos Janacek - On an Overgrown Path", "file": "h3_janacek_overgrown_path"}
+{"expect": "classical", "query": "Jean-Philippe Rameau - Les Tendres Plaintes", "file": "h3_rameau_tendres_plaintes"}
+{"expect": "classical", "query": "Francois Couperin - Les Barricades Mysterieuses", "file": "h3_couperin_barricades"}
+{"expect": "classical", "query": "Alberto Ginastera - Danza del gaucho matrero", "file": "h3_ginastera_gaucho_matrero"}
+{"expect": "folk", "query": "Tom Paxton - The Last Thing on My Mind", "file": "h4_paxton_last_thing"}
+{"expect": "folk", "query": "Michael Chapman - Postcard", "file": "h4_chapman_postcard"}
+{"expect": "folk", "query": "Davy Graham - Angi", "file": "h4_graham_angi"}
+{"expect": "folk", "query": "Dick Gaughan - Both Sides the Tweed", "file": "h4_gaughan_tweed"}
+{"expect": "folk", "query": "Martin Carthy - Byker Hill", "file": "h4_carthy_byker"}
+{"expect": "folk", "query": "Christy Moore - Lisdoonvarna", "file": "h4_moore_lisdoonvarna"}
+{"expect": "folk", "query": "Paul Brady - The Island", "file": "h4_brady_island"}
+{"expect": "folk", "query": "Smog - Cold Blooded Old Times", "file": "h4_smog_cold_blooded"}
+{"expect": "folk", "query": "Vic Chesnutt - Flirted With You All My Life", "file": "h4_chesnutt_flirted"}
+{"expect": "folk", "query": "Peggy Seeger - Gonna Be an Engineer", "file": "h4_seeger_engineer"}
+{"expect": "folk", "query": "Richard and Mimi Farina - Pack Up Your Sorrows", "file": "h4_farina_pack_up"}
+{"expect": "folk", "query": "Jackson Browne - Fountain of Sorrow", "file": "h4_browne_fountain"}
+{"expect": "latin", "query": "Lhasa de Sela - La Llorona", "file": "h4_lhasa_llorona"}
+{"expect": "latin", "query": "Jorge Drexler - Milonga del moro judio", "file": "h4_drexler_milonga"}
+{"expect": "latin", "query": "Julieta Venegas - Limon y Sal", "file": "h4_venegas_limon"}
+{"expect": "latin", "query": "Fania All-Stars - Quimbara", "file": "h4_fania_quimbara"}
+{"expect": "latin", "query": "Arsenio Rodriguez - Bruca Maniqua", "file": "h4_rodriguez_bruca"}
+{"expect": "latin", "query": "Trio Matamoros - Lagrimas Negras", "file": "h4_matamoros_lagrimas"}
+{"expect": "latin", "query": "Los Panchos - Piel Canela", "file": "h4_panchos_piel"}
+{"expect": "latin", "query": "Aterciopelados - Bolero Falaz", "file": "h4_aterciopelados_bolero"}
+{"expect": "latin", "query": "Pedro Infante - Amorcito Corazon", "file": "h4_infante_amorcito"}
+{"expect": "latin", "query": "Javier Solis - Sombras", "file": "h4_solis_sombras"}
+{"expect": "latin", "query": "Pete Rodriguez - I Like It Like That", "file": "h4_rodriguez_like_that"}
+{"expect": "latin", "query": "Lucho Gatica - Contigo en la distancia", "file": "h4_gatica_contigo"}
+{"expect": "world", "query": "Ebo Taylor - Love and Death", "file": "h4_taylor_love_death"}
+{"expect": "world", "query": "Franco - Mario", "file": "h4_franco_mario"}
+{"expect": "world", "query": "Oliver Mtukudzi - Neria", "file": "h4_mtukudzi_neria"}
+{"expect": "world", "query": "Abdel Halim Hafez - Ahwak", "file": "h4_halim_ahwak"}
+{"expect": "world", "query": "Abida Parveen - Dama Dam Mast Qalandar", "file": "h4_parveen_dama"}
+{"expect": "world", "query": "Baris Manco - Daglar Daglar", "file": "h4_manco_daglar"}
+{"expect": "world", "query": "Le Mystere des Voix Bulgares - Izlel e Delyu Haydutin", "file": "h4_mystere_izlel"}
+{"expect": "world", "query": "Rustavi Choir - Chakrulo", "file": "h4_rustavi_chakrulo"}
+{"expect": "world", "query": "Fadhili William - Jambo Bwana", "file": "h4_william_jambo"}
+{"expect": "world", "query": "Los Kjarkas - Llorando se fue", "file": "h4_kjarkas_llorando"}
+{"expect": "world", "query": "Boubacar Traore - Mariama", "file": "h4_traore_mariama"}
+{"expect": "world", "query": "Sabri Brothers - Bhar Do Jholi Meri", "file": "h4_sabri_jholi"}
+{"expect": "world", "query": "Didi Kempot - Stasiun Balapan", "file": "h4_kempot_balapan"}
+{"expect": "world", "query": "Tilahun Gessesse - Tezeta", "file": "h4_gessesse_tezeta"}
+{"expect": "pop", "query": "Alice - Per Elisa", "file": "h4_alice_per_elisa"}
+{"expect": "pop", "query": "Loredana Berte - Sei Bellissima", "file": "h4_berte_bellissima"}
+{"expect": "pop", "query": "Edoardo Vianello - Pinne fucile ed occhiali", "file": "h4_vianello_pinne"}
+{"expect": "pop", "query": "Dalida - Il venait d'avoir 18 ans", "file": "h4_dalida_18_ans"}
+{"expect": "pop", "query": "Stromae - Formidable", "file": "h4_stromae_formidable"}
+{"expect": "pop", "query": "Zaz - Je veux", "file": "h4_zaz_je_veux"}
+{"expect": "pop", "query": "Alaska y Dinarama - A quien le importa", "file": "h4_alaska_importa"}
+{"expect": "pop", "query": "Roberto Carlos - Detalhes", "file": "h4_carlos_detalhes"}
+{"expect": "pop", "query": "Rita Lee - Ovelha Negra", "file": "h4_lee_ovelha"}
+{"expect": "pop", "query": "Yumi Matsutoya - Hikouki Gumo", "file": "h4_matsutoya_hikouki"}
+{"expect": "pop", "query": "IU - Good Day", "file": "h4_iu_good_day"}

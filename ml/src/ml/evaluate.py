@@ -102,10 +102,11 @@ def evaluate(checkpoint: Path, songs: list[dict], verbose: bool = True, refresh:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Score a checkpoint on the test songs")
     parser.add_argument("--checkpoint", type=Path, default=DEFAULT_CHECKPOINT)
+    parser.add_argument("--songs", type=Path, default=TEST_SONGS, help="test song list (jsonl)")
     parser.add_argument("--refresh", action="store_true", help="recompute cached test features")
     parser.add_argument("--fetch", action="store_true", help="download missing test audio first")
     args = parser.parse_args(argv)
-    songs = load_songs()
+    songs = load_songs(args.songs)
     if args.fetch:
         fetch_missing(songs)
     evaluate(args.checkpoint, songs, refresh=args.refresh)

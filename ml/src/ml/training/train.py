@@ -38,10 +38,10 @@ def _artist_bucket(artist: str) -> float:
     return int(digest[:8], 16) / 0x100000000
 
 
-def test_keys(path: Path = DATA_DIR / "test_songs.jsonl") -> set[tuple[str, str]]:
-    """Normalized (artist, title) of the held-out smoke-test songs."""
+def test_keys(directory: Path = DATA_DIR) -> set[tuple[str, str]]:
+    """Normalized (artist, title) of the held-out test songs (all test_songs*.jsonl)."""
     keys = set()
-    if path.exists():
+    for path in sorted(directory.glob("test_songs*.jsonl")):
         for line in path.read_text().splitlines():
             if line.strip():
                 artist, _, title = json.loads(line)["query"].partition(" - ")

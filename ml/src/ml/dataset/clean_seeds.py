@@ -135,7 +135,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--seeds", type=Path, default=DATA_DIR / "agent_seeds.txt")
     parser.add_argument("--overrides", type=Path, default=DATA_DIR / "seed_genre_overrides.json")
     parser.add_argument("--mood-seeds", type=Path, default=DATA_DIR / "mood_seeds.json")
-    parser.add_argument("--test-songs", type=Path, default=DATA_DIR / "test_songs.jsonl")
+    parser.add_argument("--test-dir", type=Path, default=DATA_DIR, help="folder with test_songs*.jsonl")
     parser.add_argument("--audio-dir", type=Path, default=DATA_DIR / "raw")
     parser.add_argument("--write", action="store_true", help="rewrite the seed file (keeps .bak)")
     parser.add_argument("--rename-audio", action="store_true", help="rename audio to surviving ids")
@@ -152,8 +152,8 @@ def main(argv: list[str] | None = None) -> int:
     mood_seeds = json.loads(args.mood_seeds.read_text()).get("moods", {})
     lines = args.seeds.read_text().splitlines()
     exclude = set()
-    if args.test_songs.exists():
-        for line in args.test_songs.read_text().splitlines():
+    for path in sorted(args.test_dir.glob("test_songs*.jsonl")):
+        for line in path.read_text().splitlines():
             if line.strip():
                 artist, _, title = json.loads(line)["query"].partition(" - ")
                 exclude.add((normalize(artist), normalize(title)))
