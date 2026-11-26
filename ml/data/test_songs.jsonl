@@ -15,3 +15,73 @@
 {"expect": "rock", "query": "Neil Young - Cinnamon Girl", "file": "t_neil"}
 {"expect": "electronic", "query": "Aphex Twin - Ageispolis", "file": "t_aphex"}
 {"expect": "electronic", "query": "Aphex Twin - Didgeridoo", "file": "t_didgeridoo"}
+{"expect": "rock", "query": "Big Star - Thirteen", "file": "t_big_star_thirteen"}
+{"expect": "rock", "query": "The Pretty Things - Rosalyn", "file": "t_the_pretty_things_rosalyn"}
+{"expect": "rock", "query": "Easybeats - Friday on My Mind", "file": "t_easybeats_friday_on_my_mind"}
+{"expect": "rock", "query": "Negrita - Mama Mae", "file": "t_negrita_mama_mae"}
+{"expect": "pop", "query": "Belinda Carlisle - Heaven Is a Place on Earth", "file": "t_belinda_carlisle_heaven_is_a_place_on_ea"}
+{"expect": "pop", "query": "Bananarama - Venus", "file": "t_bananarama_venus"}
+{"expect": "pop", "query": "Thompson Twins - Hold Me Now", "file": "t_thompson_twins_hold_me_now"}
+{"expect": "pop", "query": "Matia Bazar - Vacanze romane", "file": "t_matia_bazar_vacanze_romane"}
+{"expect": "rap", "query": "Big Pun - Twinz (Deep Cover '98)", "file": "t_big_pun_twinz_deep_cover_98"}
+{"expect": "rap", "query": "Pharoahe Monch - Simon Says", "file": "t_pharoahe_monch_simon_says"}
+{"expect": "hip_hop", "query": "Pete Rock & CL Smooth - They Reminisce Over You (T.R.O.Y.)", "file": "t_pete_rock_cl_smooth_they_reminisce_over_"}
+{"expect": "hip_hop", "query": "Boogie Down Productions - My Philosophy", "file": "t_boogie_down_productions_my_philosophy"}
+{"expect": "hip_hop", "query": "Digable Planets - Rebirth of Slick (Cool Like Dat)", "file": "t_digable_planets_rebirth_of_slick_cool_li"}
+{"expect": "hip_hop", "query": "Brand Nubian - Slow Down", "file": "t_brand_nubian_slow_down"}
+{"expect": "jazz", "query": "Donald Byrd - Cristo Redentor", "file": "t_donald_byrd_cristo_redentor"}
+{"expect": "jazz", "query": "Jaco Pastorius - Portrait of Tracy", "file": "t_jaco_pastorius_portrait_of_tracy"}
+{"expect": "jazz", "query": "Bobby Timmons - Dat Dere", "file": "t_bobby_timmons_dat_dere"}
+{"expect": "blues", "query": "Sonny Boy Williamson II - Help Me", "file": "t_sonny_boy_williamson_ii_help_me"}
+{"expect": "blues", "query": "Blind Willie McTell - Statesboro Blues", "file": "t_blind_willie_mctell_statesboro_blues"}
+{"expect": "blues", "query": "J.B. Lenoir - Mama Talk to Your Daughter", "file": "t_j_b_lenoir_mama_talk_to_your_daughter"}
+{"expect": "electronic", "query": "The Future Sound of London - Papua New Guinea", "file": "t_the_future_sound_of_london_papua_new_gui"}
+{"expect": "electronic", "query": "Ryan Paris - Dolce Vita", "file": "t_ryan_paris_dolce_vita"}
+{"expect": "electronic", "query": "Sandy Marton - People from Ibiza", "file": "t_sandy_marton_people_from_ibiza"}
+{"expect": "electronic", "query": "Bomb the Bass - Beat Dis", "file": "t_bomb_the_bass_beat_dis"}
+{"expect": "house", "query": "Cajmere - Brighter Days", "file": "t_cajmere_brighter_days"}
+{"expect": "house", "query": "Ralphi Rosario - You Used to Hold Me", "file": "t_ralphi_rosario_you_used_to_hold_me"}
+{"expect": "house", "query": "Sterling Void - It's Alright", "file": "t_sterling_void_it_s_alright"}
+{"expect": "house", "query": "Ce Ce Peniston - Finally", "file": "t_ce_ce_peniston_finally"}
+{"expect": "folk", "query": "Linda Perhacs - Parallelograms", "file": "t_linda_perhacs_parallelograms"}
+{"expect": "folk", "query": "Mary Hopkin - Those Were the Days", "file": "t_mary_hopkin_those_were_the_days"}
+{"expect": "folk", "query": "Shirley Collins - Pretty Polly", "file": "t_shirley_collins_pretty_polly"}
+{"expect": "folk", "query": "Rino Gaetano - Ma il cielo e sempre piu blu", "file": "t_rino_gaetano_ma_il_cielo_e_sempre_piu_bl"}
+{"expect": "country", "query": "Kitty Wells - It Wasn't God Who Made Honky Tonk Angels", "file": "t_kitty_wells_it_wasn_t_god_who_made_honky"}
+{"expect": "country", "query": "Lefty Frizzell - If You've Got the Money Honey", "file": "t_lefty_frizzell_if_you_ve_got_the_money_h"}
+{"expect": "country", "query": "Emmylou Harris - Boulder to Birmingham", "file": "t_emmylou_harris_boulder_to_birmingham"}
+{"expect": "country", "query": "Porter Wagoner - The Carroll County Accident", "file": "t_porter_wagoner_the_carroll_county_accide"}
+{"expect": "reggae", "query": "Delroy Wilson - Better Must Come", "file": "t_delroy_wilson_better_must_come"}
+{"expect": "reggae", "query": "Ken Boothe - Everything I Own", "file": "t_ken_boothe_everything_i_own"}
+{"expect": "reggae", "query": "Johnny Clarke - Move Out of Babylon", "file": "t_johnny_clarke_move_out_of_babylon"}
+{"expect": "reggae", "query": "Jacob Miller - Baby I Love You So", "file": "t_jacob_miller_baby_i_love_you_so"}
+{"expect": "funk", "query": "Bootsy Collins - I'd Rather Be with You", "file": "t_bootsy_collins_i_d_rather_be_with_you"}
+{"expect": "funk", "query": "The Honey Drippers - Impeach the President", "file": "t_the_honey_drippers_impeach_the_president"}
+{"expect": "funk", "query": "Mandrill - Fencewalk", "file": "t_mandrill_fencewalk"}
+{"expect": "soul", "query": "Solomon Burke - Cry to Me", "file": "t_solomon_burke_cry_to_me"}
+{"expect": "soul", "query": "Irma Thomas - Wish Someone Would Care", "file": "t_irma_thomas_wish_someone_would_care"}
+{"expect": "soul", "query": "Bettye Swann - Make Me Yours", "file": "t_bettye_swann_make_me_yours"}
+{"expect": "soul", "query": "Joe Simon - Drowning in the Sea of Love", "file": "t_joe_simon_drowning_in_the_sea_of_love"}
+{"expect": "rnb", "query": "SWV - Weak", "file": "t_swv_weak"}
+{"expect": "rnb", "query": "Jodeci - Forever My Lady", "file": "t_jodeci_forever_my_lady"}
+{"expect": "rnb", "query": "Tony! Toni! Tone! - Feels Good", "file": "t_tony_toni_tone_feels_good"}
+{"expect": "rnb", "query": "Brownstone - If You Love Me", "file": "t_brownstone_if_you_love_me"}
+{"expect": "metal", "query": "Candlemass - Solitude", "file": "t_candlemass_solitude"}
+{"expect": "metal", "query": "Saxon - Denim and Leather", "file": "t_saxon_denim_and_leather"}
+{"expect": "metal", "query": "Accept - Balls to the Wall", "file": "t_accept_balls_to_the_wall"}
+{"expect": "metal", "query": "Cirith Ungol - Atom Smasher", "file": "t_cirith_ungol_atom_smasher"}
+{"expect": "punk", "query": "The Adverts - Gary Gilmore's Eyes", "file": "t_the_adverts_gary_gilmore_s_eyes"}
+{"expect": "punk", "query": "The Saints - (I'm) Stranded", "file": "t_the_saints_i_m_stranded"}
+{"expect": "punk", "query": "Sham 69 - If the Kids Are United", "file": "t_sham_69_if_the_kids_are_united"}
+{"expect": "punk", "query": "The Ramones - Blitzkrieg Bop", "file": "t_the_ramones_blitzkrieg_bop"}
+{"expect": "classical", "query": "Camille Saint-Saens - The Swan", "file": "t_camille_saint_saens_the_swan"}
+{"expect": "classical", "query": "Maurice Ravel - Pavane pour une infante defunte", "file": "t_maurice_ravel_pavane_pour_une_infante_de"}
+{"expect": "classical", "query": "Edvard Grieg - Morning Mood", "file": "t_edvard_grieg_morning_mood"}
+{"expect": "classical", "query": "Antonin Dvorak - Humoresque", "file": "t_antonin_dvorak_humoresque"}
+{"expect": "latin", "query": "Ray Barretto - El Watusi", "file": "t_ray_barretto_el_watusi"}
+{"expect": "latin", "query": "Joe Bataan - Rap-O Clap-O", "file": "t_joe_bataan_rap_o_clap_o"}
+{"expect": "world", "query": "Orchestra Baobab - Utrera", "file": "t_orchestra_baobab_utrera"}
+{"expect": "world", "query": "Amadou & Mariam - Sabali", "file": "t_amadou_mariam_sabali"}
+{"expect": "experimental", "query": "Suicide - Ghost Rider", "file": "t_suicide_ghost_rider"}
+{"expect": "experimental", "query": "Henry Cow - Nirvana for Mice", "file": "t_henry_cow_nirvana_for_mice"}
+{"expect": "experimental", "query": "Diamanda Galas - Wish the Wicked", "file": "t_diamanda_galas_wish_the_wicked"}
