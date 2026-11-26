@@ -12,6 +12,7 @@ import hashlib
 import json
 import math
 import random
+import re
 import time
 from pathlib import Path
 
@@ -28,7 +29,6 @@ from ml.training.model import MultiTaskAST
 GENRE_VOCAB = genre_list()
 MOOD_VOCAB = mood_list()
 
-VAL_FRACTION = 0.1
 SEED_WEIGHT = 3.0  # hand-labelled seed songs are the target domain; sample them more often
 
 
@@ -49,16 +49,38 @@ def test_keys(path: Path = DATA_DIR / "test_songs.jsonl") -> set[tuple[str, str]
     return keys
 
 
+def sample_weights(rows: list[dict], power: float) -> list[float]:
+    """Per-row sampling weight: seed boost times a rare-genre boost.
+
+    power 0 keeps the old weights, 1 equalizes genre mass. Speech rows keep weight 1
+    """
+    base = [SEED_WEIGHT if row.get("origin") == "agent" else 1.0 for row in rows]
+    if not power:
+        return base
+    mass: dict[str, float] = {}
+    for row, weight in zip(rows, base):
+        for genre in row.get("genre", []):
+            mass[genre] = mass.get(genre, 0.0) + weight
+    boost = [
+        sum(mass[g] ** -power for g in row["genre"]) / len(row["genre"]) if row.get("genre") else None
+        for row in rows
+    ]
+    mean = sum(b for b in boost if b is not None) / max(1, sum(b is not None for b in boost))
+    # normalize so the music/speech ratio stays as before
+    return [w if b is None else w * b / mean for w, b in zip(base, boost)]
+
+
 def is_jamendo(row: dict) -> bool:
     """Dataset-tagged music rows (jamendo); seeds are agent-labelled, speech is not music."""
     return row.get("origin") == "dataset_tag" and row.get("audio_type", "music") == "music"
 
 
-def assign_split(row: dict, held_out: set[tuple[str, str]]) -> str:
+def assign_split(row: dict, held_out: set[tuple[str, str]], fold: int = 0, folds: int = 10) -> str:
+    """test (held-out songs) / val (this fold's artists) / train. Folds partition artists."""
     if (normalize(row.get("artist", "")), normalize(row.get("title", ""))) in held_out:
         return "test"
     # rows without an artist (should not happen) fall into train rather than a shared bucket
-    if row.get("artist") and _artist_bucket(row["artist"]) < VAL_FRACTION:
+    if row.get("artist") and fold / folds <= _artist_bucket(row["artist"]) < (fold + 1) / folds:
         return "val"
     return "train"
 
@@ -86,18 +108,33 @@ def load_rows(manifest_path: Path, specs_dir: Path) -> list[dict]:
 
 
 class SpecDataset(Dataset):
-    """Rows joined with AST feature windows on disk; train picks a random window per call."""
+    """Rows joined with AST feature windows on disk.
+
+    train: one item per track, a random window each call.
+    eval:  one item per (track, window), so evaluation can average a track's windows
+           the way inference does; items carry their track index in "_track".
+    """
 
     def __init__(self, rows: list[dict], specs_dir: Path, train: bool):
         self.rows, self.specs_dir, self.train = rows, specs_dir, train
+        self.items: list[tuple[int, int]] = []
+        if not train:
+            for i, row in enumerate(rows):
+                n = len(np.load(specs_dir / f"{row['id']}.npy", mmap_mode="r"))
+                self.items += [(i, w) for w in range(n)]
 
     def __len__(self) -> int:
-        return len(self.rows)
+        return len(self.rows) if self.train else len(self.items)
 
     def __getitem__(self, index: int) -> tuple[np.ndarray, dict]:
-        windows = np.load(self.specs_dir / f"{self.rows[index]['id']}.npy", mmap_mode="r")
-        pick = random.randrange(len(windows)) if self.train else len(windows) // 2
-        return np.array(windows[pick], dtype=np.float32), self.rows[index]
+        if self.train:
+            track = index
+            windows = np.load(self.specs_dir / f"{self.rows[track]['id']}.npy", mmap_mode="r")
+            pick = random.randrange(len(windows))
+        else:
+            track, pick = self.items[index]
+            windows = np.load(self.specs_dir / f"{self.rows[track]['id']}.npy", mmap_mode="r")
+        return np.array(windows[pick], dtype=np.float32), {**self.rows[track], "_track": track}
 
 
 def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, torch.Tensor]:
@@ -125,6 +162,7 @@ def collate(batch, genre_vocab=GENRE_VOCAB, mood_vocab=MOOD_VOCAB) -> dict[str, 
         "mood_mask": (mood.sum(dim=1, keepdim=True) > 0).float(),
         "energy": torch.tensor([e if e is not None else 0.0 for e in energy]),
         "energy_mask": torch.tensor([0.0 if e is None else 1.0 for e in energy]),
+        "track": torch.tensor([row.get("_track", -1) for _, row in batch]),
     }
 
 
@@ -149,41 +187,125 @@ def _macro_ap(logits: np.ndarray, labels: np.ndarray, mask: np.ndarray) -> float
 
 
 def evaluate(model: MultiTaskAST, loader: DataLoader, device: torch.device) -> dict[str, float]:
-    """Held-out metrics: macro mAP per label head, top-1 genre, music accuracy, energy MAE."""
+    """Held-out metrics per track (windows averaged, as inference does).
+
+    macro mAP per label head, genre top-1/top-3, music accuracy, energy MAE.
+    """
     model.eval()
-    collected = {k: [] for k in ("genre", "mood", "music", "energy")}
-    targets = {
+    parts: dict[str, list] = {
         k: []
         for k in (
+            "genre",
+            "mood",
+            "music",
+            "energy",
+            "track",
             "genre_labels",
             "genre_mask",
             "mood_labels",
             "mood_mask",
             "music_labels",
-            "energy",
+            "energy_target",
             "energy_mask",
         )
     }
     with torch.no_grad(), torch.autocast(device.type, dtype=torch.bfloat16):
         for batch in loader:
             outputs = model(batch["specs"].to(device))
-            for key in collected:
-                collected[key].append(outputs[key].float().cpu())
-            for key in targets:
-                targets[key].append(batch[key])
-    out = {k: torch.cat(v).numpy() for k, v in collected.items()}
-    tgt = {k: torch.cat(v).numpy() for k, v in targets.items()}
+            for key in ("genre", "mood", "music"):
+                parts[key].append(torch.sigmoid(outputs[key].float()).cpu())
+            parts["energy"].append(outputs["energy"].float().cpu())
+            parts["energy_target"].append(batch["energy"])
+            for key in ("track", "genre_labels", "genre_mask", "mood_labels", "mood_mask"):
+                parts[key].append(batch[key])
+            parts["music_labels"].append(batch["music_labels"])
+            parts["energy_mask"].append(batch["energy_mask"])
+    cat = {k: torch.cat(v).numpy() for k, v in parts.items()}
+
+    # average windows per track; labels are identical across a track's windows
+    tracks, first, inverse = np.unique(cat["track"], return_index=True, return_inverse=True)
+
+    def mean_by_track(values: np.ndarray) -> np.ndarray:
+        sums = np.zeros((len(tracks),) + values.shape[1:], dtype=np.float64)
+        np.add.at(sums, inverse, values)
+        return sums / np.bincount(inverse).reshape((-1,) + (1,) * (values.ndim - 1))
+
+    prob = {k: mean_by_track(cat[k]) for k in ("genre", "mood", "music", "energy")}
+    tgt = {k: cat[k][first] for k in cat if k not in prob and k != "track"}
     labelled = tgt["genre_mask"][:, 0] > 0
-    top1 = out["genre"][labelled].argmax(axis=1)
-    hit = tgt["genre_labels"][labelled][np.arange(labelled.sum()), top1] > 0
+    ranked = np.argsort(-prob["genre"][labelled], axis=1)
+    true = tgt["genre_labels"][labelled]
+    rows = np.arange(labelled.sum())
     energy_rows = tgt["energy_mask"] > 0
     return {
-        "genre_map": _macro_ap(out["genre"], tgt["genre_labels"], tgt["genre_mask"]),
-        "genre_top1": float(hit.mean()) if labelled.any() else float("nan"),
-        "mood_map": _macro_ap(out["mood"], tgt["mood_labels"], tgt["mood_mask"]),
-        "music_acc": float(((out["music"] > 0) == (tgt["music_labels"] > 0.5)).mean()),
-        "energy_mae": float(np.abs(out["energy"] - tgt["energy"])[energy_rows].mean()),
+        "genre_map": _macro_ap(prob["genre"], tgt["genre_labels"], tgt["genre_mask"]),
+        "genre_top1": float((true[rows, ranked[:, 0]] > 0).mean()) if labelled.any() else float("nan"),
+        "genre_top3": float((true[rows[:, None], ranked[:, :3]] > 0).any(axis=1).mean())
+        if labelled.any()
+        else float("nan"),
+        "mood_map": _macro_ap(prob["mood"], tgt["mood_labels"], tgt["mood_mask"]),
+        "music_acc": float(((prob["music"] > 0.5) == (tgt["music_labels"] > 0.5)).mean()),
+        "energy_mae": float(np.abs(prob["energy"] - tgt["energy_target"])[energy_rows].mean()),
     }
+
+
+def spec_augment(specs: torch.Tensor, freq_mask: int = 24, time_mask: int = 96, masks: int = 2):
+    """Zero random frequency bands and time spans (0 is the normalized mean level)."""
+    specs = specs.clone()
+    _, frames, bins = specs.shape
+    for i in range(specs.shape[0]):
+        for _ in range(masks):
+            width = random.randint(0, freq_mask)
+            start = random.randint(0, bins - width)
+            specs[i, :, start : start + width] = 0
+            width = random.randint(0, time_mask)
+            start = random.randint(0, frames - width)
+            specs[i, start : start + width, :] = 0
+    return specs
+
+
+def mixup(batch: dict[str, torch.Tensor], alpha: float = 0.4) -> dict[str, torch.Tensor]:
+    """Blend each music row with another music row: audio and labels share one weight.
+
+    Speech rows are left alone. A blended row keeps a head's loss only if both
+    parents were labelled for that head.
+    """
+    n = batch["specs"].shape[0]
+    perm = torch.randperm(n, device=batch["specs"].device)
+    lam = float(torch.distributions.Beta(alpha, alpha).sample())
+    ok = (batch["music_labels"] > 0.5) & (batch["music_labels"][perm] > 0.5)
+    out = dict(batch)
+
+    def blend(x: torch.Tensor, shape: tuple[int, ...]) -> torch.Tensor:
+        return torch.where(ok.view(shape), lam * x + (1 - lam) * x[perm], x)
+
+    out["specs"] = blend(batch["specs"], (-1, 1, 1))
+    for head in ("genre", "mood"):
+        out[f"{head}_labels"] = blend(batch[f"{head}_labels"], (-1, 1))
+        mask = batch[f"{head}_mask"]
+        out[f"{head}_mask"] = torch.where(ok.view(-1, 1), mask * mask[perm], mask)
+    out["energy"] = blend(batch["energy"], (-1,))
+    out["energy_mask"] = torch.where(ok, batch["energy_mask"] * batch["energy_mask"][perm], batch["energy_mask"])
+    return out
+
+
+def trunk_param_groups(encoder: torch.nn.Module, lr: float, decay: float) -> list[dict]:
+    """Layer-wise learning-rate decay: the top layer gets lr, each layer below gets decay x less."""
+    n_layers = len(encoder.layers)
+
+    def depth(name: str) -> int:
+        if name.startswith("embeddings"):
+            return 0
+        match = re.match(r"layers\.(\d+)\.", name)
+        return int(match.group(1)) + 1 if match else n_layers + 1
+
+    by_depth: dict[int, list[torch.nn.Parameter]] = {}
+    for name, param in encoder.named_parameters():
+        by_depth.setdefault(depth(name), []).append(param)
+    return [
+        {"params": params, "lr": lr * decay ** (n_layers + 1 - d)}
+        for d, params in sorted(by_depth.items())
+    ]
 
 
 def make_scheduler(optimizer, total_steps: int, warmup_fraction: float = 0.05):
@@ -202,15 +324,25 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Train the multi-task audio model")
     parser.add_argument("specs_dir", type=Path, help="AST feature .npy directory (ml.dataset.preprocess)")
     parser.add_argument("--manifest", type=Path, required=True, help="assembled samples jsonl")
-    parser.add_argument("--epochs", type=int, default=6)
+    parser.add_argument("--epochs", type=int, default=12)
+    parser.add_argument("--patience", type=int, default=3, help="stop after N epochs without gain")
+    parser.add_argument("--fold", type=int, default=0, help="validation fold (artist-grouped)")
+    parser.add_argument("--folds", type=int, default=10, help="number of artist-grouped folds")
+    parser.add_argument("--lr-decay", type=float, default=0.85, help="per-layer trunk lr decay")
+    parser.add_argument(
+        "--specaug", action=argparse.BooleanOptionalAction, default=True, help="SpecAugment masks"
+    )
+    parser.add_argument("--balance", type=float, default=0.5, help="rare-genre sampling power, 0 off")
+    parser.add_argument("--mixup-prob", type=float, default=0.5, help="chance a batch is mixed up")
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--accum", type=int, default=4, help="gradient accumulation steps")
-    parser.add_argument("--trunk-lr", type=float, default=1e-5)
+    parser.add_argument("--trunk-lr", type=float, default=3e-5)
     parser.add_argument("--head-lr", type=float, default=1e-3)
     parser.add_argument("--freeze-trunk", action="store_true", help="train heads only")
     parser.add_argument("--grad-checkpoint", action="store_true", help="trade speed for memory")
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--drop-jamendo", action="store_true", help="exclude jamendo from training")
+    parser.add_argument("--exclude-ids", type=Path, default=None, help="train ids to drop, one per line")
     parser.add_argument("--max-train", type=int, default=None, help="subsample train rows (smoke)")
     parser.add_argument("--max-val", type=int, default=None, help="subsample val rows (smoke)")
     parser.add_argument("--out-dir", type=Path, required=True)
@@ -225,7 +357,10 @@ def main(argv: list[str] | None = None) -> int:
     rows = load_rows(args.manifest, args.specs_dir)
     split: dict[str, list[dict]] = {"train": [], "val": [], "test": []}
     for row in rows:
-        split[assign_split(row, held_out)].append(row)
+        split[assign_split(row, held_out, args.fold, args.folds)].append(row)
+    if args.exclude_ids:
+        dropped = set(args.exclude_ids.read_text().split())
+        split["train"] = [r for r in split["train"] if r["id"] not in dropped]
     if args.drop_jamendo:
         split["train"] = [r for r in split["train"] if not is_jamendo(r)]
     # validate on the target domain only (seed songs + speech), so runs with and
@@ -241,7 +376,7 @@ def main(argv: list[str] | None = None) -> int:
     if not split["train"] or not split["val"]:
         raise SystemExit("empty train or val split; is the specs dir populated?")
 
-    weights = [SEED_WEIGHT if row.get("origin") == "agent" else 1.0 for row in split["train"]]
+    weights = sample_weights(split["train"], args.balance)
     train_loader = DataLoader(
         SpecDataset(split["train"], args.specs_dir, train=True),
         batch_size=args.batch_size,
@@ -267,24 +402,37 @@ def main(argv: list[str] | None = None) -> int:
         for param in model.encoder.parameters():
             param.requires_grad = False
     else:
-        groups.append({"params": list(model.encoder.parameters()), "lr": args.trunk_lr})
+        groups += trunk_param_groups(model.encoder, args.trunk_lr, args.lr_decay)
     optimizer = torch.optim.AdamW(groups, weight_decay=0.01)
     total_steps = args.epochs * (len(train_loader) // args.accum)
     scheduler = make_scheduler(optimizer, total_steps)
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
     metrics_path = args.out_dir / "metrics.csv"
-    columns = ["epoch", "train_loss", "genre_map", "genre_top1", "mood_map", "music_acc", "energy_mae"]
+    columns = [
+        "epoch",
+        "train_loss",
+        "genre_map",
+        "genre_top1",
+        "genre_top3",
+        "mood_map",
+        "music_acc",
+        "energy_mae",
+    ]
     with metrics_path.open("w", newline="") as file:
         csv.writer(file).writerow(columns)
 
-    best = -1.0
+    best, stale = -1.0, 0
     for epoch in range(args.epochs):
         model.train()
         running, batches, epoch_start = 0.0, 0, time.monotonic()
         optimizer.zero_grad()
         for batch in train_loader:
             batch = {k: v.to(device) for k, v in batch.items()}
+            if args.mixup_prob and random.random() < args.mixup_prob:
+                batch = mixup(batch)
+            if args.specaug:
+                batch["specs"] = spec_augment(batch["specs"])
             with torch.autocast(device.type, dtype=torch.bfloat16):
                 outputs = model(batch["specs"])
             losses = model.loss(outputs, batch)
@@ -322,8 +470,13 @@ def main(argv: list[str] | None = None) -> int:
         }
         torch.save(checkpoint, args.out_dir / "last.pt")
         if score > best:
-            best = score
+            best, stale = score, 0
             torch.save(checkpoint, args.out_dir / "best.pt")
+        else:
+            stale += 1
+            if args.patience and stale >= args.patience:
+                print(f"no gain for {stale} epochs; stopping")
+                break
     return 0
 
 
