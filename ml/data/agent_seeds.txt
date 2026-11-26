@@ -1,87 +1,83 @@
-Queen - Bohemian Rhapsody | rock
+Queen - Bohemian Rhapsody | rock | dramatic
 Queen - We Will Rock You | rock
 Queen - Another One Bites the Dust | rock|funk
-Led Zeppelin - Stairway to Heaven | rock
-Deep Purple - Smoke on the Water | rock
-AC/DC - Back In Black | rock
-AC/DC - Thunderstruck | rock
-Guns N Roses - Sweet Child O Mine | rock
-Guns N Roses - November Rain | rock
-Nirvana - Smells Like Teen Spirit | rock|punk
-Nirvana - Come As You Are | rock
-Pearl Jam - Alive | rock
-Foo Fighters - Everlong | rock
-Radiohead - Creep | rock
-Radiohead - Paranoid Android | rock|experimental
-Oasis - Wonderwall | rock|pop
-Oasis - Dont Look Back in Anger | rock
-Blur - Song 2 | rock|punk
-The Strokes - Last Nite | rock
-Arctic Monkeys - Do I Wanna Know | rock
-The White Stripes - Seven Nation Army | rock
-The Killers - Mr. Brightside | rock|pop
-Kings of Leon - Sex on Fire | rock|pop
-Coldplay - Viva La Vida | rock|pop
-Coldplay - Yellow | rock
-U2 - With Or Without You | rock
-U2 - Beautiful Day | rock
-R.E.M. - Losing My Religion | rock
-Red Hot Chili Peppers - Under the Bridge | rock|funk
-Red Hot Chili Peppers - Californication | rock
-Fleetwood Mac - Dreams | rock|pop
-Eagles - Hotel California | rock
-Pink Floyd - Another Brick in the Wall | rock
-Pink Floyd - Comfortably Numb | rock
-The Rolling Stones - Paint It Black | rock
-The Rolling Stones - Satisfaction | rock|blues
-The Beatles - Come Together | rock|blues
-The Beatles - Hey Jude | rock|pop
-David Bowie - Starman | rock
-David Bowie - Heroes | rock
-Jimi Hendrix - Purple Haze | rock|blues
-Black Sabbath - Paranoid | metal|rock
-Iron Maiden - Run to the Hills | metal
-Iron Maiden - The Number of the Beast | metal
-Metallica - Enter Sandman | metal
-Metallica - Master of Puppets | metal
-Megadeth - Symphony of Destruction | metal
-Slayer - Raining Blood | metal
-Pantera - Walk | metal
-Slipknot - Duality | metal
-System of a Down - Chop Suey | metal
-System of a Down - Toxicity | metal
-Motorhead - Ace of Spades | metal|punk
-Judas Priest - Breaking the Law | metal
-Rammstein - Du Hast | metal|electronic
-Ramones - Blitzkrieg Bop | punk
-Sex Pistols - God Save the Queen | punk
-The Clash - London Calling | punk|rock
-The Clash - Should I Stay or Should I Go | punk|rock
-Green Day - American Idiot | punk
-Green Day - Basket Case | punk
-The Offspring - Self Esteem | punk
-Blink-182 - All the Small Things | punk|pop
-My Chemical Romance - Welcome to the Black Parade | punk|rock
-Dead Kennedys - Holiday in Cambodia | punk
+Led Zeppelin - Stairway to Heaven | rock | dreamy
+Deep Purple - Smoke on the Water | rock | energetic
+AC/DC - Back In Black | rock | aggressive|energetic
+AC/DC - Thunderstruck | rock | energetic
+Nirvana - Smells Like Teen Spirit | rock|punk | aggressive
+Nirvana - Come As You Are | rock | calm|dark
+Pearl Jam - Alive | rock | energetic
+Foo Fighters - Everlong | rock | energetic
+Radiohead - Creep | rock | melancholic|sad
+Radiohead - Paranoid Android | rock|experimental | dark
+Oasis - Wonderwall | rock|pop | melancholic
+Blur - Song 2 | rock|punk | aggressive
+The Strokes - Last Nite | rock | energetic|happy
+Arctic Monkeys - Do I Wanna Know | rock | dark
+The White Stripes - Seven Nation Army | rock | aggressive
+The Killers - Mr. Brightside | rock|pop | energetic
+Kings of Leon - Sex on Fire | rock|pop | energetic
+Coldplay - Viva La Vida | rock|pop | energetic
+Coldplay - Yellow | rock | calm|romantic
+U2 - With Or Without You | rock | melancholic|romantic
+U2 - Beautiful Day | rock | energetic
+R.E.M. - Losing My Religion | rock | melancholic
+Red Hot Chili Peppers - Under the Bridge | rock|funk | melancholic
+Red Hot Chili Peppers - Californication | rock | melancholic
+Fleetwood Mac - Dreams | rock|pop | calm
+Eagles - Hotel California | rock | dark|calm
+Pink Floyd - Another Brick in the Wall | rock | dark|aggressive
+Pink Floyd - Comfortably Numb | rock | dreamy
+The Rolling Stones - Paint It Black | rock | dark|aggressive
+The Rolling Stones - Satisfaction | rock|blues | energetic
+The Beatles - Come Together | rock|blues | energetic
+The Beatles - Hey Jude | rock|pop | calm
+David Bowie - Starman | rock | dreamy
+David Bowie - Heroes | rock | dramatic
+Jimi Hendrix - Purple Haze | rock|blues | energetic
+Black Sabbath - Paranoid | metal|rock | dark|aggressive
+Iron Maiden - Run to the Hills | metal | energetic|aggressive
+Iron Maiden - The Number of the Beast | metal | dark|aggressive
+Metallica - Enter Sandman | metal | dark|aggressive
+Metallica - Master of Puppets | metal | aggressive
+Megadeth - Symphony of Destruction | metal | dark|aggressive
+Slayer - Raining Blood | metal | dark|aggressive
+Pantera - Walk | metal | aggressive
+Slipknot - Duality | metal | aggressive
+System of a Down - Chop Suey | metal | aggressive
+System of a Down - Toxicity | metal | dark
+Motorhead - Ace of Spades | metal|punk | aggressive
+Judas Priest - Breaking the Law | metal | energetic
+Rammstein - Du Hast | metal|electronic | aggressive
+Ramones - Blitzkrieg Bop | punk | energetic|happy
+Sex Pistols - God Save the Queen | punk | aggressive
+The Clash - London Calling | punk|rock | energetic
+The Clash - Should I Stay or Should I Go | punk|rock | energetic
+Green Day - American Idiot | punk | aggressive|energetic
+Green Day - Basket Case | punk | energetic|happy
+The Offspring - Self Esteem | punk | melancholic
+Blink-182 - All the Small Things | punk|pop | happy|energetic
+My Chemical Romance - Welcome to the Black Parade | punk|rock | dramatic
+Dead Kennedys - Holiday in Cambodia | punk | dark|aggressive
 Michael Jackson - Billie Jean | pop|rnb
 Michael Jackson - Beat It | pop|rock
 Michael Jackson - Thriller | pop
-Madonna - Like A Prayer | pop
-Madonna - Vogue | pop|house
-ABBA - Dancing Queen | pop
-ABBA - Mamma Mia | pop
-Whitney Houston - I Wanna Dance with Somebody | pop|rnb
-Whitney Houston - I Will Always Love You | pop
-Britney Spears - Toxic | pop
-Britney Spears - Oops I Did It Again | pop
-Lady Gaga - Bad Romance | pop
-Lady Gaga - Poker Face | pop|electronic
-Katy Perry - Firework | pop
-Katy Perry - Roar | pop
-Taylor Swift - Blank Space | pop
-Taylor Swift - Shake It Off | pop
-Adele - Rolling in the Deep | pop|soul
-Adele - Someone Like You | pop
+Madonna - Like A Prayer | pop | energetic
+Madonna - Vogue | pop|house|electronic | party|energetic
+ABBA - Dancing Queen | pop | happy|party
+ABBA - Mamma Mia | pop | happy
+Whitney Houston - I Wanna Dance with Somebody | pop|rnb | happy|party
+Whitney Houston - I Will Always Love You | pop | sad|romantic
+Britney Spears - Toxic | pop | dark|energetic
+Lady Gaga - Bad Romance | pop | dark|energetic
+Lady Gaga - Poker Face | pop|electronic | party|energetic
+Katy Perry - Firework | pop | energetic
+Katy Perry - Roar | pop | energetic
+Taylor Swift - Blank Space | pop | dark|happy
+Taylor Swift - Shake It Off | pop | happy|party
+Adele - Rolling in the Deep | pop|soul | aggressive
+Adele - Someone Like You | pop | sad
 Ed Sheeran - Shape of You | pop
 Ed Sheeran - Perfect | pop
 Justin Timberlake - SexyBack | pop|rnb
@@ -92,240 +88,2564 @@ Billie Eilish - bad guy | pop
 Billie Eilish - when the party is over | pop
 The Weeknd - Blinding Lights | pop|electronic
 The Weeknd - Save Your Tears | pop
-Dua Lipa - Dont Start Now | pop
-Dua Lipa - New Rules | pop|house
+Dua Lipa - New Rules | pop|house|electronic
 Harry Styles - As It Was | pop
 Lorde - Royals | pop
 Sia - Chandelier | pop
-Sam Smith - Stay With Me | pop|soul
+Sam Smith - Stay With Me | pop|soul | sad|romantic
 Pharrell Williams - Happy | pop|funk
 Gotye - Somebody That I Used To Know | pop
-Stevie Wonder - Superstition | soul|funk
-Stevie Wonder - Sir Duke | soul|funk
-Marvin Gaye - Whats Going On | soul
-Marvin Gaye - Lets Get It On | soul|rnb
-Aretha Franklin - Respect | soul|rnb
-Al Green - Lets Stay Together | soul|rnb
-Otis Redding - Sittin On The Dock of the Bay | soul
-Sam Cooke - A Change Is Gonna Come | soul
-James Brown - I Got You I Feel Good | funk|soul
-Bill Withers - Aint No Sunshine | soul|rnb
-Bill Withers - Lovely Day | soul|rnb
-Curtis Mayfield - Move On Up | soul|funk
-The Temptations - My Girl | soul
-The Temptations - Papa Was a Rollin Stone | soul
-Earth Wind and Fire - September | funk|soul|pop
-Earth Wind and Fire - Lets Groove | funk|pop
-Rick James - Super Freak | funk|rnb
+Stevie Wonder - Superstition | soul|funk | energetic
+Stevie Wonder - Sir Duke | soul|funk | happy|energetic
+Aretha Franklin - Respect | soul|rnb | energetic
+Otis Redding - Sittin On The Dock of the Bay | soul | calm|melancholic
+Sam Cooke - A Change Is Gonna Come | soul | melancholic
+James Brown - I Got You I Feel Good | funk|soul | happy|energetic
+Bill Withers - Lovely Day | soul|rnb | happy
+Curtis Mayfield - Move On Up | soul|funk | happy|energetic
+The Temptations - My Girl | soul | romantic|happy
+Earth Wind and Fire - September | funk|soul|pop | happy|party
+Earth Wind and Fire - Lets Groove | funk|pop | party|energetic
+Rick James - Super Freak | funk|rnb | party
 Chaka Khan - I Feel for You | funk|pop
-Prince - Kiss | funk|pop
-Prince - When Doves Cry | pop|rnb
+Prince - Kiss | funk|pop | energetic
+Prince - When Doves Cry | pop|rnb | melancholic
 Janet Jackson - Rhythm Nation | pop|rnb
-TLC - Waterfalls | rnb
-TLC - No Scrubs | rnb
-Boyz II Men - End of the Road | rnb
-Usher - Yeah | rnb|pop
-Alicia Keys - Fallin | rnb|soul
-John Legend - All of Me | rnb|pop
-Frank Ocean - Thinkin Bout You | rnb
-SZA - Kill Bill | rnb
-Amy Winehouse - Back To Black | rnb|soul
-Amy Winehouse - Valerie | rnb|soul|pop
-Erykah Badu - On and On | rnb|soul
+TLC - Waterfalls | rnb | melancholic
+TLC - No Scrubs | rnb | calm
+Boyz II Men - End of the Road | rnb | sad
+John Legend - All of Me | rnb|pop | romantic
+Frank Ocean - Thinkin Bout You | rnb | romantic
+SZA - Kill Bill | rnb | dark
+Amy Winehouse - Back To Black | rnb|soul | dark|melancholic
+Amy Winehouse - Valerie | rnb|soul|pop | happy
+Erykah Badu - On and On | rnb|soul | calm
 D Angelo - Brown Sugar | rnb|soul
-Sugarhill Gang - Rappers Delight | rap
-Grandmaster Flash and the Furious Five - The Message | rap
-Afrika Bambaataa - Planet Rock | rap|electronic
+Grandmaster Flash and the Furious Five - The Message | rap | melancholic
+Afrika Bambaataa - Planet Rock | hip_hop|electronic | party|energetic
 Run DMC - Walk This Way | rap|rock
 Run DMC - Its Tricky | rap
-Beastie Boys - Fight For Your Right | rap|rock
-Beastie Boys - Intergalactic | hip_hop
-LL Cool J - Mama Said Knock You Out | rap
-Public Enemy - Fight The Power | rap|hip_hop
-NWA - Straight Outta Compton | rap|hip_hop
-Ice Cube - It Was A Good Day | hip_hop
-Dr Dre - Nuthin But A G Thang | hip_hop
-Dr Dre - Still D.R.E. | hip_hop
-Snoop Dogg - Gin and Juice | hip_hop
-2Pac - California Love | hip_hop
-2Pac - Dear Mama | hip_hop
-The Notorious B.I.G. - Juicy | hip_hop
-The Notorious B.I.G. - Big Poppa | hip_hop
-Wu-Tang Clan - C.R.E.A.M. | hip_hop
-Nas - N.Y. State of Mind | hip_hop
-Mobb Deep - Shook Ones Pt. II | hip_hop
-Warren G and Nate Dogg - Regulate | hip_hop
-Coolio - Gangstas Paradise | hip_hop|pop
-Fugees - Killing Me Softly | hip_hop|pop
-Lauryn Hill - Doo Wop That Thing | rnb|hip_hop
-OutKast - Ms. Jackson | hip_hop
-OutKast - Hey Ya | pop|funk
-Eminem - Lose Yourself | hip_hop
-Eminem - Without Me | hip_hop
-50 Cent - In Da Club | hip_hop
-Jay-Z - 99 Problems | hip_hop
-Jay-Z - Empire State of Mind | hip_hop|pop
-Kanye West - Gold Digger | hip_hop|pop
-Kanye West - Stronger | hip_hop|electronic
-Lil Wayne - A Milli | hip_hop
+Beastie Boys - Fight For Your Right | rap|rock | party|aggressive
+Beastie Boys - Intergalactic | hip_hop | energetic|aggressive
+LL Cool J - Mama Said Knock You Out | rap | aggressive
+Public Enemy - Fight The Power | rap|hip_hop | aggressive
+Ice Cube - It Was A Good Day | hip_hop | calm|happy
+Snoop Dogg - Gin and Juice | hip_hop | calm
+2Pac - California Love | hip_hop | party|energetic
+2Pac - Dear Mama | hip_hop | melancholic
+The Notorious B.I.G. - Juicy | hip_hop | happy|melancholic
+The Notorious B.I.G. - Big Poppa | hip_hop | calm
+Wu-Tang Clan - C.R.E.A.M. | hip_hop | dark|melancholic
+Nas - N.Y. State of Mind | hip_hop | dark|aggressive
+Mobb Deep - Shook Ones Pt. II | hip_hop | dark|aggressive
+Warren G and Nate Dogg - Regulate | hip_hop | calm|dark
+Coolio - Gangstas Paradise | hip_hop|pop | melancholic|dark
+Fugees - Killing Me Softly | hip_hop|pop | melancholic
+Lauryn Hill - Doo Wop That Thing | rnb|hip_hop | energetic
+OutKast - Ms. Jackson | hip_hop | melancholic
+OutKast - Hey Ya | pop|funk | happy|party
+Eminem - Lose Yourself | hip_hop | aggressive
+Eminem - Without Me | hip_hop | happy|energetic
+50 Cent - In Da Club | hip_hop | party|energetic
+Jay-Z - 99 Problems | hip_hop | aggressive
+Jay-Z - Empire State of Mind | hip_hop|pop | energetic
+Kanye West - Gold Digger | hip_hop|pop | energetic
+Kanye West - Stronger | hip_hop|electronic | energetic
+Lil Wayne - A Milli | hip_hop | aggressive
 T.I. - Whatever You Like | hip_hop
-Kendrick Lamar - HUMBLE | hip_hop
-Kendrick Lamar - Alright | hip_hop
+Kendrick Lamar - Alright | hip_hop | happy
 J. Cole - No Role Modelz | hip_hop
-Nicki Minaj - Super Bass | pop|rap
-Drake - Gods Plan | hip_hop
-Drake - Hotline Bling | hip_hop
-Travis Scott - SICKO MODE | hip_hop
-Cardi B - Bodak Yellow | hip_hop
-Migos - Bad and Boujee | hip_hop
-Post Malone - rockstar | hip_hop|rock
-Childish Gambino - Redbone | rnb|funk
-Daft Punk - One More Time | electronic|house
-Daft Punk - Get Lucky | electronic|funk
-Daft Punk - Around the World | electronic|house
-The Chemical Brothers - Galvanize | electronic
-The Chemical Brothers - Block Rockin Beats | electronic
-The Prodigy - Firestarter | electronic
-The Prodigy - Breathe | electronic
-Fatboy Slim - Right Here Right Now | electronic
-Fatboy Slim - Praise You | electronic
-Moby - Porcelain | electronic|ambient
-Moby - Natural Blues | electronic
-Massive Attack - Teardrop | electronic
-Portishead - Glory Box | electronic
-New Order - Blue Monday | electronic
-Depeche Mode - Enjoy The Silence | electronic
-Depeche Mode - Personal Jesus | electronic|rock
-Eurythmics - Sweet Dreams | electronic|pop
-Soft Cell - Tainted Love | electronic|pop
-Justice - D.A.N.C.E. | electronic
-M83 - Midnight City | electronic
-Aphex Twin - Windowlicker | electronic|experimental
-Boards of Canada - Roygbiv | electronic|ambient
-Bjork - Hyperballad | electronic|pop
-Robyn - Dancing On My Own | pop|electronic
-Faithless - Insomnia | electronic|house
-Avicii - Levels | electronic|house
-Avicii - Wake Me Up | electronic|pop
-Calvin Harris - Feel So Close | electronic|pop
-David Guetta - Titanium | electronic|pop
-Swedish House Mafia - Dont You Worry Child | electronic|house
-Alan Walker - Faded | electronic
-Skrillex - Scary Monsters and Nice Sprites | electronic
-Robin S - Show Me Love | house
-Crystal Waters - Gypsy Woman | house
-Stardust - Music Sounds Better With You | house
-Modjo - Lady | house
-Eric Prydz - Call On Me | house
-Marshall Jefferson - Move Your Body | house
-CeCe Peniston - Finally | house
-Tiesto - Red Lights | house
-Fisher - Losing It | house|techno
-Meduza - Piece Of Your Heart | house|pop
-Kraftwerk - The Model | techno|electronic
-Kraftwerk - Trans Europe Express | techno
-Underworld - Born Slippy | techno
-Orbital - Halcyon | techno|ambient
-Jeff Mills - The Bells | techno
+Nicki Minaj - Super Bass | pop|rap | party|happy
+Drake - Hotline Bling | hip_hop | calm
+Travis Scott - SICKO MODE | hip_hop | aggressive|energetic
+Cardi B - Bodak Yellow | hip_hop | aggressive|energetic
+Migos - Bad and Boujee | hip_hop | party|aggressive
+Post Malone - rockstar | hip_hop|rock | dark
+Childish Gambino - Redbone | rnb|funk | romantic|calm
+Daft Punk - One More Time | electronic|house | happy|party
+Daft Punk - Get Lucky | electronic|funk | happy|party
+Daft Punk - Around the World | electronic|house | energetic
+The Chemical Brothers - Galvanize | electronic | energetic
+The Prodigy - Firestarter | electronic | aggressive
+The Prodigy - Breathe | electronic | aggressive|energetic
+Fatboy Slim - Praise You | electronic | happy|energetic
+Moby - Porcelain | electronic|ambient | calm|melancholic
+Moby - Natural Blues | electronic | melancholic
+Massive Attack - Teardrop | electronic | calm|melancholic
+Portishead - Glory Box | electronic | romantic|dark
+New Order - Blue Monday | electronic | dark|energetic
+Depeche Mode - Enjoy The Silence | electronic | melancholic
+Depeche Mode - Personal Jesus | electronic|rock | dark|aggressive
+Soft Cell - Tainted Love | electronic|pop | melancholic
+Justice - D.A.N.C.E. | electronic | happy|energetic
+M83 - Midnight City | electronic | energetic|dreamy
+Aphex Twin - Windowlicker | electronic|experimental | dark
+Boards of Canada - Roygbiv | electronic|ambient | dreamy|calm
+Bjork - Hyperballad | electronic|pop | melancholic|energetic
+Robyn - Dancing On My Own | pop|electronic | melancholic
+Faithless - Insomnia | electronic|house | energetic|dark
+Avicii - Levels | electronic|house | energetic|party
+Avicii - Wake Me Up | electronic|pop | energetic|happy
+Calvin Harris - Feel So Close | electronic|pop | happy|party
+David Guetta - Titanium | electronic|pop | dramatic|energetic
+Alan Walker - Faded | electronic | melancholic
+Skrillex - Scary Monsters and Nice Sprites | electronic | aggressive
+Robin S - Show Me Love | house|electronic | energetic
+Crystal Waters - Gypsy Woman | house|electronic | happy|party
+Stardust - Music Sounds Better With You | house|electronic | happy|party
+Modjo - Lady | house|electronic | happy|party
+Eric Prydz - Call On Me | house|electronic | energetic|party
+Marshall Jefferson - Move Your Body | house|electronic | energetic|party
+CeCe Peniston - Finally | house|electronic | happy
+Tiesto - Red Lights | house|electronic | energetic
+Fisher - Losing It | house|techno|electronic | energetic|dark
+Meduza - Piece Of Your Heart | house|pop|electronic | melancholic|energetic
+Kraftwerk - The Model | electronic | calm|energetic
+Kraftwerk - Trans Europe Express | electronic | calm|dark
+Underworld - Born Slippy | techno|electronic | energetic
+Orbital - Halcyon | techno|ambient|electronic | dreamy|calm
+Jeff Mills - The Bells | techno|electronic | energetic
 Brian Eno - An Ending Ascent | ambient
-Brian Eno - Music for Airports 1/1 | ambient
-Aphex Twin - Avril 14th | ambient
-Enya - Orinoco Flow | ambient|pop
+Brian Eno - Music for Airports 1/1 | ambient | calm|dreamy
+Aphex Twin - Avril 14th | ambient | calm|melancholic
+Enya - Orinoco Flow | ambient|pop | dreamy|calm
 Tycho - A Walk | electronic|ambient
-Sigur Ros - Hoppipolla | rock|ambient
-Max Richter - On The Nature of Daylight | classical|ambient
-Beethoven - Symphony No. 5 | classical
-Beethoven - Fur Elise | classical
-Beethoven - Moonlight Sonata | classical
-Mozart - Eine kleine Nachtmusik | classical
-Bach - Cello Suite No. 1 | classical
-Bach - Toccata and Fugue in D minor | classical
-Vivaldi - Spring Four Seasons | classical
-Chopin - Nocturne Op. 9 No. 2 | classical
-Debussy - Clair de Lune | classical
-Satie - Gymnopedie No. 1 | classical
-Tchaikovsky - Swan Lake | classical
-Grieg - In the Hall of the Mountain King | classical
-Pachelbel - Canon in D | classical
-Louis Armstrong - What a Wonderful World | jazz
-Duke Ellington - Take the A Train | jazz
-Miles Davis - So What | jazz
-John Coltrane - Giant Steps | jazz
-John Coltrane - My Favorite Things | jazz
-Dave Brubeck - Take Five | jazz
-Ella Fitzgerald - Summertime | jazz
-Ella Fitzgerald - Dream a Little Dream of Me | jazz|pop
-Nina Simone - Feeling Good | jazz|soul
-Nina Simone - My Baby Just Cares for Me | jazz
-Frank Sinatra - Fly Me To The Moon | jazz|pop
-Frank Sinatra - My Way | jazz|pop
-Nat King Cole - Unforgettable | jazz
-Nat King Cole - L-O-V-E | jazz
-Bobby Darin - Mack the Knife | jazz
-Herbie Hancock - Cantaloupe Island | jazz|funk
-Herbie Hancock - Rockit | jazz
-Bill Withers - Use Me | soul|funk
-B.B. King - The Thrill Is Gone | blues
-Muddy Waters - Mannish Boy | blues
-Muddy Waters - Hoochie Coochie Man | blues
-John Lee Hooker - Boom Boom | blues
-Robert Johnson - Cross Road Blues | blues
-Stevie Ray Vaughan - Pride and Joy | blues
-Etta James - At Last | blues|soul
-Gary Moore - Still Got the Blues | blues
-Janis Joplin - Piece of My Heart | blues|rock
-ZZ Top - La Grange | blues|rock
-Johnny Cash - Ring of Fire | country
-Johnny Cash - I Walk the Line | country
-Johnny Cash - Hurt | country|rock
-Dolly Parton - Jolene | country
-Dolly Parton - 9 to 5 | country|pop
-Willie Nelson - On the Road Again | country
-Patsy Cline - Crazy | country
-Kenny Rogers - The Gambler | country
-Shania Twain - Man I Feel Like a Woman | country|pop
-Chris Stapleton - Tennessee Whiskey | country
-John Denver - Take Me Home Country Roads | country|folk
-Bob Marley - No Woman No Cry | reggae
-Bob Marley - One Love | reggae
-Bob Marley - Three Little Birds | reggae
-Bob Marley - Jamming | reggae
-Toots and the Maytals - Pressure Drop | reggae
-Desmond Dekker - Israelites | reggae
-UB40 - Red Red Wine | reggae|pop
-Inner Circle - Bad Boys | reggae
-Sean Paul - Get Busy | reggae|hip_hop
-Damian Marley - Welcome to Jamrock | reggae|hip_hop
-Santana - Oye Como Va | latin|rock
-Santana - Smooth | latin|rock
-Ricky Martin - Livin La Vida Loca | latin|pop
-Shakira - Hips Dont Lie | latin|pop
-Shakira - Whenever Wherever | latin|pop
-Enrique Iglesias - Bailando | latin|pop
-Enrique Iglesias - Hero | latin|pop
-Luis Fonsi - Despacito | latin|pop
-Daddy Yankee - Gasolina | latin|hip_hop
-Bad Bunny - Titi Me Pregunto | latin|hip_hop
-Marc Anthony - Vivir Mi Vida | latin
-Celia Cruz - La Vida Es Un Carnaval | latin
-Buena Vista Social Club - Chan Chan | latin
-Gipsy Kings - Bamboleo | latin
-Gloria Estefan - Conga | latin|pop
-Manu Chao - Me Gustas Tu | latin|reggae
-Simon and Garfunkel - The Sound of Silence | folk|rock
-Simon and Garfunkel - Mrs. Robinson | folk|rock
-Bob Dylan - Blowin in the Wind | folk
-Bob Dylan - Like a Rolling Stone | folk|rock
-Leonard Cohen - Hallelujah | folk
-Joni Mitchell - Big Yellow Taxi | folk
-Cat Stevens - Father and Son | folk
-Mumford and Sons - Little Lion Man | folk|rock
-Of Monsters and Men - Little Talks | folk|rock
-Vance Joy - Riptide | folk|pop
-Passenger - Let Her Go | folk|pop
-The Lumineers - Ho Hey | folk|rock
-Hozier - Take Me To Church | folk|rock
-Fela Kuti - Zombie | world|funk
-Khaled - Aicha | world
-Miriam Makeba - Pata Pata | world
-Toto - Africa | rock
+Sigur Ros - Hoppipolla | rock|ambient | happy|dreamy
+Max Richter - On The Nature of Daylight | classical|ambient | melancholic
+Beethoven - Symphony No. 5 | classical | aggressive
+Beethoven - Fur Elise | classical | calm
+Beethoven - Moonlight Sonata | classical | melancholic
+Mozart - Eine kleine Nachtmusik | classical | happy|energetic
+Bach - Cello Suite No. 1 | classical | calm
+Bach - Toccata and Fugue in D minor | classical | dark|dramatic
+Vivaldi - Spring Four Seasons | classical | happy|energetic
+Chopin - Nocturne Op. 9 No. 2 | classical | romantic
+Debussy - Clair de Lune | classical | calm|dreamy
+Satie - Gymnopedie No. 1 | classical | calm|melancholic
+Tchaikovsky - Swan Lake | classical | dramatic
+Grieg - In the Hall of the Mountain King | classical | aggressive|energetic
+Pachelbel - Canon in D | classical | calm|romantic
+Louis Armstrong - What a Wonderful World | jazz | calm|happy
+Duke Ellington - Take the A Train | jazz | energetic
+Miles Davis - So What | jazz | calm|melancholic
+John Coltrane - Giant Steps | jazz | energetic
+John Coltrane - My Favorite Things | jazz | dreamy
+Dave Brubeck - Take Five | jazz | calm|energetic
+Ella Fitzgerald - Summertime | jazz | calm|melancholic
+Ella Fitzgerald - Dream a Little Dream of Me | jazz|pop | romantic|calm
+Nina Simone - Feeling Good | jazz|soul | energetic
+Nina Simone - My Baby Just Cares for Me | jazz | happy
+Frank Sinatra - Fly Me To The Moon | jazz|pop | romantic|calm
+Frank Sinatra - My Way | jazz|pop | dramatic
+Nat King Cole - Unforgettable | jazz | romantic
+Nat King Cole - L-O-V-E | jazz | romantic|happy
+Bobby Darin - Mack the Knife | pop|jazz | energetic
+Herbie Hancock - Cantaloupe Island | jazz|funk | energetic
+Herbie Hancock - Rockit | jazz | energetic
+Bill Withers - Use Me | soul|funk | energetic|happy
+B.B. King - The Thrill Is Gone | blues | melancholic
+Muddy Waters - Mannish Boy | blues | aggressive
+Muddy Waters - Hoochie Coochie Man | blues | aggressive
+John Lee Hooker - Boom Boom | blues | energetic
+Robert Johnson - Cross Road Blues | blues | melancholic
+Stevie Ray Vaughan - Pride and Joy | blues | happy|energetic
+Etta James - At Last | blues|soul | romantic
+Gary Moore - Still Got the Blues | blues | melancholic
+Janis Joplin - Piece of My Heart | blues|rock | energetic|aggressive
+ZZ Top - La Grange | blues|rock | energetic
+Johnny Cash - Ring of Fire | country | energetic
+Johnny Cash - I Walk the Line | country | calm
+Johnny Cash - Hurt | country|rock | sad|melancholic
+Dolly Parton - Jolene | country | melancholic
+Dolly Parton - 9 to 5 | country|pop | energetic|happy
+Willie Nelson - On the Road Again | country | happy|energetic
+Patsy Cline - Crazy | country | melancholic
+Kenny Rogers - The Gambler | country | calm|melancholic
+Chris Stapleton - Tennessee Whiskey | country | romantic|calm
+John Denver - Take Me Home Country Roads | country|folk | happy
+Bob Marley - No Woman No Cry | reggae | melancholic|calm
+Bob Marley - One Love | reggae | happy|calm
+Bob Marley - Three Little Birds | reggae | happy|calm
+Bob Marley - Jamming | reggae | happy|calm
+Toots and the Maytals - Pressure Drop | reggae | energetic
+Desmond Dekker - Israelites | reggae | energetic
+UB40 - Red Red Wine | reggae|pop | calm|happy
+Inner Circle - Bad Boys | reggae | energetic
+Sean Paul - Get Busy | reggae|hip_hop | party|energetic
+Damian Marley - Welcome to Jamrock | reggae|hip_hop | dark|aggressive
+Santana - Oye Como Va | latin|rock | energetic
+Santana - Smooth | latin|rock | energetic
+Shakira - Whenever Wherever | latin|pop | energetic|happy
+Enrique Iglesias - Bailando | latin|pop | party|happy
+Enrique Iglesias - Hero | latin|pop | romantic|melancholic
+Luis Fonsi - Despacito | latin|pop | party|happy
+Daddy Yankee - Gasolina | latin|hip_hop | party|energetic
+Bad Bunny - Titi Me Pregunto | latin|hip_hop | calm|happy
+Marc Anthony - Vivir Mi Vida | latin | happy|energetic
+Celia Cruz - La Vida Es Un Carnaval | latin | happy|party
+Buena Vista Social Club - Chan Chan | latin | calm|romantic
+Gipsy Kings - Bamboleo | latin | energetic|party
+Gloria Estefan - Conga | latin|pop | party|energetic
+Manu Chao - Me Gustas Tu | latin|reggae | calm|happy
+Simon and Garfunkel - Mrs. Robinson | folk|rock | calm|happy
+Bob Dylan - Like a Rolling Stone | folk|rock | energetic
+Leonard Cohen - Hallelujah | folk | melancholic
+Joni Mitchell - Big Yellow Taxi | folk | happy
+Cat Stevens - Father and Son | folk | calm|melancholic
+Of Monsters and Men - Little Talks | folk|rock | energetic|melancholic
+Vance Joy - Riptide | folk|pop | happy|calm
+Passenger - Let Her Go | folk|pop | melancholic
+The Lumineers - Ho Hey | folk|rock | happy
+Hozier - Take Me To Church | folk|rock | dramatic|dark
+Fela Kuti - Zombie | world|funk | aggressive|energetic
+Khaled - Aicha | world | romantic
+Miriam Makeba - Pata Pata | world | happy|energetic
+Toto - Africa | rock | calm|romantic
+The Doors - Light My Fire | rock | energetic|happy
+The Doors - Riders on the Storm | rock | dark
+The Animals - House of the Rising Sun | rock|folk | dark|melancholic
+Creedence Clearwater Revival - Fortunate Son | rock | aggressive
+Creedence Clearwater Revival - Bad Moon Rising | rock | dark|energetic
+Creedence Clearwater Revival - Proud Mary | rock|soul | energetic|party
+The Who - My Generation | rock | aggressive
+The Animals - We Gotta Get Out of This Place | rock | melancholic|dark
+The Beach Boys - Good Vibrations | rock|pop | happy|dreamy
+The Beach Boys - God Only Knows | rock|pop | romantic|dreamy
+The Ronettes - Be My Baby | pop|rock | romantic|dreamy
+Dire Straits - Sultans of Swing | rock|blues | calm|happy
+Dire Straits - Money for Nothing | rock | energetic
+Aerosmith - Dream On | rock | dramatic|melancholic
+Aerosmith - Walk This Way | rock|funk | party|energetic
+Van Halen - Jump | rock|pop | party|happy
+Def Leppard - Pour Some Sugar On Me | rock|pop | party
+Europe - The Final Countdown | rock | dramatic|energetic
+Survivor - Eye of the Tiger | rock | energetic|aggressive
+Boston - More Than A Feeling | rock | dreamy|happy
+Kansas - Carry On Wayward Son | rock | dramatic|energetic
+Lynyrd Skynyrd - Sweet Home Alabama | rock|country | happy|party
+Free - All Right Now | rock | energetic|party
+Chuck Berry - Johnny B. Goode | rock|blues | party|energetic
+The Police - Every Breath You Take | rock|pop | melancholic|dark
+The Police - Roxanne | rock|pop | melancholic|dramatic
+The Cure - Just Like Heaven | rock|pop | happy|dreamy
+The Cure - Pictures of You | rock | melancholic|dreamy
+Joy Division - Love Will Tear Us Apart | rock|punk | melancholic|dark
+Soundgarden - Black Hole Sun | rock|metal | dark|dreamy
+Alice In Chains - Man in the Box | rock|metal | dark|aggressive
+Deep Purple - Highway Star | rock | energetic|aggressive
+Neil Young - Heart of Gold | folk|rock | calm|melancholic
+Neil Young - Rockin In The Free World | rock | energetic|aggressive
+Alice Cooper - Schools Out | rock|metal | aggressive|party
+Radiohead - Everything In Its Right Place | rock|experimental | dark|dreamy
+Black Sabbath - Iron Man | metal | aggressive|dark
+Ozzy Osbourne - Crazy Train | metal | energetic|aggressive
+Dio - Holy Diver | metal | dramatic|energetic
+Tool - Schism | metal|experimental | dark|aggressive
+Deftones - Change In The House of Flies | metal|experimental | dark|dreamy
+Rammstein - Sonne | metal|electronic | aggressive|energetic
+Korn - Freak On A Leash | metal | aggressive|dark
+Linkin Park - In The End | metal|rock | melancholic|energetic
+Disturbed - Down With The Sickness | metal | aggressive|dark
+Ghost - Rats | metal|rock | dark|energetic
+Iggy Pop - Lust For Life | punk|rock | energetic|party
+The Stooges - I Wanna Be Your Dog | punk|rock | aggressive|dark
+Black Flag - Rise Above | punk | aggressive|energetic
+Buzzcocks - Ever Fallen In Love | punk | melancholic|romantic
+Prince - Purple Rain | pop|rock | dramatic|melancholic
+Michael Jackson - Man in the Mirror | pop|rnb | melancholic|calm
+Michael Jackson - Rock With You | pop|funk | party|romantic
+Beyonce - Crazy In Love | pop|rnb | party|energetic
+Beyonce - Halo | pop|rnb | romantic|calm
+Rihanna - Umbrella | pop|rnb | romantic|calm
+Rihanna - Diamonds | pop|rnb | dreamy|calm
+Ariana Grande - 7 rings | pop|hip_hop | party
+Carly Rae Jepsen - Call Me Maybe | pop | happy|romantic
+Ellie Goulding - Love Me Like You Do | pop|electronic | romantic|dreamy
+Adele - Hello | pop|soul | sad|melancholic
+Mark Ronson - Uptown Funk | pop|funk | party|happy
+Maroon 5 - Moves Like Jagger | pop|rock | party|energetic
+Maroon 5 - Sugar | pop | party|happy
+OneRepublic - Counting Stars | pop|rock | energetic|party
+Sia - Cheap Thrills | pop | party|happy
+Doja Cat - Say So | pop|funk | party|happy
+Ray Charles - Hit The Road Jack | soul|rnb | happy|energetic
+Ray Charles - Georgia On My Mind | soul|blues | calm|melancholic
+Ben E. King - Stand By Me | soul|pop | calm|romantic
+Percy Sledge - When A Man Loves A Woman | soul | romantic|melancholic
+Wilson Pickett - In The Midnight Hour | soul|funk | party|energetic
+Sly and the Family Stone - Everyday People | funk|soul | happy|calm
+Sly and the Family Stone - Dance To The Music | funk|soul | party|energetic
+Cameo - Word Up | funk|rnb | party|energetic
+The OJays - Love Train | soul|funk | happy|party
+Harold Melvin and the Blue Notes - If You Dont Know Me By Now | soul | sad|romantic
+Gladys Knight and the Pips - Midnight Train To Georgia | soul | melancholic|sad
+Gnarls Barkley - Crazy | soul|pop | melancholic|dark
+Aaliyah - Try Again | rnb|pop | party|romantic
+Usher - Burn | rnb | sad|melancholic
+Anderson Paak - Come Down | funk|rnb | party|happy
+Missy Elliott - Work It | hip_hop|electronic | party|energetic
+Salt-N-Pepa - Push It | hip_hop | party|energetic
+OutKast - Roses | hip_hop | melancholic
+Kanye West - Heartless | hip_hop | sad|melancholic
+Kid Cudi - Day N Nite | hip_hop|electronic | melancholic|dreamy
+Eminem - The Real Slim Shady | hip_hop | party|energetic
+Post Malone - Circles | hip_hop|pop | melancholic|calm
+Wiz Khalifa - See You Again | hip_hop|pop | sad|melancholic
+Megan Thee Stallion - Savage | hip_hop|rap | party|energetic
+deadmau5 - Strobe | electronic|ambient | dreamy|calm
+Calvin Harris - Summer | electronic|pop | party|happy
+Zedd - Clarity | electronic|pop | romantic|dramatic
+Martin Garrix - Animals | electronic|house | aggressive|energetic
+Major Lazer - Lean On | electronic|pop | dreamy|melancholic
+The Chainsmokers - Closer | electronic|pop | romantic|melancholic
+ODESZA - A Moment Apart | electronic|ambient | dreamy|calm
+Bonobo - Kerala | electronic|ambient | dreamy|happy
+Jon Hopkins - Immunity | electronic|ambient | dreamy|calm
+Four Tet - Morning Side | electronic | calm|dreamy
+Burial - Archangel | electronic|experimental | melancholic|dark
+Moderat - A New Error | electronic | dark|energetic
+Pet Shop Boys - West End Girls | electronic|pop | dark|party
+Eiffel 65 - Blue | electronic|pop | party|melancholic
+Darude - Sandstorm | techno|electronic | energetic|aggressive
+Paul Kalkbrenner - Sky and Sand | techno|electronic | dreamy|happy
+Laurent Garnier - The Man With The Red Face | techno|electronic | dramatic|energetic
+Eric Prydz - Opus | electronic|house | dreamy|energetic
+Aphex Twin - Rhubarb | electronic|ambient | dreamy|calm
+Beethoven - Symphony No. 9 | classical | dramatic|happy
+Bach - Air On The G String | classical | calm
+Bach - Jesu Joy of Mans Desiring | classical | calm|dreamy
+Handel - Hallelujah Chorus | classical | dramatic|happy
+Mozart - Symphony No. 40 | classical | dramatic|melancholic
+Mozart - Rondo Alla Turca | classical | energetic|happy
+Schubert - Ave Maria | classical | calm|romantic
+Brahms - Hungarian Dance No. 5 | classical | energetic|party
+Dvorak - Symphony No. 9 From The New World | classical | dramatic|dreamy
+Rimsky Korsakov - Flight of the Bumblebee | classical | energetic|aggressive
+Liszt - Liebestraum No. 3 | classical | romantic|dreamy
+Ludovico Einaudi - Nuvole Bianche | classical|ambient | melancholic|dreamy
+Yann Tiersen - Comptine Dun Autre Ete | classical|ambient | melancholic|dreamy
+Vangelis - Chariots of Fire | electronic|ambient | dreamy|dramatic
+Duke Ellington - It Dont Mean A Thing | jazz | party|energetic
+Dizzy Gillespie - A Night In Tunisia | jazz | energetic|party
+Count Basie - April In Paris | jazz | calm|happy
+Bill Evans - Waltz For Debby | jazz | dreamy|calm
+Billie Holiday - God Bless The Child | jazz|soul | melancholic|sad
+Roy Ayers - Everybody Loves The Sunshine | jazz|funk | calm|dreamy
+Weather Report - Birdland | jazz|funk | energetic|party
+George Benson - Breezin | jazz|soul | calm|dreamy
+The Crusaders - Street Life | jazz|funk | energetic|party
+Albert King - Born Under A Bad Sign | blues | dark|melancholic
+Freddie King - Hideaway | blues | energetic|happy
+T-Bone Walker - Stormy Monday | blues | melancholic|calm
+Lead Belly - Where Did You Sleep Last Night | blues|folk | sad|dark
+Bonnie Raitt - I Cant Make You Love Me | blues|pop | sad|romantic
+Garth Brooks - Friends In Low Places | country | party|happy
+Tim McGraw - Live Like You Were Dying | country | dramatic|melancholic
+Zac Brown Band - Chicken Fried | country | happy|party
+Kacey Musgraves - Rainbow | country|pop | calm|dreamy
+Shania Twain - Youre Still The One | country|pop | romantic|calm
+Faith Hill - Breathe | country|pop | romantic|dreamy
+Taylor Swift - Love Story | country|pop | romantic|happy
+Bob Marley - Could You Be Loved | reggae | party|happy
+Bob Marley - Buffalo Soldier | reggae | happy|energetic
+Peter Tosh - Legalize It | reggae | calm|happy
+Jimmy Cliff - The Harder They Come | reggae | energetic|dark
+Shaggy - It Wasnt Me | reggae|hip_hop | party|happy
+Selena - Como La Flor | latin | party|melancholic
+Juanes - La Camisa Negra | latin|rock | melancholic|energetic
+Mana - Rayando El Sol | latin|rock | melancholic
+Los Lobos - La Bamba | latin|rock | party|energetic
+Tito Puente - Ran Kan Kan | latin | party|energetic
+Hector Lavoe - El Cantante | latin | melancholic|dramatic
+Ruben Blades - Pedro Navaja | latin | dark|dramatic
+Los del Rio - Macarena | latin|pop | party|happy
+J Balvin - Mi Gente | latin|hip_hop | party|energetic
+Woody Guthrie - This Land Is Your Land | folk | happy|calm
+Peter Paul and Mary - Puff The Magic Dragon | folk | dreamy|calm
+Joan Baez - Diamonds and Rust | folk | melancholic|dramatic
+Tracy Chapman - Fast Car | folk | melancholic|sad
+Crosby Stills Nash and Young - Teach Your Children | folk|rock | calm|happy
+Gordon Lightfoot - If You Could Read My Mind | folk | melancholic|dreamy
+Nusrat Fateh Ali Khan - Mustt Mustt | world | dreamy|energetic
+Cesaria Evora - Sodade | world | melancholic|sad
+Paul Simon - You Can Call Me Al | pop|world | party|happy
+Miriam Makeba - The Click Song | world | happy|party
+Queen - We Are The Champions | rock | dramatic|happy
+Queen - Somebody To Love | rock|soul | melancholic|romantic
+Queen - Dont Stop Me Now | rock | party|energetic
+Led Zeppelin - Whole Lotta Love | rock | energetic|aggressive
+Led Zeppelin - Black Dog | rock | energetic|party
+Led Zeppelin - Immigrant Song | rock | aggressive|energetic
+Led Zeppelin - Ramble On | rock | dreamy|melancholic
+Deep Purple - Child In Time | rock | dramatic|melancholic
+AC/DC - Highway to Hell | rock | energetic|party
+AC/DC - You Shook Me All Night Long | rock | party|energetic
+AC/DC - Hells Bells | rock | dark|energetic
+Guns N Roses - Welcome to the Jungle | rock | aggressive|energetic
+Nirvana - Heart-Shaped Box | rock | dark|melancholic
+Nirvana - Lithium | rock | melancholic|energetic
+Pearl Jam - Black | rock | melancholic|dramatic
+Pearl Jam - Even Flow | rock | energetic|dark
+Foo Fighters - Learn To Fly | rock | happy|energetic
+Radiohead - Karma Police | rock | dark|melancholic
+Radiohead - No Surprises | rock | dreamy|melancholic
+Radiohead - High and Dry | rock | melancholic|romantic
+Oasis - Champagne Supernova | rock | dreamy|melancholic
+Blur - Beetlebum | rock | dreamy|melancholic
+Arctic Monkeys - I Bet You Look Good On The Dancefloor | rock | party|energetic
+The Killers - Somebody Told Me | rock | party|energetic
+The Killers - All These Things That Ive Done | rock | dramatic|happy
+Kings of Leon - Use Somebody | rock | melancholic|romantic
+Coldplay - Fix You | rock|pop | melancholic|calm
+Coldplay - The Scientist | rock|pop | melancholic|sad
+Coldplay - Clocks | rock|pop | energetic|dreamy
+U2 - Sunday Bloody Sunday | rock | aggressive|energetic
+U2 - One | rock | melancholic|dramatic
+R.E.M. - Everybody Hurts | rock | sad|melancholic
+Red Hot Chili Peppers - Cant Stop | rock|funk | energetic|party
+Red Hot Chili Peppers - Otherside | rock | dark|melancholic
+Fleetwood Mac - Go Your Own Way | rock | energetic|melancholic
+Fleetwood Mac - The Chain | rock | dramatic|melancholic
+Eagles - Take It Easy | rock | calm|happy
+Eagles - Life in the Fast Lane | rock | energetic|party
+Pink Floyd - Wish You Were Here | rock | melancholic|dreamy
+Pink Floyd - Time | rock | dramatic|melancholic
+Pink Floyd - Shine On You Crazy Diamond | rock | dreamy|melancholic
+The Rolling Stones - Gimme Shelter | rock | dark|dramatic
+The Rolling Stones - Sympathy for the Devil | rock | dark|energetic
+The Rolling Stones - Wild Horses | rock | melancholic|romantic
+The Beatles - Let It Be | rock|pop | calm|melancholic
+The Beatles - Yesterday | rock|pop | sad|melancholic
+The Beatles - A Day In The Life | rock|experimental | dreamy|melancholic
+The Beatles - Eleanor Rigby | rock | melancholic|dark
+David Bowie - Life On Mars | rock | dramatic|dreamy
+David Bowie - Ziggy Stardust | rock | energetic|dramatic
+Jimi Hendrix - All Along The Watchtower | rock | dramatic|energetic
+Jimi Hendrix - Little Wing | rock | dreamy|melancholic
+The Doors - Break On Through | rock | energetic|dark
+The Doors - The End | rock | dark|dramatic
+Steppenwolf - Born To Be Wild | rock|metal | energetic|aggressive
+Bad Company - Feel Like Makin Love | rock | romantic|calm
+The Who - Behind Blue Eyes | rock | melancholic|dark
+Dire Straits - Brothers In Arms | rock | melancholic|dreamy
+Dire Straits - Romeo And Juliet | rock | romantic|melancholic
+Bruce Springsteen - Born To Run | rock | energetic|dramatic
+Bruce Springsteen - Dancing In The Dark | rock | energetic|party
+Bruce Springsteen - Thunder Road | rock | romantic|dreamy
+The Cars - Just What I Needed | rock|pop | energetic|happy
+Talking Heads - Psycho Killer | rock|funk | dark|energetic
+Talking Heads - Once In A Lifetime | rock|experimental | dramatic|dark
+Imagine Dragons - Radioactive | rock|electronic | dark|energetic
+Lenny Kravitz - Are You Gonna Go My Way | rock|funk | energetic|aggressive
+Weezer - Island In The Sun | rock | calm|happy
+Pixies - Where Is My Mind | rock | dark|dreamy
+Franz Ferdinand - Take Me Out | rock | party|energetic
+Audioslave - Like A Stone | rock | melancholic|dreamy
+Stone Temple Pilots - Interstate Love Song | rock | melancholic|calm
+Green Day - Boulevard of Broken Dreams | rock|punk | melancholic|dark
+Nine Inch Nails - Closer | rock|electronic | dark|aggressive
+Cream - Sunshine Of Your Love | rock|blues | energetic|dark
+Eric Clapton - Layla | rock|blues | dramatic|melancholic
+Scorpions - Wind Of Change | rock|metal | melancholic|calm
+Metallica - Nothing Else Matters | metal | melancholic|romantic
+Metallica - Sad But True | metal | dark|aggressive
+Metallica - One | metal | dark|dramatic
+Black Sabbath - War Pigs | metal | dark|aggressive
+Black Sabbath - Heaven and Hell | metal | dramatic|dark
+Iron Maiden - Fear of the Dark | metal | dark|energetic
+Judas Priest - Painkiller | metal | aggressive|energetic
+Motorhead - Overkill | metal | aggressive|energetic
+Megadeth - Peace Sells | metal | dark|aggressive
+Slayer - South of Heaven | metal | dark|aggressive
+Pantera - Cowboys From Hell | metal | aggressive|energetic
+Slipknot - Psychosocial | metal | aggressive|dark
+Slipknot - Wait and Bleed | metal | aggressive|dark
+System of a Down - B.Y.O.B. | metal | aggressive|energetic
+Rammstein - Engel | metal|electronic | dark|dreamy
+Tool - Lateralus | metal|experimental | dreamy|dramatic
+Tool - Sober | metal|experimental | dark|melancholic
+Deftones - Digital Bath | metal|experimental | dreamy|dark
+Korn - Got The Life | metal | party|aggressive
+Disturbed - The Sound Of Silence | metal | dark|melancholic
+Ghost - Dance Macabre | metal|rock | party|dark
+Ozzy Osbourne - Mr. Crowley | metal | dark|dramatic
+Dio - Rainbow In The Dark | metal | energetic|party
+Def Leppard - Photograph | rock|metal | energetic|happy
+Bon Jovi - You Give Love A Bad Name | rock|metal | aggressive|energetic
+Ramones - I Wanna Be Sedated | punk | energetic|party
+Ramones - Sheena Is A Punk Rocker | punk | party|happy
+Green Day - When I Come Around | punk|rock | melancholic|calm
+Green Day - Minority | punk | energetic|party
+The Offspring - Pretty Fly | punk | party|happy
+Blink-182 - Whats My Age Again | punk|pop | party|happy
+Blink-182 - Dammit | punk | energetic|melancholic
+The Clash - Rock The Casbah | punk|rock | party|energetic
+The Clash - White Riot | punk | aggressive|energetic
+The Undertones - Teenage Kicks | punk | happy|energetic
+The Jam - Town Called Malice | punk|pop | party|energetic
+Rancid - Time Bomb | punk | party|energetic
+Elton John - Your Song | pop | romantic|calm
+Elton John - Rocket Man | pop|rock | dreamy|melancholic
+Elton John - Tiny Dancer | pop|rock | romantic|calm
+Elton John - Im Still Standing | pop|rock | happy|energetic
+Billy Joel - Piano Man | pop | melancholic|calm
+Billy Joel - Uptown Girl | pop | party|happy
+Phil Collins - In The Air Tonight | pop|rock | dark|dramatic
+Phil Collins - You Cant Hurry Love | pop | happy|party
+Tina Turner - The Best | pop|rock | happy|energetic
+Bonnie Tyler - Total Eclipse Of The Heart | pop|rock | dramatic|melancholic
+Pat Benatar - Love Is A Battlefield | pop|rock | dramatic|melancholic
+Blondie - Heart Of Glass | pop|rock | party|melancholic
+Blondie - Call Me | pop|rock | party|dark
+A-ha - Take On Me | pop|electronic | happy|dreamy
+Wham - Wake Me Up Before You Go Go | pop | party|happy
+George Michael - Careless Whisper | pop|soul | sad|romantic
+Cyndi Lauper - Time After Time | pop | melancholic|romantic
+Bangles - Eternal Flame | pop | romantic|dreamy
+Roxette - It Must Have Been Love | pop | sad|romantic
+Bee Gees - How Deep Is Your Love | pop | romantic|calm
+ABBA - The Winner Takes It All | pop | sad|melancholic
+ABBA - Fernando | pop | melancholic|romantic
+Madonna - Like A Virgin | pop | party|happy
+Madonna - Material Girl | pop | happy|party
+Madonna - Hung Up | pop|electronic | party|energetic
+Michael Jackson - Dont Stop Til You Get Enough | pop|funk | party|happy
+Michael Jackson - The Way You Make Me Feel | pop|rnb | party|romantic
+Michael Jackson - Bad | pop|rock | aggressive|energetic
+Michael Jackson - Black Or White | pop|rock | happy|party
+Prince - Lets Go Crazy | pop|rock | party|energetic
+Whitney Houston - Greatest Love Of All | pop | calm|dramatic
+Whitney Houston - I Have Nothing | pop | dramatic|romantic
+Mariah Carey - Hero | pop|soul | romantic|dramatic
+Celine Dion - My Heart Will Go On | pop | dramatic|romantic
+Britney Spears - Baby One More Time | pop | romantic|melancholic
+Backstreet Boys - I Want It That Way | pop | melancholic|party
+Spice Girls - Wannabe | pop | party|happy
+Christina Aguilera - Beautiful | pop|soul | melancholic|happy
+Kelly Clarkson - Since U Been Gone | pop|rock | energetic|melancholic
+Pink - So What | pop|rock | party|energetic
+Avril Lavigne - Complicated | pop|rock | calm|melancholic
+Avril Lavigne - Sk8er Boi | pop|rock | energetic|happy
+Natalie Imbruglia - Torn | pop|rock | melancholic|calm
+Rod Stewart - Maggie May | rock|folk | melancholic|happy
+Carole King - Its Too Late | pop|soul | melancholic|calm
+Lady Gaga - Just Dance | pop|electronic | party|happy
+Lady Gaga - Million Reasons | pop | sad|romantic
+Taylor Swift - Wildest Dreams | pop | romantic|dreamy
+Taylor Swift - Anti-Hero | pop | melancholic|dark
+Billie Eilish - Ocean Eyes | pop | dreamy|romantic
+Billie Eilish - Happier Than Ever | pop | aggressive|melancholic
+The Weeknd - Starboy | pop|electronic | party|dark
+The Weeknd - The Hills | pop|electronic | dark|melancholic
+Dua Lipa - Levitating | pop|funk | party|happy
+Dua Lipa - Physical | pop|electronic | energetic|party
+Harry Styles - Sign Of The Times | pop | dramatic|melancholic
+Harry Styles - Watermelon Sugar | pop|rock | happy|party
+Ed Sheeran - Thinking Out Loud | pop|soul | romantic|calm
+Ed Sheeran - Photograph | pop | melancholic|dreamy
+Adele - Set Fire To The Rain | pop|soul | dramatic|melancholic
+Sam Smith - Im Not The Only One | pop|soul | sad|melancholic
+Bruno Mars - Thats What I Like | pop|rnb | party|romantic
+Justin Timberlake - Cry Me A River | pop|rnb | melancholic|dark
+Katy Perry - Dark Horse | pop|hip_hop | dark|party
+Aretha Franklin - Chain Of Fools | soul|rnb | dark|melancholic
+Aretha Franklin - Natural Woman | soul|rnb | romantic|calm
+Aretha Franklin - Think | soul|rnb | energetic|party
+Marvin Gaye - I Heard It Through The Grapevine | soul | dark|melancholic
+Marvin Gaye - Sexual Healing | soul|rnb | romantic|calm
+Marvin Gaye - Mercy Mercy Me | soul | melancholic|sad
+Stevie Wonder - You Are The Sunshine Of My Life | pop|soul | romantic|happy
+Stevie Wonder - I Just Called To Say I Love You | pop|soul | romantic|calm
+Stevie Wonder - Signed Sealed Delivered | soul|pop | energetic|happy
+Smokey Robinson - The Tracks Of My Tears | soul | sad|melancholic
+The Temptations - Just My Imagination | soul | dreamy|melancholic
+The Supremes - Stop In The Name Of Love | pop|soul | dramatic|melancholic
+Diana Ross - Aint No Mountain High Enough | soul|pop | dramatic|romantic
+Martha Reeves and the Vandellas - Dancing In The Street | soul|pop | party|energetic
+Four Tops - I Cant Help Myself | soul|pop | happy|party
+Otis Redding - Try A Little Tenderness | soul | dramatic|romantic
+Sam Cooke - Bring It On Home To Me | soul | melancholic|romantic
+James Brown - The Payback | funk|soul | aggressive|energetic
+James Brown - Its A Mans Mans Mans World | soul | melancholic|dark
+Wilson Pickett - Land Of 1000 Dances | soul|rock | party|energetic
+Isaac Hayes - Theme From Shaft | soul|funk | dark|energetic
+Bill Withers - Lean On Me | soul|pop | calm|happy
+Donny Hathaway - A Song For You | soul | sad|romantic
+Roberta Flack - Killing Me Softly | soul|pop | melancholic|calm
+Minnie Riperton - Lovin You | pop|soul | dreamy|romantic
+Al Green - Take Me To The River | soul|funk | party|energetic
+Kool & The Gang - Celebration | funk|pop | party|happy
+Earth Wind and Fire - Shining Star | funk|soul | happy|energetic
+Earth Wind and Fire - Boogie Wonderland | funk|pop | party|happy
+War - Low Rider | funk|soul | calm|happy
+Average White Band - Pick Up The Pieces | funk|jazz | party|energetic
+The Isley Brothers - Its Your Thing | funk|soul | party|energetic
+Jamiroquai - Virtual Insanity | funk|soul | dark|melancholic|energetic
+Boyz II Men - Ill Make Love To You | rnb | romantic|calm
+TLC - Creep | rnb | romantic|calm
+En Vogue - Dont Let Go | rnb|pop | romantic|melancholic
+En Vogue - Free Your Mind | rnb|rock | aggressive|energetic
+Mary J Blige - Family Affair | rnb|hip_hop | party|energetic
+Mary J Blige - No More Drama | rnb|soul | dramatic|melancholic
+Beyonce - Single Ladies | pop|rnb | party|happy
+Beyonce - Drunk In Love | rnb|hip_hop | dark|romantic
+Rihanna - We Found Love | pop|electronic | happy|party
+Rihanna - Love On The Brain | rnb|soul | dramatic|romantic
+Usher - Nice and Slow | rnb | romantic|calm
+John Legend - Ordinary People | rnb|soul | melancholic|romantic
+Frank Ocean - Pink And White | rnb|soul | dreamy|happy
+D Angelo - Untitled How Does It Feel | rnb|soul | romantic|dark
+Miguel - Adorn | rnb|pop | romantic|dreamy
+Janet Jackson - Thats The Way Love Goes | rnb|pop | calm|romantic
+Janet Jackson - Together Again | rnb|pop | happy|dreamy
+Lauryn Hill - Ex-Factor | rnb|soul | sad|melancholic
+Toni Braxton - Un-Break My Heart | rnb|pop | sad|melancholic
+Beastie Boys - No Sleep Till Brooklyn | rap|rock | aggressive|party
+Beastie Boys - Sabotage | rap|rock | aggressive|energetic
+LL Cool J - I Need Love | rap|rnb | romantic|calm
+Public Enemy - Bring The Noise | rap|metal | aggressive|energetic
+Dr Dre - Let Me Ride | hip_hop|funk | dreamy|dark
+Snoop Dogg - Who Am I | hip_hop|funk | party|happy
+2Pac - Changes | rap | melancholic|sad
+The Notorious B.I.G. - Hypnotize | hip_hop|funk | party|energetic
+The Notorious B.I.G. - Skys The Limit | hip_hop|soul | dreamy|happy
+Wu-Tang Clan - Triumph | hip_hop | aggressive|energetic
+Nas - If I Ruled The World | hip_hop|soul | dreamy|happy
+Nas - One Love | hip_hop | calm|melancholic
+Jay-Z - Hard Knock Life | hip_hop | dark|melancholic
+Kanye West - Jesus Walks | hip_hop | dramatic|dark
+Kanye West - Flashing Lights | hip_hop|electronic | dreamy|party
+Eminem - Stan | hip_hop | dark|melancholic
+Eminem - Rap God | hip_hop | energetic|aggressive
+50 Cent - 21 Questions | hip_hop|rnb | romantic|melancholic
+50 Cent - Many Men | hip_hop | dark|melancholic
+OutKast - So Fresh So Clean | hip_hop|funk | party|romantic
+Fugees - Ready Or Not | hip_hop|soul | dark|dramatic
+T.I. - What You Know | hip_hop | aggressive|energetic
+J. Cole - Power Trip | hip_hop|rnb | dreamy|melancholic
+Kendrick Lamar - King Kunta | hip_hop|funk | party|energetic
+Kendrick Lamar - Money Trees | hip_hop | dreamy|melancholic|calm|dark
+Drake - One Dance | rnb|pop | party|happy
+Travis Scott - Goosebumps | hip_hop|electronic | dark|dreamy
+Lil Wayne - Lollipop | hip_hop|pop | party|dark
+Nicki Minaj - Moment 4 Life | hip_hop | happy|dreamy
+Chance The Rapper - No Problem | hip_hop | happy|party
+Gorillaz - Feel Good Inc | rap|electronic | party|dark
+Gorillaz - Clint Eastwood | rap|electronic | dark|dreamy
+A Tribe Called Quest - Can I Kick It | rap|jazz | happy|party
+De La Soul - Me Myself And I | rap|funk | party|happy
+The Roots - You Got Me | hip_hop|soul | romantic|melancholic
+Common - The Light | hip_hop|soul | romantic|happy
+Bone Thugs N Harmony - Tha Crossroads | hip_hop | sad|melancholic
+Daft Punk - Harder Better Faster Stronger | electronic|house | party|energetic
+Daft Punk - Digital Love | electronic|pop | happy|romantic
+Daft Punk - Something About Us | electronic|rnb | romantic|dreamy
+The Chemical Brothers - Hey Boy Hey Girl | electronic | party|energetic
+The Chemical Brothers - Let Forever Be | electronic|rock | dreamy|energetic
+The Prodigy - Poison | electronic | dark|energetic
+Fatboy Slim - The Rockafeller Skank | electronic | party|energetic
+Fatboy Slim - Weapon Of Choice | electronic | party|dreamy
+Moby - Extreme Ways | electronic | dark|melancholic
+Moby - Why Does My Heart Feel So Bad | electronic|ambient | sad|melancholic
+Massive Attack - Unfinished Sympathy | electronic|soul | melancholic|dramatic
+Massive Attack - Angel | electronic | dark|aggressive
+Portishead - Sour Times | electronic|soul | dark|melancholic
+Bjork - Joga | electronic | dramatic|dreamy
+Bjork - Army Of Me | electronic|rock | aggressive|dark
+Bjork - All Is Full Of Love | electronic|ambient | dreamy|romantic
+Aphex Twin - Xtal | electronic|ambient | dreamy|calm
+Boards of Canada - Dayvan Cowboy | electronic|ambient | dreamy|happy
+Kraftwerk - The Robots | electronic | dark|energetic
+Kraftwerk - Autobahn | electronic | dreamy|happy
+Air - Sexy Boy | electronic|pop | dreamy|party
+Zero 7 - Destiny | electronic|soul | dreamy|romantic
+Royksopp - What Else Is There | electronic|pop | dark|dreamy
+LCD Soundsystem - All My Friends | electronic|rock | energetic|melancholic
+Bicep - Glue | electronic|house | dreamy|melancholic
+Flume - Never Be Like You | electronic|pop | romantic|dreamy
+Empire Of The Sun - Walking On A Dream | electronic|pop | dreamy|happy
+Mgmt - Kids | electronic|rock | melancholic|party
+Mgmt - Electric Feel | electronic|funk | party|happy
+Moloko - Sing It Back | house|pop|electronic | party|romantic
+Basement Jaxx - Romeo | house|pop|electronic | party|energetic
+Disclosure - Latch | house|pop|electronic | romantic|party
+Frankie Knuckles - Your Love | house|electronic | romantic|dreamy
+Inner City - Big Fun | house|electronic | party|happy
+Inner City - Good Life | house|pop|electronic | happy|dreamy
+Haddaway - What Is Love | house|electronic | party|romantic
+Snap - Rhythm Is A Dancer | house|electronic | party|happy
+La Bouche - Be My Lover | house|pop|electronic | party|romantic
+Black Box - Ride On Time | house|electronic | party|energetic
+David Guetta - When Love Takes Over | electronic|house | party|happy
+The Chainsmokers - Dont Let Me Down | electronic|pop | energetic|melancholic
+Justice - Genesis | electronic | dramatic|energetic
+Deep Forest - Sweet Lullaby | electronic|world | dreamy|happy
+Underworld - Cowgirl | techno|electronic | energetic|dark
+Orbital - Chime | techno|electronic | dreamy|energetic
+Green Velvet - Flash | techno|electronic | aggressive|party
+Nils Frahm - Says | electronic|ambient | dramatic|dreamy
+Olafur Arnalds - Near Light | classical|ambient | dreamy|romantic
+Marconi Union - Weightless | ambient | calm|dreamy
+Steve Roach - Structures From Silence | ambient | dreamy|calm
+Brian Eno - Deep Blue Day | ambient | dreamy|calm
+Beethoven - Symphony No. 3 Eroica | classical | dramatic|energetic
+Beethoven - Pathetique Sonata | classical | dramatic|melancholic
+Mozart - Symphony No. 41 | classical | dramatic|energetic
+Mozart - Piano Sonata No. 11 | classical | happy|calm
+Mozart - Queen Of The Night Aria | classical | dramatic|aggressive
+Mozart - Requiem Lacrimosa | classical | sad|dramatic
+Bach - Goldberg Variations | classical | calm|dreamy
+Bach - Brandenburg Concerto No. 3 | classical | happy|energetic
+Vivaldi - Winter Four Seasons | classical | dramatic|aggressive
+Vivaldi - Summer Four Seasons | classical | energetic|aggressive
+Chopin - Revolutionary Etude | classical | aggressive|dramatic
+Chopin - Ballade No. 1 | classical | dramatic|melancholic
+Chopin - Raindrop Prelude | classical | melancholic|calm
+Debussy - Arabesque No. 1 | classical | dreamy|happy
+Debussy - Reverie | classical | dreamy|calm
+Liszt - Hungarian Rhapsody No. 2 | classical | dramatic|energetic
+Schubert - Erlkonig | classical | dark|dramatic
+Tchaikovsky - Dance Of The Sugar Plum Fairy | classical | dreamy|happy
+Tchaikovsky - 1812 Overture | classical | dramatic|aggressive
+Tchaikovsky - Piano Concerto No. 1 | classical | dramatic|energetic
+Grieg - Peer Gynt Morning Mood | classical | calm|happy
+Dvorak - Humoresque No. 7 | classical | happy|calm
+Mendelssohn - Spring Song | classical | happy|calm
+Verdi - La Donna E Mobile | classical | happy|dramatic
+Puccini - Nessun Dorma | classical | dramatic|romantic
+Wagner - Ride Of The Valkyries | classical | aggressive|dramatic
+Handel - Water Music | classical | happy|party
+Brahms - Lullaby | classical | calm|dreamy
+Saint-Saens - Danse Macabre | classical | dark|dramatic
+Mussorgsky - Night On Bald Mountain | classical | dark|dramatic
+Holst - Jupiter The Planets | classical | dramatic|happy
+Holst - Mars The Planets | classical | aggressive|dramatic
+Carl Orff - O Fortuna | classical | dramatic|dark
+Albinoni - Adagio In G Minor | classical | sad|melancholic
+Barber - Adagio For Strings | classical | sad|dramatic
+Mahler - Symphony No. 5 Adagietto | classical | melancholic|romantic
+Gershwin - Rhapsody In Blue | classical|jazz | dramatic|dreamy
+Philip Glass - Opening | classical|experimental | dreamy|dramatic
+Steve Reich - Music For 18 Musicians | classical|experimental | dreamy|energetic
+Andrea Bocelli - Con Te Partiro | classical|pop | romantic|dramatic
+Louis Armstrong - La Vie En Rose | jazz|pop | romantic|calm
+Duke Ellington - In A Sentimental Mood | jazz | romantic|dreamy
+Duke Ellington - Caravan | jazz | dark|energetic
+Miles Davis - Blue In Green | jazz | melancholic|dreamy
+John Coltrane - A Love Supreme | jazz | dramatic|dreamy
+Thelonious Monk - Well You Neednt | jazz | happy|energetic
+Dave Brubeck - Blue Rondo A La Turk | jazz | energetic|party
+Ella Fitzgerald - Misty | jazz | romantic|dreamy
+Ella Fitzgerald - Cheek To Cheek | jazz | happy|party
+Nina Simone - I Put A Spell On You | jazz|soul | dark|romantic
+Nina Simone - Sinnerman | jazz|soul | dramatic|energetic
+Frank Sinatra - New York New York | jazz|pop | dramatic|happy
+Nat King Cole - Mona Lisa | jazz | calm|romantic
+Billie Holiday - Blue Moon | jazz | melancholic|romantic
+Herbie Hancock - Watermelon Man | jazz|funk | party|energetic
+Herbie Hancock - Maiden Voyage | jazz | dreamy|calm
+Cab Calloway - Minnie The Moocher | jazz | dark|party
+Benny Goodman - Sing Sing Sing | jazz | party|energetic
+Chet Baker - My Funny Valentine | jazz | romantic|melancholic
+Sarah Vaughan - Lullaby Of Birdland | jazz | dreamy|happy
+Oscar Peterson - Night Train | jazz | energetic|happy
+Charles Mingus - Goodbye Pork Pie Hat | jazz | melancholic|dramatic
+Glenn Miller - In The Mood | jazz | party|happy
+Glenn Miller - Moonlight Serenade | jazz | romantic|dreamy
+Django Reinhardt - Minor Swing | jazz | melancholic|energetic
+B.B. King - Every Day I Have The Blues | blues | melancholic|energetic
+Muddy Waters - I Just Want To Make Love To You | blues | party|energetic
+John Lee Hooker - Boogie Chillen | blues | party|energetic
+Elmore James - Dust My Broom | blues | energetic|melancholic
+Stevie Ray Vaughan - Texas Flood | blues | dark|melancholic
+Robert Johnson - Hellhound On My Trail | blues | dark|melancholic
+Johnny Cash - Folsom Prison Blues | country|blues | dark|melancholic
+Johnny Cash - A Boy Named Sue | country | happy|dramatic
+Kenny Rogers and Dolly Parton - Islands In The Stream | country|pop | romantic|happy
+Dolly Parton - Coat Of Many Colors | country|folk | melancholic|sad
+Waylon Jennings - Luckenbach Texas | country | calm|happy
+Merle Haggard - Mama Tried | country | melancholic|dramatic
+Merle Haggard - Okie From Muskogee | country | happy|party
+George Jones - He Stopped Loving Her Today | country | sad|melancholic
+Tammy Wynette - Stand By Your Man | country | melancholic|romantic
+Alan Jackson - Remember When | country | melancholic|romantic
+Alan Jackson - Chattahoochee | country | party|happy
+Reba McEntire - Fancy | country | dramatic|party
+Randy Travis - Forever And Ever Amen | country | romantic|calm
+Alabama - Mountain Music | country | happy|energetic
+Toby Keith - Red Solo Cup | country | party|happy
+Keith Urban - Somebody Like You | country|pop | party|happy
+Taylor Swift - You Belong With Me | country|pop | happy|romantic
+Brad Paisley - Whiskey Lullaby | country | sad|melancholic
+Townes Van Zandt - Pancho And Lefty | country|folk | melancholic|dramatic
+Carrie Underwood - Before He Cheats | country|rock | aggressive|energetic
+Miranda Lambert - The House That Built Me | country | melancholic|calm
+Bob Marley - Redemption Song | reggae|folk | melancholic|dramatic
+Bob Marley - Exodus | reggae | energetic|party
+Bob Marley - Stir It Up | reggae | romantic|calm
+Bob Marley - Waiting In Vain | reggae | melancholic|romantic
+Third World - 96 Degrees In The Shade | reggae | dark|melancholic
+Burning Spear - Marcus Garvey | reggae | dark|dramatic
+Gregory Isaacs - Night Nurse | reggae | romantic|dark
+Jimmy Cliff - You Can Get It If You Really Want | reggae | happy|energetic
+Ini Kamoze - Here Comes The Hotstepper | reggae|hip_hop | party|energetic
+UB40 - Kingston Town | reggae|pop | romantic|melancholic
+Omi - Cheerleader | reggae|pop | happy|party
+Chaka Demus and Pliers - Murder She Wrote | reggae|hip_hop | party|energetic
+Santana - Samba Pa Ti | latin|rock | romantic|melancholic
+Gipsy Kings - Volare | latin|pop | happy|party
+Selena - Bidi Bidi Bom Bom | latin|pop | happy|party
+Jennifer Lopez - Lets Get Loud | latin|pop | party|energetic
+Rosalia - Con Altura | latin|pop | party|energetic
+Celia Cruz - Quimbara | latin | party|energetic
+Vicente Fernandez - El Rey | latin | dramatic|happy
+Juan Gabriel - Amor Eterno | latin | sad|melancholic
+Natalia Lafourcade - Hasta La Raiz | latin|folk | melancholic|romantic
+Caetano Veloso - Cucurrucucu Paloma | latin | melancholic|romantic
+Antonio Carlos Jobim - The Girl From Ipanema | latin|jazz | calm|romantic
+Elis Regina - Aguas De Marco | latin|jazz | happy|calm
+Shakira - La Tortura | latin|pop | party|melancholic
+Bob Dylan - The Times They Are A Changin | folk | dramatic|melancholic
+Bob Dylan - Knockin On Heavens Door | folk|rock | melancholic|calm
+Simon and Garfunkel - Bridge Over Troubled Water | folk|pop | calm|romantic
+Simon and Garfunkel - Cecilia | folk|pop | party|happy
+Leonard Cohen - Suzanne | folk | dreamy|melancholic
+Joni Mitchell - A Case Of You | folk|jazz | romantic|melancholic
+Cat Stevens - Wild World | folk|pop | melancholic|happy
+Nick Drake - Pink Moon | folk | melancholic|dreamy
+The Band - The Night They Drove Old Dixie Down | folk|rock | melancholic|dramatic
+The Band - The Weight | folk|rock | calm|happy
+Fela Kuti - Water No Get Enemy | world|funk | happy|calm
+Angelique Kidjo - Agolo | world | party|energetic
+Ali Farka Toure - Ai Du | world|blues | calm|melancholic
+Salif Keita - Africa | world | dramatic|melancholic
+Ravi Shankar - Dhun | world|classical | dreamy|calm
+Kishore Kumar - Mere Sapno Ki Rani | world | romantic|happy
+Ladysmith Black Mambazo - Homeless | world | sad|calm
+Mulatu Astatke - Yegelle Tezeta | world|jazz | dreamy|romantic
+Teresa Teng - The Moon Represents My Heart | world|pop | romantic|calm
+Kyu Sakamoto - Sukiyaki | world|pop | melancholic|romantic
+Amr Diab - Habibi | world|pop | romantic|happy
+Psy - Gangnam Style | pop|hip_hop | party|energetic
+Radiohead - Idioteque | rock|experimental | dark|energetic
+Can - Vitamin C | rock|experimental | energetic|dark
+Neu - Hallogallo | electronic|experimental | dreamy|calm
+Travis Scott - Antidote | hip_hop | party|dark
+Future - Mask Off | hip_hop|pop | melancholic|dreamy
+Future - March Madness | hip_hop | dark|melancholic
+21 Savage - A Lot | hip_hop|soul | melancholic|dark
+Young Thug - Hot | hip_hop | energetic|dark
+Playboi Carti - Magnolia | hip_hop | party|energetic
+Lil Uzi Vert - XO Tour Llif3 | hip_hop | sad|dark
+Juice WRLD - Lucid Dreams | rap|pop | dreamy|sad
+Roddy Ricch - The Box | hip_hop | dark|energetic
+Pop Smoke - Dior | rap | dark|energetic
+Lil Yachty - Poland | rap | party|dreamy
+Metro Boomin - Superhero | hip_hop|electronic | dark|energetic
+Lil Baby - The Bigger Picture | hip_hop | dramatic|melancholic
+Baby Keem - Orange Soda | hip_hop | party|dark
+Vince Staples - Norf Norf | rap | aggressive|dark
+JID - Surround Sound | hip_hop|soul | energetic|dreamy
+Denzel Curry - Ultimate | rap | aggressive|energetic
+Joey Badass - Devastated | hip_hop | energetic|melancholic
+ASAP Rocky - Praise The Lord | hip_hop | happy|dreamy
+Latto - Big Energy | pop|rap | party|happy
+Gunna - Fukumean | hip_hop | party|aggressive
+Brockhampton - Sugar | rap|pop | romantic|dreamy
+Desiigner - Panda | rap | party|energetic
+Pusha T - Numbers On The Boards | rap | dark|aggressive
+2 Chainz - Im Different | rap|pop | happy|party
+Skepta - Shutdown | hip_hop | aggressive|energetic
+Little Simz - Introvert | rap|soul | dramatic|energetic
+Madvillain - All Caps | rap|experimental | dark|energetic
+Madvillain - Accordion | rap|experimental | dark|dreamy
+MF DOOM - Rapp Snitch Knishes | rap | happy|dark
+Freddie Gibbs and Madlib - Thuggin | rap|soul | dark|aggressive
+Run The Jewels - Legend Has It | rap|electronic | aggressive|energetic
+Death Grips - Guillotine | experimental|hip_hop | aggressive|energetic
+JPEGMAFIA - BALD | rap|experimental | aggressive|energetic
+Clipping - Work Work | rap|experimental | dark|aggressive
+Danny Brown - When It Rain | rap|experimental | aggressive|dark
+Earl Sweatshirt - Chum | rap | dark|melancholic
+Aesop Rock - Daylight | rap|experimental | melancholic|calm
+Playboi Carti - Wokeuplikethis | hip_hop | party|dreamy
+Playboi Carti - Sky | hip_hop | party|energetic
+Playboi Carti - Shoota | hip_hop | happy|party
+Playboi Carti - Broke Boi | hip_hop | party|aggressive
+Travis Scott - Highest In The Room | hip_hop | dark|melancholic
+Travis Scott - Butterfly Effect | hip_hop | dreamy|melancholic
+Travis Scott - Stargazing | hip_hop|electronic | dreamy|energetic
+Travis Scott - Fein | rap|rock | aggressive|party
+Travis Scott - I KNOW | hip_hop|electronic | dreamy|dark
+The Beatles - Helter Skelter | rock
+Pink Floyd - Money | rock
+Foo Fighters - The Pretender | rock
+Guns N' Roses - Sweet Child O' Mine | rock | energetic
+Guns N' Roses - Paradise City | rock | party|energetic
+The Who - Baba O'Riley | rock | energetic|party
+Tom Petty - Free Fallin' | rock | happy|dreamy
+Bon Jovi - Livin' on a Prayer | rock | energetic|party
+Journey - Don't Stop Believin' | rock | happy|party
+Thin Lizzy - The Boys Are Back in Town | rock
+T. Rex - Bang a Gong (Get It On) | rock
+Pixies - Debaser | rock
+Sonic Youth - Teen Age Riot | rock
+The Stooges - Search and Destroy | rock
+MC5 - Kick Out the Jams | rock
+Roy Orbison - Oh, Pretty Woman | rock|pop | romantic|happy
+Creed - Higher | rock
+Nickelback - How You Remind Me | rock
+Linkin Park - Numb | rock
+Britney Spears - Oops!... I Did It Again | pop | happy
+Dua Lipa - Don't Start Now | pop
+ABBA - Gimme! Gimme! Gimme! | pop
+Justin Bieber - Sorry | pop
+Ariana Grande - thank u, next | pop|rnb | happy|calm
+Dido - White Flag | pop
+Robbie Williams - Angels | pop
+Take That - Back for Good | pop
+Backstreet Boys - Everybody | pop
+Imagine Dragons - Believer | pop
+Tame Impala - The Less I Know the Better | pop
+Foster the People - Pumped Up Kicks | pop
+Aphex Twin - Flim | electronic
+Aphex Twin - Heliosphan | electronic
+Autechre - Bike | electronic
+Autechre - Cichlisuite | electronic
+Squarepusher - Tommib | electronic
+The Prodigy - Omen | electronic
+The Chemical Brothers - Block Rockin' Beats | electronic | energetic
+Fatboy Slim - Right Here, Right Now | electronic | energetic
+Orbital - Halcyon On and On | electronic
+Leftfield - Open Up | electronic
+Justice - Waters of Nazareth | electronic
+Swedish House Mafia - Don't You Worry Child | electronic|house | melancholic|energetic
+Skrillex - Bangarang | electronic
+Burial - Night Bus | electronic
+Tycho - Awake | electronic
+Tycho - Dive | electronic
+Bonobo - Cirrus | electronic
+Four Tet - Two Thousand and Seventeen | electronic
+Four Tet - Baby | electronic
+Jon Hopkins - Emerald Rush | electronic
+Kraftwerk - Computer Love | electronic
+Jean-Michel Jarre - Oxygene, Pt. 4 | electronic
+Tangerine Dream - Love on a Real Train | electronic
+Giorgio Moroder - I Feel Love | electronic
+Vitalic - Poney Part 1 | electronic
+Gesaffelstein - Pursuit | electronic
+Gesaffelstein - Viol | electronic
+Deadmau5 - Ghosts 'n' Stuff | electronic|house | party|dark
+Rone - Bye Bye Macadam | electronic
+Bicep - Aura | electronic
+Jeff Mills - Changes of Life | techno|electronic
+Plastikman - Spastik | techno|electronic
+Ben Klock - Subzero | techno|electronic
+Ben Klock - Freeze | techno|electronic
+Marcel Dettmann - Quicksand | techno|electronic
+Charlotte de Witte - Sgadi Li Mi | techno|electronic
+Charlotte de Witte - Doppler | techno|electronic
+Amelie Lens - Higher | techno|electronic
+Amelie Lens - In My Mind | techno|electronic
+Nina Kraviz - Ghetto Kraviz | techno|electronic
+Nina Kraviz - Skyscrapers | techno|electronic
+Carl Cox - I Want You Forever | techno|electronic
+Adam Beyer - Your Mind | techno|electronic
+FJAAK - Drift | techno|electronic
+FJAAK - Overdrive | techno|electronic
+Rebuke - Along | techno|electronic
+UMEK - Vibes 3 | techno|electronic
+Robert Hood - Minus | techno|electronic
+Underground Resistance - Transition | techno|electronic
+Adam Beyer - Teach Me | techno|electronic
+Mr. Fingers - Can You Feel It | house|electronic
+Cassius - 1999 | house|electronic
+Purple Disco Machine - Hypnotized | house|electronic
+Purple Disco Machine - In My Arms | house|electronic
+Chris Lake - Turn Off the Lights | house|electronic
+Patrick Topping - Forget | house|electronic
+MK - 17 | house|electronic
+Duke Dumont - Ocean Drive | house|electronic
+Disclosure - White Noise | house|electronic
+Route 94 - My Head | house|electronic
+Ten City - That's the Way Love Is | house|electronic
+Kerri Chandler - Rain | house|electronic
+Masters at Work - To Be In Love | house|electronic
+Duck Sauce - Barbra Streisand | house|electronic
+Shakedown - At Night | house|electronic
+Fisher - You Little Beauty | house|electronic
+Beethoven - Symphony No. 9 Ode to Joy | classical
+Beethoven - Symphony No. 7 Second Movement | classical
+Beethoven - Egmont Overture | classical
+Beethoven - Piano Concerto No. 5 Emperor | classical
+Beethoven - Symphony No. 6 Pastoral | classical
+Mozart - Piano Concerto No. 21 | classical
+Mozart - Marriage of Figaro Overture | classical
+Bach - Cello Suite No. 1 Prelude | classical
+Bach - Mass in B Minor Kyrie | classical
+Bach - Orchestral Suite No. 3 Air | classical
+Vivaldi - Four Seasons Spring | classical
+Vivaldi - Four Seasons Winter | classical
+Vivaldi - Four Seasons Summer | classical
+Handel - Messiah Hallelujah Chorus | classical
+Handel - Music for the Royal Fireworks | classical
+Haydn - Symphony No. 94 Surprise | classical
+Schubert - Symphony No. 8 Unfinished | classical
+Brahms - Symphony No. 1 | classical
+Brahms - Academic Festival Overture | classical
+Tchaikovsky - Nutcracker Dance of the Sugar Plum Fairy | classical
+Tchaikovsky - Symphony No. 6 Pathetique | classical
+Tchaikovsky - Waltz of the Flowers | classical
+Dvorak - Symphony No. 9 New World | classical
+Dvorak - Slavonic Dance No. 1 | classical
+Smetana - The Moldau | classical
+Mahler - Symphony No. 2 Resurrection Finale | classical
+Wagner - Tannhauser Overture | classical
+Puccini - O Mio Babbino Caro | classical
+Rossini - William Tell Overture | classical
+Rossini - Barber of Seville Overture | classical
+Rachmaninoff - Piano Concerto No. 2 | classical
+Rachmaninoff - Rhapsody on a Theme of Paganini | classical
+Debussy - La Mer | classical
+Ravel - Bolero | classical
+Stravinsky - The Rite of Spring | classical|experimental | aggressive|dramatic
+Stravinsky - Firebird Suite | classical
+Prokofiev - Dance of the Knights | classical
+Shostakovich - Waltz No. 2 | classical
+Holst - The Planets Mars | classical
+Holst - The Planets Jupiter | classical
+Sibelius - Finlandia | classical
+Elgar - Nimrod from Enigma Variations | classical
+Orff - O Fortuna | classical
+Rimsky-Korsakov - Flight of the Bumblebee | classical
+Paganini - Caprice No. 24 | classical
+Megadeth - Holy Wars | metal
+Avenged Sevenfold - Nightmare | metal
+Opeth - Blackwater Park | metal
+Gojira - Stranded | metal
+Gojira - Flying Whales | metal
+Lamb of God - Redneck | metal
+Trivium - Pull Harder on the Strings of Your Martyr | metal
+In Flames - Only for the Weak | metal
+Amon Amarth - Twilight of the Thunder God | metal
+Behemoth - Ov Fire and the Void | metal
+Machine Head - Davidian | metal
+Sepultura - Roots Bloody Roots | metal
+Death - Symbolic | metal
+Helloween - I Want Out | metal
+DragonForce - Through the Fire and Flames | metal
+Sabaton - The Last Stand | metal
+Nightwish - Nemo | metal
+Arch Enemy - War Eternal | metal
+Deftones - Change (In the House of Flies) | metal
+Tool - The Pot | metal|experimental
+Mastodon - Blood and Thunder | metal
+Meshuggah - Bleed | metal
+Sex Pistols - Anarchy in the U.K. | punk | aggressive|dark
+Misfits - Last Caress | punk
+Bad Religion - 21st Century Digital Boy | punk
+NOFX - Linoleum | punk
+Descendents - Silly Girl | punk
+Rise Against - Prayer of the Refugee | punk
+Minor Threat - Straight Edge | punk
+The Damned - New Rose | punk
+Bad Brains - I Against I | punk
+The Exploited - Punk's Not Dead | punk
+Gogol Bordello - Start Wearing Purple | punk
+PUP - Sleep in the Heat | punk
+IDLES - Never Fight a Man With a Perm | punk
+The Interrupters - She's Kerosene | punk
+John Coltrane - A Love Supreme Part 1 | jazz
+Thelonious Monk - 'Round Midnight | jazz | dark|melancholic
+Thelonious Monk - Blue Monk | jazz
+Herbie Hancock - Chameleon | jazz
+Cannonball Adderley - Mercy Mercy Mercy | jazz
+Sonny Rollins - St. Thomas | jazz | happy|energetic
+Art Blakey - Moanin' | jazz | dark|energetic
+Wayne Shorter - Footprints | jazz
+Lee Morgan - The Sidewinder | jazz
+Kamasi Washington - The Rhythm Changes | jazz
+GoGo Penguin - Hopopono | jazz
+BadBadNotGood - Confessions Part II | jazz
+Snarky Puppy - Lingus | jazz
+Stan Getz - Girl from Ipanema | jazz
+B.B. King - Everyday I Have the Blues | blues
+Howlin' Wolf - Smokestack Lightning | blues | dark|dreamy
+Buddy Guy - Damn Right I've Got the Blues | blues | melancholic|energetic
+Robert Johnson - Sweet Home Chicago | blues
+Freddie King - Hide Away | blues
+T-Bone Walker - Call It Stormy Monday | blues
+Gary Clark Jr. - Bright Lights | blues
+Etta James - I'd Rather Go Blind | soul|blues | sad|melancholic
+Son House - Death Letter | blues
+Skip James - Devil Got My Woman | blues
+Koko Taylor - Wang Dang Doodle | blues
+Little Walter - Juke | blues
+Stevie Ray Vaughan - Cold Shot | blues
+Peter Green - The Green Manalishi | blues
+Marvin Gaye - What's Going On | soul | melancholic
+Marvin Gaye - Let's Get It On | soul|rnb | romantic
+Aretha Franklin - A Natural Woman | soul
+Al Green - Let's Stay Together | soul|rnb
+Otis Redding - (Sittin' On) The Dock of the Bay | soul
+Bill Withers - Ain't No Sunshine | soul|rnb | melancholic
+Gladys Knight - Midnight Train to Georgia | soul
+Isley Brothers - Shout | soul
+Barry White - Can't Get Enough of Your Love Babe | soul
+Stevie Wonder - Isn't She Lovely | soul
+Smokey Robinson - Cruisin' | soul
+Syl Johnson - Different Strokes | soul
+The Delfonics - Didn't I Blow Your Mind | soul
+Curtis Mayfield - Superfly | soul
+James Brown - Try Me | soul
+Usher - Yeah! | rnb|pop | party|energetic
+Usher - Confessions Part II | rnb
+Usher - U Got It Bad | rnb
+Frank Ocean - Pink + White | rnb
+The Weeknd - Wicked Games | rnb
+SZA - Good Days | rnb
+SZA - Snooze | rnb
+Daniel Caesar - Best Part | rnb
+Daniel Caesar - Get You | rnb
+Khalid - Location | rnb
+Miguel - Sure Thing | rnb
+Steve Lacy - Bad Habit | rnb
+Silk Sonic - Leave the Door Open | rnb|funk
+Giveon - Heartbreak Anniversary | rnb
+Chris Brown - No Guidance | rnb
+Ne-Yo - So Sick | rnb
+Mario - Let Me Love You | rnb
+Rihanna - Unfaithful | rnb
+Alicia Keys - If I Ain't Got You | rnb|soul | romantic|melancholic
+Alicia Keys - Fallin' | rnb|soul | melancholic
+Trey Songz - Can't Help But Wait | rnb
+Summer Walker - Girls Need Love | rnb
+H.E.R. - Damage | rnb
+Jorja Smith - Blue Lights | rnb
+Snoh Aalegra - I Want You Around | rnb
+Kehlani - Nights Like This | rnb
+Tyla - Water | rnb
+Bruno Mars - When I Was Your Man | rnb
+Kendrick Lamar - HUMBLE. | hip_hop | aggressive
+Kendrick Lamar - DNA. | hip_hop | aggressive|energetic
+Drake - God's Plan | hip_hop | calm|happy
+Drake - Started From the Bottom | hip_hop
+J. Cole - Middle Child | hip_hop
+Nas - One Mic | hip_hop
+2Pac - Hail Mary | hip_hop
+Dr. Dre - Still D.R.E. | hip_hop | energetic
+A$AP Rocky - Praise the Lord | hip_hop
+Tyler, The Creator - EARFQUAKE | hip_hop|soul | dreamy|romantic
+MF DOOM - Accordion | hip_hop
+Mos Def - Umi Says | hip_hop
+Lauryn Hill - Doo Wop (That Thing) | hip_hop
+Missy Elliott - Get Ur Freak On | hip_hop
+Busta Rhymes - Put Your Hands Where My Eyes Could See | hip_hop
+DMX - Ruff Ryders' Anthem | hip_hop
+Eric B. & Rakim - Paid in Full | hip_hop
+Grandmaster Flash - The Message | hip_hop
+Bone Thugs-N-Harmony - Tha Crossroads | hip_hop
+Three 6 Mafia - Stay Fly | hip_hop
+Stormzy - Shut Up | hip_hop
+Dizzee Rascal - Bonkers | hip_hop
+Sfera Ebbasta - Rapstar | hip_hop
+Capo Plaza - Tesla | hip_hop
+Salmo - Far Out | hip_hop
+Fabri Fibra - In Italy | hip_hop
+Ghali - Cara Italia | hip_hop
+Pnl - Au DD | hip_hop
+Bad Bunny - Yo Perreo Sola | latin
+Don Omar - Danza Kuduro | latin
+Shakira - Hips Don't Lie | latin|pop | party|happy
+J Balvin - Ginza | latin
+Karol G - Tusa | latin
+Rosalia - Despecha | latin
+Maluma - Felices los 4 | latin
+Romeo Santos - Propuesta Indecente | latin
+Prince Royce - Darte un Beso | latin
+Compay Segundo - Chan Chan | latin
+Antonio Carlos Jobim - Garota de Ipanema | latin
+Jorge Ben Jor - Mas Que Nada | latin
+Sergio Mendes - Mas Que Nada | latin
+Seu Jorge - Burguesinha | latin
+Calle 13 - Atravete-te | latin
+Mana - Oye Mi Amor | latin
+Bomba Estereo - Soy Yo | latin
+Natalia Lafourcade - Tu lo sabes | latin
+Los Tigres del Norte - La Puerta Negra | latin
+Carlos Vives - La Bicicleta | latin
+Ozuna - Taki Taki | latin
+Karol G - Provenza | latin
+Rauw Alejandro - Todo de Ti | latin
+Calle 13 - Latinoamerica | latin
+Gilberto Gil - Aquele Abraco | latin
+Caetano Veloso - Cucurucucu Paloma | latin
+Chico Buarque - Construcao | latin
+Elvis Crespo - Suavemente | latin
+Oscar D'Leon - Lloraras | latin
+Willie Colon - Idilio | latin
+Willie Nelson - Always on My Mind | country
+Hank Williams - Your Cheatin' Heart | country|blues | sad|melancholic
+Shania Twain - Man! I Feel Like a Woman | country|pop | happy|energetic
+George Strait - Amarillo by Morning | country
+Chris Stapleton - Broken Halos | country
+Sturgill Simpson - Turtles All the Way Down | country
+Tyler Childers - Feathered Indians | country
+Colter Wall - The Devil Wears a Suit and Tie | country
+Zach Bryan - Something in the Orange | country|folk
+Morgan Wallen - Last Night | country
+Luke Combs - Hurricane | country
+Miranda Lambert - Gunpowder & Lead | country
+Kacey Musgraves - Slow Burn | country
+Kacey Musgraves - Golden Hour | country
+Johnny Paycheck - Take This Job and Shove It | country
+Waylon Jennings - Mammas Don't Let Your Babies Grow Up to Be Cowboys | country
+Hank Williams Jr. - Family Tradition | country
+Billy Strings - Dust in a Baggie | country|folk
+Molly Tuttle - She'll Be Coming Round the Mountain | country|folk
+Bob Dylan - Blowin' in the Wind | folk | melancholic
+Bob Dylan - The Times They Are A-Changin' | folk
+Simon & Garfunkel - The Sound of Silence | folk|rock | melancholic
+Simon & Garfunkel - The Boxer | folk
+Nick Drake - Riverman | folk
+Iron & Wine - Naked as We Came | folk
+Fleet Foxes - White Winter Hymnal | folk
+Bon Iver - Skinny Love | folk
+Bon Iver - Holocene | folk
+Mumford & Sons - Little Lion Man | folk|rock | energetic|aggressive
+Jose Gonzalez - Heartbeats | folk
+Sufjan Stevens - Chicago | folk
+The Tallest Man on Earth - Love Is All | folk
+Gregory Alan Isakov - The Stable Song | folk
+Hozier - Almost (Sweet Music) | folk
+Damien Rice - The Blower's Daughter | folk
+Fela Kuti - Cobra | world|funk
+Tony Allen - Afro disco beat | world|funk
+Antibalas - Sorte | world|funk
+King Sunny Ade - Ja Funmi | world
+Femi Kuti - Beng Beng Beng | world
+Youssou N'Dour - 7 Seconds | world|pop | calm|melancholic
+Salif Keita - Mandjou | world
+Oumou Sangare - Ah Ndiya | world
+Ali Farka Toure - Goye Kur | world
+Bombino - Akhar Zaman | world
+Tinariwen - Tenere Taqqim Tossam | world
+Tinariwen - Imidiwan Ma Tenam | world
+Baaba Maal - Lam Tooro | world
+Konono No. 1 - Lufuala Ndonga | world
+Staff Benda Bilili - Polio | world
+Nusrat Fateh Ali Khan - Ali Da Malang | world
+Ravi Shankar - Raga Bhairav | world
+A.R. Rahman - Jai Ho | world|pop | party|happy
+Umm Kulthum - Enta Omri | world
+Fairuz - Nassam Alayna El Hawa | world
+Souad Massi - Ghir Enta | world
+Cheb Khaled - Aicha | world
+Cheb Khaled - C'est la vie | world
+The Hu - Wolf Totem | world
+The Hu - Yuve Yuve Yu | world
+Shpongle - Star Shpongled Banner | electronic|ambient
+Kodo - O-Daiko | world
+Bomba Estereo - Fuego | latin
+Brian Eno - An Ending (Ascent) | ambient | calm|dreamy
+Brian Eno - Thursday Afternoon | ambient
+Brian Eno - By This River | ambient
+Vangelis - Blade Runner Blues | ambient
+Vangelis - Memories of Green | ambient
+Tangerine Dream - Phaedra | ambient
+Stars of the Lid - Requiem for Dying Mothers | ambient
+Stars of the Lid - Don't Bother They're Here | ambient
+William Basinski - Disintegration Loop 1.1 | ambient
+Aphex Twin - #3 Rhubarb | ambient
+Global Communication - 14:31 | ambient
+Biosphere - Poa Alpina | ambient
+The Orb - Little Fluffy Clouds | ambient
+The Orb - Blue Room | ambient
+KLF - Chill Out | ambient
+Carbon Based Lifeforms - World of Sleepers | ambient
+Solar Fields - Sol | ambient
+Tycho - Coastal Brake | ambient
+Jon Hopkins - Sun Harmonics | ambient
+Nils Frahm - Ambre | ambient
+Olafur Arnalds - Doria | ambient
+Max Richter - Vladimir's Blues | classical|ambient | melancholic|calm
+Sigur Ros - Svefn-g-englar | ambient
+Hammock - Silencer | ambient
+Aphex Twin - Mt. Saint Michel Mix+St. Michaels Mount | experimental
+Aphex Twin - Vordhosbn | experimental
+Autechre - Incunabula Radio | experimental
+Autechre - LCC | experimental
+Squarepusher - I Wish You Could Talk | experimental
+Squarepusher - Do You Know Squarepusher | experimental
+Venetian Snares - Hajnal | experimental
+Venetian Snares - Szamar Madar | experimental
+Autechre - Fold4, Wrap5 | experimental
+Boards of Canada - Music Has the Right to Children | experimental
+Talk Talk - I Believe in You | experimental
+Slint - Good Morning, Captain | rock|experimental
+Neutral Milk Hotel - In the Aeroplane Over the Sea | rock|experimental
+Animal Collective - My Girls | experimental
+Animal Collective - Leaf House | experimental
+Sufjan Stevens - The Black Hawk War | folk
+Death Grips - No Love | experimental|hip_hop
+These New Puritans - We Want War | experimental
+Scott Walker - The Seventh Seal | experimental
+Swans - The Glowing Man | experimental
+Swans - No Words No Tears | experimental
+Xiu Xiu - I Luv the Valley OH! | experimental
+Avalon Emerson - Sandrail Silhouette | experimental
+James Brown - Papa's Got a Brand New Bag | funk
+James Brown - Get Up (I Feel Like Being a) Sex Machine | funk
+James Brown - Cold Sweat | funk
+Parliament - Give Up the Funk | funk
+Parliament - Flash Light | funk | party
+Funkadelic - Maggot Brain | funk
+Funkadelic - One Nation Under a Groove | funk | party|energetic
+Sly and the Family Stone - Thank You | funk
+Stevie Wonder - Higher Ground | funk
+Prince - 1999 | funk
+Prince - Little Red Corvette | funk
+Kool and the Gang - Jungle Boogie | funk | party|energetic
+Kool and the Gang - Get Down On It | funk
+The Isley Brothers - Fight the Power | funk
+Ohio Players - Love Rollercoaster | funk
+The Commodores - Brick House | funk
+Lakeside - Fantastic Voyage | funk
+Zapp - More Bounce to the Ounce | funk | calm|energetic
+Jamiroquai - Canned Heat | funk | party|energetic
+Vulfpeck - Back Pocket | funk
+The Kinks - You Really Got Me | rock
+Canned Heat - On the Road Again | rock
+Bad Company - Can't Get Enough | rock
+Lynyrd Skynyrd - Free Bird | rock
+Creedence - Proud Mary | rock
+Foreigner - Cold as Ice | rock
+Rainbow - Since You Been Gone | rock|metal
+Whitesnake - Here I Go Again | rock|metal
+Twisted Sister - We're Not Gonna Take It | rock
+Guns N' Roses - November Rain | rock | melancholic
+Smashing Pumpkins - Bullet with Butterfly Wings | rock
+Rage Against the Machine - Killing in the Name | rock
+Red Hot Chili Peppers - By the Way | rock
+Queens of the Stone Age - No One Knows | rock
+The Black Keys - Lonely Boy | rock
+Muse - Knights of Cydonia | rock
+Muse - Hysteria | rock
+Interpol - Evil | rock
+Oasis - Don't Look Back in Anger | rock
+Pulp - Common People | rock
+Radiohead - Paranoid | rock
+Supergrass - Alright | rock
+George Michael - Faith | pop
+Michael Jackson - Smooth Criminal | pop
+Christina Aguilera - Genie in a Bottle | pop
+Kanye - Gold Digger | hip_hop
+P!nk - Get the Party Started | pop
+Lorde - Green Light | pop
+Justin Bieber - Love Yourself | pop
+Katy Perry - Teenage Dream | pop
+Rihanna - Only Girl | pop
+Olivia Rodrigo - drivers license | pop
+Tones and I - Dance Monkey | pop
+Miley Cyrus - Flowers | pop
+Keane - Somewhere Only We Know | pop|rock
+Snow Patrol - Chasing Cars | pop|rock
+The Script - The Man Who Can't Be Moved | pop|rock
+Maroon 5 - This Love | pop
+OneRepublic - Apologize | pop
+Jason Mraz - I'm Yours | pop
+Train - Hey, Soul Sister | pop|rock
+Spin Doctors - Two Princes | rock|pop
+Deep Blue Something - Breakfast at Tiffany's | rock|pop
+Semisonic - Closing Time | rock|pop
+Third Eye Blind - Semi-Charmed Life | rock|pop
+Smash Mouth - All Star | rock|pop
+Aqua - Barbie Girl | pop
+NSYNC - Bye Bye Bye | pop
+Spice Girls - Say You'll Be There | pop
+Autechre - VLetrmx | electronic
+Autechre - Cichli | electronic
+Boards of Canada - Turquoise Hexagon Sun | electronic
+Squarepusher - My Sound | electronic
+Plaid - Eyen | electronic
+Clark - Ted | electronic
+Fatima Yamaha - What's a Girl to Do | electronic
+Oneohtrix Point Never - Replica | electronic
+Oneohtrix Point Never - Americans | electronic
+Arca - Piel | electronic
+Arca - Kick I | electronic
+Holly Herndon - Chorus | electronic
+Holly Herndon - Frontier | electronic
+Nicolas Jaar - Space Is Only Noise If You Can See | electronic
+Rhye - Open | electronic
+Burial - Kindred | electronic
+The Bug - Poison Dart | electronic
+Death Grips - The Fever (Aye Aye) | experimental|hip_hop
+Drexciya - Wavejumper | electronic
+Dave Clarke - Red 2 | electronic
+Joey Beltram - Energy Flash | electronic
+Robert Armani - Ambulance | electronic
+Joey Beltram - Mentasm | electronic
+Sun Electric - Kitchen | electronic
+Orbital - Impact | electronic
+The Orb - A Huge Ever Growing Pulsating Brain | electronic
+Amon Tobin - Four Ton Mantis | electronic
+Bicep - Saku | electronic
+Overmono - So U Kno | electronic
+Overmono - Gunk | electronic
+Fred again.. - Delilah (pull me out of this) | electronic
+Fred again.. - Rumble | electronic
+Skream - Midnight Request Line | electronic
+Benga & Coki - Night | electronic
+Burial - Forgive | electronic
+Kode9 - 9 Samurai | electronic
+Mala - Changes | electronic
+Digital Mystikz - Anti War Dub | electronic
+Kendrick Lamar - Backseat Freestyle | hip_hop
+Kendrick - Poetic Justice | hip_hop
+Kanye West - Can't Tell Me Nothing | hip_hop
+Nas - Represent | hip_hop
+Big L - Put It On | hip_hop
+Big L - M.V.P. | hip_hop
+GZA - Liquid Swords | hip_hop
+Ol' Dirty Bastard - Shimmy Shimmy Ya | hip_hop
+Raekwon - Ice Cream | hip_hop
+Method Man - Bring the Pain | hip_hop
+Eminem - The Way I Am | hip_hop
+The Game - Hate It or Love It | hip_hop
+Ice Cube - Check Yo Self | hip_hop
+Dr. Dre - Nuthin' but a 'G' Thang | hip_hop
+Nate Dogg - Regulate | hip_hop
+Warren G - Regulate | hip_hop
+Mobb Deep - Shook Ones | hip_hop
+Mobb Deep - Survival of the Fittest | hip_hop
+OutKast - Rosa Parks | hip_hop
+Goodie Mob - Soul Food | hip_hop
+UGK - Int'l Players Anthem | hip_hop
+Scarface - On My Block | hip_hop
+Ludacris - Southern Hospitality | hip_hop
+Young Jeezy - Put On | hip_hop
+Gucci Mane - Lemonade | hip_hop
+Future - Wait for U | hip_hop
+Lil Baby - Drip Too Hard | hip_hop
+Kendrick - money trees | hip_hop
+J. Cole - 1985 | hip_hop
+Childish Gambino - This Is America | hip_hop
+Tyler, The Creator - See You Again | hip_hop
+Brockhampton - BOOGIE | hip_hop
+Run The Jewels - Close Your Eyes | hip_hop
+Killer Mike - Reagan | hip_hop
+Denzel Curry - Clout Cobain | hip_hop
+JPEGMAFIA - Baby I'm Bleeding | hip_hop
+Kano - Garage Skank | hip_hop
+Wiley - Wearing My Rolex | hip_hop
+D-Block Europe - Darling Armani | hip_hop
+Headie One - Ain't It Different | hip_hop
+Dave - Thiago Silva | hip_hop
+AJ Tracey - Ladbroke Grove | hip_hop
+Gazo - Drill FR 4 | hip_hop
+PNL - Le monde ou rien | hip_hop
+Niska - Réseaux | hip_hop
+Nekfeu - Ma dope | hip_hop
+SCH - Mode Akimbo | hip_hop
+Capo Plaza - Capo Argento | hip_hop
+Sfera Ebbasta - Rockstar | hip_hop
+Gué - Freestyle Koching | hip_hop
+Salmo - 1969 | hip_hop
+Nitro - Outlaw | hip_hop
+Dvorak - Cello Concerto | classical
+Dvorak - American Quartet | classical
+Sibelius - Violin Concerto | classical
+Sibelius - Symphony No. 2 Finale | classical
+Tchaikovsky - Violin Concerto | classical
+Tchaikovsky - Swan Lake Scene | classical
+Tchaikovsky - 1812 Overture Finale | classical
+Rachmaninoff - Piano Concerto No. 3 | classical
+Rachmaninoff - Vocalise | classical
+Prokofiev - Peter and the Wolf | classical
+Prokofiev - Symphony No. 5 | classical
+Shostakovich - Symphony No. 5 | classical
+Shostakovich - Cello Concerto No. 1 | classical
+Britten - Four Sea Interludes | classical
+Elgar - Cello Concerto | classical
+Vaughan Williams - The Lark Ascending | classical
+Vaughan Williams - Fantasia on a Theme of Thomas Tallis | classical
+Grieg - Peer Gynt Suite | classical
+Borodin - Polovtsian Dances | classical
+Rimsky-Korsakov - Scheherazade | classical
+Ippolitov-Ivanov - Caucasian Sketches | classical
+Khachaturian - Gayane Sabre Dance | classical
+Haydn - Trumpet Concerto | classical
+Mozart - Clarinet Concerto | classical
+Mozart - Symphony No. 41 Jupiter | classical
+Beethoven - Symphony No. 9 Choral Finale | classical
+Beethoven - Violin Concerto | classical
+Brahms - Symphony No. 4 | classical
+Brahms - Violin Concerto | classical
+Brahms - Piano Concerto No. 2 | classical
+Bruckner - Symphony No. 7 Adagio | classical
+Wagner - Siegfried Idyll | classical
+Wagner - Tristan und Isolde Prelude | classical
+Massenet - Meditation from Thais | classical
+Faure - Pavane | classical
+Faure - Requiem Pie Jesu | classical
+Saint-Saens - Symphony No. 3 Organ | classical
+Saint-Saens - The Swan | classical
+Debussy - Prelude to the Afternoon of a Faun | classical
+Ravel - Daphnis et Chloe | classical
+Ravel - Pavane pour une infante defunte | classical
+Chopin - Heroic Polonaise | classical
+Schumann - Piano Concerto | classical
+Schumann - Carnaval | classical
+Bach - Goldberg Variations Aria | classical
+Bach - Mass in B Minor | classical
+Handel - Zadok the Priest | classical
+Vivaldi - Gloria | classical
+Monteverdi - L'Orfeo Toccata | classical
+Palestrina - Missa Papae Marcelli Kyrie | classical
+Buxtehude - Toccata in F | classical
+Duke Ellington - Satin Doll | jazz
+Count Basie - One O'Clock Jump | jazz | party|energetic
+Thelonious Monk - Straight No Chaser | jazz
+John Coltrane - Naima | jazz
+John Coltrane - Moment's Notice | jazz
+Miles Davis - Milestones | jazz
+Chet Baker - But Not for Me | jazz
+Bill Evans - Peace Piece | jazz
+Bill Evans - Time Remembered | jazz
+Oscar Peterson - C Jam Blues | jazz
+Ahmad Jamal - Poinciana | jazz
+Keith Jarrett - Koln Concert Part I | jazz
+Dave Brubeck - Strange Meadow Lark | jazz
+Charles Mingus - Moanin | jazz
+Charles Mingus - Better Git It in Your Soul | jazz
+Art Blakey - A Night in Tunisia | jazz
+Horace Silver - Song for My Father | jazz
+Freddie Hubbard - Red Clay | jazz
+Joe Henderson - Inner Urge | jazz
+Wayne Shorter - Infant Eyes | jazz
+McCoy Tyner - Passion Dance | jazz
+John Coltrane - India | jazz
+Jimmy Smith - Back at the Chicken Shack | jazz
+Wes Montgomery - Four on Six | jazz
+Grant Green - Idle Moments | jazz
+Kenny Burrell - Midnight Blue | jazz
+Pat Metheny - Bright Size Life | jazz
+Bill Frisell - Shenandoah | jazz
+Avishai Cohen - Nu Nu | jazz
+Esperanza Spalding - I Know You Know | jazz
+Robert Glasper - So Beautiful | jazz
+Cecil Taylor - Luyah! The Glorious | jazz|experimental
+Sun Ra - Space Is the Place | jazz|experimental
+Pharoah Sanders - The Creator Has a Master Plan | jazz|experimental
+Albert Ayler - Ghosts | jazz|experimental
+Eric Dolphy - Out to Lunch | jazz|experimental
+Muddy Waters - I Can't Be Satisfied | blues
+Muddy Waters - Got My Mojo Working | blues
+Howlin' Wolf - Spoonful | blues | dark|energetic
+B.B. King - Three O'Clock Blues | blues
+Albert Collins - If You Love Me Like You Say | blues
+Buddy Guy - First Time I Met the Blues | blues
+Freddie King - Big Legged Woman | blues
+Junior Wells - Messin' with the Kid | blues
+Buddy Guy & Junior Wells - Hoodoo Man | blues
+Sister Rosetta Tharpe - Strange Things Happening Every Day | blues
+Big Bill Broonzy - Key to the Highway | blues
+Sonny Boy Williamson - Help Me | blues
+Bukka White - Parchman Farm | blues
+Lightnin' Hopkins - Moanin' Blues | blues
+Mississippi John Hurt - Candy Man | blues
+Reverend Gary Davis - Death Don't Have No Mercy | blues
+Stevie Ray Vaughan - Couldn't Stand the Weather | blues
+Kenny Wayne Shepherd - Blue on Black | blues
+Jonny Lang - Lie to Me | blues
+Gary Clark Jr. - Our Love | blues
+Christone Kingfish Ingram - It's Gonna Be Alright | blues
+Gary Moore - Midnight Blues | blues
+Peter Green - Man of the World | blues
+Eric Clapton - Crossroads | blues
+Cream - Crossroads | blues
+Ten Years After - I'm Going Home | blues
+Savoy Brown - Train to Nowhere | blues
+Foghat - Slow Ride | rock|blues
+ZZ Top - Blue Jean Blues | blues
+Iron Maiden - Hallowed Be Thy Name | metal
+Black Sabbath - Children of the Grave | metal
+Megadeth - Tornado of Souls | metal
+Slayer - Angel of Death | metal
+Metallica - Fade to Black | metal
+Metallica - Creeping Death | metal
+Pantera - Cemetery Gates | metal
+Sepultura - Arise | metal
+Kreator - Pleasure to Kill | metal
+Exodus - Bonded by Blood | metal
+Testament - Over the Wall | metal
+Death - The Philosopher | metal
+Cannibal Corpse - Hammer Smashed Face | metal
+Morbid Angel - Dawn of the Angry | metal
+Carcass - Heartwork | metal
+At the Gates - Blinded by Fear | metal
+In Flames - Cloud Connected | metal
+Dark Tranquillity - Punish My Heaven | metal
+Amon Amarth - First Kill | metal
+Opeth - Bleak | metal
+Opeth - Ghost of Perdition | metal
+Gojira - The Art of Dying | metal
+Mastodon - Colony of Birchmen | metal
+Meshuggah - New Millennium Cyanide Christ | metal
+Meshuggah - Demiurge | metal
+Tool - Right in Two | metal|experimental
+Porcupine Tree - Blackest Eyes | rock|experimental
+Rammstein - Ich Will | metal
+Oomph! - Augen auf | metal
+Marilyn Manson - The Beautiful People | metal|rock
+Korn - Blind | metal
+Machine Head - Imperium | metal
+Lamb of God - Laid to Rest | metal
+Trivium - In Waves | metal
+Avenged Sevenfold - A Little Piece of Heaven | metal
+Parkway Drive - Carrion | metal
+Architects - Animals | metal
+Bring Me The Horizon - Can You Feel My Heart | metal
+Sabaton - Attack of the Dead Men | metal
+Powerwolf - Demons Are a Girl's Best Friend | metal
+Blind Guardian - Mirror Mirror | metal
+Hammerfall - Hearts on Fire | metal
+Rhapsody - Emerald Sword | metal
+Wintersun - Beyond the Dark Sun | metal
+Insomnium - While We Sleep | metal
+Be'lakor - Fraught | metal
+Sex Pistols - Holidays in the Sun | punk
+The Clash - London's Burning | punk
+Ramones - Judy Is a Punk | punk
+Dead Kennedys - Too Drunk to Fuck | punk
+Circle Jerks - Group Sex | punk
+Black Flag - Six Pack | punk
+Minor Threat - Out of Step | punk
+Bad Brains - Banned in D.C. | punk
+Agnostic Front - Victim in Pain | punk
+Sick of It All - Built to Last | punk
+Gorilla Biscuits - Start Today | punk
+Youth of Today - Break Down the Walls | punk
+7 Seconds - Walk Together Rock Together | punk
+Operation Ivy - Sound System | punk
+Rancid - Salvation | punk
+NOFX - The Decline | punk
+Bad Religion - Suffer | punk
+Strung Out - Analog | punk
+Propagandhi - Less Talk More Rock | punk
+Anti-Flag - Die for Your Government | punk
+The Bouncing Souls - True Believers | punk
+Pennywise - Bro Hymn | punk
+Lagwagon - May 16 | punk
+Goldfinger - Here In Your Bedroom | punk
+Reel Big Fish - Sell Out | punk
+Rancid - Ruby Soho | punk
+Dropkick Murphys - I'm Shipping Up to Boston | punk|folk
+Flogging Molly - Drunken Lullabies | punk|folk
+7 Seconds - Regress No Way | punk
+Descendents - I'm the One | punk
+The Vandals - My Girlfriend Is Dead | punk
+Otis Redding - Respect | soul
+Al Green - Tired of Being Alone | soul
+Curtis Mayfield - Pusherman | soul
+Isaac Hayes - Walk on By | soul
+Betty Wright - Clean Up Woman | soul
+Lyn Collins - Think (About It) | soul
+James Brown - Papa Don't Take No Mess | soul
+The Temptations - Papa Was a Rollin' Stone | soul | dark
+The Supremes - You Can't Hurry Love | soul
+Martha Reeves - Dancing in the Street | soul
+Stevie Wonder - Living for the City | soul
+Donny Hathaway - Someday We'll All Be Free | soul
+Nina Simone - I Wish I Knew How It Would Feel to Be Free | soul
+Mavis Staples - I'll Take You There | soul
+The Staple Singers - Let's Do It Again | soul
+Ann Peebles - I Can't Stand the Rain | soul
+Millie Jackson - My Man | soul
+Dorothy Moore - Misty Blue | soul
+Jean Knight - Mr. Big Stuff | soul
+The Delfonics - La La Means I Love You | soul
+The Stylistics - You Are Everything | soul
+Harold Melvin - If You Don't Know Me by Now | soul
+Teddy Pendergrass - Turn Off the Lights | soul
+Barry White - I'm Gonna Love You Just a Little More Baby | soul
+Isaac Hayes - By the Time I Get to Phoenix | soul
+Al Green - Here I Am | soul
+Usher - U Remind Me | rnb
+Trey Songz - Bottoms Up | rnb
+Chris Brown - Loyal | rnb
+Jeremih - Birthday Sex | rnb
+The-Dream - Falsetto | rnb
+The Weeknd - The Zone | rnb
+Frank Ocean - Novacane | rnb
+Frank Ocean - Pink Matter | rnb
+Khalid - Talk | rnb
+SZA - The Weekend | rnb
+SZA - Broken Clocks | rnb
+Summer Walker - Playing Games | rnb
+H.E.R. - Slide | rnb
+Kehlani - CRZY | rnb
+Ella Mai - Boo'd Up | rnb
+Daniel Caesar - Japanese Denim | rnb
+Giveon - For Tonight | rnb
+GIVĒON - Like I Want You | rnb
+Mahalia - Simmer | rnb
+Jorja Smith - On My Mind | rnb
+Craig David - Fill Me In | rnb
+Craig David - 7 Days | rnb
+Usher - There Goes My Baby | rnb
+Ne-Yo - Miss Independent | rnb
+Trey Songz - Neighbors Know My Name | rnb
+Jeremih - Don't Tell 'Em | rnb
+Partynextdoor - Come and See Me | rnb
+Bryson Tiller - Don't | rnb
+Tory Lanez - Luv | rnb
+6LACK - PRBLMS | rnb
+Smino - Anita | rnb
+Mereba - Sandstorm | rnb
+Ravyn Lenae - Sticky | rnb
+Kali Uchis - Telepatia | rnb
+Kali Uchis - After the Storm | rnb
+Compay Segundo - Guantanamera | latin
+Ibrahim Ferrer - Bruca Manigua | latin
+Hector Lavoe - Periodico de Ayer | latin
+El Gran Combo - Un Verano en Nueva York | latin
+Willie Colon - La Murga | latin
+Grupo Niche - Cali Pachanguero | latin
+Joe Arroyo - La Rebelion | latin
+Juan Luis Guerra - Ojala Que Llueva Cafe | latin
+Juan Luis Guerra - Burbujas de Amor | latin
+Romeo Santos - Himalaya | latin
+Monchy y Alexandra - Hoja en Blanco | latin
+Aventura - Obsesion | latin
+Shakira - Ciega Sordomuda | latin
+Shakira - Suerte | latin
+J Balvin - Ay Vamos | latin
+Maluma - Borro Cassette | latin
+Ozuna - Se Preparo | latin
+Anuel AA - China | latin
+Karol G & Nicki Minaj - Tusa | latin
+Becky G - Mayores | latin
+Natti Natasha - Criminal | latin
+Ozuna - El Farsante | latin
+Bad Bunny - Chambea | latin
+Bad Bunny - Callaita | latin
+Sech - Otro Trago | latin
+Myke Towers - Playa del Inglés | latin
+Rauw Alejandro - Fantasias | latin
+Camilo - Tutu | latin
+Sebastian Yatra - Robarte un Beso | latin
+Morat - Como Te Atreves | latin
+Reik - Me Niego | latin
+Ritchie Valens - La Bamba | rock|latin
+Celia Cruz - La Negra Tiene Tumbao | latin
+Ruben Blades - Plastico | latin
+Jimmie Rodgers - Blue Yodel No. 1 | country
+Hank Williams - Cold Cold Heart | country
+Hank Williams - I'm So Lonesome I Could Cry | country
+Patsy Cline - Walkin' After Midnight | country
+Loretta Lynn - Coal Miner's Daughter | country|folk | calm|melancholic
+Loretta Lynn - You Ain't Woman Enough | country
+Willie Nelson - Blue Eyes Crying in the Rain | country
+Willie Nelson - City of New Orleans | country
+Waylon Jennings - I'm a Ramblin' Man | country
+Merle Haggard - Sing Me Back Home | country
+George Strait - Write This Down | country
+Alan Jackson - Chasin' That Neon Rainbow | country
+Garth Brooks - The Dance | country
+Trisha Yearwood - She's in Love with the Boy | country
+Faith Hill - This Kiss | country
+Alison Krauss - When You Say Nothing at All | country|folk
+Chris Stapleton - Fire Away | country
+Sturgill Simpson - Keep It Between the Lines | country
+Margo Price - Hurtin' (On the Bottle) | country
+Ashley McBryde - One Night Standards | country
+Mickey Guyton - Black Like Me | country
+Kane Brown - Heaven | country
+Luke Combs - Beautiful Crazy | country
+Bob Marley - Lively Up Yourself | reggae
+Bob Marley - Sun Is Shining | reggae
+Peter Tosh - Stepping Razor | reggae
+Bunny Wailer - Dreamland | reggae
+Toots and the Maytals - Funky Kingston | reggae
+Jimmy Cliff - Many Rivers to Cross | reggae
+Desmond Dekker - 007 (Shanty Town) | reggae
+Gregory Isaacs - Rumours | reggae
+Dennis Brown - Things in Life | reggae
+Freddie McGregor - Big Ship | reggae
+Beres Hammond - I Feel Good | reggae
+Burning Spear - Slavery Days | reggae
+Burning Spear - Jah No Dead | reggae
+The Congos - Fisherman | reggae
+The Abyssinians - Declaration of Rights | reggae
+Israel Vibration - The Same Song | reggae
+Steel Pulse - Your House | reggae
+Black Uhuru - Sponji Reggae | reggae
+Third World - Now That We Found Love | reggae
+Sly and Robbie - Boops (Here to Go) | reggae
+Augustus Pablo - East of the River Nile | reggae
+King Tubby - King Tubby Meets Rockers | reggae
+Lee Perry - Soul Fire | reggae
+Scientist - The Mummy's Shroud | reggae
+Keith Hudson - Civilization | reggae
+The Upsetters - Return of Django | reggae
+Junior Murvin - Police and Thieves | reggae
+Max Romeo - Chase the Devil | reggae
+Linval Thompson - Don't Trouble Trouble | reggae
+Half Pint - Greetings | reggae
+Frankie Paul - Ain't No Stopping | reggae
+Buju Banton - Untold Stories | reggae
+Bounty Killer - Down in the Ghetto | reggae
+Capleton - That Day Will Come | reggae
+Sizzla - Just One of Those Days | reggae
+Anthony B - Raid Di Barn | reggae
+Gentleman - Dem Gone | reggae
+Alborosie - Herbalist | reggae
+Larry Heard - Missing You | house|electronic
+Frankie Knuckles - Baby Wants to Ride | house|electronic
+Ten City - Devotion | house|electronic
+Adonis - No Way Back | house|electronic
+Phuture - Acid Tracks | house|electronic
+DJ Pierre - Acid Trax | house|electronic
+Joe Smooth - Promised Land | house|electronic
+Rhythim Is Rhythim - It Is Well | house|electronic
+Rhythim Is Rhythim - Strings of Life | house|electronic
+Fingers Inc. - Can You Feel It | house|electronic
+Robert Owens - I'll Be Your Friend | house|electronic
+Alison Limerick - Where Love Lives | house|electronic
+Armand Van Helden - You Don't Know Me | house|electronic
+Spiller - Groovejet | house|electronic
+Cassius - Toop Toop | house|electronic
+Bob Sinclar - Love Generation | house|electronic
+Kerri Chandler - Bar A Thym | house|electronic
+Dennis Ferrer - Hey Hey | house|electronic
+Osunlade - Envision | house|electronic
+Kenny Dope - The Bomb | house|electronic
+Jeff Mills - Alarms | techno|electronic
+Carl Craig - At Les | techno|electronic
+Carl Craig - Sandstorms | techno|electronic
+Plastikman - Helikolon | techno|electronic
+Richie Hawtin - Minus Orange | techno|electronic
+Speedy J - Pullover | techno|electronic
+Speedy J - Ginger | techno|electronic
+Oscar Mulero - Black Propaganda | techno|electronic
+Surgeon - Atol | techno|electronic
+Regis - Blood Witness | techno|electronic
+Ancient Methods - The Jericho Records | techno|electronic
+Objekt - Ganzfeld | techno|electronic
+Lena Willikens - Ihm Und Seine Schwestern | techno|electronic
+DVS1 - Black Russian | techno|electronic
+Rrose - Waterfall | techno|electronic
+Donato Dozzy - K2 | techno|electronic
+Neel - Phobos | techno|electronic
+Lucy - Fluctuation | techno|electronic
+Rødhåd - Kinder der Ringwelt | techno|electronic
+Dax J - Offending Public | techno|electronic
+Aphex Twin - Girl-Boy Song | electronic
+Kraftwerk - The Man-Machine | electronic
+Kraftwerk - Trans-Europe Express | electronic
+Kraftwerk - Computerwelt | electronic
+Kraftwerk - Taschenrechner | electronic
+Boards of Canada - In a Beautiful Place Out in the Country | electronic
+Squarepusher - Dark Steering | electronic
+Autechre - Incunabula | electronic
+LFO - LFO | electronic
+808 State - Pacific State | electronic
+Frankie Goes To Hollywood - Two Tribes | electronic
+Donna Summer - I Feel Love | electronic
+Giorgio Moroder - From Here to Eternity | electronic
+Yellow Magic Orchestra - Computer Game | electronic
+Yellow Magic Orchestra - Behind the Mask | electronic
+Model 500 - No UFOs | electronic
+Cybotron - Clear | electronic
+Drexciya - Wave Jumper | electronic
+Moderat - Bad Kingdom | electronic
+Apparat - Song of Los | electronic
+ODESZA - Line Of Sight | electronic
+Flume - Holdin On | electronic
+Kavinsky - Nightcall | electronic
+Moby - In This World | electronic
+Charlotte de Witte - Age of Love (Charlotte de Witte Remix) | techno|electronic
+Laurent Garnier - Crispy Bacon | techno|electronic
+Paul Kalkbrenner - Aaron | techno|electronic
+Booka Shade - Body Language | techno|electronic
+Moderat - Song of Los | electronic
+Tale of Us - Mononoke | techno|electronic
+Stephan Bodzin - Singularity | techno|electronic
+Stephan Bodzin - Powers of Ten | techno|electronic
+Boris Brejcha - Gravity | techno|electronic
+Aphex Twin - On | experimental
+Flying Lotus - Do the Astral Plane | electronic|experimental
+Death Grips - Takyon (Death Yon) | experimental|hip_hop
+Scott Walker - Tilt | experimental
+Fela Kuti - Sorrow Tears and Blood | world|funk
+Fela Kuti - Coffin for Head of State | world|funk
+Antibalas - Beaten Metal | world|funk
+Tony Allen - Asiko | world|funk
+Beethoven - Symphony No. 5 Fate | classical
+Tchaikovsky - Nutcracker Waltz of the Flowers | classical
+Holst - Mars from The Planets | classical
+Handel - Messiah Hallelujah | classical
+Haydn - Surprise Symphony | classical
+Elgar - Nimrod | classical
+Massenet - Meditation | classical
+Smetana - Vltava | classical
+Erik Satie - Gymnopedie | classical
+Einaudi - Nuvole Bianche | classical
+Arvo Part - Spiegel im Spiegel | classical
+Philip Glass - Glassworks Opening | classical
+Led Zeppelin - Rock and Roll | rock
+Deep Purple - Perfect Strangers | rock
+The Rolling Stones - Start Me Up | rock
+The Rolling Stones - Angie | rock
+The Who - Won't Get Fooled Again | rock | aggressive|energetic
+The Kinks - Lola | rock
+The Byrds - Turn! Turn! Turn! | rock
+The Beatles - A Hard Day's Night | rock
+The Beatles - Revolution | rock
+The Beatles - Day Tripper | rock
+Pink Floyd - Hey You | rock
+Genesis - Dance on a Volcano | rock
+Yes - Owner of a Lonely Heart | rock
+Emerson Lake and Palmer - Lucky Man | rock
+King Crimson - 21st Century Schizoid Man | rock
+Jethro Tull - Aqualung | rock
+Rush - Tom Sawyer | rock
+Rush - 2112 Overture | rock
+Blue Oyster Cult - Don't Fear the Reaper | rock|metal | dark|dreamy
+Steely Dan - Reelin' in the Years | rock|jazz
+Doobie Brothers - Listen to the Music | rock
+Grand Funk Railroad - We're an American Band | rock
+Nazareth - Love Hurts | rock
+UFO - Doctor Doctor | rock
+Budgie - Breadfan | rock
+Bachman-Turner Overdrive - Takin' Care of Business | rock
+Ted Nugent - Cat Scratch Fever | rock
+Brownsville Station - Smokin' in the Boys Room | rock
+Sweet - Ballroom Blitz | rock
+Slade - Cum on Feel the Noize | rock
+Gary Glitter - Rock and Roll Part 2 | rock
+David Bowie - Suffragette City | rock
+David Bowie - Let's Dance | rock|pop | party|happy
+Mott the Hoople - All the Young Dudes | rock
+Lou Reed - Walk on the Wild Side | rock
+New York Dolls - Personality Crisis | rock|punk
+Television - Marquee Moon | rock|punk
+Patti Smith - Because the Night | rock|punk
+The Pretenders - Brass in Pocket | rock
+Cheap Trick - I Want You to Want Me | rock
+U2 - Where the Streets Have No Name | rock
+INXS - Need You Tonight | rock
+Midnight Oil - Beds Are Burning | rock
+Kiss - Rock and Roll All Nite | rock
+Van Halen - Ain't Talkin' 'Bout Love | rock
+Aerosmith - Sweet Emotion | rock
+Ted Nugent - Stranglehold | rock
+Boston - Foreplay/Long Time | rock
+REO Speedwagon - Roll with the Changes | rock
+Styx - Renegade | rock
+Chicago - 25 or 6 to 4 | rock|pop
+Santana - Black Magic Woman | rock
+Ten Years After - I'd Love to Change the World | rock
+Foghat - Fool for the City | rock|blues
+Free - Wishing Well | rock
+Badfinger - No Matter What | rock
+The Guess Who - American Woman | rock
+Steppenwolf - Magic Carpet Ride | rock
+Iron Butterfly - In-A-Gadda-Da-Vida | rock
+John Fogerty - Centerfield | rock
+Bob Seger - Night Moves | rock
+Bob Seger - Old Time Rock and Roll | rock
+Bryan Adams - Summer of '69 | rock | happy|energetic
+Bryan Adams - Heaven | rock
+Joan Jett - I Love Rock 'n' Roll | rock|punk
+The Go-Go's - Our Lips Are Sealed | rock
+Tears for Fears - Everybody Wants to Rule the World | rock
+Simple Minds - Don't You (Forget About Me) | rock
+The Cult - She Sells Sanctuary | rock
+Cyndi Lauper - Girls Just Want to Have Fun | pop | party|happy
+Huey Lewis - The Power of Love | rock
+Foreigner - I Want to Know What Love Is | rock
+Asia - Heat of the Moment | rock
+Twisted Sister - I Wanna Rock | rock
+Cinderella - Don't Know What You Got | rock|metal
+Ratt - Round and Round | rock|metal
+Winger - Seventeen | rock|metal
+Skid Row - 18 and Life | rock|metal
+White Lion - When the Children Cry | rock|metal
+Extreme - More Than Words | rock
+Tesla - Love Song | rock
+Tesla - Signs | rock
+Danger Danger - Bang Bang | rock|metal
+Warrant - Cherry Pie | rock|metal
+Stryper - Honestly | rock|metal
+Dokken - Dream Warriors | rock|metal
+Iron Maiden - The Trooper | metal
+Iron Maiden - Aces High | metal
+Judas Priest - Living After Midnight | metal
+Judas Priest - You've Got Another Thing Comin' | metal | energetic|party
+Rush - Subdivisions | rock
+Pink Floyd - Learning to Fly | rock
+Rush - The Spirit of Radio | rock
+Genesis - Invisible Touch | rock
+Phil Collins - Sussudio | rock
+Peter Gabriel - Sledgehammer | rock
+Devo - Whip It | rock
+B-52's - Love Shack | rock
+The Cure - Friday I'm in Love | rock
+The Smiths - This Charming Man | rock
+The Cranberries - Linger | rock
+Ride - Vapour Trail | rock
+Stone Roses - I Wanna Be Adored | rock
+Happy Mondays - Step On | rock
+Charlatans - The Only One I Know | rock
+James - Sit Down | rock
+Oasis - Live Forever | rock
+Blur - Girls and Boys | rock
+Supergrass - Caught by the Fuzz | rock
+Stereophonics - Dakota | rock
+Manic Street Preachers - A Design for Life | rock
+Ash - Girl from Mars | rock
+Feeder - Buck Rogers | rock
+Stereophonics - Have a Nice Day | rock
+Embrace - Gravity | rock
+Kasabian - Club Foot | rock
+Kaiser Chiefs - I Predict a Riot | rock
+Arctic Monkeys - When the Sun Goes Down | rock
+The Fratellis - Chelsea Dagger | rock
+The Libertines - Don't Look Back into the Sun | rock
+Franz Ferdinand - Do You Want To | rock
+Bloc Party - Banquet | rock
+The Futureheads - Hounds of Love | rock
+Maximo Park - Apply Some Pressure | rock
+Weezer - Buddy Holly | rock
+Green Day - Good Riddance (Time of Your Life) | rock
+The Offspring - Come Out and Play | punk
+Sum 41 - Fat Lip | punk|rock
+New Found Glory - My Friends Over You | punk|rock
+Foo Fighters - Best of You | rock
+Audioslave - Show Me How to Live | rock
+Chris Cornell - You Know My Name | rock
+Soundgarden - Spoonman | rock
+Alice in Chains - Rooster | rock
+Melvins - Honey Bucket | rock
+Tool - Forty Six and 2 | metal|experimental
+A Perfect Circle - Judith | rock
+Rage Against the Machine - Bulls on Parade | rock
+System of a Down - Aerials | metal
+Incubus - Drive | rock
+Incubus - Pardon Me | rock
+311 - Down | rock
+Sublime - Santeria | rock
+Sublime - What I Got | rock
+Limp Bizkit - Nookie | rock|metal
+Papa Roach - Last Resort | rock|metal
+Linkin Park - Breaking the Habit | rock
+Hoobastank - The Reason | rock
+Nickelback - Photograph | rock
+Creed - My Sacrifice | rock
+Three Days Grace - I Hate Everything About You | rock
+Breaking Benjamin - The Diary of Jane | rock
+Seether - Fake It | rock
+Shinedown - Sound of Madness | rock
+Godsmack - I Stand Alone | rock|metal
+Evanescence - Bring Me To Life | rock|metal
+Alter Bridge - Blackbird | rock
+Greta Van Fleet - Highway Tune | rock
+The Struts - Could Have Been Me | rock
+Royal Blood - Figure It Out | rock
+Nothing But Thieves - Trip Switch | rock
+Matt Corby - Brother | rock
+Vampire Weekend - A-Punk | rock
+Arctic Monkeys - 505 | rock
+Foals - My Number | rock
+Two Door Cinema Club - What You Know | rock
+Interpol - Slow Hands | rock
+The National - Bloodbuzz Ohio | rock
+The War on Drugs - Red Eyes | rock
+Fleet Foxes - Ragged Wood | folk
+Tame Impala - Elephant | rock
+Alt-J - Breezeblocks | rock
+Glass Animals - Heat Waves | rock
+Catfish and the Bottlemen - Cocoon | rock
+Fontaines D.C. - Boys in the Better Land | punk|rock
+Wet Leg - Chaise Longue | rock
+Sam Fender - Hypersonic Missiles | rock
+Elvis Presley - Suspicious Minds | pop
+Elvis Presley - Jailhouse Rock | pop
+Elvis Presley - Can't Help Falling in Love | pop
+The Everly Brothers - All I Have to Do Is Dream | pop
+Dean Martin - Everybody Loves Somebody | pop|jazz
+Perry Como - Catch a Falling Star | pop|jazz
+Connie Francis - Who's Sorry Now | pop
+Brenda Lee - I'm Sorry | pop
+Lesley Gore - It's My Party | pop
+The Shirelles - Will You Love Me Tomorrow | pop
+The Crystals - Then He Kissed Me | pop
+Dusty Springfield - Son of a Preacher Man | pop
+Petula Clark - Downtown | pop
+The Turtles - Happy Together | pop
+The Monkees - I'm a Believer | pop
+The Archies - Sugar, Sugar | pop
+The Jackson 5 - I Want You Back | pop
+The Jackson 5 - ABC | pop
+The Carpenters - (They Long to Be) Close to You | pop
+The Carpenters - We've Only Just Begun | pop
+The Supremes - Baby Love | pop
+Marvin Gaye - How Sweet It Is | soul
+Bee Gees - Stayin' Alive | pop|funk | party|energetic
+Donna Summer - Hot Stuff | pop
+Chic - Le Freak | funk|pop | party
+Sister Sledge - We Are Family | funk|pop
+Olivia Newton-John - Physical | pop
+Irene Cara - Flashdance... What a Feeling | pop
+Wham! - Wake Me Up Before You Go-Go | pop
+Wham! - Careless Whisper | pop
+Lionel Richie - Hello | pop
+Madonna - Papa Don't Preach | pop
+Whitney Houston - How Will I Know | pop
+George Michael - Freedom! '90 | pop
+Paula Abdul - Cold Hearted | pop
+Janet Jackson - Miss You Much | pop
+New Kids On The Block - Hangin' Tough | pop
+Mariah Carey - Vision of Love | pop
+Mariah Carey - Fantasy | pop
+Celine Dion - The Power of Love | pop
+Robbie Williams - Feel | pop
+Ricky Martin - Livin' la Vida Loca | latin|pop | party|energetic
+Destiny's Child - Say My Name | pop|rnb | melancholic|dark
+Destiny's Child - Survivor | pop
+Jennifer Lopez - Love Don't Cost a Thing | pop
+Nelly Furtado - I'm Like a Bird | pop
+Shakira - Underneath Your Clothes | pop
+Gwen Stefani - Hollaback Girl | pop
+Mariah Carey - We Belong Together | pop
+Rihanna - SOS | pop
+Beyonce - Irreplaceable | pop
+Leona Lewis - Bleeding Love | pop
+Katy Perry - I Kissed a Girl | pop
+Ke$ha - Tik Tok | pop
+One Direction - What Makes You Beautiful | pop
+One Direction - Story of My Life | pop
+Taylor Swift - 22 | pop
+Ariana Grande - No Tears Left to Cry | pop
+Pharrell - Happy | pop
+Meghan Trainor - All About That Bass | pop
+Adele - When We Were Young | pop
+Camila Cabello - Havana | pop
+Dua Lipa - IDGAF | pop
+Shawn Mendes - Stitches | pop
+Charlie Puth - Attention | pop
+Bebe Rexha - Meant to Be | pop
+Billie Eilish - when the party's over | pop
+Taylor Swift - Cruel Summer | pop
+Doja Cat - Kiss Me More | pop
+Olivia Rodrigo - good 4 u | pop
+Lil Nas X - Old Town Road | hip_hop|pop
+Harry Styles - Golden | pop
+Miley Cyrus - Midnight Sky | pop
+Pink - Just Give Me a Reason | pop
+Rihanna - Stay | pop
+Sia - Elastic Heart | pop
+Tina Turner - What's Love Got to Do with It | pop|rock | melancholic|calm
+Lionel Richie - All Night Long | pop
+Duran Duran - Hungry Like the Wolf | pop
+Culture Club - Karma Chameleon | pop
+Hall and Oates - I Can't Go for That | pop|soul
+Depeche Mode - Just Can't Get Enough | electronic
+Depeche Mode - Strangelove | electronic
+New Order - Temptation | electronic
+New Order - True Faith | electronic
+Erasure - A Little Respect | electronic
+Eurythmics - Sweet Dreams (Are Made of This) | electronic|pop | dark|energetic
+Yazoo - Don't Go | electronic
+OMD - Enola Gay | electronic
+Gary Numan - Cars | electronic
+Human League - Don't You Want Me | electronic
+Visage - Fade to Grey | electronic
+Ultravox - Vienna | electronic
+Japan - Ghosts | electronic
+Talk Talk - It's My Life | pop|electronic
+The Human League - Mirror Man | electronic
+Bronski Beat - Smalltown Boy | electronic
+Frankie Goes to Hollywood - Relax | electronic
+A Flock of Seagulls - I Ran | electronic
+Kraftwerk - Tour de France | electronic
+Kraftwerk - Neon Lights | electronic
+Kraftwerk - Pocket Calculator | electronic
+Tangerine Dream - Stratosfear | electronic
+Jean-Michel Jarre - Equinoxe Part 4 | electronic
+Mike Oldfield - Tubular Bells | rock|ambient
+Enigma - Sadeness | electronic
+Enya - Only Time | ambient|pop
+Portishead - Roads | electronic
+Tricky - Hell Is Around the Corner | electronic
+Morcheeba - The Sea | electronic
+Thievery Corporation - Lebanese Blonde | electronic
+Groove Armada - Superstylin' | house|funk|electronic | party|energetic
+The Crystal Method - Busy Child | electronic
+Leftfield - Phat Planet | electronic
+Orbital - Belfast | electronic
+Aphex Twin - Come to Daddy | electronic
+Aphex Twin - 4 | electronic
+Roni Size - Brown Paper Bag | electronic
+Goldie - Inner City Life | electronic
+LTJ Bukem - Atlantis | electronic
+Aphrodite - Rinse | electronic
+Roni Size / Reprazent - Heroes | electronic
+Pendulum - Propane Nightmares | electronic
+Skrillex - First of the Year (Equinox) | electronic
+Noisia - Could This Be Real | electronic
+Bassnectar - Bass Head | electronic
+Sub Focus - Rock It | electronic
+Example - Changed the Way You Kiss Me | electronic
+Nero - Promises | electronic
+Madeon - Pop Culture | electronic
+Odesza - It's Only | electronic
+Porter Robinson - Language | electronic
+Porter Robinson - Shelter | electronic
+Zedd - Stay the Night | electronic
+Kygo - Firestone | electronic
+Kygo - Stole the Show | electronic
+Robin Schulz - Prayer in C | electronic
+Felix Jaehn - Ain't Nobody | electronic
+Marshmello - Alone | electronic
+Illenium - Good Things Fall Apart | electronic
+San Holo - Light | electronic
+Seven Lions - Worlds Apart | electronic
+Deadmau5 - Some Chords | electronic
+Madeon - The City | electronic
+Duke Dumont - The Giver | electronic
+Mura Masa - Love$ick | electronic
+Bicep - Just | electronic
+Ross From Friends - Talk to Me You'll Understand | electronic
+Jamie xx - Gosh | electronic
+Jamie xx - In Colour | electronic
+Caribou - Odessa | electronic
+Todd Terje - Inspector Norse | electronic
+Lindstrom - I Feel Space | electronic
+Maceo Plex - Mutant Magic | electronic
+Recondite - Levo | electronic
+Rone - Bora | electronic
+Stephan Bodzin - Contemplation | electronic
+Extrawelt - Soopertrack | electronic
+Dominik Eulberg - Rotbaeckchen | electronic
+Vitalic - La Rock 01 | electronic
+Tiga - Sunglasses at Night | electronic
+Soulwax - E Talking | electronic
+Digitalism - Circles | electronic
+Digitalism - Pogo | electronic
+Kendrick Lamar - Swimming Pools | hip_hop
+Kendrick Lamar - N95 | hip_hop
+Kendrick Lamar - Family Ties | hip_hop
+Drake - Wants and Needs | hip_hop
+Drake - Way 2 Sexy | hip_hop
+Travis Scott - 90210 | hip_hop
+J. Cole - Kevin's Heart | hip_hop
+J. Cole - Neighbors | hip_hop
+Kanye West - Runaway | hip_hop
+Jay-Z - Public Service Announcement | hip_hop
+Nas - It Ain't Hard to Tell | hip_hop
+Nas - The World Is Yours | hip_hop
+The Notorious B.I.G. - One More Chance | hip_hop
+Eminem - 'Till I Collapse | hip_hop | energetic|aggressive
+Dr. Dre - The Next Episode | hip_hop | energetic
+Snoop Dogg - Drop It Like It's Hot | hip_hop | party|dark
+Ice Cube - Today Was a Good Day | hip_hop
+N.W.A - Straight Outta Compton | rap|hip_hop | aggressive
+N.W.A - Express Yourself | rap|hip_hop | happy|party
+Geto Boys - Mind Playing Tricks on Me | hip_hop
+Scarface - Smile | hip_hop
+Clipse - Grindin | hip_hop
+Rick Ross - Hustlin' | hip_hop
+Meek Mill - Dreams and Nightmares | hip_hop
+Jeezy - Put On | hip_hop
+Yo Gotti - Down in the DM | hip_hop
+Young Dolph - Preach | hip_hop
+21 Savage - Bank Account | hip_hop
+DaBaby - Suge | hip_hop
+DaBaby - Rockstar | hip_hop
+Lil Durk - Voice of the Heroes | hip_hop
+Lil Baby - Emotionally Scarred | hip_hop
+Pop Smoke - Welcome to the Party | hip_hop
+Fivio Foreign - Big Drip | hip_hop
+Ice Spice - Munch | hip_hop
+Lil Uzi Vert - Money Longer | hip_hop
+A$AP Ferg - Work REMIX | hip_hop
+ScHoolboy Q - Man of the Year | hip_hop
+Isaiah Rashad - Wat's Wrong | hip_hop
+Earl Sweatshirt - Hive | hip_hop
+Mac Miller - Self Care | hip_hop
+Mac Miller - Donald Trump | hip_hop
+Logic - 1-800-273-8255 | hip_hop
+Joyner Lucas - I'm Not Racist | hip_hop
+NF - Let You Down | hip_hop
+Hopsin - Ill Mind of Hopsin 5 | hip_hop
+Tech N9ne - Fragile | hip_hop
+Jadakiss - We Gonna Make It | hip_hop
+Cam'ron - Hey Ma | hip_hop
+The Diplomats - I Really Mean It | hip_hop
+M.O.P. - Ante Up | hip_hop
+Busta Rhymes - Break Ya Neck | hip_hop
+Lil Jon - Get Low | hip_hop
+Petey Pablo - Raise Up | hip_hop
+Chingy - Right Thurr | hip_hop
+Nelly - Hot in Herre | hip_hop
+Nelly - Dilemma | hip_hop
+T.I. - Bring Em Out | hip_hop
+Lloyd Banks - On Fire | hip_hop
+The Game - Wouldn't Get Far | hip_hop
+M.O.P. - Cold as Ice | hip_hop
+Freeway - What We Do | hip_hop
+Jadakiss - Knock Yourself Out | hip_hop
+Grandmaster Flash - White Lines | rap
+Run DMC - My Adidas | rap
+Kurtis Blow - The Breaks | rap
+Sugarhill Gang - Rapper's Delight | rap | happy|party
+Whodini - Freaks Come Out at Night | rap
+L.L. Cool J - I'm Bad | rap
+EPMD - You Gots to Chill | rap
+Big Daddy Kane - Ain't No Half-Steppin' | rap
+Kool G Rap - Road to the Riches | rap
+Slick Rick - Children's Story | rap
+Biz Markie - Just a Friend | rap
+De La Soul - The Magic Number | rap
+A Tribe Called Quest - Award Tour | rap
+Jungle Brothers - Straight Out the Jungle | rap
+Black Sheep - The Choice Is Yours | rap
+Pete Rock and CL Smooth - T.R.O.Y. | rap
+Guru - Mass Appeal | rap
+Gang Starr - Mass Appeal | rap
+Showbiz & A.G. - Party Groove | rap
+O.C. - Time's Up | rap
+Jeru the Damaja - Come Clean | rap
+Smif-N-Wessun - Wontime | rap
+Heltah Skeltah - Leflaur Leflah Eshkoshka | rap
+Black Moon - How Many MC's | rap
+Group Home - Livin' Proof | rap
+Too Short - Blow the Whistle | rap
+E-40 - Tell Me When to Go | rap
+Mac Dre - Feeling Myself | rap
+E-40 - U and Dat | rap
+Too Short - The Ghetto | rap
+Spice 1 - Welcome to the Ghetto | rap
+8Ball & MJG - Space Age Pimpin | rap
+Three 6 Mafia - Sippin on Some Syrup | rap
+Project Pat - Chickenhead | rap
+UGK - One Day | rap
+Devin the Dude - Doobie Ashtray | rap
+Z-Ro - Mo City Don | rap
+Slim Thug - 3 Kings | rap
+Chamillionaire - Ridin' | rap
+Paul Wall - Sittin' Sidewayz | rap
+Kirko Bangz - Drank in My Cup | rap
+Curren$y - Audio Dope 2 | rap
+Freddie Gibbs - Thuggin' | rap
+MF DOOM - Rhymes Like Dimes | rap
+Del the Funky Homosapien - Mistadobalina | rap
+Souls of Mischief - '93 'Til Infinity | rap
+Pharcyde - Passin' Me By | rap
+The Pharcyde - Ya Mama | rap
+Binary Star - Reality Check | rap
+Atmosphere - Trying to Find a Balance | rap
+Aesop Rock - None Shall Pass | rap
+Cannibal Ox - Iron Galaxy | rap
+El-P - Deep Space 9mm | rap
+Prokofiev - Piano Concerto No. 3 | classical
+Khachaturian - Adagio of Spartacus and Phrygia | classical
+Glazunov - The Seasons | classical
+Glinka - Ruslan and Lyudmila Overture | classical
+Balakirev - Islamey | classical
+Scriabin - Etude Op. 2 No. 2 No. 1 | classical
+Medtner - Sonata Reminiscenza | classical
+Shostakovich - Jazz Suite Waltz | classical
+Kabalevsky - The Comedians | classical
+Sviridov - Time, Forward! | classical
+Myaskovsky - Symphony No. 21 | classical
+Rachmaninoff - Symphony No. 2 | classical
+Rachmaninoff - Isle of the Dead | classical
+Rachmaninoff - Etude-Tableau Op. 39 No. 5 | classical
+Taneyev - Piano Quintet | classical
+Schnittke - Concerto Grosso No. 1 | classical
+Weinberg - Symphony No. 10 | classical
+Paganini - Violin Concerto No. 1 | classical
+Paganini - La Campanella | classical
+Locatelli - L'Arte del Violino | classical
+Boccherini - String Quintet Minuet | classical
+Corelli - Christmas Concerto | classical
+Vivaldi - Mandolin Concerto | classical
+Marcello - Oboe Concerto in D minor | classical
+Albinoni - Oboe Concerto | classical
+Handel - Concerto Grosso Op. 6 No. 12 | classical
+Purcell - Dido's Lament | classical
+Tallis - Spem In Alium | classical
+Byrd - Mass for Four Voices | classical
+Josquin - Ave Maria | classical
+Ockeghem - Requiem | classical
+Dufay - Nuper Rosarum Flores | classical
+Machaut - Messe de Nostre Dame | classical
+Hildegard - Ordo Virtutum | classical
+Berlioz - Symphonie Fantastique | classical
+Berlioz - Requiem Dies Irae | classical
+Franck - Symphony in D minor | classical
+Franck - Violin Sonata | classical
+Saint-Saens - Piano Concerto No. 2 | classical
+Chabrier - Espana | classical
+Lalo - Symphonie Espagnole | classical
+Bizet - Carmen Overture | classical
+Bizet - L'Arlesienne Suite | classical
+Offenbach - Orpheus In The Underworld | classical
+Faure - Sicilienne | classical
+Duparc - Chanson Triste | classical
+Chausson - Poeme | classical
+Boulanger - Psalm 24 | classical
+Honegger - Pacific 231 | classical
+Milhaud - Le Boeuf sur le Toit | classical
+Poulenc - Piano Concerto | classical
+Poulenc - Gloria | classical
+Messiaen - Quartet for the End of Time | classical
+Messiaen - Turangalila-Symphonie | classical
+Dutilleux - Symphony No. 2 | classical
+Ives - The Unanswered Question | classical
+Copland - Appalachian Spring | classical
+Copland - Fanfare for the Common Man | classical
+Barber - Violin Concerto | classical
+Gershwin - Concerto in F | classical
+Bernstein - Mambo | classical
+Cage - In a Landscape | classical|experimental
+Ligeti - Atmospheres | classical
+Ligeti - Musica Ricercata II | classical
+Adams - Short Ride in a Fast Machine | classical
+Adams - The Chairman Dances | classical
+Rautavaara - Cantus Arcticus | classical
+Sibelius - Tapiola | classical
+Nielsen - Symphony No. 4 The Inextinguishable | classical
+Alfven - Swedish Rhapsody | classical
+Stenhammar - Serenade | classical
+Metallica - For Whom the Bell Tolls | metal
+Metallica - Seek & Destroy | metal
+Metallica - Battery | metal
+Metallica - Disposable Heroes | metal
+Megadeth - Hangar 18 | metal
+Anthrax - Madhouse | metal
+Anthrax - Caught In a Mosh | metal
+Slayer - Seasons in the Abyss | metal
+Testament - Practice What You Preach | metal
+Overkill - Hello from the Gutter | metal
+Death Angel - Mistaken for Thrown to the Wolves | metal
+Forbidden - Through Eyes of Glass | metal
+Celtic Frost - Into the Pandemonium | metal
+Bathory - One Rode to Asa Bay | metal
+Venom - Black Metal | metal
+Mercyful Fate - Melissa | metal
+King Diamond - Abigail | metal
+Entombed - Left Hand Path | metal
+Dismember - Dreaming in Red | metal
+Grave - Into the Grave | metal
+Unleashed - Before the Creation of Time | metal
+Hypocrisy - Roswell 47 | metal
+Immortal - Withstand the Fall of Time | metal
+Emperor - I Am the Black Wizards | metal
+Mayhem - Freezing Moon | metal
+Darkthrone - Transilvanian Hunger | metal
+Burzum - Dunkelheit | metal
+Dissection - Where Dead Angels Lie | metal
+Summoning - Ashen Cold | metal
+Satyricon - K.I.N.G. | metal
+Windir - Svartesmeden Og Lundamyrstolpen | metal
+Moonsorrow - Sankaritarina | metal|folk
+Ensiferum - From Afar | metal|folk
+Korpiklaani - Vodka | metal|folk
+Turisas - Rasputin | metal|folk
+Finntroll - Trollhammaren | metal|folk
+Equilibrium - Blut Im Auge | metal|folk
+Heidevolk - Vulgaris Magnificus | metal|folk
+Nile - Annihilation of the Wicked | metal
+Morbid Angel - God of Emptiness | metal
+Obituary - Chopped in Half | metal
+Asphyx - Death...The Brutal Way | metal
+Bolt Thrower - For Victory | metal
+Paradise Lost - As I Die | metal
+My Dying Bride - The Cry of Mankind | metal
+Anathema - Sleepless | metal
+Katatonia - My Twin | metal
+Amorphis - Black Winter Day | metal
+Sentenced - Noose | metal
+Stan Kenton - Malaguega | jazz
+Woody Herman - Four Brothers | jazz
+Chick Webb - Stompin' At The Savoy | jazz
+Stephane Grappelli - Night And Day | jazz
+Barney Kessel - 64 Bars On Wilshire | jazz
+Gene Ammons - Red Top | jazz
+Lester Young - Lester Leaps In | jazz
+Coleman Hawkins - Body And Soul | jazz
+Ben Webster - Chelsea Bridge | jazz
+Bud Powell - Un Poco Loco | jazz
+Thelonious Monk - Criss Cross | jazz
+Max Roach - Lonesome Lover | jazz
+Roy Haynes - Hibiscus | jazz
+Jimmy Cobb - Lights | jazz
+Clifford Brown - Joy Spring | jazz
+Dexter Gordon - Tanya | jazz
+Hank Mobley - Soul Station | jazz
+Tina Brooks - True Blue | jazz
+Lou Donaldson - Blues Walk | jazz
+Jackie McLean - A Fickle Sonance | jazz
+Andrew Hill - Black Fire | jazz
+Sam Rivers - Beatrice | jazz
+Dexter Gordon - Go | jazz
+Freddie Hubbard - First Light | jazz
+Woody Shaw - Rosewood | jazz
+Johnny Griffin - Hard Jazz | jazz
+Sonny Clark - Cool Struttin' | jazz
+Ramsey Lewis - Hang On The In Crowd | jazz|soul
+Ahmad Jamal - But Not for Me | jazz
+McCoy Tyner - Contemplation | jazz
+Lee Konitz - Subconscious-Lee | jazz
+Lennie Tristano - Line Up | jazz
+Jimmy Giuffre - The Song Is You | jazz
+Gerry Mulligan - Line for Lyons | jazz
+Herbie Mann - Comin' Home Baby | jazz
+Stanley Turrentine - Sugar | jazz
+Jimmy Forrest - Night Train | jazz
+Paul Gonsalves - Gettin' Some Fun | jazz
+Son House - Grinnin' In Your Face | blues
+Lead Belly - Goodnight, Irene | blues
+Lead Belly - The Midnight Special | blues
+Big Bill Broonzy - Saturday Night | blues
+Memphis Minnie - When The Levee Breaks | blues
+Otis Spann - Spann's Blues | blues
+Otis Rush - All Your Love (I Miss Loving) | blues
+Magic Sam - Black Magic | blues
+Little Milton - Blind Man | blues
+Albert King - I'll Play the Blues for You | blues
+Eric Clapton - Nobody Knows You When You're Down and Out | blues
+Taj Mahal - Leaving Trunk | blues
+Robert Cray - Smoking Gun | blues
+Bonnie Raitt - Love Sneakin' Up On You | blues
+Bobby Rush - Chicken Heads | blues
+Shemekia Copeland - It's 2 A.M. | blues
+Rory Gallagher - Tattoo'd Lady | blues
+Johnny Winter - Be Careful With A Fool | blues
+Lucky Peterson - Can't 1-2-3 | blues
+Kim Wilson - Tiger Blood | blues
+James Cotton - Honey Bee | blues
+Carey Bell - Blues with a Feeling | blues
+Ruth Brown - Mama He Treats Your Daughter Mean | rnb|blues
+Big Mama Thornton - Hound Dog | blues|rnb | aggressive|energetic
+LaVern Baker - Jim Dandy Jim Dandy | rnb|blues
+Bo Diddley - I'm a Man | rock|blues
+Mance Lipscomb - Ain't No Captain, Captain | blues
+Roy Buchanan - The Messiah Will Come Again | blues
+Albert Collins - Frosty | blues
+Lonnie Mack - Wham! | rock|blues
+Link Wray - Rumble | rock
+Clarence Gatemouth Brown - Okie Dokie Stomp | blues
+Lowell Fulson - Reconsider Baby | blues
+Jimmy Reed - Bright Lights, Big City | blues
+Elmore James - Shake Your Moneymaker | blues
+J.B. Hutto - Hawk Hawk Squat | blues
+Hound Dog Taylor - Give Me Back My Wig | blues
+Magic Slim - Must Be Mustang Sally | blues
+Eddy Clearwater - Bo Diddley | blues
