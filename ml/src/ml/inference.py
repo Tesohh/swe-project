@@ -5,10 +5,12 @@ windows spread across the track body, each scored and averaged into one track sc
 """
 
 import argparse
+import json
 from pathlib import Path
 
 import numpy as np
 import torch
+from safetensors.torch import load_file
 
 from ml.features import audio_to_windows, load_audio
 from ml.training.model import MultiTaskAST
@@ -19,13 +21,20 @@ INFER_WINDOWS = 6
 
 
 def load_model(checkpoint_path: Path = DEFAULT_CHECKPOINT, device: str | None = None) -> MultiTaskAST:
-    """Load a checkpoint into the multi-task model, eval mode; refuses mismatched vocabs."""
+    """Load a .pt checkpoint or an exported .safetensors file; refuses mismatched vocabs."""
     device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
-    if checkpoint.get("genres") != GENRE_VOCAB or checkpoint.get("moods") != MOOD_VOCAB:
+    checkpoint_path = Path(checkpoint_path)
+    if checkpoint_path.suffix == ".safetensors":
+        config = json.loads(checkpoint_path.with_name("config.json").read_text())
+        genres, moods = config["genres"], config["moods"]
+        state = load_file(checkpoint_path, device=device)
+    else:
+        checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
+        genres, moods, state = checkpoint.get("genres"), checkpoint.get("moods"), checkpoint["model"]
+    if genres != GENRE_VOCAB or moods != MOOD_VOCAB:
         raise ValueError(f"{checkpoint_path} was trained with different genre/mood vocabularies")
     model = MultiTaskAST(n_genre=len(GENRE_VOCAB), n_mood=len(MOOD_VOCAB)).to(device)
-    model.load_state_dict(checkpoint["model"])
+    model.load_state_dict(state)
     model.eval()
     return model
 

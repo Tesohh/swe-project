@@ -11,3 +11,4 @@ runs/
 # temp orchestration scripts and logs
 run_speech_pipeline.sh
 *.log
+hf_release/
