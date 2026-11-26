@@ -45,8 +45,16 @@ def mood_key(artist: str, title: str) -> str:
     return f"{title.lower()}|{artist.lower()}"
 
 
-def clean(lines: list[str], overrides: dict, mood_seeds: dict) -> tuple[list[str], dict, list[str]]:
-    """Return (clean lines, old id -> new id renames, human-readable drop notes)."""
+def clean(
+    lines: list[str],
+    overrides: dict,
+    mood_seeds: dict,
+    exclude: set[tuple[str, str]] = frozenset(),
+) -> tuple[list[str], dict, list[str]]:
+    """Return (clean lines, old id -> new id renames, human-readable drop notes).
+
+    exclude: normalized (artist, title) pairs that must not become seeds (held-out test songs).
+    """
     genres, moods = load_genres(), load_moods()
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     dropped: list[str] = []
@@ -63,6 +71,9 @@ def clean(lines: list[str], overrides: dict, mood_seeds: dict) -> tuple[list[str
         mood = [t for t in (sections[2].split(TAG_SEPARATOR) if len(sections) > 2 else []) if t]
         mood += mood_seeds.get(mood_key(old_artist.strip(), old_title.strip()), [])
         mood += mood_seeds.get(mood_key(artist, title), [])
+        if (normalize(artist), normalize(title)) in exclude:
+            dropped.append(f"line {number}: held-out test song: {artist} - {title}")
+            continue
         groups[(normalize(artist), normalize(title))].append(
             {
                 "artist": artist,
@@ -124,6 +135,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--seeds", type=Path, default=DATA_DIR / "agent_seeds.txt")
     parser.add_argument("--overrides", type=Path, default=DATA_DIR / "seed_genre_overrides.json")
     parser.add_argument("--mood-seeds", type=Path, default=DATA_DIR / "mood_seeds.json")
+    parser.add_argument("--test-songs", type=Path, default=DATA_DIR / "test_songs.jsonl")
     parser.add_argument("--audio-dir", type=Path, default=DATA_DIR / "raw")
     parser.add_argument("--write", action="store_true", help="rewrite the seed file (keeps .bak)")
     parser.add_argument("--rename-audio", action="store_true", help="rename audio to surviving ids")
@@ -139,7 +151,13 @@ def main(argv: list[str] | None = None) -> int:
     }
     mood_seeds = json.loads(args.mood_seeds.read_text()).get("moods", {})
     lines = args.seeds.read_text().splitlines()
-    cleaned, renames, dropped = clean(lines, overrides, mood_seeds)
+    exclude = set()
+    if args.test_songs.exists():
+        for line in args.test_songs.read_text().splitlines():
+            if line.strip():
+                artist, _, title = json.loads(line)["query"].partition(" - ")
+                exclude.add((normalize(artist), normalize(title)))
+    cleaned, renames, dropped = clean(lines, overrides, mood_seeds, exclude)
 
     print(f"{len(lines)} lines -> {len(cleaned)} songs, {len(renames)} spellings merged")
     print("\n".join(dropped))
