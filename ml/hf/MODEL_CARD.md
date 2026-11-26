@@ -69,7 +69,7 @@ https://github.com/Tesohh/swe-project (folder `ml/`).
 from huggingface_hub import snapshot_download
 from ml.inference import load_model, load_windows, score_windows
 
-path = snapshot_download("Tesohh/music-tagger-ast")
+path = snapshot_download("tesohh/music-tagger-ast")
 model = load_model(f"{path}/model.safetensors")
 scores = score_windows(model, load_windows("song.mp3"))
 print(scores["genre"], scores["mood"], scores["energy"], scores["p_music"])
