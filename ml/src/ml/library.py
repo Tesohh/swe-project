@@ -14,7 +14,7 @@ import torch
 from ml.dataset.clean_seeds import normalize
 from ml.inference import DEFAULT_CHECKPOINT, load_model, load_windows, score_windows
 
-DEFAULT_LIBRARY = Path("runs/rap_a/library.npz")
+DEFAULT_LIBRARY = Path("runs/rap_b/library.npz")
 DEFAULT_MANIFEST = Path("data/manifests/train.jsonl")
 DEFAULT_SPECS = Path("data/specs_ast")
 
