@@ -48,12 +48,27 @@ services:
             - DATABASE_URL=postgresql://root:root@postgres:5432/music
             - DEPLOYMENT_ENV=development
             - JWT_SECRET_KEY=KABASHISTYLE
+            - INFERENCE_TAGGER_BASE=http://caddy/inference
         expose:
             - "8000"
         networks:
             - app
         depends_on:
             - postgres
+
+    inference:
+        restart: unless-stopped
+        build:
+            context: ./inference
+            dockerfile: Dockerfile.dev
+        volumes:
+            - ./inference/src:/app/src:z,ro
+            - ./inference/pyproject.toml:/app/pyproject.toml:z,ro
+            - ./inference/uv.lock:/app/uv.lock:z,ro
+        expose:
+            - "8000"
+        networks:
+            - app
 
     postgres:
         image: postgres:16-alpine

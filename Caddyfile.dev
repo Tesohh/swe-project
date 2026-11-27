@@ -2,6 +2,12 @@ http://localhost {
     handle /api/* {
         reverse_proxy backend:8000
     }
+
+	# NOTE: local dev only!! do not do this in prod
+    handle /inference/* {
+        reverse_proxy inference:8000
+		uri strip_prefix /inference
+    }
  
     handle /adminer/* {
         reverse_proxy adminer:8080
