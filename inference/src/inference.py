@@ -1,6 +1,7 @@
 import argparse
 import json
 from pathlib import Path
+from typing import TypedDict
 
 import numpy as np
 import torch
@@ -12,6 +13,15 @@ from src.model import MultiTaskAST
 DEFAULT_REPO = "tesohh/music-tagger-ast"
 DEFAULT_REVISION = "bebf3a602b3e3d13334724c6380ca2cc8968ee76"
 INFER_WINDOWS = 6
+
+
+class Scores(TypedDict):
+    embedding: np.ndarray  # float32 [dim], unit length
+    p_music: float  # 0..1, probability that the audio is music
+    genre: dict[str, float]  # genre name -> 0..1 probability
+    mood: dict[str, float]  # mood name -> 0..1 probability
+    energy: float
+    windows: int  # number of windows the scores are averaged over
 
 
 def load_model(checkpoint_path: Path, device: str | None = None) -> MultiTaskAST:
@@ -40,12 +50,12 @@ def load_from_hub(repo: str = DEFAULT_REPO, revision: str = DEFAULT_REVISION, de
     return load_model(Path(folder) / "model.safetensors", device)
 
 
-def load_windows(audio_path: Path, n_windows: int = INFER_WINDOWS) -> np.ndarray:
-    """Audio file -> float16 [n, 1024, 128] windows, same features as the training data."""
-    return audio_to_windows(load_audio(audio_path), n_windows)
+def load_windows(audio: Path | bytes, n_windows: int = INFER_WINDOWS) -> np.ndarray:
+    """Audio file or bytes -> float16 [n, 1024, 128] windows, same features as the training data."""
+    return audio_to_windows(load_audio(audio), n_windows)
 
 
-def score_windows(model: MultiTaskAST, windows: np.ndarray) -> dict:
+def score_windows(model: MultiTaskAST, windows: np.ndarray) -> Scores:
     """Feature windows [n, 1024, 128] -> per-head scores averaged over the windows."""
     device = next(model.parameters()).device
     batch = torch.from_numpy(windows.astype(np.float32)).to(device)

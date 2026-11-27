@@ -27,25 +27,29 @@ def extractor():
     return fe
 
 
-def load_audio(path, max_seconds: float = MAX_AUDIO_SECONDS) -> np.ndarray:
+def load_audio(source, max_seconds: float = MAX_AUDIO_SECONDS) -> np.ndarray:
     """Mono float32 samples at the AST sample rate; ffmpeg decodes what libsndfile cannot."""
+    import io
+
     import librosa
 
     try:
-        audio, _ = librosa.load(str(path), sr=SAMPLE_RATE, mono=True, duration=max_seconds)
+        target = io.BytesIO(source) if isinstance(source, bytes) else str(source)
+        audio, _ = librosa.load(target, sr=SAMPLE_RATE, mono=True, duration=max_seconds)
         return audio
     except Exception:  # noqa: BLE001 - webm/opus and mislabelled containers land here
-        return _load_with_ffmpeg(path, max_seconds)
+        return _load_with_ffmpeg(source, max_seconds)
 
 
-def _load_with_ffmpeg(path, max_seconds: float) -> np.ndarray:
+def _load_with_ffmpeg(source, max_seconds: float) -> np.ndarray:
     import subprocess
 
+    is_bytes = isinstance(source, bytes)
     command = [
-        "ffmpeg", "-v", "error", "-i", str(path), "-t", str(max_seconds),
+        "ffmpeg", "-v", "error", "-i", "pipe:0" if is_bytes else str(source), "-t", str(max_seconds),
         "-f", "f32le", "-ac", "1", "-ar", str(SAMPLE_RATE), "-",
     ]  # fmt: skip
-    result = subprocess.run(command, capture_output=True, check=True)
+    result = subprocess.run(command, input=source if is_bytes else None, capture_output=True, check=True)
     return np.frombuffer(result.stdout, dtype=np.float32)
 
 
