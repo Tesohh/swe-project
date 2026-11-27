@@ -1,3 +1,6 @@
+# NOTE: This is a docker-compose for local development!!!
+# The real docker-compose is on the server as that requires special server-specific configuration and credentials
+
 services:
     caddy:
         image: caddy:2.11.3-alpine
