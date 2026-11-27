@@ -47,8 +47,8 @@
 
   // Area titles
   node((2, -1.85), [*Frontend*], stroke: none),
-  node((2.45, 2.4), [*Backend* (one FastAPI service per bounded context)], stroke: none),
-  node((2.45, 6.75), [*Database* (Postgres, one database per service)], stroke: none),
+  node((4.6, 2.35), [*Backend* (one service per bounded context)], stroke: none),
+  node((1.3, 6.75), [*Database* (Postgres, one database per service)], stroke: none),
   node((7.7, 2.4), [*AI Server*], stroke: none),
 
   // Frontend
@@ -64,8 +64,8 @@
   node((0.2, 3.5), [*Auth* \ users, JWT], name: <auth>, fill: white, ..box),
   node((2.45, 3.5), [*Queues* \ rooms, queue, votes], name: <queues>, fill: white, ..box),
   node((4.7, 3.5), [*Songs* \ song cache], name: <songs>, fill: white, ..box),
-  node((4.7, 4.7), [yt-dlp], name: <ytdlp>, fill: white, ..box),
-  node((2.45, 5.0), [*Common* library \ JWT check, HTTP client], name: <common>, fill: white, ..tbd),
+  node((3.5, 4.7), [yt-dlp], name: <ytdlp>, fill: white, ..box),
+  node((1.3, 4.9), [*Common* library \ JWT check, HTTP client], name: <common>, fill: white, ..tbd),
 
   // Databases
   node((0.2, 7.1), [Auth DB], name: <authdb>, fill: white, ..box),
