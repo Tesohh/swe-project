@@ -1,0 +1,11 @@
+# build context of the python services is the repo root
+.git
+.data
+.env
+ml
+documentation
+frontend
+**/node_modules
+**/.venv
+**/__pycache__
+**/.ruff_cache

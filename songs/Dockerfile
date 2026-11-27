@@ -1,0 +1,19 @@
+FROM python:3.14-slim
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+# yt-dlp needs node as its JS runtime, and ffmpeg to write mp3
+RUN apt-get update && apt-get install -y --no-install-recommends nodejs ffmpeg && rm -rf /var/lib/apt/lists/*
+
+# the build context is the repo root, because every service installs ./common
+WORKDIR /srv/songs
+
+COPY common /srv/common
+COPY songs/pyproject.toml songs/uv.lock ./
+RUN uv sync --frozen --no-dev
+
+COPY songs/src ./src
+
+EXPOSE 8000
+
+CMD ["uv", "run", "--frozen", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,6 +1,22 @@
 http://localhost {
+    # the gateway: the UI talks only to these routes, the services talk to each other directly
+    handle /api/auth/* {
+        reverse_proxy auth:8000
+    }
+
+    handle /api/song/* {
+        reverse_proxy songs:8000
+    }
+
+    # SSE (/api/room/<id>/events) needs flush_interval -1, so events are not buffered
+    handle /api/room/* {
+        reverse_proxy queues:8000 {
+            flush_interval -1
+        }
+    }
+
     handle /api/* {
-        reverse_proxy backend:8000
+        respond "Not found" 404
     }
 
 	# NOTE: local dev only!! do not do this in prod
