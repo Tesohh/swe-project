@@ -16,8 +16,9 @@ services:
             - app
         depends_on:
             - frontend
-            - postgres
-            - backend
+            - auth
+            - songs
+            - queues
 
     frontend:
         restart: unless-stopped
@@ -33,28 +34,73 @@ services:
         env_file:
             - .env
 
-    backend:
+    auth:
         restart: unless-stopped
         build:
-            context: ./backend
-            dockerfile: Dockerfile.dev
+            context: .
+            dockerfile: auth/Dockerfile.dev
         volumes:
-            - ./backend/src:/app/src:z,ro
-            - ./backend/static:/app/static:z,ro
-            - ./backend/pyproject.toml:/app/pyproject.toml:z,ro
-            - ./backend/uv.lock:/app/uv.lock:z,ro
-            - ./.data/songs:/app/songs:z
+            - ./auth/src:/srv/auth/src:z,ro
+            - ./auth/pyproject.toml:/srv/auth/pyproject.toml:z,ro
+            - ./auth/uv.lock:/srv/auth/uv.lock:z,ro
+            - ./common/src:/srv/common/src:z,ro
         environment:
-            - DATABASE_URL=postgresql://root:root@postgres:5432/music
+            - DATABASE_URL=postgresql://root:root@postgres-auth:5432/auth
             - DEPLOYMENT_ENV=development
-            - JWT_SECRET_KEY=KABASHISTYLE
-            - INFERENCE_TAGGER_BASE=http://caddy/inference
+            - JWT_SECRET_KEY=${JWT_SECRET_KEY:-KABASHISTYLE}
+            - QUEUES_BASE=http://queues:8000
         expose:
             - "8000"
         networks:
             - app
         depends_on:
-            - postgres
+            - postgres-auth
+
+    songs:
+        restart: unless-stopped
+        build:
+            context: .
+            dockerfile: songs/Dockerfile.dev
+        volumes:
+            - ./songs/src:/srv/songs/src:z,ro
+            - ./songs/pyproject.toml:/srv/songs/pyproject.toml:z,ro
+            - ./songs/uv.lock:/srv/songs/uv.lock:z,ro
+            - ./common/src:/srv/common/src:z,ro
+            - ./.data/songs:/srv/songs/songs:z
+        environment:
+            - DATABASE_URL=postgresql://root:root@postgres-songs:5432/songs
+            - DEPLOYMENT_ENV=development
+            - JWT_SECRET_KEY=${JWT_SECRET_KEY:-KABASHISTYLE}
+            - INFERENCE_TAGGER_BASE=http://inference:8000
+        expose:
+            - "8000"
+        networks:
+            - app
+        depends_on:
+            - postgres-songs
+
+    queues:
+        restart: unless-stopped
+        build:
+            context: .
+            dockerfile: queues/Dockerfile.dev
+        volumes:
+            - ./queues/src:/srv/queues/src:z,ro
+            - ./queues/pyproject.toml:/srv/queues/pyproject.toml:z,ro
+            - ./queues/uv.lock:/srv/queues/uv.lock:z,ro
+            - ./common/src:/srv/common/src:z,ro
+        environment:
+            - DATABASE_URL=postgresql://root:root@postgres-queues:5432/queues
+            - DEPLOYMENT_ENV=development
+            - JWT_SECRET_KEY=${JWT_SECRET_KEY:-KABASHISTYLE}
+            - SONGS_BASE=http://songs:8000
+            - AUTH_BASE=http://auth:8000
+        expose:
+            - "8000"
+        networks:
+            - app
+        depends_on:
+            - postgres-queues
 
     inference:
         restart: unless-stopped
@@ -70,29 +116,51 @@ services:
         networks:
             - app
 
-    postgres:
+    postgres-auth:
         image: postgres:16-alpine
         restart: unless-stopped
         environment:
             - POSTGRES_USER=root
             - POSTGRES_PASSWORD=root
-            - POSTGRES_DB=music
-        ports:
-            - "5432:5432"
+            - POSTGRES_DB=auth
         volumes:
-            - postgres_data:/var/lib/postgresql/data
+            - postgres_auth_data:/var/lib/postgresql/data
+        networks:
+            - app
+
+    postgres-songs:
+        image: postgres:16-alpine
+        restart: unless-stopped
+        environment:
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=songs
+        volumes:
+            - postgres_songs_data:/var/lib/postgresql/data
+        networks:
+            - app
+
+    postgres-queues:
+        image: postgres:16-alpine
+        restart: unless-stopped
+        environment:
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=queues
+        volumes:
+            - postgres_queues_data:/var/lib/postgresql/data
         networks:
             - app
 
     adminer:
         image: adminer:5.4.2
         restart: always
-        environment:
-            - DATABASE_URL=postgresql://root:root@postgres:5432/music
         expose:
             - "8080"
         depends_on:
-            - postgres
+            - postgres-auth
+            - postgres-songs
+            - postgres-queues
         networks:
             - app
 
@@ -103,4 +171,6 @@ networks:
 volumes:
     caddy_data:
     caddy_config:
-    postgres_data:
+    postgres_auth_data:
+    postgres_songs_data:
+    postgres_queues_data:

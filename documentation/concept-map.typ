@@ -10,7 +10,7 @@
 // Edge with a label parallel to the arrow.
 // side: which side of the line the label is on (left/right, seen from the start of the arrow)
 // pos: position of the label along the line (0 = start, 1 = end)
-#let rel(from, to, label, side: left, pos: 0.5) = edge(
+#let rel(from, to, label, side: left, pos: 0.5, dash: none) = edge(
   from,
   to,
   "->",
@@ -20,6 +20,7 @@
   label-pos: pos,
   label-sep: 3pt,
   mark-scale: 130%,
+  ..if dash != none { (stroke: (dash: dash)) },
 )
 
 #diagram(
@@ -27,31 +28,28 @@
   node-stroke: 0.8pt,
 
   // Areas
-  node(
-    enclose: ((5.95, 2.4), (6.85, 3.7)),
-    fill: green.lighten(70%),
-    stroke: green.darken(20%),
-    snap: false,
-    inset: 8pt,
-  ),
   node(enclose: ((0, -2.2), (4, 0.4)), fill: orange.lighten(85%), stroke: orange.darken(20%), snap: false, inset: 8pt),
   node(
-    enclose: ((1.4, 1.4), (5.6, 6.1)),
+    enclose: ((-0.5, 2.1), (5.4, 5.6)),
     fill: fuchsia.lighten(85%),
     stroke: fuchsia.darken(20%),
     snap: false,
     inset: 8pt,
   ),
-  node(enclose: ((7.3, 2.1), (10.4, 6.1)), fill: blue.lighten(90%), stroke: blue.darken(20%), snap: false, inset: 8pt),
+  node(
+    enclose: ((-0.5, 6.4), (5.4, 7.6)),
+    fill: green.lighten(70%),
+    stroke: green.darken(20%),
+    snap: false,
+    inset: 8pt,
+  ),
+  node(enclose: ((6.2, 2.1), (9.2, 5.6)), fill: blue.lighten(90%), stroke: blue.darken(20%), snap: false, inset: 8pt),
 
   // Area titles
-  node((6.4, 2.75), [*Database*], stroke: none),
   node((2, -1.85), [*Frontend*], stroke: none),
-  node((4.25, 1.7), [*Backend*], stroke: none),
-  node((8.9, 2.4), [*AI Server*], stroke: none),
-
-  // Database
-  node((6.4, 3.2), [Postgres], name: <pg>, fill: white, ..box),
+  node((4.6, 2.35), [*Backend* (one service per bounded context)], stroke: none),
+  node((1.3, 6.75), [*Database* (one Postgres per service)], stroke: none),
+  node((7.7, 2.4), [*AI Server*], stroke: none),
 
   // Frontend
   node((2, -1.2), [SvelteKit], name: <svelte>, fill: white, ..box),
@@ -59,42 +57,55 @@
   node((2, 0), [QR code], name: <qr>, fill: white, ..box),
   node((3.5, 0), [Player client], name: <player>, fill: white, ..box),
 
-  // Backend
-  node((2, 2), [Rooms], name: <rooms>, fill: white, ..box),
-  node((3.5, 2), [REST API], name: <rest>, fill: white, ..box),
-  node((2.75, 3.2), [Server (FastAPI)], name: <server>, fill: white, ..box),
-  node((2.75, 4.6), [Song cache], name: <cache>, fill: white, ..box),
-  node((4.4, 4.6), [yt-dlp], name: <ytdlp>, fill: white, ..box),
-  node((2, 5.7), [Queue management], name: <queue>, fill: white, ..box),
+  // Gateway
+  node((2, 1.2), [API gateway (Caddy)], name: <gw>, fill: white, ..box),
+
+  // Backend services
+  node((0.2, 3.5), [*Auth* \ users, JWT], name: <auth>, fill: white, ..box),
+  node((2.45, 3.5), [*Queues* \ rooms, queue, votes], name: <queues>, fill: white, ..box),
+  node((4.7, 3.5), [*Songs* \ song cache], name: <songs>, fill: white, ..box),
+  node((3.5, 4.7), [yt-dlp], name: <ytdlp>, fill: white, ..box),
+  node((1.3, 4.9), [*Common* library \ JWT check, HTTP client], name: <common>, fill: white, ..tbd),
+
+  // Databases
+  node((0.2, 7.1), [Postgres \ auth], name: <authdb>, fill: white, ..box),
+  node((2.45, 7.1), [Postgres \ queues], name: <queuesdb>, fill: white, ..box),
+  node((4.7, 7.1), [Postgres \ songs], name: <songsdb>, fill: white, ..box),
 
   // AI Server
-  node((8.9, 3.0), [llama.cpp], name: <llama>, fill: white, ..box),
-  node((8.1, 4.3), [Audio decision model \ (TBD)], name: <audio>, fill: white, ..tbd),
-  node((9.7, 4.3), [Text decision model \ (TBD)], name: <text>, fill: white, ..tbd),
-  node((8.9, 5.7), [Systemone API], name: <sys>, fill: white, ..box),
+  node((7.7, 3.2), [*Tagger* \ (inference)], name: <tagger>, fill: white, ..box),
+  node((7.7, 4.4), [*Decision* \ llama.cpp], name: <llama>, fill: white, ..tbd),
+  node((7.7, 5.2), [Audio and text models \ (TBD)], name: <models>, fill: white, ..tbd),
 
   // Frontend relations
   rel(<svelte>, <user>, [renders], side: right),
   rel(<svelte>, <player>, [renders], side: left),
   rel(<user>, <qr>, [scans], side: left),
   rel(<player>, <qr>, [displays], side: right),
-  rel(<user>, <rest>, [shares songs via], side: right, pos: 0.33),
-  rel(<player>, <rest>, [manages queue via], side: left),
-  rel(<qr>, <rooms>, [links to], side: right, pos: 0.75),
+  rel(<user>, <gw>, [shares songs via], side: right, pos: 0.4),
+  rel(<player>, <gw>, [manages queue via], side: left, pos: 0.4),
 
-  // Backend relations
-  rel(<server>, <rooms>, [manages], side: left),
-  rel(<server>, <rest>, [exposes], side: left),
-  rel(<server>, <pg>, [stores data in], side: left),
-  rel(<server>, <cache>, [reads songs from], side: left),
-  rel(<cache>, <ytdlp>, [downloads with], side: left),
-  rel(<rooms>, <queue>, [uses], side: right),
-  rel(<cache>, <queue>, [supplies songs to], side: left),
-  rel(<queue>, <sys>, [requests decisions from], side: left, pos: 0.35),
+  // Gateway relations (the UI talks only to the gateway)
+  rel(<gw>, <auth>, [/api/auth], side: right),
+  rel(<gw>, <queues>, [/api/room], side: right),
+  rel(<gw>, <songs>, [/api/song], side: right),
 
-  // AI Server relations
-  rel(<llama>, <audio>, [runs], side: right),
-  rel(<llama>, <text>, [runs], side: left),
-  rel(<audio>, <sys>, [sends results to], side: right),
-  rel(<text>, <sys>, [sends results to], side: left),
+  // Service to service relations (HTTP, never through the gateway)
+  rel(<queues>, <songs>, [requests and reads songs], side: left),
+  rel(<queues>, <auth>, [reads user names], side: right),
+  rel(<auth>, <queues>, [deletes user data], side: right, pos: 0.5),
+  rel(<songs>, <ytdlp>, [downloads with], side: left),
+  rel(<songs>, <tagger>, [tags songs with], side: left),
+  rel(<queues>, <llama>, [asks decisions (later)], side: right, pos: 0.65, dash: "dashed"),
+  rel(<llama>, <models>, [runs], side: left),
+
+  // Library
+  edge(<common>, <auth>, "->", lbl[used by], label-side: left, label-angle: auto, stroke: (dash: "dotted")),
+  edge(<common>, <queues>, "->", stroke: (dash: "dotted")),
+  edge(<common>, <songs>, "->", stroke: (dash: "dotted")),
+
+  // Data relations
+  rel(<auth>, <authdb>, [owns], side: right),
+  rel(<queues>, <queuesdb>, [owns], side: right, pos: 0.85),
+  rel(<songs>, <songsdb>, [owns], side: right),
 )

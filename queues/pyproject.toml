@@ -1,0 +1,17 @@
+[project]
+name = "queues"
+version = "0.1.0"
+description = "Rooms, song queues, votes and live room events"
+requires-python = ">=3.14"
+dependencies = [
+    "common",
+    "fastapi[standard]==0.136.1",
+    "psycopg2-binary==2.9.12",
+    "sqlmodel==0.0.38",
+]
+
+[tool.uv.sources]
+common = { path = "../common", editable = true }
+
+[tool.fastapi]
+entrypoint = "src.main:app"
