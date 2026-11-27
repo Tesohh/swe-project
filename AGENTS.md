@@ -5,16 +5,16 @@
 - `frontend` is a `sveltekit` app with two clients:
   - user client to add/share songs
   - player client to manage the queue and show info
-- the backend is split into `fastapi` python services, one per bounded context (see `documentation/concept-map.typ`). Each service has its own dir, `pyproject.toml` (`uv`), Dockerfile and database:
+- the backend is split into `fastapi` python services, one per bounded context (see `documentation/concept-map.typ`). Each service has its own dir, `pyproject.toml` (`uv`), Dockerfile and its own `postgres` container:
   - `common`: library (not a service) with the JWT check, password hashing and the HTTP client for service-to-service calls
-  - `auth`: users and login (jwt cookie). Database `auth`
-  - `songs`: song catalog, downloads/strips songs with `yt-dlp`, streams audio. Database `songs`
-  - `queues`: rooms, queues, votes, and `sse` (live updates, not websocket). Database `queues`
+  - `auth`: users and login (jwt cookie). Postgres `postgres-auth`
+  - `songs`: song catalog, downloads/strips songs with `yt-dlp`, streams audio. Postgres `postgres-songs`
+  - `queues`: rooms, queues, votes, and `sse` (live updates, not websocket). Postgres `postgres-queues`
   - `inference`: the audio tagger (torch), called by `songs`
   - `decision` (`llama.cpp`) comes later
 - `caddy` is the only gateway: the frontend talks to `/api/auth`, `/api/song`, `/api/room`. Services call each other directly (e.g. `http://songs:8000`), never through `caddy`
-- a service never reads the database of another service. It keeps ids and asks the other service over HTTP (`/internal/...` routes, which `caddy` does not route)
-- `postgres` is one container with one database per service (`postgres/init.sql`)
+- a service never reads the postgres of another service. It keeps ids and asks the other service over HTTP (`/internal/...` routes, which `caddy` does not route)
+- there is one `postgres` container per service (`postgres-auth`, `postgres-songs`, `postgres-queues`), each with its own volume. `adminer` can open all three
 - qr code system to join a room/queue
 
 # Frontend

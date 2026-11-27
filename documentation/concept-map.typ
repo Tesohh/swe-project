@@ -48,7 +48,7 @@
   // Area titles
   node((2, -1.85), [*Frontend*], stroke: none),
   node((4.6, 2.35), [*Backend* (one service per bounded context)], stroke: none),
-  node((1.3, 6.75), [*Database* (Postgres, one database per service)], stroke: none),
+  node((1.3, 6.75), [*Database* (one Postgres per service)], stroke: none),
   node((7.7, 2.4), [*AI Server*], stroke: none),
 
   // Frontend
@@ -68,9 +68,9 @@
   node((1.3, 4.9), [*Common* library \ JWT check, HTTP client], name: <common>, fill: white, ..tbd),
 
   // Databases
-  node((0.2, 7.1), [Auth DB], name: <authdb>, fill: white, ..box),
-  node((2.45, 7.1), [Queues DB], name: <queuesdb>, fill: white, ..box),
-  node((4.7, 7.1), [Songs DB], name: <songsdb>, fill: white, ..box),
+  node((0.2, 7.1), [Postgres \ auth], name: <authdb>, fill: white, ..box),
+  node((2.45, 7.1), [Postgres \ queues], name: <queuesdb>, fill: white, ..box),
+  node((4.7, 7.1), [Postgres \ songs], name: <songsdb>, fill: white, ..box),
 
   // AI Server
   node((7.7, 3.2), [*Tagger* \ (inference)], name: <tagger>, fill: white, ..box),

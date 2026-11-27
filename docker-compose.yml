@@ -16,7 +16,6 @@ services:
             - app
         depends_on:
             - frontend
-            - postgres
             - auth
             - songs
             - queues
@@ -46,7 +45,7 @@ services:
             - ./auth/uv.lock:/srv/auth/uv.lock:z,ro
             - ./common/src:/srv/common/src:z,ro
         environment:
-            - DATABASE_URL=postgresql://root:root@postgres:5432/auth
+            - DATABASE_URL=postgresql://root:root@postgres-auth:5432/auth
             - DEPLOYMENT_ENV=development
             - JWT_SECRET_KEY=${JWT_SECRET_KEY:-KABASHISTYLE}
             - QUEUES_BASE=http://queues:8000
@@ -55,7 +54,7 @@ services:
         networks:
             - app
         depends_on:
-            postgres:
+            postgres-auth:
                 condition: service_healthy
 
     songs:
@@ -70,7 +69,7 @@ services:
             - ./common/src:/srv/common/src:z,ro
             - ./.data/songs:/srv/songs/songs:z
         environment:
-            - DATABASE_URL=postgresql://root:root@postgres:5432/songs
+            - DATABASE_URL=postgresql://root:root@postgres-songs:5432/songs
             - DEPLOYMENT_ENV=development
             - JWT_SECRET_KEY=${JWT_SECRET_KEY:-KABASHISTYLE}
             - INFERENCE_TAGGER_BASE=http://inference:8000
@@ -79,7 +78,7 @@ services:
         networks:
             - app
         depends_on:
-            postgres:
+            postgres-songs:
                 condition: service_healthy
 
     queues:
@@ -93,7 +92,7 @@ services:
             - ./queues/uv.lock:/srv/queues/uv.lock:z,ro
             - ./common/src:/srv/common/src:z,ro
         environment:
-            - DATABASE_URL=postgresql://root:root@postgres:5432/queues
+            - DATABASE_URL=postgresql://root:root@postgres-queues:5432/queues
             - DEPLOYMENT_ENV=development
             - JWT_SECRET_KEY=${JWT_SECRET_KEY:-KABASHISTYLE}
             - SONGS_BASE=http://songs:8000
@@ -103,7 +102,7 @@ services:
         networks:
             - app
         depends_on:
-            postgres:
+            postgres-queues:
                 condition: service_healthy
 
     inference:
@@ -120,19 +119,51 @@ services:
         networks:
             - app
 
-    postgres:
+    postgres-auth:
         image: postgres:16-alpine
         restart: unless-stopped
         environment:
             - POSTGRES_USER=root
             - POSTGRES_PASSWORD=root
-        ports:
-            - "5432:5432"
+            - POSTGRES_DB=auth
         volumes:
-            - postgres_data:/var/lib/postgresql/data
-            - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:z,ro
+            - postgres_auth_data:/var/lib/postgresql/data
         healthcheck:
-            test: ["CMD-SHELL", "pg_isready -U root"]
+            test: ["CMD-SHELL", "pg_isready -U root -d auth"]
+            interval: 3s
+            timeout: 3s
+            retries: 20
+        networks:
+            - app
+
+    postgres-songs:
+        image: postgres:16-alpine
+        restart: unless-stopped
+        environment:
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=songs
+        volumes:
+            - postgres_songs_data:/var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U root -d songs"]
+            interval: 3s
+            timeout: 3s
+            retries: 20
+        networks:
+            - app
+
+    postgres-queues:
+        image: postgres:16-alpine
+        restart: unless-stopped
+        environment:
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=queues
+        volumes:
+            - postgres_queues_data:/var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U root -d queues"]
             interval: 3s
             timeout: 3s
             retries: 20
@@ -145,7 +176,9 @@ services:
         expose:
             - "8080"
         depends_on:
-            - postgres
+            - postgres-auth
+            - postgres-songs
+            - postgres-queues
         networks:
             - app
 
@@ -156,4 +189,6 @@ networks:
 volumes:
     caddy_data:
     caddy_config:
-    postgres_data:
+    postgres_auth_data:
+    postgres_songs_data:
+    postgres_queues_data:
