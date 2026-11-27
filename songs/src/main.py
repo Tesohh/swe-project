@@ -23,7 +23,13 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="songs", root_path="/api", lifespan=lifespan)
+app = FastAPI(
+    title="songs",
+    root_path="/api",
+    lifespan=lifespan,
+    docs_url="/song/docs",
+    openapi_url="/song/openapi.json",
+)
 app.state.is_dev = os.getenv("DEPLOYMENT_ENV") == "development"
 
 app.include_router(src.router.router, tags=["song"])

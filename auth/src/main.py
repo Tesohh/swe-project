@@ -23,7 +23,13 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="auth", root_path="/api", lifespan=lifespan)
+app = FastAPI(
+    title="auth",
+    root_path="/api",
+    lifespan=lifespan,
+    docs_url="/auth/docs",
+    openapi_url="/auth/openapi.json",
+)
 app.state.is_dev = os.getenv("DEPLOYMENT_ENV") == "development"
 
 app.include_router(src.router.router, tags=["auth"])

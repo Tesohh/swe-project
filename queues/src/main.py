@@ -26,7 +26,13 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="queues", root_path="/api", lifespan=lifespan)
+app = FastAPI(
+    title="queues",
+    root_path="/api",
+    lifespan=lifespan,
+    docs_url="/room/docs",
+    openapi_url="/room/openapi.json",
+)
 app.state.is_dev = os.getenv("DEPLOYMENT_ENV") == "development"
 
 app.include_router(src.room.router.router, tags=["room"])
