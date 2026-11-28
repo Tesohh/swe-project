@@ -6,7 +6,7 @@ from sqlmodel import Field, SQLModel
 # queue states that queue_items.state may hold
 QUEUE_STATES = ("requested", "queued", "playing", "paused", "played")
 # states that hold a position in the room order
-ORDERED_STATES = ("queued", "playing")
+ORDERED_STATES = ("queued", "playing", "paused")
 STATE_IN = "(" + ", ".join(f"'{state}'" for state in QUEUE_STATES) + ")"
 
 

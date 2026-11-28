@@ -42,7 +42,7 @@ jobs:
           cache-dependency-glob: ${{ matrix.service }}/uv.lock
 
       - name: Install
-        run: uv sync --locked --dev
+        run: uv sync --locked --dev${{ matrix.service == 'inference' && ' --extra cpu' || '' }}
 
       - name: Lint
         run: uvx ruff check .
