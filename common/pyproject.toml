@@ -17,3 +17,13 @@ build-backend = "uv_build"
 
 [tool.uv.build-backend]
 module-name = "common"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "respx>=0.23.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
