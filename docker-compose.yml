@@ -107,6 +107,8 @@ services:
         build:
             context: ./inference
             dockerfile: Dockerfile.dev
+            args:
+                TORCH_VARIANT: ${TORCH_VARIANT:-cpu}
         volumes:
             - ./inference/src:/app/src:z,ro
             - ./inference/pyproject.toml:/app/pyproject.toml:z,ro
