@@ -748,6 +748,8 @@ cpu = [
 ]
 cuda = [
     { name = "torch", version = "2.15.0", source = { registry = "https://pypi.org/simple" } },
+]
+
 [package.dev-dependencies]
 dev = [
     { name = "pytest" },
@@ -1599,7 +1601,7 @@ name = "pytest"
 version = "9.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "sys_platform == 'win32'" },
+    { name = "colorama", marker = "sys_platform == 'win32' or (extra == 'extra-9-inference-cpu' and extra == 'extra-9-inference-cuda')" },
     { name = "iniconfig" },
     { name = "packaging" },
     { name = "pluggy" },
