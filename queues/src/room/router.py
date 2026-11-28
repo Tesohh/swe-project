@@ -24,7 +24,7 @@ class CreateRoomBody(BaseModel):
     description: str | None = None
 
 
-@router.post("/create", status_code=status.HTTP_201_CREATED, responses=errors(401, 409))
+@router.post("/create", status_code=status.HTTP_201_CREATED, responses=errors(401, 403, 409))
 def create_room(
     session: src.db.SessionDep,
     user: CurrentUserDep,
@@ -108,7 +108,7 @@ def delete_room(session: src.db.SessionDep, user: CurrentUserDep, room_id: int) 
     return Status()
 
 
-@router.get("/mine", responses=errors(401))
+@router.get("/mine", responses=errors(401, 403))
 def get_my_rooms(user: CurrentUserDep, session: src.db.SessionDep) -> list[RoomPublic]:
     """The rooms that user hosts."""
     rooms = session.exec(select(Room).where(Room.user_id == user.id)).all()

@@ -36,8 +36,8 @@ class SongPayload(BaseModel):
 
 ERROR_DESCRIPTIONS = {
     400: "The request cannot be processed",
-    401: "Not logged in, or the credentials are wrong",
-    403: "The user is not allowed to do this",
+    401: "The credentials or the token are not valid",
+    403: "No token cookie (not logged in), or the user is not allowed to do this",
     404: "The resource does not exist",
     409: "The request conflicts with the current state",
     415: "Unsupported media type",

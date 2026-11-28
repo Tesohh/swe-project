@@ -70,7 +70,7 @@ def signup(session: src.db.SessionDep, body: SignupBody) -> src.models.User:
     return user
 
 
-@router.get("/me", responses=errors(401))
+@router.get("/me", responses=errors(401, 403))
 def me(user: src.security.UserDep) -> src.models.User:
     """The user of the JWT cookie."""
     return user
@@ -83,7 +83,7 @@ def logout(response: Response) -> Status:
     return Status(status="cookie deleted")
 
 
-@router.post("/delete", responses=errors(401, 502))
+@router.post("/delete", responses=errors(401, 403, 502))
 def delete_account(user: src.security.UserDep, session: src.db.SessionDep) -> Status:
     """Deletes the account of the user, and the rooms and votes of the user in the queues service."""
     # the queues service holds the rooms and votes of the user. It goes first, so a failure keeps the account
@@ -98,7 +98,7 @@ class ChangeUsernameBody(BaseModel):
     new_username: str
 
 
-@router.post("/change_username", responses=errors(401, 409))
+@router.post("/change_username", responses=errors(401, 403, 409))
 def change_username(session: src.db.SessionDep, user: src.security.UserDep, body: ChangeUsernameBody) -> Status:
     """Changes the name of the user. The new name must be new."""
     db_user = session.exec(select(src.models.User).where(src.models.User.name == body.new_username)).first()
@@ -117,7 +117,7 @@ class ChangePasswordBody(BaseModel):
     new_password: str
 
 
-@router.post("/change_password", responses=errors(401))
+@router.post("/change_password", responses=errors(401, 403))
 def change_password(session: src.db.SessionDep, user: src.security.UserDep, body: ChangePasswordBody) -> Status:
     """Changes the password of the user. old_password must be correct."""
     if not verify_password(body.old_password, user.password_hash):
