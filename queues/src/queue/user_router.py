@@ -3,8 +3,8 @@
 from typing import Literal
 
 from common.auth import CurrentUserDep
+from common.schemas import errors
 from fastapi import APIRouter, HTTPException, status
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from sqlmodel import select
 
@@ -22,6 +22,7 @@ from src.queue.order import (
     set_vote,
 )
 from src.queue.payload import build_entries, pending_of, single_payload
+from src.schemas import EntryResponse, QueueView
 from src.songs import song_from_url
 
 router = APIRouter(prefix="/room")
@@ -33,28 +34,26 @@ class RequestBody(BaseModel):
     query: str = Field(min_length=1)  # url of the song, a search text comes later
 
 
-@router.get("/{room_id}/queue")
-def get_queue(session: src.db.SessionDep, user: CurrentUserDep, room_id: int):
+@router.get("/{room_id}/queue", responses=errors(401, 404, 502))
+def get_queue(session: src.db.SessionDep, user: CurrentUserDep, room_id: int) -> QueueView:
     """The play order, the requests that wait for the audio model, the history, and the banlist of room_id."""
     room_or_404(session, room_id)
     banned_songs = session.exec(select(RoomBan).where(RoomBan.room_id == room_id)).all()
-    return JSONResponse(
-        {
-            "order": build_entries(session, order_of(session, room_id), user),
-            "pending": build_entries(session, pending_of(session, room_id), user),
-            "history": build_entries(session, history_of(session, room_id), user),
-            "banned": [row.song_id for row in banned_songs],
-        }
+    return QueueView(
+        order=build_entries(session, order_of(session, room_id), user),
+        pending=build_entries(session, pending_of(session, room_id), user),
+        history=build_entries(session, history_of(session, room_id), user),
+        banned=[row.song_id for row in banned_songs],
     )
 
 
-@router.post("/{room_id}/queue/request")
+@router.post("/{room_id}/queue/request", status_code=status.HTTP_201_CREATED, responses=errors(400, 401, 404, 409, 422, 502))
 def request_song(
     session: src.db.SessionDep,
     user: CurrentUserDep,
     room_id: int,
     body: RequestBody,
-):
+) -> EntryResponse:
     """Adds a requested entry for the song that query names, voted up by user."""
     room = room_or_404(session, room_id)
     song = song_from_url(body.query)  # the songs service downloads the song if it is new
@@ -69,32 +68,29 @@ def request_song(
     set_vote(session, room_id, entry_id, user, 1)
 
     events.publish(room_id, {"topic": "queue", "type": "requested", "entry_id": entry_id})
-    return JSONResponse(
-        status_code=status.HTTP_201_CREATED,
-        content={"status": "ok", "entry": single_payload(session, room_id, entry_id, user)},
-    )
+    return EntryResponse(entry=single_payload(session, room_id, entry_id, user))
 
 
-@router.put("/{room_id}/queue/vote/{item_id}")
+@router.put("/{room_id}/queue/vote/{item_id}", responses=errors(401, 404, 502))
 def vote_entry(
     session: src.db.SessionDep,
     user: CurrentUserDep,
     room_id: int,
     item_id: int,
     direction: Literal["up", "down"] = "up",
-):
+) -> EntryResponse:
     """Votes entry item_id for user. direction up stores +1, direction down stores -1."""
     room_or_404(session, room_id)
     weight = 1 if direction == "up" else -1
     set_vote(session, room_id, item_id, user, weight)
     events.publish(room_id, {"topic": "queue", "type": "voted", "entry_id": item_id, "weight": weight})
-    return JSONResponse({"status": "ok", "entry": single_payload(session, room_id, item_id, user)})
+    return EntryResponse(entry=single_payload(session, room_id, item_id, user))
 
 
-@router.delete("/{room_id}/queue/vote/{item_id}")
-def vote_clear(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, item_id: int):
+@router.delete("/{room_id}/queue/vote/{item_id}", responses=errors(401, 404, 502))
+def vote_clear(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, item_id: int) -> EntryResponse:
     """Removes the vote of user on entry item_id, so the entry scores 0."""
     room_or_404(session, room_id)
     clear_vote(session, room_id, item_id, user)
     events.publish(room_id, {"topic": "queue", "type": "unvoted", "entry_id": item_id})
-    return JSONResponse({"status": "ok", "entry": single_payload(session, room_id, item_id, user)})
+    return EntryResponse(entry=single_payload(session, room_id, item_id, user))

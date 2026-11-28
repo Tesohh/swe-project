@@ -59,7 +59,7 @@ export const register = async (username: string, password: string): Promise<bool
 		})
 	})
 
-	if (res.status == 408) {
+	if (res.status == 409) {
 		return true
 	} else if (!res.ok) {
 		console.error(res.statusText)

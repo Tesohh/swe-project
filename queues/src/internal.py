@@ -6,12 +6,13 @@ from sqlmodel import col, delete, select, update
 import src.db
 from src.events import events
 from src.models import QueueItem, Room, Vote
+from src.schemas import DeleteUserResult
 
 router = APIRouter(prefix="/internal")
 
 
 @router.delete("/users/{user_id}")
-def delete_user_data(session: src.db.SessionDep, user_id: int):
+def delete_user_data(session: src.db.SessionDep, user_id: int) -> DeleteUserResult:
     """Removes what a deleted user left here: the votes, the rooms they host, and their name on requests.
 
     The queue entries, votes and bans of a deleted room go with it (database cascade).
@@ -25,4 +26,4 @@ def delete_user_data(session: src.db.SessionDep, user_id: int):
 
     for room_id in room_ids:
         events.publish(room_id, {"topic": "room", "type": "deleted"})
-    return {"status": "ok", "rooms_deleted": len(room_ids)}
+    return DeleteUserResult(rooms_deleted=len(room_ids))
