@@ -20,6 +20,11 @@ dataset-collect = "ml.dataset.collect:main"
 requires = ["uv_build>=0.9,<1"]
 build-backend = "uv_build"
 
+[project.optional-dependencies]
+cpu = ["torch>=2.9"]
+cuda = ["torch>=2.9"]
+
+
 [dependency-groups]
 dev = [
     "pytest>=8",
@@ -27,9 +32,19 @@ dev = [
 ]
 train = [
     "scikit-learn>=1.9.1",
-    "torch>=2.9",
     "transformers>=4.57",
 ]
 
 [tool.uv.build-backend]
 module-name = "ml"
+
+[tool.uv]
+conflicts = [[{ extra = "cpu" }, { extra = "cuda" }]]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", extra = "cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

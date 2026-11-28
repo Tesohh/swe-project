@@ -10,7 +10,7 @@
   - `auth`: users and login (jwt cookie). Postgres `postgres-auth`
   - `songs`: song catalog, downloads/strips songs with `yt-dlp`, streams audio. Postgres `postgres-songs`
   - `queues`: rooms, queues, votes, and `sse` (live updates, not websocket). Postgres `postgres-queues`
-  - `inference`: the audio tagger (torch), called by `songs`
+  - `inference`: the audio tagger (torch), called by `songs`. torch is CPU-only by default. For GPU use extra `cuda` (`uv sync --extra cuda`, docker `--build-arg TORCH_VARIANT=cuda`)
   - `decision` (`llama.cpp`) comes later
 - `caddy` is the only gateway: the frontend talks to `/api/auth`, `/api/song`, `/api/room`. Services call each other directly (e.g. `http://songs:8000`), never through `caddy`
 - a service never reads the postgres of another service. It keeps ids and asks the other service over HTTP (`/internal/...` routes, which `caddy` does not route)
