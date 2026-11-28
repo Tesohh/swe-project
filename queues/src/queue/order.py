@@ -128,7 +128,8 @@ def ban(session: Session, room_id: int, song_id: int) -> None:
     """Blocks song_id in room_id and drops every entry of that song from the queue."""
     with _transaction(session):
         _lock_room(session, room_id)
-        session.add(RoomBan(room_id=room_id, song_id=song_id))
+        if not banned(session, room_id, song_id):
+            session.add(RoomBan(room_id=room_id, song_id=song_id))
         entries = session.exec(select(QueueItem).where(QueueItem.room_id == room_id, QueueItem.song_id == song_id)).all()
         for entry in entries:
             session.delete(entry)
