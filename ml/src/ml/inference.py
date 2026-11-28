@@ -16,7 +16,7 @@ from ml.features import audio_to_windows, load_audio
 from ml.training.model import MultiTaskAST
 from ml.training.train import GENRE_VOCAB, MOOD_VOCAB
 
-DEFAULT_CHECKPOINT = Path("runs/rap_b/best.pt")
+DEFAULT_CHECKPOINT = Path("runs/neg_b/best.pt")
 INFER_WINDOWS = 6
 
 
