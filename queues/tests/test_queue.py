@@ -263,20 +263,17 @@ def paused(client, room, three) -> list[int]:
     return three
 
 
-@pytest.mark.xfail(strict=True, reason="bug: ORDERED excludes 'paused', renumber gives position 0 twice")
 def test_accept_while_paused(client, room, paused):
     entry = add_requested(client, room, 9)
     assert host_put(client, f"/room/{room}/queue/temp_accept/{entry}").status_code == 200
     check_invariants(room)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: ORDERED excludes 'paused', renumber gives position 0 twice")
 def test_move_while_paused(client, room, paused):
     assert host_put(client, f"/room/{room}/queue/move/{paused[2]}", json={"position": 1}).status_code == 200
     check_invariants(room)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: play_next drops ids[0] although the paused entry is not in ids")
 def test_next_while_paused_plays_next_entry(client, room, paused):
     assert host_put(client, f"/room/{room}/queue/next").status_code == 200
     rows = by_id(room)
@@ -285,14 +282,12 @@ def test_next_while_paused_plays_next_entry(client, room, paused):
     check_invariants(room)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: ORDERED excludes 'paused', renumber gives position 0 twice")
 def test_ban_while_paused(client, room, paused):
     banned_song = by_id(room)[paused[1]].song_id
     assert host_put(client, f"/room/{room}/queue/ban/{banned_song}").status_code == 200
     check_invariants(room)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: ORDERED excludes 'paused', renumber gives position 0 twice")
 def test_remove_while_paused(client, room, paused):
     as_user(client, HOST)
     assert client.delete(f"/room/{room}/queue/item/{paused[1]}").status_code == 200
@@ -337,7 +332,6 @@ def test_ban_removes_entries_and_renumbers(client, room, three, published):
     check_invariants(room)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: a second ban of the same song breaks uq_room_ban and gives 500")
 def test_ban_twice_is_handled(client, room):
     host_put(client, f"/room/{room}/queue/ban/1")
     assert host_put(client, f"/room/{room}/queue/ban/1").status_code < 500

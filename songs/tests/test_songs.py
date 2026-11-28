@@ -138,7 +138,6 @@ def test_tagger_failure_keeps_song_untagged(client, tagger, failure):
     assert (song["genre"], song["mood"], song["quality"]) == (None, None, None)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: tag_song does not catch KeyError when the tagger JSON misses a key")
 def test_tagger_bad_json_shape_keeps_song_untagged(client, tagger):
     tagger["analyze"].respond(200, json={"p_music": 0.9})
     assert download(client).status_code == 200

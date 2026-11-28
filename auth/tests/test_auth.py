@@ -1,5 +1,4 @@
 import httpx
-import pytest
 import respx
 from common.auth import TOKEN_COOKIE, verify_password
 from sqlmodel import select
@@ -49,12 +48,10 @@ def test_password_is_stored_hashed(client, session):
     assert verify_password("secret", user.password_hash)
 
 
-@pytest.mark.xfail(strict=True, reason="bug: signup returns the User row, with password_hash")
 def test_signup_does_not_leak_password_hash(client):
     assert "password_hash" not in signup(client).json()
 
 
-@pytest.mark.xfail(strict=True, reason="bug: /me returns the User row, with password_hash")
 def test_me_does_not_leak_password_hash(client):
     signed_in(client)
     assert "password_hash" not in client.get("/api/auth/me").json()
@@ -65,7 +62,6 @@ def test_duplicate_signup_is_refused(client):
     assert signup(client).status_code >= 400
 
 
-@pytest.mark.xfail(strict=True, reason="bug: duplicate username gives 408 Request Timeout, not 409 Conflict")
 def test_duplicate_signup_is_409(client):
     signup(client)
     assert signup(client).status_code == 409

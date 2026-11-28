@@ -56,7 +56,6 @@ def test_analyze_top_k(client, top_k):
     assert len(body["mood"]) == min(top_k, len(MOODS))
 
 
-@pytest.mark.xfail(strict=True, reason="bug: top_k has no type, so a non-number gives 500, not 422")
 def test_analyze_bad_top_k_is_422(client):
     assert analyze(client, top_k="abc").status_code == 422
 
