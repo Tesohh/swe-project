@@ -42,16 +42,40 @@ All numbers are for songs by artists that are not in the training data.
 
 | Test | Songs | Top-1 genre | Top-3 genre |
 |---|---|---|---|
-| Easy test set | 87 | 70% (61/87) | 93% (81/87) |
-| Hard test set (borderline and non-English songs) | 152 | 68% (103/152) | 90% (137/152) |
+| Easy test set | 87 | 76% (66/87) | 91% (79/87) |
+| Hard test set (borderline and non-English songs) | 152 | 69% (105/152) | 89% (136/152) |
 
-Validation (434 tracks, artist-grouped): genre mAP 0.683, mood mAP 0.523, music-or-not accuracy 99.8%,
-energy MAE 0.03.
+Validation (531 tracks, grouped by artist or by sound source): genre mAP 0.689, mood mAP 0.506,
+music-or-not accuracy 98.9%, energy MAE 0.035.
 
 Top-1 means the highest-scoring genre equals the expected genre. A song often has more than one
 valid genre, so top-3 is the fairer number.
 
+### Music-or-not head
+
+The `music` output is a score from 0 to 1. It was tested on 83 clips and 5 videos that are not in the
+training data. Each clip is 60 seconds from YouTube. The table shows the mean `p_music` per group.
+
+| Group | Clips | Mean p_music |
+|---|---|---|
+| Rain, ocean, birds, traffic | 12 | 0.03 |
+| Crowd, bar and street noise | 12 | 0.09 |
+| Applause | 3 | 0.07 |
+| Sound effects | 4 | 0.21 |
+| Podcast and talk | 11 | 0.25 |
+| Folk, a cappella, solo instruments | 10 | 1.00 |
+| Non-English speech | 12 | 0.52 |
+| Ringtones, jingles, modem sounds | 7 | 0.75 |
+| Music with speech over it | 7 | 0.64 |
+
+Speech and noise that have no music get a low score. Music gets a high score.
+Non-English speech and music with speech over it are not reliable. The test clips were not checked by
+listening. Some of them may contain music.
+
 ### Known weak spots
+
+- The music-or-not score is not reliable for non-English speech, for speech over music, and for ringtones.
+- A short sound effect (for example a vacuum cleaner) can still get a high music score.
 
 - Many songs get `rock`, `pop` or `electronic` when they are not.
 - `house` is weak. It is often called `electronic`.
@@ -82,12 +106,17 @@ The `embedding` is a unit vector. The dot product of two embeddings is their cos
 ## Training
 
 - Start: `MIT/ast-finetuned-audioset-10-10-0.4593` (AudioSet).
-- Data: about 16,000 tracks. About 12,000 come from MTG-Jamendo, with genre tags mapped to the
+- Data: about 17,400 tracks. About 12,000 come from MTG-Jamendo, with genre tags mapped to the
   21 genres. About 3,900 are well-known songs that were labeled by hand and with model help (genre and mood).
-  About 150 are speech clips (for the music-or-not head).
+  About 275 are speech clips and about 1,300 are noise clips (for the music-or-not head).
+  The noise clips are environmental sounds (ESC-50, 4 or more clips joined to at least 12 seconds),
+  synthetic sounds (silence, noise, tones) and YouTube ambience and sound effects. The speech clips
+  are LibriVox audiobooks and YouTube talk and news. Windows that contain music are removed from the
+  noise and speech clips (AudioSet Music score of 0.2 or more).
 - Songs and artists in the test sets are excluded from training. The validation split is grouped by artist.
-- 6 epochs, AdamW, trunk learning rate 1e-5, head learning rate 1e-3, effective batch 32, bf16.
-  One random 10.24 second window per track in each step. About 40 minutes on one consumer GPU (RTX 3080).
+- Up to 12 epochs with early stopping (the saved model is from epoch 5), AdamW, trunk learning rate 3e-5
+  with layer decay 0.85, head learning rate 1e-3, effective batch 32, bf16.
+  One random 10.24 second window per track in each step. About 55 minutes on one consumer GPU (RTX 3080).
 
 The training audio is not included in this repository. Only the model weights are.
 
