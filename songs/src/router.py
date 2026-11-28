@@ -69,9 +69,9 @@ def song_payload(song: Song, path: Path | None) -> SongPayload:
 
 
 @router.post("/download", responses=errors(400, 422, 502))
-def download(url: str, session: src.db.SessionDep) -> SongResponse:
+async def download(url: str, session: src.db.SessionDep) -> SongResponse:
     """Stores the song in the songs table and saves the file as songs/<song id>. url is the input the song was found by."""
-    song = download_song(session, url)
+    song = await download_song(session, url)
     return SongResponse(song=song_payload(song, song_file(song.id)))
 
 
@@ -122,9 +122,9 @@ class FromUrlBody(BaseModel):
 
 
 @internal.post("/songs/from-url", responses=errors(400, 422, 502))
-def song_from_url(body: FromUrlBody, session: src.db.SessionDep) -> SongEnvelope:
+async def song_from_url(body: FromUrlBody, session: src.db.SessionDep) -> SongEnvelope:
     """Downloads the song that query names, or reuses it. Called by the queues service."""
-    song = download_song(session, body.query)
+    song = await download_song(session, body.query)
     return SongEnvelope(song=song_payload(song, song_file(song.id)))
 
 

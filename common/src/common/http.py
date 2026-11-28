@@ -20,7 +20,7 @@ def base_url(env_name: str, default: str) -> str:
     return os.environ.get(env_name, default).rstrip("/")
 
 
-def call(
+async def call(
     service: str,
     method: str,
     url: str,
@@ -34,7 +34,8 @@ def call(
     A 4xx answer keeps its status and detail, so the user sees the real reason.
     """
     try:
-        response = httpx.request(method, url, timeout=timeout, **kwargs)
+        async with httpx.AsyncClient(timeout=timeout) as client:
+            response = await client.request(method, url, **kwargs)
     except httpx.HTTPError as err:
         log.warning("%s service unreachable: %s", service, err)
         raise HTTPException(

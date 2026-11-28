@@ -3,6 +3,7 @@
 The tagger is slow and may be down. A failure never blocks a download: the song stays untagged.
 """
 
+import asyncio
 import logging
 from pathlib import Path
 
@@ -18,16 +19,16 @@ TAGGER_TIMEOUT_SECONDS = 120.0
 MIN_P_MUSIC = 0.5  # below this the audio is not music
 
 
-def tag_song(session: Session, song: Song, path: Path, media_type: str) -> None:
+async def tag_song(session: Session, song: Song, path: Path, media_type: str) -> None:
     """Stores genre, mood and quality of song, as the tagger reports them for its audio file at path."""
     url = f"{base_url('INFERENCE_TAGGER_BASE', 'http://inference:8000')}/analyze"
     try:
-        with path.open("rb") as audio:
-            response = httpx.post(
+        audio = await asyncio.to_thread(path.read_bytes)
+        async with httpx.AsyncClient(timeout=TAGGER_TIMEOUT_SECONDS) as client:
+            response = await client.post(
                 url,
                 files={"file": (path.name, audio, media_type)},
                 params={"top_k": 1},
-                timeout=TAGGER_TIMEOUT_SECONDS,
             )
         response.raise_for_status()
         result = response.json()
