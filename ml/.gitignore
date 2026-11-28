@@ -12,3 +12,4 @@ runs/
 run_speech_pipeline.sh
 *.log
 hf_release/
+data/esc50/

@@ -11,7 +11,7 @@ from src.features import audio_to_windows, load_audio
 from src.model import MultiTaskAST
 
 DEFAULT_REPO = "tesohh/music-tagger-ast"
-DEFAULT_REVISION = "bebf3a602b3e3d13334724c6380ca2cc8968ee76"
+DEFAULT_REVISION = "861bdcf71b6eb9fc1fb232bbf40c7c2d0539435a"
 INFER_WINDOWS = 6
 
 
