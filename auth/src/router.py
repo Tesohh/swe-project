@@ -33,7 +33,7 @@ class SignupBody(BaseModel):
 def get_oauth2_token(
     session: src.db.SessionDep,
     response: Response,
-    form_data: OAuth2PasswordRequestForm = Depends(),
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
 ) -> Status:
     """Checks the username and password. On success, sets the JWT cookie (httpOnly) and returns the status."""
     user = src.security.authenticate_user(session, form_data.username, form_data.password)

@@ -44,5 +44,8 @@ jobs:
       - name: Install
         run: uv sync --locked --dev
 
+      - name: Lint
+        run: uvx ruff check .
+
       - name: Test
         run: uv run pytest -q
