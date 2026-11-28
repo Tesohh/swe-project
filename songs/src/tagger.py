@@ -31,13 +31,16 @@ def tag_song(session: Session, song: Song, path: Path, media_type: str) -> None:
             )
         response.raise_for_status()
         result = response.json()
-    except (httpx.HTTPError, ValueError) as err:
+        genre = next(iter(result["genre"]), None)
+        mood = next(iter(result["mood"]), None)
+        quality = "good" if result["p_music"] >= MIN_P_MUSIC else "not_music"
+    except (httpx.HTTPError, ValueError, KeyError, TypeError) as err:
         log.warning("could not tag song %s: %s", song.id, err)
         return
 
-    song.genre = next(iter(result["genre"]), None)
-    song.mood = next(iter(result["mood"]), None)
-    song.quality = "good" if result["p_music"] >= MIN_P_MUSIC else "not_music"
+    song.genre = genre
+    song.mood = mood
+    song.quality = quality
     session.add(song)
     session.commit()
     session.refresh(song)
