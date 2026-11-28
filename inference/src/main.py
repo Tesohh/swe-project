@@ -1,6 +1,6 @@
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException, UploadFile
+from fastapi import FastAPI, HTTPException, Query, UploadFile
 from pydantic import BaseModel
 
 from src.inference import Scores, load_windows, score_windows
@@ -17,9 +17,19 @@ async def lifespan(_app: FastAPI):
 app = FastAPI(title="tagger", root_path="/inference", lifespan=lifespan)
 
 
+class HealthResult(BaseModel):
+    loaded: bool  # the model is loaded
+    device: str  # device of the model, e.g. "cpu" or "cuda"
+
+
+class ErrorDetail(BaseModel):
+    detail: str
+
+
 @app.get("/health")
-def health(model: ModelDep):
-    return {"loaded": True, "device": next(model.parameters()).device.type}
+def health(model: ModelDep) -> HealthResult:
+    """Tells that the model is loaded, and on which device it runs."""
+    return HealthResult(loaded=True, device=next(model.parameters()).device.type)
 
 
 ALLOWED_MIME_TYPES = {
@@ -61,8 +71,9 @@ class AnalyzeResult(BaseModel):
         )
 
 
-@app.post("/analyze")
-def analyze(model: ModelDep, file: UploadFile, top_k=3) -> AnalyzeResult:
+@app.post("/analyze", responses={415: {"model": ErrorDetail, "description": "The audio type is not supported"}})
+def analyze(model: ModelDep, file: UploadFile, top_k: int = Query(default=3, ge=1)) -> AnalyzeResult:
+    """Tags the audio file: music probability, the top_k genres and moods, energy, and an embedding."""
     if file.content_type not in ALLOWED_MIME_TYPES:
         raise HTTPException(status_code=415, detail=f"unsupported audio type: {file.content_type}")
     scores = score_windows(model, load_windows(file.file.read()))

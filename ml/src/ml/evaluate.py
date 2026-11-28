@@ -14,7 +14,7 @@ from pathlib import Path
 import numpy as np
 
 from ml.dataset.vocabs import DATA_DIR
-from ml.inference import INFER_WINDOWS, DEFAULT_CHECKPOINT, load_model, load_windows, score_windows
+from ml.inference import DEFAULT_CHECKPOINT, INFER_WINDOWS, load_model, load_windows, score_windows
 
 TEST_SONGS = DATA_DIR / "test_songs.jsonl"
 TEST_AUDIO = DATA_DIR / "test_audio"

@@ -7,3 +7,10 @@ class User(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     name: str = Field(unique=True)
     password_hash: str
+
+
+class UserPublic(SQLModel):
+    """The fields of a user that a client can see."""
+
+    id: int
+    name: str
