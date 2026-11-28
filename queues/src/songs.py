@@ -8,19 +8,19 @@ def _base() -> str:
     return base_url("SONGS_BASE", "http://songs:8000")
 
 
-def song_from_url(query: str) -> dict:
+async def song_from_url(query: str) -> dict:
     """Payload of the song that query names. The songs service downloads it if it is new."""
     # a download can take long, so the timeout is long too
-    response = call("songs", "POST", f"{_base()}/internal/songs/from-url", json={"query": query}, timeout=300.0)
+    response = await call("songs", "POST", f"{_base()}/internal/songs/from-url", json={"query": query}, timeout=300.0)
     return response.json()["song"]
 
 
-def songs_by_id(ids: list[int]) -> dict[int, dict]:
+async def songs_by_id(ids: list[int]) -> dict[int, dict]:
     """Song payloads by song id. A missing song is a data error, so it is a 502."""
     wanted = sorted(set(ids))
     if not wanted:
         return {}
-    response = call("songs", "GET", f"{_base()}/internal/songs", params={"ids": wanted})
+    response = await call("songs", "GET", f"{_base()}/internal/songs", params={"ids": wanted})
     found = {song["id"]: song for song in response.json()["songs"]}
     for song_id in wanted:
         if song_id not in found:

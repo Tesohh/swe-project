@@ -8,6 +8,7 @@ from pathlib import Path
 
 import yt_dlp
 from fastapi import HTTPException, status
+from fastapi.concurrency import run_in_threadpool
 from sqlmodel import select
 
 import src.db
@@ -146,17 +147,15 @@ def download_url(query: str) -> str:
     return query
 
 
-def download_song(session: src.db.SessionDep, query: str) -> Song:
-    """Downloads the song that query names into songs/<song id>, and stores query as the input it was found by.
-    Reuses the row if the song was already downloaded.
-    """
+def _download_song(session: src.db.SessionDep, query: str) -> tuple[Song, Path | None]:
+    """Blocking part of download_song. The path is set only for a new download, which still needs tags."""
     SONGS_DIR.mkdir(parents=True, exist_ok=True)
 
     url = download_url(query)
     existing = session.exec(select(Song).where(Song.source_url == url)).first()
     if existing is not None:
         ensure_file(existing)
-        return existing
+        return existing, None
 
     info = _extract_info(url)
 
@@ -180,6 +179,16 @@ def download_song(session: src.db.SessionDep, query: str) -> Song:
         session.commit()
         raise HTTPException(status.HTTP_502_BAD_GATEWAY, f"Download failed: {err}") from err
 
-    # the tagger fills genre, mood and quality. If it is not available, the song stays untagged
-    tag_song(session, song, path, MEDIA_TYPES.get(path.suffix.lower(), "application/octet-stream"))
+    return song, path
+
+
+async def download_song(session: src.db.SessionDep, query: str) -> Song:
+    """Downloads the song that query names into songs/<song id>, and stores query as the input it was found by.
+    Reuses the row if the song was already downloaded.
+    """
+    # yt-dlp and the database block, so they run in a thread and the event loop stays free
+    song, path = await run_in_threadpool(_download_song, session, query)
+    if path is not None:
+        # the tagger fills genre, mood and quality. If it is not available, the song stays untagged
+        await tag_song(session, song, path, MEDIA_TYPES.get(path.suffix.lower(), "application/octet-stream"))
     return song

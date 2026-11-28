@@ -28,13 +28,13 @@ def entry_payload(entry: QueueItem, song: dict, score: int, my_vote: int | None,
     )
 
 
-def build_entries(session: Session, entries: list[QueueItem], user: CurrentUser | None) -> list[EntryPayload]:
+async def build_entries(session: Session, entries: list[QueueItem], user: CurrentUser | None) -> list[EntryPayload]:
     """Payload list for entries, with the vote score of each entry."""
     ids = [required_id(entry.id, "queue entry") for entry in entries]
     counts = vote_counts(session, ids)
     mine = votes_by_user(session, ids, user.id) if user else {}
-    songs = songs_by_id([entry.song_id for entry in entries])
-    names = names_by_id([entry.added_by for entry in entries if entry.added_by is not None])
+    songs = await songs_by_id([entry.song_id for entry in entries])
+    names = await names_by_id([entry.added_by for entry in entries if entry.added_by is not None])
 
     return [
         entry_payload(
@@ -53,7 +53,7 @@ def pending_of(session: Session, room_id: int) -> list[QueueItem]:
     return list(session.exec(select(QueueItem).where(QueueItem.room_id == room_id, QueueItem.state == "requested").order_by(col(QueueItem.id))).all())
 
 
-def single_payload(session: Session, room_id: int, item_id: int, user: CurrentUser) -> EntryPayload:
+async def single_payload(session: Session, room_id: int, item_id: int, user: CurrentUser) -> EntryPayload:
     """Payload of one entry, with the vote of user."""
     entry = entry_or_404(session, room_id, item_id)
-    return build_entries(session, [entry], user)[0]
+    return (await build_entries(session, [entry], user))[0]

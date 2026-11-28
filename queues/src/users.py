@@ -8,13 +8,13 @@ from fastapi import HTTPException
 log = logging.getLogger(__name__)
 
 
-def names_by_id(ids: list[int]) -> dict[int, str]:
+async def names_by_id(ids: list[int]) -> dict[int, str]:
     """User names by user id. If auth is down the names are left out, the queue still works."""
     wanted = sorted(set(ids))
     if not wanted:
         return {}
     try:
-        response = call("auth", "GET", f"{base_url('AUTH_BASE', 'http://auth:8000')}/internal/users/names", params={"ids": wanted})
+        response = await call("auth", "GET", f"{base_url('AUTH_BASE', 'http://auth:8000')}/internal/users/names", params={"ids": wanted})
     except HTTPException as err:
         log.warning("no user names: %s", err.detail)
         return {}

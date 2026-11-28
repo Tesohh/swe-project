@@ -84,10 +84,10 @@ def logout(response: Response) -> Status:
 
 
 @router.post("/delete", responses=errors(401, 403, 502))
-def delete_account(user: src.security.UserDep, session: src.db.SessionDep) -> Status:
+async def delete_account(user: src.security.UserDep, session: src.db.SessionDep) -> Status:
     """Deletes the account of the user, and the rooms and votes of the user in the queues service."""
     # the queues service holds the rooms and votes of the user. It goes first, so a failure keeps the account
-    call("queues", "DELETE", f"{base_url('QUEUES_BASE', 'http://queues:8000')}/internal/users/{user.id}")
+    await call("queues", "DELETE", f"{base_url('QUEUES_BASE', 'http://queues:8000')}/internal/users/{user.id}")
 
     session.exec(delete(src.models.User).where(src.models.User.id == user.id))  # type:ignore
     session.commit()

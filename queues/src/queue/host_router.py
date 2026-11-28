@@ -30,12 +30,12 @@ class MoveBody(BaseModel):
 
 
 @router.put("/{room_id}/queue/move/{item_id}", responses=errors(401, 403, 404, 409, 502))
-def move_entry(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, item_id: int, body: MoveBody) -> EntryResponse:
+async def move_entry(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, item_id: int, body: MoveBody) -> EntryResponse:
     """Moves entry item_id to position, host only."""
     owned_room(session, room_id, user)
     move(session, room_id, item_id, body.position)
     events.publish(room_id, {"topic": "queue", "type": "ordered", "entry_id": item_id})
-    return EntryResponse(entry=single_payload(session, room_id, item_id, user))
+    return EntryResponse(entry=await single_payload(session, room_id, item_id, user))
 
 
 @router.put("/{room_id}/queue/ban/{song_id}", responses=errors(401, 403, 404, 409, 502))
@@ -57,7 +57,7 @@ def unban_song(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, s
 
 
 @router.put("/{room_id}/queue/temp_accept/{item_id}", responses=errors(401, 403, 404, 409, 502))
-def temp_accept_entry(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, item_id: int) -> EntryResponse:
+async def temp_accept_entry(session: src.db.SessionDep, user: CurrentUserDep, room_id: int, item_id: int) -> EntryResponse:
     """Temporary stand-in for the audio gate: moves a requested entry into the order, host only.
     Delete this route when admission runs.
     """
@@ -65,21 +65,21 @@ def temp_accept_entry(session: src.db.SessionDep, user: CurrentUserDep, room_id:
     entry = accept_entry(session, room_id, item_id)
     entry_id = required_id(entry.id, "queue entry")
     events.publish(room_id, {"topic": "queue", "type": "accepted", "entry_id": entry_id})
-    return EntryResponse(entry=single_payload(session, room_id, entry_id, user))
+    return EntryResponse(entry=await single_payload(session, room_id, entry_id, user))
 
 
 @router.put("/{room_id}/queue/toggle", responses=errors(401, 403, 404, 409, 502))
-def toggle_player_route(session: src.db.SessionDep, user: CurrentUserDep, room_id: int) -> EntryResponse:
+async def toggle_player_route(session: src.db.SessionDep, user: CurrentUserDep, room_id: int) -> EntryResponse:
     """Flips the track that plays between playing and paused, host only."""
     owned_room(session, room_id, user)
     current = toggle_player(session, room_id)
     events.publish(room_id, {"topic": "queue", "type": current.state, "entry_id": current.id})
-    payload = single_payload(session, room_id, required_id(current.id, "queue entry"), user)
+    payload = await single_payload(session, room_id, required_id(current.id, "queue entry"), user)
     return EntryResponse(entry=payload)
 
 
 @router.put("/{room_id}/queue/next", responses=errors(401, 403, 404, 409, 502))
-def play_next_entry(
+async def play_next_entry(
     session: src.db.SessionDep,
     user: CurrentUserDep,
     room_id: int,
@@ -90,11 +90,11 @@ def play_next_entry(
     entry = play_next(session, room_id, amount)
     entry_id = required_id(entry.id, "queue entry")
     events.publish(room_id, {"topic": "queue", "type": "playing", "entry_id": entry_id})
-    return EntryResponse(entry=single_payload(session, room_id, entry_id, user))
+    return EntryResponse(entry=await single_payload(session, room_id, entry_id, user))
 
 
 @router.put("/{room_id}/queue/prev", responses=errors(401, 403, 404, 409, 502))
-def play_prev_entry(
+async def play_prev_entry(
     session: src.db.SessionDep,
     user: CurrentUserDep,
     room_id: int,
@@ -105,7 +105,7 @@ def play_prev_entry(
     entry = play_prev(session, room_id, amount)
     entry_id = required_id(entry.id, "queue entry")
     events.publish(room_id, {"topic": "queue", "type": "playing", "entry_id": entry_id})
-    return EntryResponse(entry=single_payload(session, room_id, entry_id, user))
+    return EntryResponse(entry=await single_payload(session, room_id, entry_id, user))
 
 
 @router.delete("/{room_id}/queue/item/{item_id}", responses=errors(401, 403, 404, 409, 502))
