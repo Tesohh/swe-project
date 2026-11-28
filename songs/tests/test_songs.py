@@ -26,7 +26,7 @@ PAYLOAD_KEYS = {
 
 
 def download(client, url=ABC):
-    return client.get("/song/download", params={"url": url})
+    return client.post("/song/download", params={"url": url})
 
 
 def songs_on_disk() -> list[str]:
