@@ -1,6 +1,6 @@
 """Dense position order for a room queue.
 
-Positions are integers from 0 for the queued and playing entries of one room.
+Positions are integers from 0 for the queued, playing and paused entries of one room.
 Every write runs in one transaction with a row lock on the room, so two reorders
 of the same room never interleave.
 """
@@ -11,12 +11,11 @@ from common.auth import CurrentUser
 from fastapi import HTTPException, status
 from sqlmodel import Session, col, func, select
 
-from src.models import QueueItem, Room, RoomBan, Vote
+from src.models import ORDERED_STATES, QueueItem, Room, RoomBan, Vote
 
 # temp range for positions during a renumber, so the unique check never sees a duplicate mid-flight
 TEMP_OFFSET = 1_000_000
 
-ORDERED = ("queued", "playing")
 
 
 def room_or_404(session: Session, room_id: int) -> Room:
@@ -62,14 +61,14 @@ def required_id(value: int | None, kind: str) -> int:
 
 
 def ordered_ids(session: Session, room_id: int) -> list[int]:
-    """Ids of the queued and playing entries of room_id, in the current order.
+    """Ids of the queued, playing and paused entries of room_id, in the current order.
 
     Entries with a NULL position sort last, which appends a fresh entry at the end.
     """
     # SQLModel sessions do not autoflush, so pending writes must reach the db before the read
     session.flush()
     entries = session.exec(
-        select(QueueItem).where(QueueItem.room_id == room_id, col(QueueItem.state).in_(ORDERED)).order_by(col(QueueItem.position), col(QueueItem.id))
+        select(QueueItem).where(QueueItem.room_id == room_id, col(QueueItem.state).in_(ORDERED_STATES)).order_by(col(QueueItem.position), col(QueueItem.id))
     ).all()
     return [required_id(entry.id, "queue entry") for entry in entries]
 
@@ -78,7 +77,7 @@ def _renumber(session: Session, room_id: int, ids: list[int]) -> None:
     """Writes dense positions for ids, from 0 to len(ids) - 1."""
     session.flush()
     # a temp range first, so the unique check never sees a duplicate mid-flight
-    entries = session.exec(select(QueueItem).where(QueueItem.room_id == room_id, col(QueueItem.state).in_(ORDERED))).all()
+    entries = session.exec(select(QueueItem).where(QueueItem.room_id == room_id, col(QueueItem.state).in_(ORDERED_STATES))).all()
     for entry in entries:
         entry.position = TEMP_OFFSET + required_id(entry.id, "queue entry")
         session.add(entry)
@@ -351,10 +350,10 @@ def votes_by_user(session: Session, ids: list[int], user_id: int) -> dict[int, i
 
 
 def order_of(session: Session, room_id: int) -> list[QueueItem]:
-    """Queued and playing entries of room_id, in position order."""
+    """Queued, playing and paused entries of room_id, in position order."""
     return list(
         session.exec(
-            select(QueueItem).where(QueueItem.room_id == room_id, col(QueueItem.state).in_(ORDERED)).order_by(col(QueueItem.position), col(QueueItem.id))
+            select(QueueItem).where(QueueItem.room_id == room_id, col(QueueItem.state).in_(ORDERED_STATES)).order_by(col(QueueItem.position), col(QueueItem.id))
         ).all()
     )
 
