@@ -57,7 +57,7 @@ def get_oauth2_token(
 
 
 @router.post("/signup", responses=errors(409))
-def signup(session: src.db.SessionDep, body: SignupBody) -> src.models.User:
+def signup(session: src.db.SessionDep, body: SignupBody) -> src.models.UserPublic:
     """Creates a user. The name must be new."""
     user = session.exec(select(src.models.User).where(src.models.User.name == body.username)).first()
     if user:
@@ -67,13 +67,13 @@ def signup(session: src.db.SessionDep, body: SignupBody) -> src.models.User:
     session.add(user)
     session.commit()
     session.refresh(user)
-    return user
+    return src.models.UserPublic.model_validate(user)
 
 
 @router.get("/me", responses=errors(401, 403))
-def me(user: src.security.UserDep) -> src.models.User:
+def me(user: src.security.UserDep) -> src.models.UserPublic:
     """The user of the JWT cookie."""
-    return user
+    return src.models.UserPublic.model_validate(user)
 
 
 @router.post("/logout")
